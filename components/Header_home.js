@@ -4,7 +4,7 @@ import Icon from "../public/Icon.png";
 
 function Header_home() {
     return (
-        <header className="flex flex-none container lg:mx-7 stick top-0">
+        <header className="flex flex-none fixed container lg:mx-7 stick top-0">
             {/*Logo*/}
             <div className="mx-4 mt-2 ">
                 <Link href='/'>

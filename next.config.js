@@ -1,5 +1,5 @@
 module.exports = {
     images: {
-        domains: ["www.kindpng.com"],
+        domains: ['upload.wikimedia.org', 'www.r-project.org','starbeamrainbowlabs.com'],
     },
 }
