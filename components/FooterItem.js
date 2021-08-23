@@ -1,4 +1,3 @@
-
 function FooterItem({ Icon, title }) {
     return (
         <div className='flex flex-col items-center cursor-pointer group w-10 lg:w-20'>

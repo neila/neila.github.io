@@ -8,15 +8,15 @@ function Nav_home() {
             <div className="flex flex-col items-end fixed bottom-3 right-3 lg:mb-10 lg:mr-7 lg:text-lg lg:space-y-1">
 
                 <Link href='/works'>
-                    <a class="underline text-[#F726A7] lg:no-underline lg:hover:underline font-light">works</a>
+                    <div class="underline text-[#F726A7] cursor-pointer lg:no-underline lg:hover:underline font-light">works</div>
                 </Link>
                 
                 <Link href="/ideas"> 
-                    <a class="underline text-[#FFDF00] lg:no-underline lg:hover:underline font-light">ideas</a>
+                    <div class="underline text-[#FFDF00] cursor-pointer lg:no-underline lg:hover:underline font-light">ideas</div>
                 </Link>
                 
                 <Link href="/about"> 
-                    <a class="underline text-[#01CDFF] lg:no-underline lg:hover:underline font-light">about</a>
+                    <div class="underline text-[#01CDFF] cursor-pointer lg:no-underline lg:hover:underline font-light">about</div>
                 </Link>
                 
 

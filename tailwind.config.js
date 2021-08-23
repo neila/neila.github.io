@@ -6,6 +6,12 @@ module.exports = {
         rotate: {
             '270':'270deg'
         },
+        listStyleType:{
+            none: 'none',
+            disc: 'disc',
+            decimal: 'decimal',
+            square: 'square',
+        },
         extend: {},
     },
     variants: {
