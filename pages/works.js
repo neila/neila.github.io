@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Test from '../public/test.jpeg';
 import Synthfeed from '../public/Synthfeed.png';
 import Rap from '../public/rap.jpg';
 import AmbulancePic from '../public/nhs.jpg';
@@ -83,17 +82,9 @@ export default function works() {
                         </div>
                     </div>
 
-                    <div className="h-36 w-36 lg:h-72 lg:w-72 flex relative overflow-hidden cursor-pointer clip-tri-up ">
-                        <Link href=''>
-                            <Image 
-                            className = "object-cover h-full w-full" 
-                            src = {Test} />
-                        </Link>
-                    </div>
-
-                    <div className="h-36 w-36 lg:h-72 lg:w-72 flex relative overflow-hidden clip-tri-down cursor-pointer">
-                            <svg class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 w-full h-full "></svg>
-                    </div> 
+                    {/* <div class="h-36 w-36 lg:h-72 lg:w-72 flex relative overflow-hidden clip-tri-down cursor-pointer">
+                        <svg class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 w-full h-full " />
+                    </div> */}
 
                 </div>
             </section>
