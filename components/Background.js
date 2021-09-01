@@ -1,92 +1,38 @@
 import React from 'react';
 import Particles from "react-tsparticles";
 
-
 export default class extends React.Component {
 
     constructor(props) {
         super(props);
-    
+
         this.particlesInit = this.particlesInit.bind(this);
         this.particlesLoaded = this.particlesLoaded.bind(this);
+
     }
-    
+
     particlesInit(main) {
-
+        
         console.log(main);
-        let noiseZ;
-        let size;
-        let columns;
-        let rows;
-        let w;
-        let h;
-        let field;
-        let noiseZIncrement;
-
-        function getAngle(x, y) {
-            return noise.simplex3(x / Math.PI, y / Math.PI, noiseZ) * Math.PI * 2;
-          }
-          
-          function getLength(x, y) {
-            return noise.simplex3(x / 100, y / 100, noiseZ);
-          }
-          
-          function setup(container) {
-            size = 50;
-            noiseZ = 0;
-            noiseZIncrement = 0.005;
-            reset(container);
-            window.addEventListener("resize", reset);
-          }
-          
-          function initField() {
-            field = new Array(columns);
-            for (let x = 0; x < columns; x++) {
-              field[x] = new Array(columns);
-              for (let y = 0; y < rows; y++) {
-                field[x][y] = [0, 0];
-              }
-            }
-          }
-          
-          function calculateField() {
-            for (let x = 0; x < columns; x++) {
-              for (let y = 0; y < rows; y++) {
-                let angle = getAngle(x, y);
-                let length = getLength(x, y);
-                field[x][y][0] = angle;
-                field[x][y][1] = length;
-              }
-            }
-          }
-          
-          function reset(container) {
-            const pxRatio = window.devicePixelRatio;
-            w = container.canvas.size.width;
-            h = container.canvas.size.width;
-            noise.seed(Math.random());
-            columns = Math.floor(w / size) + 1;
-            rows = Math.floor(h / size) + 1;
-            initField();
-          }
-    
         // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
     }
     
-    particlesLoaded(container) {
-        console.log(container);
-    }
-    
+    particlesLoaded(main) {
+        
+        console.log(main);
+        //https://codepen.io/matteobruni/pen/QWyZOKr
+
+    };
+
     render() {
         return (
-            <Particles
-                width='100vw' 
+            (<Particles
+                width="100%"
                 height="100vh"
                 id="tsparticles"
                 init={this.particlesInit}
                 loaded={this.particlesLoaded}
                 options={
-
                     {
                         fps_limit: 60,
                         emitters: [
@@ -210,26 +156,26 @@ export default class extends React.Component {
                                 }
                             }
                         ],
-                        interactivity:{
-                            detectsOn:'canvas',
-                            events:{
-                                onClick:{
-                                    enable:true,
-                                    mode:'push'
+                        interactivity: {
+                            detectsOn: 'canvas',
+                            events: {
+                                onClick: {
+                                    enable: true,
+                                    mode: 'push'
                                 },
-                                onHover:{
-                                    enable:true,
-                                    mode:'repulse'
+                                onHover: {
+                                    enable: true,
+                                    mode: 'repulse'
                                 },
-                                "resize":true
+                                "resize": true
                             },
-                            modes:{
-                                push:{
-                                    quantity:40
+                            modes: {
+                                push: {
+                                    quantity: 40
                                 },
-                                repulse:{
-                                    distance:80,
-                                    duration:1.0
+                                repulse: {
+                                    distance: 80,
+                                    duration: 1.0
                                 }
                             }
                         },
@@ -259,23 +205,23 @@ export default class extends React.Component {
                                 noise: {
                                     enable: true,
                                     delay: {
-                                        value: 0.001
+                                        value: 0.01
                                     }
                                 }
                             },
-                            number: { 
-                                density: { 
-                                    enable: true, 
-                                    value_area: 800 
-                                }, 
-                                value: 0 
+                            number: {
+                                density: {
+                                    enable: true,
+                                    value_area: 800
+                                },
+                                value: 0
                             },
                             opacity: {
-                                anim: { 
-                                    enable: false, 
-                                    opacity_min: 0.1, 
-                                    speed: 1, 
-                                    sync: false 
+                                anim: {
+                                    enable: false,
+                                    opacity_min: 0.1,
+                                    speed: 1,
+                                    sync: false
                                 },
                                 random: true,
                                 value: 0.5
@@ -294,12 +240,12 @@ export default class extends React.Component {
                                     src: "images/github.svg",
                                     width: 500
                                 },
-                                polygon: { 
+                                polygon: {
                                     nb_sides: 5
                                 },
-                                stroke: { 
+                                stroke: {
                                     color: "random",
-                                    width: 0 
+                                    width: 0
                                 },
                                 type: "circle"
                             },
@@ -309,9 +255,8 @@ export default class extends React.Component {
                         },
                         retina_detect: true
                     }
-                    
                 }
-            />
+            />)
         );
     }
 }

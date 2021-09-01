@@ -11,7 +11,7 @@ function Nav() {
                 </Link>
                 
                 <Link href="/ideas"> 
-                    <div class="underline text-[#FFDF00] cursor-pointer ml-1.5 lg:ml-2 lg:no-underline lg:hover:underline font-light">ideas</div>
+                    <div class="underline text-[#FFDF00] cursor-pointer ml-1.5 lg:ml-2 lg:no-underline lg:hover:underline font-light">ἰδέα</div>
                 </Link>
                 
                 <Link href="/about"> 

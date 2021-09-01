@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import HeroIcon from '../components/HeroIcon';
-import Filter_Profile from '../components/Filter_Profile';
 import profilePic from '../public/profilePic.png';
 import {LocationMarkerIcon} from "@heroicons/react/outline";
 
@@ -19,18 +18,16 @@ export default function about() {
 
             <Header />
 
-            <Title section="about" color="text-[#01CDFF]"/>
+            <Title section="ABOUT" color="text-[#01CDFF]"/>
 
             {/* profile pic */}
             {/* Breathing Halftone later */}
-            <div className="max-h-32 lg:max-h-72 flex justify-center">
-                <div className="w-32 lg:w-72 mx-auto overflow-hidden">
+            <div className="h-32 w-32 lg:w-72 lg:h-72 mx-auto overflow-hidden flex justify-center">
                     <Image 
                         src = {profilePic}
                         alt = 'profile image'
-                        className="lg:h-full shadow rounded-3xl align-middle border-none"
+                        className="lg:rounded-3xl align-middle border-none"
                     />
-                </div>
             </div>
 
             {/*-- content - */}
@@ -41,12 +38,26 @@ export default function about() {
                     <section className="lg:flex flex-col items-start">
                         <div className="lg:w-4/5 mx-auto leading-snug space-y-5">
                             <p className='text-center'>Sho // free nerd // <em>Homo sapiens</em></p>
-                            <p><a href='https://www.youtube.com/watch?v=UL5x60lpGIE'>Konnichiwa</a>, I'm Sho, a developer and an artist from Japan. </p>
-                            <p>In May 2021, I completed my studies at Minerva University, where I specialized in applications of simulation algorithms and machine learning.</p>
-                            <p>I grew up in many places. Over the years, this resulted in my development of a sense of existential angst; resonating with works such as Ijeoma Umebinyuo's <em>Diaspora Blues</em>. 
-                            Perhaps oweing to these frequent environmental changes I underwent, it is my second nature to ask questions more than I answer them. About progress. About justice. About family. Self. Love. About the whole universe.</p>
-                            <p>Aside from my computational and artistic pursuits, I enjoy the <a href='https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things'>small things</a>; dancing through my everyday movements, sleeping in makeshift spaces, and getting off at unvisited subway stations without my phone.</p>
-                            <p>I am currently available for visual design and digital art commissions.</p>
+                            <p>
+                                <a href='https://www.youtube.com/watch?v=UL5x60lpGIE'>Konnichiwa</a>, I'm Sho, a developer and artist from Japan. Alum of <a href='https://www.minerva.edu/undergraduate-program/'>Minerva University</a>. 
+                            </p>
+                            <p>
+                                I wore various creative hats in the past including web design for a <a href='https://synthfeed.com/'>music startup</a>; authoring an <a href='https://style.nikkei.com/search?keyword=%E3%83%9F%E3%83%8D%E3%83%AB%E3%83%90%E3%81%AE%E3%81%B5%E3%81%8F%E3%82%8D%E3%81%86'>essay series</a> for a nationwide media outlet; curriculum design consultant for a <a href="https://manai.me/">STEM high school</a>; and even bartending in NYC. 
+                            </p>
+                            <p>
+                                Aside from my computational and artistic pursuits, I enjoy the <a href='https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things'>small things</a>; dancing through my everyday movements, sleeping in makeshift spaces, and getting off at unvisited subway stations without my phone.
+                            </p>
+                            <p>
+                                Fascinated by human-computer relationship. 
+                                Driven by passion to create soulful artifacts. 
+                            </p>
+                            <p> 
+                                Drawn to questioning everything around me; even more than seeking answers about them.
+                            </p>
+                            <p>
+                                Seeking to be inspired, to envision the bold, to strive for aesthetics, and to be surrounded by souls who bring out the best in each other.
+                            </p>
+                           
                             <div className='flex justify-center w-full'>
                                 <div className='flex object-center font-normal p-2 pr-10 rounded-md bg-[#7D8491] max-w-prose whitespace-nowrap'>
                                     <HeroIcon Icon={LocationMarkerIcon}/><a className='hover:text-red-600' href='https://www.youtube.com/watch?v=QsZlY0Vz4-o'>New York City, USA</a>
@@ -61,26 +72,48 @@ export default function about() {
                             <h2>Skills</h2>
                         </div>
                         <div className="lg:w-full mx-auto leading-snug space-y-5">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quae. Exercitationem, aspernatur cupiditate reiciendis veniam fugiat rerum officia dolor accusantium ipsam cum provident eum voluptatum numquam consequatur! Consectetur, quos rem.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quae. Exercitationem, aspernatur cupiditate reiciendis veniam fugiat rerum officia dolor accusantium ipsam cum provident eum voluptatum numquam consequatur! Consectetur, quos rem.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quae. Exercitationem, aspernatur cupiditate reiciendis veniam fugiat rerum officia dolor accusantium ipsam cum provident eum voluptatum numquam consequatur! Consectetur, quos rem.</p>
+                            {/*<SkillTree classNamecontent='w-full h-screen bg-purple-400 rounded-md border-double border-4 border-light-blue-500'/>*/}
+                            <ul className='list-disc list-inside leading-snug space-y-3'>
+                                <li>
+                                    Iterative design
+                                    <ul class='list-none ml-12'>
+                                        <li>DRY patterns/modular programming</li> <li>Agile development</li> <li>IxD</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Consulting
+                                    <ul class='list-none ml-12'>
+                                        <li>Business Intelligence</li> <li>Data analytics</li> <li>Brand management</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Machine learning
+                                    <ul class='list-none ml-12'>
+                                        <li>NLP</li> <li>Predictive analytics</li> <li>Recommendation systems</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Simulation and modeling
+                                    <ul class='list-none ml-12'>
+                                        <li>Computational physics</li> <li>Optimization</li> <li>Game theory</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Digital Siginal Processing
+                                    <ul class='list-none ml-12'>
+                                        <li>Audio signal</li> <li>Digital image</li> <li>Economic/financial forecasting</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </section>
 
                     {/* tools */}
                     <section className="lg:flex space-x-0 space-y-1 lg:space-x-10 items-start">
                         <div className="space-y-1 transform lg:w-0 lg:rotate-270 lg:translate-y-10 lg:sticky top-72">
-                            <h2>
-                            Current Toolkit
-                            </h2>
+                            <h2 > Current Toolkit</h2>
                         </div>
                         <div className="lg:w-full flex flex-wrap gap-1 justify-start">
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png' alt='Next.js Logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' alt='React Logo' layout='fill'/>
-                            </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
                                 <Image src='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' alt='Python Logo' layout='fill'/>
                             </div>
@@ -88,17 +121,35 @@ export default function about() {
                                 <Image src='https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg' alt='PyTorch Logo' layout='fill'/>
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
+                                <Image src='https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' alt='React Logo' layout='fill'/>
+                            </div>
+                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
+                                <Image src='https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png' alt='Next.js Logo' layout='fill'/>
+                            </div>
+                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
+                                <Image src='https://s3.eu-west-2.amazonaws.com/jamescross/images/frontEndTrio.png' alt='Trinity Logo' layout='fill'/>
+                            </div>
+                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
+                                <Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg' alt='D3 logo' layout='fill' />
+                            </div>
+                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
+                                <Image src='https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg' alt='Firebase logo' layout='fill' />
+                            </div>
+                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
                                 <Image src='https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg' alt='VS Code Logo' layout='fill'/>
+                            </div>
+                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
+                                <Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg' alt='git logo' layout='fill' />
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
                                 <Image src='https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg' alt='Figma Logo' layout='fill'/>
                             </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
+                            {/*<div className="w-20 h-20 lg:h-30 lg:w-30 relative">
                                 <Image src='https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png' alt='Notion Logo' layout='fill'/>
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
                                 <Image src='https://upload.wikimedia.org/wikipedia/en/e/e2/2015_Logic_Pro_Logo.png' alt='Logic Pro X Logo' layout='fill'/>
-                            </div>
+                            </div> */}
                         </div>
                     </section>
                     <section className="lg:flex space-x-0 space-y-1 lg:space-x-10 items-start">
@@ -142,7 +193,7 @@ export default function about() {
                         </div>
                         <ul className="lg:w-full mx-auto leading-snug space-y-3">
                             <div>🏆 Fellow, '17-pres. // Masason foundation</div>
-                            <div>🏆 Japanese national committee scholar '15-'17 // United World Colleges </div>
+                            <div>🏆 National committee scholar '15-'17 // United World Colleges Japan</div>
                         </ul>
                     </section>
 

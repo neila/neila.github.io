@@ -8,21 +8,21 @@ import Background from '../components/Background'
 export default function Home() {
       
     return (
-        <div>
-            <Head>
-                <title>Sho Hihara</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+        <div className="">
+            <div>
+                <Head>
+                    <title>Sho Hihara</title>
+                    <link rel="icon" href="/favicon.ico" />
+                </Head>
 
-            {/* logo */}
-            <Header_home  />
-            
-            <Nav_home />
+                {/* logo */}
+                <Header_home  />
 
-            <div className='flex h-screen w-screen'>
-                <Background />
+                <Background/>
+                
+                <Nav_home />
+
             </div>
-
         </div>
     );
 }

@@ -23,6 +23,15 @@
         @apply underline hover:text-[#F8D106];
     }
     p {
-        @apply lg:leading-relaxed
+        @apply lg:leading-relaxed;
     }
+}
+
+@layer utilities {
+    .clip-tri-up {
+        clip-path: polygon(50% 14.5%, 100% 100%, 0 100%); {/*equilateral triangle. */}
+    } 
+    .clip-tri-down{
+        clip-path: polygon(0 0, 100% 0, 50% 86.5%); {/*must be wrapped in square element*/}
+    } 
 }

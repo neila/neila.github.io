@@ -5,21 +5,25 @@ import Icon from "../public/Icon.png"
 
 function Header() {
     return (
-        <header className="flex flex-none justify-between sticky top-0 bg-[#07070D] border-b z-10">
+        <header className="flex flex-none justify-between sticky top-0 border-b z-10 bg-[#07070D]">
             
             {/*Logo*/}
             <div class="mx-4 mt-2">
                 <Link href='/'>
-                    <Image 
+                    {/* <Image 
                     className = "object-contain rounded-full cursor-pointer align-left" 
                     src = {Icon}
                     width={80} 
-                    height={80}/>
+                    height={80}/> */}
+                    <div class="text-3xl font-extrabold absolute w-0 cursor-pointer">
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-purple-500">
+                            Sho Hihara
+                        </span>
+                    </div>
                 </Link>
             </div>
 
             <Nav />
-
 
         </header>
     );
