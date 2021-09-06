@@ -39,13 +39,7 @@ export default function about() {
                         <div className="lg:w-4/5 mx-auto leading-snug space-y-5">
                             <p className='text-center'>Sho // free nerd // <em>Homo sapiens</em></p>
                             <p>
-                                <a href='https://www.youtube.com/watch?v=UL5x60lpGIE'>Konnichiwa</a>, I'm Sho, a developer and artist from Japan. Alum of <a href='https://www.minerva.edu/undergraduate-program/'>Minerva University</a>. 
-                            </p>
-                            <p>
-                                I wore various creative hats in the past including web design for a <a href='https://synthfeed.com/'>music startup</a>; authoring an <a href='https://style.nikkei.com/search?keyword=%E3%83%9F%E3%83%8D%E3%83%AB%E3%83%90%E3%81%AE%E3%81%B5%E3%81%8F%E3%82%8D%E3%81%86'>essay series</a> for a nationwide media outlet; curriculum design consultant for a <a href="https://manai.me/">STEM high school</a>; and even bartending in NYC. 
-                            </p>
-                            <p>
-                                Aside from my computational and artistic pursuits, I enjoy the <a href='https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things'>small things</a>; dancing through my everyday movements, sleeping in makeshift spaces, and getting off at unvisited subway stations without my phone.
+                                <a href='https://www.youtube.com/watch?v=UL5x60lpGIE'>Konnichiwa</a>, I'm Sho, a developer and artist from Japan. Alum of <a href='https://www.minerva.edu/undergraduate-program/'>Minerva University</a>. <em>Time</em>'s 2006 person of the year.
                             </p>
                             <p>
                                 Fascinated by human-computer relationship. 
@@ -55,7 +49,7 @@ export default function about() {
                                 Drawn to questioning everything around me; even more than seeking answers about them.
                             </p>
                             <p>
-                                Seeking to be inspired, to envision the bold, to strive for aesthetics, and to be surrounded by souls who bring out the best in each other.
+                                Aside from my computational and artistic pursuits, I enjoy the <a href='https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things'>small things</a>; dancing through my everyday movements, sleeping in makeshift spaces, and getting off at unvisited subway stations without my phone.
                             </p>
                            
                             <div className='flex justify-center w-full'>

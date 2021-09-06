@@ -37,7 +37,7 @@ export default function works() {
                             src = {Rap} />
                         </Link>
                         <div className="absolute bottom-3 w-full">
-                            <div className='mx-auto w-4/5 text-center text-xl'>
+                            <div className='mx-auto w-4/5 text-center lg:text-xl'>
                                 AlgoRap
                             </div>
                         </div>
@@ -49,8 +49,8 @@ export default function works() {
                             className = "object-cover h-full w-full" 
                             src = {AmbulancePic} />
                         </Link>
-                        <div className="absolute top-7 w-full">
-                            <div className='mx-auto w-4/5 text-center text-xl'>
+                        <div className="absolute top-3 w-full">
+                            <div className='mx-auto w-4/5 text-center lg:text-xl'>
                                 London Emergency Response Simulation
                             </div>
                         </div>
@@ -63,7 +63,7 @@ export default function works() {
                             src = {Radio} />
                         </Link>
                         <div className="absolute bottom-3 w-full">
-                            <div className='mx-auto w-4/5 text-center text-xl'>
+                            <div className='mx-auto w-4/5 text-center lg:text-xl'>
                                 Radio algorithm <br /> (Song recommendation)
                             </div>
                         </div>
@@ -76,7 +76,7 @@ export default function works() {
                             src = {Synthfeed} />
                         </Link>
                         <div className="absolute bottom-28 w-full">
-                            <div className='mx-auto w-4/5 text-center text-xl'>
+                            <div className='mx-auto w-4/5 text-center lg:text-xl'>
                                 SynthFeed
                             </div>
                         </div>
