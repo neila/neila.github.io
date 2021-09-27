@@ -51,7 +51,7 @@ export default function works() {
                         </Link>
                         <div className="absolute top-3 w-full">
                             <div className='mx-auto w-4/5 text-center lg:text-xl'>
-                                London Emergency Response Simulation
+                                London Emergency Response Simulation 
                             </div>
                         </div>
                     </div>

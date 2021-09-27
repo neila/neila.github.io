@@ -9,8 +9,8 @@ tags: "#digital-garden"
 
 Some examples of personal digital gardening tools (non-exhaustive):
 
-- Notion
-- Obsidian
-- Roam Research
+- [Notion](https://www.notion.so/)
+- [Obsidian](https://obsidian.md/)
+- [Roam Research](https://roamresearch.com/)
 
 <br />Instead of seeing a personal website as a filtered representation of self in the digital space, a digital gardeer sees it as a mere reflection of their actual self, who are also always thinking, always associating, and always growing. It is the rejection of the perfect self and the courageous embracement of eternal imperfection. 
