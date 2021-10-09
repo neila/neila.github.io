@@ -74,12 +74,12 @@ export default function about() {
                                         <li>DRY patterns/modular programming</li> <li>Agile development</li> <li>IxD</li>
                                     </ul>
                                 </li>
-                                <li>
+                                {/* <li>
                                     Consulting
                                     <ul class='list-none ml-12'>
                                         <li>Business Intelligence</li> <li>Data analytics</li> <li>Brand management</li>
                                     </ul>
-                                </li>
+                                </li> */}
                                 <li>
                                     Machine learning
                                     <ul class='list-none ml-12'>
