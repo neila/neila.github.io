@@ -9,6 +9,8 @@ import Sim1 from '../../public/Sim1.png';
 import Sim2 from '../../public/Sim2.png';
 import Sim3 from '../../public/Sim3.png';
 import Sim4 from '../../public/Sim4.png';
+import Sim5 from '../../public/Sim5.png';
+import Sim6 from '../../public/Sim6.png';
 
 const Title = ({section, color}) => <div class="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
 
@@ -49,12 +51,14 @@ export default function ERsim() {
                                 <div className="md:w-4/6 lg:w-1/2">
                                     <Image 
                                         className = "rounded-full object-cover h-full w-full" 
-                                        src = {LondonGeo} />
+                                        src = {LondonGeo} 
+                                        alt= "London regions, visualized" />
                                 </div>
                                 <div className="md:w-4/6 lg:w-1/2">
                                     <Image 
                                         className = "object-cover h-full w-full" 
-                                        src = {LondonNetwork} />
+                                        src = {LondonNetwork}
+                                        alt= "Regions encoded as a network" />
                                 </div>
 
                             </div>
@@ -89,7 +93,9 @@ export default function ERsim() {
                             </p>
 
                             <br />
-                            <Image src = {LondonBridges} />
+                            <Image src = {LondonBridges} 
+                            alt= "The 7 London bridges" />
+                            
                             <br />
 
                             <p>Closing down Lambeth bridge had the most significant slowdown effect on ambulance response (±2σ).</p>
@@ -110,8 +116,16 @@ export default function ERsim() {
 
                             <p>
                                 For example, adding a hospital in node 922 yielded approximately 30 seconds of expected improvement per response overall; 
-                                in a matter of life or death, this improvement can save or kill a life.
+                                in a matter of life or death, this improvement can save or kill a life. 
+                                The comparison below shows us that three strategic additional hospitals will significantly improves the pain regions in the northeast and southwest.  
                             </p>
+
+                            <br />
+                            <Image src={Sim5} 
+                            alt= "Emergency response time, per region node."/>
+                            <Image src={Sim6} 
+                            alt= "Warmer colors indicate slower response, colder colors faster."/>
+                            <br />
 
                         </div>
                         <Footer />
