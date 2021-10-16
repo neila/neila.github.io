@@ -69,9 +69,27 @@ export default function about() {
                             {/*<SkillTree classNamecontent='w-full h-screen bg-purple-400 rounded-md border-double border-4 border-light-blue-500'/>*/}
                             <ul className='list-disc list-inside leading-snug space-y-3'>
                                 <li>
+                                    Web development
+                                    <ul class='list-none ml-12'>
+                                        <li>Headless CMS</li> <li>Responsive web design</li> <li>Progressive enhancement</li>
+                                    </ul>
+                                </li>
+                                <li>
                                     Iterative design
                                     <ul class='list-none ml-12'>
                                         <li>DRY patterns/modular programming</li> <li>Agile development</li> <li>IxD</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Machine learning
+                                    <ul class='list-none ml-12'>
+                                        <li>NLP</li> <li>Analytical forecasting</li> <li>Recommendation systems</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Simulation and modeling
+                                    <ul class='list-none ml-12'>
+                                        <li>Scenario optimization</li> <li>Game theory simulations</li> <li>Computational physics</li>
                                     </ul>
                                 </li>
                                 {/* <li>
@@ -80,24 +98,6 @@ export default function about() {
                                         <li>Business Intelligence</li> <li>Data analytics</li> <li>Brand management</li>
                                     </ul>
                                 </li> */}
-                                <li>
-                                    Machine learning
-                                    <ul class='list-none ml-12'>
-                                        <li>NLP</li> <li>Predictive analytics</li> <li>Recommendation systems</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Simulation and modeling
-                                    <ul class='list-none ml-12'>
-                                        <li>Computational physics</li> <li>Optimization</li> <li>Game theory</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Digital Siginal Processing
-                                    <ul class='list-none ml-12'>
-                                        <li>Audio signal</li> <li>Digital image</li> <li>Economic/financial forecasting</li>
-                                    </ul>
-                                </li>
                             </ul>
                         </div>
                     </section>
@@ -124,13 +124,10 @@ export default function about() {
                                 <Image src='https://s3.eu-west-2.amazonaws.com/jamescross/images/frontEndTrio.png' alt='Trinity Logo' layout='fill'/>
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg' alt='D3 logo' layout='fill' />
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
                                 <Image src='https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg' alt='Firebase logo' layout='fill' />
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg' alt='VS Code Logo' layout='fill'/>
+                                <Image src='https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png' alt='Vercel Logo' layout='fill'/>
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
                                 <Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg' alt='git logo' layout='fill' />
@@ -138,12 +135,9 @@ export default function about() {
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
                                 <Image src='https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg' alt='Figma Logo' layout='fill'/>
                             </div>
-                            {/*<div className="w-20 h-20 lg:h-30 lg:w-30 relative">
+                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
                                 <Image src='https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png' alt='Notion Logo' layout='fill'/>
                             </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://upload.wikimedia.org/wikipedia/en/e/e2/2015_Logic_Pro_Logo.png' alt='Logic Pro X Logo' layout='fill'/>
-                            </div> */}
                         </div>
                     </section>
                     <section className="lg:flex space-x-0 space-y-1 lg:space-x-10 items-start">
