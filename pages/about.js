@@ -37,19 +37,15 @@ export default function about() {
                     {/* intro */}
                     <section className="lg:flex flex-col items-start">
                         <div className="lg:w-4/5 mx-auto leading-snug space-y-5">
-                            <p className='text-center'>Sho // free nerd // <em>Homo sapiens</em></p>
+                            <p className='text-center'><em>Homo sapiens</em> // free nerd // <em>Time</em>'s 2006 person of the year</p>
                             <p>
-                                <a href='https://www.youtube.com/watch?v=UL5x60lpGIE'>Konnichiwa</a>, I'm Sho, a developer and artist from Japan. Alum of <a href='https://www.minerva.edu/undergraduate-program/'>Minerva University</a>. <em>Time</em>'s 2006 person of the year.
-                            </p>
-                            <p>
-                                Fascinated by human-computer relationship. 
-                                Driven by passion to create soulful artifacts. 
+                                <a href='https://www.youtube.com/watch?v=UL5x60lpGIE'>Konnichiwa</a>, I'm Sho, a developer from Japan.
                             </p>
                             <p> 
-                                Drawn to questioning everything around me; even more than seeking answers about them.
+                                I like questioning everything around me; perhaps even more than finding answers to them.
                             </p>
                             <p>
-                                Aside from my computational and artistic pursuits, I enjoy the <a href='https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things'>small things</a>; dancing through my everyday movements, sleeping in makeshift spaces, and getting off at unvisited subway stations without my phone.
+                                I seek joy in the <a href='https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things'>small things</a>; dancing through my everyday movements, sleeping in makeshift spaces, and getting off at unvisited subway stations without my phone.
                             </p>
                            
                             <div className='flex justify-center w-full'>
