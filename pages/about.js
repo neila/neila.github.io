@@ -37,8 +37,8 @@ export default function about() {
                     {/* intro */}
                     <section className="lg:flex flex-col items-start">
                         <div className="lg:w-4/5 mx-auto leading-snug space-y-5">
-                            <p> <a href='https://www.youtube.com/watch?v=UL5x60lpGIE'>Konnichiwa</a>, I'm Sho, a developer from Japan. <em>Time</em>'s 2006 person of the year. </p>
-                            <p> I like questioning everything around me; perhaps even more than finding answers to them. </p>
+                            <p> <a href='https://www.youtube.com/watch?v=UL5x60lpGIE'>Konnichiwa</a>. I'm Sho, a creative developer from Japan. <em>Time</em>'s 2006 person of the year. </p>
+                            <p> I like questioning things; perhaps even more than finding answers to them. </p>
                             <p> I seek joy in the <a href='https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things'>small things</a>; dancing through my everyday movements, sleeping in makeshift spaces, and getting off at unvisited subway stations without my phone. </p>
                            
                             <div className='flex justify-center w-full'>
