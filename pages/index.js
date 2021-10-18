@@ -16,11 +16,11 @@ export default function Home() {
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
 
-                {/* logo */}
                 <Header_home  />
 
                 <Background/>
-                {/*<Canvas />*/}
+
+                {/* <Canvas /> */}
                 
                 <Nav_home />
 

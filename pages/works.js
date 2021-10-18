@@ -24,7 +24,7 @@ export default function works() {
             {/* logo */}
             <Header />
             
-            <Title section="WORKS" color="text-[#F726A7]" />
+            <Title section="WORKS" color="text-[#26F7A0]" />
 
             {/* content */}
             <section className="">
