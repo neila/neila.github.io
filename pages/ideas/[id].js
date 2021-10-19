@@ -6,12 +6,12 @@ import Graph from '../../components/Graph';
 import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
 
-export default function post({ title, content }){
-
+export default function post({ content }){
+    
     return(
         <div>
             <Head>
-                <title>{title}</title>
+                <title></title>
             </Head>
 
             <Header />
@@ -22,15 +22,9 @@ export default function post({ title, content }){
                 </div>
 
                 <div>
-                    {/* console.log({postData.id})
-                    console.log({postData.content})
-                    console.log({postData.Html})
-                    console.log({postData.type})
-                    console.log({postData.tags}) 
-                    console.log({Object.keys(postData)})
-                    console.log({dateFormat(postData.datetime, "yyyy-mm-dd", true)})
                     
-                    formatting needed 
+                    
+                    {/* formatting needed 
                     find md file and get backlinks from yaml? */}
                 </div>
 
@@ -47,19 +41,23 @@ export default function post({ title, content }){
 
 
 export async function getStaticProps( context ) {
+
     const { params } = context;
     const { data, content } = getAllPosts().find((item) => item.id === params.id)
     const mdxSource = await serialize(content)
+
     return {
         props: {
-            content:mdxSource,
+            content: mdxSource
         },
     };
 }
 
 export async function getStaticPaths() {
+    const posts = getAllPosts(['id'])
+
     return {
-        paths: getAllPosts().map((item) => ({
+        paths: posts.map((item) => ({
             params: {
                 id: item.id,
             },

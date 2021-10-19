@@ -51,14 +51,16 @@ export default function ideas({ postsList }) {
                     <ul className='space-y-2 flex flex-col px-0'>
                         
                         {postsList.map(({ id, date, tags}) => (
-                            <postlink key={id}>
-                                <Link href={`/ideas/${encodeURIComponent(id)}`} passHref>
+                            <div key={id} className="rounded-md align-middle px-3 bg-gradient-to-r cursor-pointer from-purple-700 via-blue-400 to-green-500 hover:from-pink-500 hover:to-yellow-500">
+                                <Link href={{
+                                        pathname: `/ideas/${encodeURIComponent(id)}`
+                                    }}>
                                     <div>
                                         <h3 className=' truncate'>{id}</h3>
                                         <small className=' truncate'>{dateFormat(date, "yyyy-mm-dd", true)}, {tags}</small>
                                     </div>
                                 </Link>
-                            </postlink>
+                            </div>
                         ))}
                     </ul>
 
