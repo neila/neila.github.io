@@ -59,31 +59,31 @@ export default function about() {
                             <ul className='list-disc list-inside leading-snug space-y-3'>
                                 <li>
                                     Web development
-                                    <ul class='list-none ml-12'>
+                                    <ul className='list-none ml-12'>
                                         <li>Headless CMS</li> <li>Responsive web design</li> <li>Progressive enhancement</li>
                                     </ul>
                                 </li>
                                 <li>
                                     Iterative design
-                                    <ul class='list-none ml-12'>
+                                    <ul className='list-none ml-12'>
                                         <li>DRY patterns/modular programming</li> <li>Agile development</li> <li>IxD</li>
                                     </ul>
                                 </li>
                                 <li>
                                     Machine learning
-                                    <ul class='list-none ml-12'>
+                                    <ul className='list-none ml-12'>
                                         <li>NLP</li> <li>Analytical forecasting</li> <li>Recommendation systems</li>
                                     </ul>
                                 </li>
                                 <li>
                                     Simulation and modeling
-                                    <ul class='list-none ml-12'>
+                                    <ul className='list-none ml-12'>
                                         <li>Scenario optimization</li> <li>Game theory simulations</li> <li>Computational physics</li>
                                     </ul>
                                 </li>
                                 {/* <li>
                                     Consulting
-                                    <ul class='list-none ml-12'>
+                                    <ul className='list-none ml-12'>
                                         <li>Business Intelligence</li> <li>Data analytics</li> <li>Brand management</li>
                                     </ul>
                                 </li> */}

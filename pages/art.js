@@ -38,7 +38,7 @@ export default function art() {
                             src = {bbl} />
                             <div className="w-full">
                                 <div className='mx-auto w-4/5 text-center'>
-                                    <p class='font-hairline text-sm lg:font-thin'>Your Love Can Start A Universe</p>
+                                    <p className='font-hairline text-sm lg:font-thin'>Your Love Can Start A Universe</p>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +49,7 @@ export default function art() {
                             src = {btt} />
                             <div className="w-full">
                                 <div className='mx-auto w-4/5 text-center'>
-                                    <p class='font-hairline text-sm lg:font-thin'>Eaten By Growth</p>
+                                    <p className='font-hairline text-sm lg:font-thin'>Eaten By Growth</p>
                                 </div>
                             </div>
                         </div>
@@ -61,7 +61,7 @@ export default function art() {
                             src = {gsh} />
                             <div className="w-full">
                                 <div className='mx-auto w-4/5 text-center'>
-                                    <p class='font-hairline text-sm lg:font-thin'>GALACTIC SUPERHIGHWAY</p>
+                                    <p className='font-hairline text-sm lg:font-thin'>GALACTIC SUPERHIGHWAY</p>
                                 </div>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ export default function art() {
                             src = {drd} />
                             <div className="w-full">
                                 <div className='mx-auto w-4/5 text-center'>
-                                    <p class='font-hairline text-sm lg:font-thin'>Deep reason (depression)</p>
+                                    <p className='font-hairline text-sm lg:font-thin'>Deep reason (depression)</p>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@ export default function art() {
                             src = {p35} />
                             <div className="w-full">
                                 <div className='mx-auto w-4/5 text-center'>
-                                    <p class='font-hairline text-sm lg:font-thin'>Polygon 3.5</p>
+                                    <p className='font-hairline text-sm lg:font-thin'>Polygon 3.5</p>
                                 </div>
                             </div>
                         </div>
