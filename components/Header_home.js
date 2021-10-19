@@ -15,7 +15,7 @@ function Header_home() {
                     height={80}/> */}
                     <div className="text-3xl font-extrabold absolute w-0 cursor-pointer">
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-purple-500">
-                            Shani Zhang
+                            Sho Hihara
                         </span>
                     </div>
                 </Link>
