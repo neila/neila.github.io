@@ -1,6 +1,6 @@
 {
     "functions": {
-      "pages/api/*": {
+      "pages/api/**": {
         "excludeFiles": "{public, posts}/**"
       }
     }
