@@ -6,7 +6,7 @@ import HeroIcon from '../components/HeroIcon';
 import profilePic from '../public/profilePic.png';
 import {LocationMarkerIcon} from "@heroicons/react/outline";
 
-const Title = ({section, color}) => <div class="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
+const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
 
 export default function about() {
     return (

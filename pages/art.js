@@ -11,7 +11,7 @@ import p35 from '../public/polygon35.png';
 
 
 
-const Title = ({section, color}) => <div class="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
+const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
 
 export default function art() {
 
@@ -90,7 +90,6 @@ export default function art() {
                             </div>
                         </div>
                         
-
                 </div>
             </section>
 

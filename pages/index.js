@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Header_home from '../components/Header_home';
 import Nav_home from '../components/Nav_home';
 import Background from '../components/Background';
-import Canvas from '../components/Canvas';
 
 
 

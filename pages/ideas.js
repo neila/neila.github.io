@@ -10,9 +10,9 @@ import matter from 'gray-matter';
 import dateFormat from 'dateformat';
 
 
-const Title = ({section, color}) => <div class="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
+const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
 
-export default function ideas({ allPostsData_f }) {
+export default function ideas({ postsList }) {
     return (
         <div>
             <Head>
@@ -50,7 +50,7 @@ export default function ideas({ allPostsData_f }) {
 
                     <ul className='space-y-2 flex flex-col px-0'>
                         
-                        {allPostsData_f.map(({ id, date, tags}) => (
+                        {postsList.map(({ id, date, tags}) => (
                             <postlink key={id}>
                                 <Link href={`/ideas/${encodeURIComponent(id)}`} passHref>
                                     <div>
@@ -107,11 +107,11 @@ export async function getStaticProps() {
             return -1
         }
     })
-    const allPostsData_f = JSON.parse(JSON.stringify(sorted_allPostsData))
+    const postsList = JSON.parse(JSON.stringify(sorted_allPostsData))
 
     return {
       props: {
-        allPostsData_f
+        postsList
       }
     }
   }
