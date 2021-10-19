@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import bbl from '../public/bigbanglove.png';
 import drd from '../public/deepreason_depression.png';
-import gsh from '../public/galactic_superhighway_h.png';
+import gsh from '../public/galactic_superhighway.png';
 import btt from '../public/biggerthanthou.png';
 import p35 from '../public/polygon35.png';
 
