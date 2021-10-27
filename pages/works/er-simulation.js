@@ -2,15 +2,15 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import LondonGeo from '../../public/LondonGeo.png';
-import LondonNetwork from '../../public/LondonNetwork.png';
-import LondonBridges from'../../public/LondonBridges.png';
-import Sim1 from '../../public/Sim1.png';
-import Sim2 from '../../public/Sim2.png';
-import Sim3 from '../../public/Sim3.png';
-import Sim4 from '../../public/Sim4.png';
-import Sim5 from '../../public/Sim5.png';
-import Sim6 from '../../public/Sim6.png';
+import LondonGeo from '/public/images/LondonGeo.png';
+import LondonNetwork from '/public/images/LondonNetwork.png';
+import LondonBridges from'/public/images/LondonBridges.png';
+import Sim1 from '/public/images/Sim1.png';
+import Sim2 from '/public/images/Sim2.png';
+import Sim3 from '/public/images/Sim3.png';
+import Sim4 from '/public/images/Sim4.png';
+import Sim5 from '/public/images/Sim5.png';
+import Sim6 from '/public/images/Sim6.png';
 
 const Title = ({section, color}) => <div class="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
 

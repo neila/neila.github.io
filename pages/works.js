@@ -3,10 +3,10 @@ import Image from "next/image";
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Synthfeed from '../public/Synthfeed.png';
-import Rap from '../public/rap.jpg';
-import AmbulancePic from '../public/nhs.jpg';
-import Radio from '../public/radio.jpg';
+import Synthfeed from '/public/images/Synthfeed.png';
+import Rap from '/public/images/rap.jpg';
+import AmbulancePic from '/public/images/nhs.jpg';
+import Radio from '/public/images/radio.jpg';
 
 
 

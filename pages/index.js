@@ -3,8 +3,6 @@ import Header_home from '../components/Header_home';
 import Nav_home from '../components/Nav_home';
 import Background from '../components/Background';
 
-
-
 export default function Home() {
       
     return (

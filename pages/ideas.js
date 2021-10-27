@@ -78,7 +78,7 @@ export default function ideas({ postsList }) {
 }
 
 export async function getStaticProps() {
-    const postsDirectory = path.join(process.cwd(), 'posts')
+    const postsDirectory = path.join(process.cwd(), 'public/posts')
     const fileNames = fs.readdirSync(postsDirectory, 'utf8')
 
     // ALL NOTES TO BE PUBLISHED MUST BE IN /posts. THE DIRECTORY CANNOT HAVE ANY NESTED FOLDERS.

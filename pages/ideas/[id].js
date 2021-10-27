@@ -1,4 +1,4 @@
-import { getAllPosts } from "../../lib/postid";
+import { getAllPosts } from "../../utils/postid";
 import Head from 'next/head';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';

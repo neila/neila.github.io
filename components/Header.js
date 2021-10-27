@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "./Nav";
-import Icon from "../public/Icon.png"
+import Icon from "/public/images/Icon.png"
 
 function Header() {
     return (

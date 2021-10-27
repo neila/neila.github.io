@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import HeroIcon from '../components/HeroIcon';
-import profilePic from '../public/profilePic.png';
+import profilePic from '/public/images/profilePic.png';
 import {LocationMarkerIcon} from "@heroicons/react/outline";
 
 const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>

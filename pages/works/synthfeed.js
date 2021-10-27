@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import Synthfeed1 from '../../public/Synthfeed_home.png'
+import Synthfeed1 from '/public/images/Synthfeed_home.png'
 
 const Title = ({section, color}) => <div class="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
 

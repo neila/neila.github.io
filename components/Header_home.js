@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Icon from "../public/Icon.png";
+import Icon from "/public/images/Icon.png";
 
 function Header_home() {
     return (

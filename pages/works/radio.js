@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import Songrec from '../../public/songrec.png'
+import Songrec from '/public/images/songrec.png'
 
 const Title = ({section, color}) => <div class="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
 
