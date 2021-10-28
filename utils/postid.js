@@ -1,8 +1,6 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import remark from 'remark';
-import html from 'remark-html';
 
 const postsDirectory = path.join(process.cwd(), 'public/posts')
 
@@ -17,7 +15,7 @@ export function getAllPosts(){
             );
             // Use gray-matter to parse the post
             const {data, content} = matter(fileContents);
-            
+
             return{
                 data,
                 content,

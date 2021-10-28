@@ -112,8 +112,8 @@ export async function getStaticProps() {
     const postsList = JSON.parse(JSON.stringify(sorted_allPostsData))
 
     return {
-      props: {
-        postsList
-      }
+        props: {
+            postsList
+        }
     }
-  }
+}

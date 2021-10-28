@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 function Nav_home() {
     return (
-        <nav_home className="">
+        <div className="">
 
 
             <div className="flex flex-col items-end fixed bottom-3 right-3 lg:mb-10 lg:mr-7 lg:text-lg lg:space-y-1 z-10">
@@ -26,7 +26,7 @@ function Nav_home() {
 
             </div>
 
-        </nav_home >
+        </div >
     )
 }
 
