@@ -23,7 +23,6 @@ export default function post({ content }){
 
                 <div>
                     
-                    
                     {/* formatting needed 
                     find md file and get backlinks from yaml? */}
                 </div>
