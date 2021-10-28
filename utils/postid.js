@@ -17,6 +17,7 @@ export function getAllPosts(){
             );
             // Use gray-matter to parse the post
             const {data, content} = matter(fileContents);
+            
             return{
                 data,
                 content,
