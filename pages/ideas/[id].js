@@ -21,13 +21,8 @@ export default function post({ content }){
                     <MDXRemote {...content} />
                 </div>
 
-                <div>
-                    
-                    {/* formatting needed 
-                    find md file and get backlinks from yaml? */}
-                </div>
-
                 <div id="graph-container"> 
+                    {/*display post network graph*/}
                     <Graph />
                 </div >
             </div>
