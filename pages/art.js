@@ -35,7 +35,8 @@ export default function art() {
                         <div className="flex flex-col col-span-3">
                             <Image 
                             className = "object-contain w-full h-full cursor-pointer" 
-                            src = {bbl} />
+                            src = {bbl} 
+                            placeholder='blur'/>
                             <div className="w-full">
                                 <div className='mx-auto w-4/5 text-center'>
                                     <p className='font-hairline text-sm lg:font-thin'>Your Love Can Start A Universe</p>
@@ -46,7 +47,8 @@ export default function art() {
                         <div className="flex flex-col col-span-3 m-8">
                             <Image 
                             className = "object-contain w-full h-full cursor-pointer" 
-                            src = {btt} />
+                            src = {btt} 
+                            placeholder='blur'/>
                             <div className="w-full">
                                 <div className='mx-auto w-4/5 text-center'>
                                     <p className='font-hairline text-sm lg:font-thin'>Eaten By Growth</p>
@@ -58,7 +60,8 @@ export default function art() {
                         <div className="flex flex-col col-start-2 col-span-4 m-8">
                             <Image 
                             className = "object-contain w-full h-full cursor-pointer" 
-                            src = {gsh} />
+                            src = {gsh} 
+                            placeholder='blur'/>
                             <div className="w-full">
                                 <div className='mx-auto w-4/5 text-center'>
                                     <p className='font-hairline text-sm lg:font-thin'>GALACTIC SUPERHIGHWAY</p>
@@ -70,7 +73,8 @@ export default function art() {
                         <div className="flex flex-col col-start-1 col-span-2 m-8">
                             <Image 
                             className = "object-contain w-full h-full cursor-pointer" 
-                            src = {drd} />
+                            src = {drd} 
+                            placeholder='blur'/>
                             <div className="w-full">
                                 <div className='mx-auto w-4/5 text-center'>
                                     <p className='font-hairline text-sm lg:font-thin'>Deep reason (depression)</p>
@@ -82,7 +86,8 @@ export default function art() {
                         <div className="flex flex-col col-span-2 m-8">
                             <Image 
                             className = "object-contain w-full h-full cursor-pointer" 
-                            src = {p35} />
+                            src = {p35} 
+                            placeholder='blur'/>
                             <div className="w-full">
                                 <div className='mx-auto w-4/5 text-center'>
                                     <p className='font-hairline text-sm lg:font-thin'>Polygon 3.5</p>
