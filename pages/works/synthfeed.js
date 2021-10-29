@@ -35,7 +35,7 @@ export default function synthfeed() {
                                 <br />
                             </div>
                             <p>
-                                I joined the team in June 2020 until service launch to assist the website design process, including color, typography, and UI. 
+                                I joined the team in June 2020 until service launch to assist the website design and development process, including color, typography, and UI. 
                             </p>
                             <br />
                             <p>
