@@ -8,6 +8,7 @@ import drd from '/public/images/deepreason_depression.png';
 import gsh from '/public/images/galactic_superhighway.png';
 import btt from '/public/images/biggerthanthou.png';
 import p35 from '/public/images/polygon35.png';
+import dghn from '/public/images/flower2.svg';
 
 
 
@@ -35,6 +36,17 @@ export default function art() {
                         <div className="flex flex-col col-span-3">
                             <Image 
                             className = "object-contain w-full h-full cursor-pointer" 
+                            src = {dghn} />
+                            <div className="w-full">
+                                <div className='mx-auto w-4/5 text-center'>
+                                    <p className='font-hairline text-sm lg:font-thin'>零華</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="flex flex-col col-start-4 col-span-2">
+                            <Image 
+                            className = "object-contain w-full h-full cursor-pointer" 
                             src = {bbl} 
                             placeholder='blur'/>
                             <div className="w-full">
@@ -44,7 +56,7 @@ export default function art() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col col-span-3 m-8">
+                        <div className="flex flex-col col-start-2 col-span-2 m-8">
                             <Image 
                             className = "object-contain w-full h-full cursor-pointer" 
                             src = {btt} 
@@ -57,7 +69,7 @@ export default function art() {
                         </div>
 
 
-                        <div className="flex flex-col col-start-2 col-span-4 m-8">
+                        <div className="flex flex-col col-start-4 col-span-3 m-8">
                             <Image 
                             className = "object-contain w-full h-full cursor-pointer" 
                             src = {gsh} 

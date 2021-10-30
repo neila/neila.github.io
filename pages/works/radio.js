@@ -19,8 +19,8 @@ export default function radio() {
             <div className="min-h-full px-8 lg:mx-24 relative">
                 <div className='px-8 justify-between flex relative'>
 
-                    <div className='h-full flex-grow relative'>
-                        <Title section="Radio algorithm"/>
+                    <div className='h-full flex-grow relative text-[#94988C]'>
+                        <Title section="Radio algorithm" color="text-[#6CC417]"/>
 
                         <div className="md:w-4/6 lg:w-1/2 md:ml-32 lg:ml-48 mt-10 lg:mt-16 left-2 ">
                             <p>

@@ -7,6 +7,7 @@ import Synthfeed from '/public/images/Synthfeed.png';
 import Rap from '/public/images/rap.jpg';
 import AmbulancePic from '/public/images/nhs.jpg';
 import Radio from '/public/images/radio.jpg';
+import Digihana from '/public/images/digihana.png';
 
 
 
@@ -28,7 +29,7 @@ export default function works() {
 
             {/* content */}
             <section className="">
-                <div className="lg:w-3/4 2xl:w-1/2 p-4 mx-auto flex flex-wrap relative justify-center">
+                <div className="lg:w-3/4 2xl:w-4/6 p-4 mx-auto flex flex-wrap relative justify-center">
                     
                     <Link href='/works/algorap'>
                         <div className="h-36 w-36 lg:h-72 lg:w-72 flex relative clip-tri-up cursor-pointer">
@@ -36,22 +37,27 @@ export default function works() {
                         </div>
                     </Link>
                     
+                    <Link href='/works/synthfeed'>
+                        <div className="h-36 w-36 lg:h-72 lg:w-72 flex relative overflow-hidden clip-tri-down cursor-pointer">
+                            <Image className="h-full w-full object-cover" src = {Synthfeed} />
+                        </div>
+                    </Link>
+                    
+                    <Link href='/works/digihana'>
+                        <div className="h-36 w-36 lg:h-72 lg:w-72 flex relative overflow-hidden clip-tri-up cursor-pointer">
+                            <Image className="h-full w-full object-cover" src = {Digihana} />
+                        </div>
+                    </Link>
                     
                     <Link href='/works/er-simulation'>
                         <div className="h-36 w-36 lg:h-72 lg:w-72 flex relative overflow-hidden clip-tri-down cursor-pointer">
                             <Image className="h-full w-full object-cover" src = {AmbulancePic} /> 
                         </div>
                     </Link>
-                    
+
                     <Link href='/works/radio'>
                         <div className="h-36 w-36 lg:h-72 lg:w-72 flex relative overflow-hidden clip-tri-up cursor-pointer">
                             <Image className="h-full w-full object-cover" src = {Radio} />
-                        </div>
-                    </Link>
-
-                    <Link href='/works/synthfeed'>
-                        <div className="h-36 w-36 lg:h-72 lg:w-72 flex relative overflow-hidden clip-tri-down cursor-pointer">
-                            <Image className="h-full w-full object-cover" src = {Synthfeed} />
                         </div>
                     </Link>
 
