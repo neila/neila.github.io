@@ -9,6 +9,7 @@ import gsh from '/public/images/galactic_superhighway.png';
 import btt from '/public/images/biggerthanthou.png';
 import p35 from '/public/images/polygon35.png';
 import dghn from '/public/images/flower2.svg';
+import cdflp from "/public/images/candyflippin' (oops).png"
 
 
 
@@ -103,6 +104,18 @@ export default function art() {
                             <div className="w-full">
                                 <div className='mx-auto w-4/5 text-center'>
                                     <p className='font-hairline text-sm lg:font-thin'>Polygon 3.5</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col col-span-2 m-8">
+                            <Image 
+                            className = "object-contain w-full h-full cursor-pointer" 
+                            src = {cdflp} 
+                            placeholder='blur'/>
+                            <div className="w-full">
+                                <div className='mx-auto w-4/5 text-center'>
+                                    <p className='font-hairline text-sm lg:font-thin'>Candyflippin' (oops)</p>
                                 </div>
                             </div>
                         </div>
