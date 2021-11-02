@@ -39,7 +39,7 @@ export default function about() {
                         <div className="lg:w-4/5 mx-auto leading-snug space-y-5">
                             <p> <a href='https://www.youtube.com/watch?v=UL5x60lpGIE'>Konnichiwa</a>. I'm Sho, a creative developer from Japan. <em>Time</em>'s 2006 person of the year. </p>
                             <p> I like questioning things; perhaps even more than finding answers to them. </p>
-                            <p> I seek joy in the <a href='https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things'>small things</a>; dancing through my everyday movements, sleeping in makeshift spaces, and getting off at unvisited subway stations without my phone. </p>
+                            <p> I seek joy in the <a href='https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things'>small things</a>, like sleeping in makeshift spaces, or finding evidence of cultural context in everyday life. </p>
                            
                             <div className='flex justify-center w-full'>
                                 <div className='flex object-center font-normal p-2 pr-10 rounded-md bg-[#7D8491] max-w-prose whitespace-nowrap'>
@@ -98,10 +98,10 @@ export default function about() {
                         </div>
                         <div className="lg:w-full flex flex-wrap gap-1 justify-start">
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' alt='Python Logo' layout='fill'/>
+                                <Image src='https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png' alt='Notion Logo' layout='fill'/>
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg' alt='PyTorch Logo' layout='fill'/>
+                                <Image src='https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg' alt='Figma Logo' layout='fill'/>
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
                                 <Image src='https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' alt='React Logo' layout='fill'/>
@@ -110,10 +110,16 @@ export default function about() {
                                 <Image src='https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png' alt='Next.js Logo' layout='fill'/>
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://s3.eu-west-2.amazonaws.com/jamescross/images/frontEndTrio.png' alt='Trinity Logo' layout='fill'/>
+                                <Image src='https://cryptologos.cc/logos/ethereum-eth-logo.svg' alt='Ethereum Logo' layout='fill'/>
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg' alt='Firebase logo' layout='fill' />
+                                <Image src='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' alt='Python Logo' layout='fill'/>
+                            </div>
+                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
+                                <Image src='https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg' alt='PyTorch Logo' layout='fill'/>
+                            </div>
+                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
+                                <Image src='https://s3.eu-west-2.amazonaws.com/jamescross/images/frontEndTrio.png' alt='Trinity Logo' layout='fill'/>
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
                                 <Image src='https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png' alt='Vercel Logo' layout='fill'/>
@@ -121,12 +127,7 @@ export default function about() {
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
                                 <Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg' alt='git logo' layout='fill' />
                             </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg' alt='Figma Logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png' alt='Notion Logo' layout='fill'/>
-                            </div>
+                            
                         </div>
                     </section>
                     <section className="lg:flex space-x-0 space-y-1 lg:space-x-10 items-start">
@@ -146,8 +147,8 @@ export default function about() {
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
                                 <Image src='https://upload.wikimedia.org/wikipedia/commons/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg' alt='MS Office Logo' layout='fill'/>
                             </div>
-                            <div className="w-32 h-20 lg:h-30 lg:w-44 relative">
-                                <Image src='https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg' alt='LaTeX Logo' layout='fill'/>
+                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
+                                <Image src='https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg' alt='Firebase logo' layout='fill' />
                             </div>
                         </div>
                     </section>
