@@ -41,7 +41,7 @@ export default function radio() {
                                 Collection ID 0x5b54de188a660dbf5e2ba6935ce1d70669348ea0
                             </p>
                             <p>
-                                <a href='https://rinkeby.rarible.com/collection/0x5b54de188a660dbf5e2ba6935ce1d70669348ea0' className='#fbdb04'>Rarible</a> / <a href='https://testnets.opensea.io/collection/flowernft-azuwzflo4x' className='#2081E2'>Opensea</a>
+                                <a href='https://rinkeby.rarible.com/collection/0x5b54de188a660dbf5e2ba6935ce1d70669348ea0' className='text-[#fbdb04]'>Rarible</a> / <a href='https://testnets.opensea.io/collection/flowernft-azuwzflo4x' className='text-[#2081E2]'>Opensea</a>
                             </p>
                             <br />
                             <p>
