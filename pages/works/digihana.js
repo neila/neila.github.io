@@ -38,7 +38,13 @@ export default function radio() {
                             </p>
                             <br />
                             <p>
-                                You can see the entire collection <a href='https://rinkeby.rarible.com/collection/0x5b54de188a660dbf5e2ba6935ce1d70669348ea0'>here</a>. 
+                                Collection ID 0x5b54de188a660dbf5e2ba6935ce1d70669348ea0
+                            </p>
+                            <p>
+                                <a href='https://rinkeby.rarible.com/collection/0x5b54de188a660dbf5e2ba6935ce1d70669348ea0'>Rarible</a> / <a href='https://testnets.opensea.io/collection/flowernft-azuwzflo4x'>Opensea</a>
+                            </p>
+                            <br />
+                            <p>
                                 You can also mint your own digihanas to this collection using a metamask wallet. 
                                 Currently the smart contract is on the Ethereum Testnet (Rinkeby) since I cannot afford the gas fees and all that. 
                                 The functionality is entirely the same, the only difference being that your hana won't cost you a penny nor will it be worth any penny. 
