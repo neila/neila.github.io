@@ -27,12 +27,12 @@ export default function radio() {
                             <div className="flex"><Image src={flower1} /><Image src={flower2} /></div>
                             <br />
                             <p>
-                                <a href="https://digihana.neila1.repl.co/">DigiHana</a> is a web application that allows users to mint their own digital flower; a hana. 
+                                <a href="https://digihana.neila1.repl.co/" className="text-[#22C1C3]">DigiHana</a> is a web application that allows users to mint their own digital flower; a hana. 
                                 Each token is unique and its pattern is generated on the fly, as you would anticipate a physical flower's bloom. 
                             </p>
                             <br />
                             <p>
-                                What makes these hanas truly unique is the permanence of its beauty and the minter's ownership. 
+                                What makes these hanas truly unique is the permanence of its beauty and the minter's ownership of it. 
                                 Instead of adopting the common practice of storing only the metadata on-chain, only to point to an external and potentially vulnerable source of data, each flower data is encoded and baked directly into the Ethereum blockchain. 
                                 Hana owners <em>truly</em> own their hanas, just as they own their necklaces or sneakers; unless the Ethereum ecosystem itself catastrophically fails, your digihanas will be semi-permanently retrievable and verifiable without any external dependencies. 
                             </p>
@@ -41,7 +41,7 @@ export default function radio() {
                                 Collection ID 0x5b54de188a660dbf5e2ba6935ce1d70669348ea0
                             </p>
                             <p>
-                                <a href='https://rinkeby.rarible.com/collection/0x5b54de188a660dbf5e2ba6935ce1d70669348ea0'>Rarible</a> / <a href='https://testnets.opensea.io/collection/flowernft-azuwzflo4x'>Opensea</a>
+                                <a href='https://rinkeby.rarible.com/collection/0x5b54de188a660dbf5e2ba6935ce1d70669348ea0' className='#fbdb04'>Rarible</a> / <a href='https://testnets.opensea.io/collection/flowernft-azuwzflo4x' className='#2081E2'>Opensea</a>
                             </p>
                             <br />
                             <p>
