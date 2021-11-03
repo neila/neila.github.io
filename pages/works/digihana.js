@@ -38,7 +38,9 @@ export default function radio() {
                             </p>
                             <br />
                             <p>
-                                You can mint your digihanas with a metamask wallet. Currently the smart contract is on the Ethereum Testnet (Rinkeby) since I cannot afford the gas fees and all that. 
+                                You can see the entire collection <a href='https://rinkeby.rarible.com/collection/0x5b54de188a660dbf5e2ba6935ce1d70669348ea0'>here</a>. 
+                                You can also mint your own digihanas to this collection using a metamask wallet. 
+                                Currently the smart contract is on the Ethereum Testnet (Rinkeby) since I cannot afford the gas fees and all that. 
                                 The functionality is entirely the same, the only difference being that your hana won't cost you a penny nor will it be worth any penny. 
                                 Try it out by connecting your metamask wallet to the Rinkeby testnet!
                             </p>
