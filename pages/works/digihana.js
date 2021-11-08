@@ -5,7 +5,7 @@ import Footer from '../../components/Footer';
 import flower1 from '/public/images/flower1.svg';
 import flower2 from '/public/images/flower2.svg';
 
-const Title = ({digi, hana, colord, colorh}) => <div class="mt-5 mb-7 justify-center flex"><h1 className={colord}> {digi} </h1><h1 className={colorh}> {hana} </h1></div>
+const Title = ({digi, hana, colord, colorh}) => <div className="mt-5 mb-7 justify-center flex"><h1 className={colord}> {digi} </h1><h1 className={colorh}> {hana} </h1></div>
 
 export default function radio() {
     return (
@@ -23,7 +23,7 @@ export default function radio() {
                     <div className='h-full flex-grow relative'>
                         <Title digi="DIGI" hana="HANA" colord="bg-clip-text text-transparent bg-gradient-to-b from-[#22C1C3] to-[#FDBB2D]" colorh="bg-clip-text text-transparent bg-gradient-to-b from-[#833AB4] to-[#FD1D1D]"/>
 
-                        <div className="md:w-4/6 lg:w-1/2 md:ml-32 lg:ml-48 mt-10 lg:mt-16 left-2 ">
+                        <div className="lg:w-4/6 2xl:w-1/2 lg:ml-32 2xl:ml-48 mt-10 2xl:mt-16 left-2 ">
                             <div className="flex"><Image src={flower1} /><Image src={flower2} /></div>
                             <br />
                             <p>

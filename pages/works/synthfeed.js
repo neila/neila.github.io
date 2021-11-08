@@ -4,7 +4,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Synthfeed1 from '/public/images/Synthfeed_home.png'
 
-const Title = ({section, color}) => <div class="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
+const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
 
 export default function synthfeed() {
     return (
@@ -22,7 +22,7 @@ export default function synthfeed() {
                     <div className='h-full flex-grow relative text-[#6BADDC]'>
                         <Title section="SynthFeed" color="text-[#00CC30]" />
 
-                        <div className="md:w-4/6 lg:w-1/2 md:ml-32 lg:ml-48 mt-10 lg:mt-16 left-2 ">
+                        <div className="lg:w-4/6 2xl:w-1/2 lg:ml-32 2xl:ml-48 mt-10 lg:mt-16 left-2 ">
                             <p>
                                 <a href='https://synthfeed.com/' className="text-[#00CC30]">SynthFeed</a> is an online feedback platform for music producers to get targeted feedback from professionals on creative and technical aspects of their work.
                                 Currently, the professional artists providing feedback on SynthFeed have accumulated in total multiple billion streams across different platforms.

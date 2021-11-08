@@ -12,7 +12,7 @@ import Sim4 from '/public/images/Sim4.png';
 import Sim5 from '/public/images/Sim5.png';
 import Sim6 from '/public/images/Sim6.png';
 
-const Title = ({section, color}) => <div class="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
+const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
 
 export default function ERsim() {
     return (
@@ -35,10 +35,10 @@ export default function ERsim() {
 
                         <div className="md:w-4/6 lg:w-1/2 md:ml-32 lg:ml-48 mt-10 lg:mt-16 left-2 ">
 
-                            <p><em>
-                                <h3>Aim: <br /> Optimizing emergency medical response time in central London area</h3>
+                            <h3><em>
+                                Aim: <br /> Optimizing emergency medical response time in central London area
                                 #simulation #network #optimization
-                            </em></p>
+                            </em></h3>
                             <br />
 
                             <p>
@@ -48,13 +48,13 @@ export default function ERsim() {
                             <br />
                             <div className='lg:flex lg:flex-row justify-start items-center'>
 
-                                <div className="md:w-4/6 lg:w-1/2">
+                                <div className="lg:w-4/6 2xl:w-1/2">
                                     <Image 
                                         className = "rounded-full object-cover h-full w-full" 
                                         src = {LondonGeo} 
                                         alt= "London regions, visualized" />
                                 </div>
-                                <div className="md:w-4/6 lg:w-1/2">
+                                <div className="lg:w-4/6 2xl:w-1/2">
                                     <Image 
                                         className = "object-cover h-full w-full" 
                                         src = {LondonNetwork}
@@ -95,7 +95,6 @@ export default function ERsim() {
                             <br />
                             <Image src = {LondonBridges} 
                             alt= "The 7 London bridges" />
-                            
                             <br />
 
                             <p>Closing down Lambeth bridge had the most significant slowdown effect on ambulance response (±2σ).</p>

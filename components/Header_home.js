@@ -13,7 +13,7 @@ function Header_home() {
                     src = {Icon}
                     width={80} 
                     height={80}/> */}
-                    <div className="text-3xl font-extrabold absolute w-0 cursor-pointer">
+                    <div className="text-2xl lg:text-3xl font-extrabold absolute w-0 cursor-pointer">
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-purple-500">
                             Sho Hihara
                         </span>

@@ -11,7 +11,7 @@ import Algorap6_1 from '/public/images/Algorap6_1.png';
 import Algorap6_2 from '/public/images/Algorap6_2.png';
 import Algorap6_3 from '/public/images/Algorap6_3.png';
 
-const Title = ({section, color}) => <div class="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
+const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
 
 export default function algorap() {
     return (
@@ -29,29 +29,29 @@ export default function algorap() {
                     <div className='h-full flex-grow relative text-[#F8DCAD]'>
                         <Title section="AlgoRap" color="text-[#FE0000]" />
 
-                        <div className="md:w-4/6 lg:w-1/2 md:ml-32 lg:ml-48 mt-10 lg:mt-16 left-2 ">
+                        <div className="lg:w-4/6 2xl:w-1/2 lg:ml-32 2xl:ml-48 mt-10 2xl:mt-16 left-2 ">
 
-                            <p><em>
-                                <h2>Aim: <br /> Computationally generate a rap album</h2>
+                            <h2><em>
+                                Aim: <br /> Computationally generate a rap album
                                 #MachineLearning #NLP #Music
-                            </em></p>
+                            </em></h2>
                             <br />
 
                             <p>
                                 AlgoRap's songwriting process is divided into three major subtasks.
-                                <ol className="p-2">
-                                    <li className='list-disc ml-10'>assembling the lyrical training dataset</li>
-                                    <li className='list-disc ml-10'>generating novel rap lyrics</li>
-                                    <li className='list-disc ml-10'>generating the final audio</li>
-                                </ol>
+                            </p>
+                            <ol className="p-2">
+                                <li className='list-disc ml-10'>assembling the lyrical training dataset</li>
+                                <li className='list-disc ml-10'>generating novel rap lyrics</li>
+                                <li className='list-disc ml-10'>generating the final audio</li>
+                            </ol>
+                            <p>
                                 The final output is an asynchronized combination of these sub-components, which are original rap songs.
                             </p>
                             <br />
                             <Image src = {Algorap1} />
                             <br />
-                            <p >
-                                <h2>Generating Lyrics</h2>
-                            </p>
+                            <h2>Generating Lyrics</h2>
                             <p>
                                 To generate rap verses, AlgoRap finetunes OpenAI’s GPT-2, an unsupervised, general-purpose generative language model based on Transformer architecture. 
                                 The approach is called the PPLM (Plug-and-Play Language Model), which combines a pretrained language model with an attribute model to fine-tunes the final output to the style of our choice - in this case, rap lyrics.
@@ -90,7 +90,8 @@ export default function algorap() {
                             <Image src={Algorap4}/>
                             <br />
                             <p>
-                            The model produces good outputs now and then, such as the following example with consistent end rhymes: 
+                                The model produces good outputs now and then, such as the following example with consistent end rhymes: 
+                            </p>
                             <ul className="text-center p-2">
                                 <li>My verses are criminal</li>
                                 <li>Efforts are minimal</li>
@@ -98,9 +99,11 @@ export default function algorap() {
                                 <li>We’ll put you in a critical</li>
                                 <li>When we invisible</li>
                             </ul>
-                            However, like any rapper, AlgoRap also flops. 
-                            Sometimes, it gets stuck repeating the same verse or word over and over again. 
-                            One such failure repeated the same five words 42 times:
+                            <p>
+                                However, like any rapper, AlgoRap also flops. 
+                                Sometimes, it gets stuck repeating the same verse or word over and over again. 
+                                One such failure repeated the same five words 42 times:
+                            </p>
                             <ul className="text-center p-2">
                                 <li>What is a magic ring?</li>
                                 <li>What is a magic ring?</li>
@@ -108,12 +111,11 @@ export default function algorap() {
                                 <li>What is a magic ring?</li>
                                 <li>What is a magic ring?</li>
                             </ul>
-                            See <a href='https://drive.google.com/drive/folders/13w_n7UNzEaPrk6yLpNp_0GsYC9sB8-I7?usp=sharing'>here</a> for more examples of the generated lyrics. 
+                            <p>
+                                See <a href='https://drive.google.com/drive/folders/13w_n7UNzEaPrk6yLpNp_0GsYC9sB8-I7?usp=sharing'>here</a> for more examples of the generated lyrics. 
                             </p>
                             <br />
-                            <p >
-                                <h2>From words to songs</h2>
-                            </p>
+                            <h2>From words to songs</h2>
                             <p>
                                 Music data is extremely high dimensional. At any given point of a song, which is of arbitrary finite length, 
                                 there are 48 different pitches (and that is by limiting ourselves within a four octave range of the chromatic scale) that can be played by a single piano.

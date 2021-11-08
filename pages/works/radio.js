@@ -4,7 +4,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Songrec from '/public/images/songrec.png'
 
-const Title = ({section, color}) => <div class="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
+const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
 
 export default function radio() {
     return (
@@ -22,7 +22,7 @@ export default function radio() {
                     <div className='h-full flex-grow relative text-[#94988C]'>
                         <Title section="Radio algorithm" color="text-[#6CC417]"/>
 
-                        <div className="md:w-4/6 lg:w-1/2 md:ml-32 lg:ml-48 mt-10 lg:mt-16 left-2 ">
+                        <div className="lg:w-4/6 2xl:w-1/2 lg:ml-32 2xl:ml-48 mt-10 2xl:mt-16 left-2 ">
                             <p>
                                 I implemented an algorithm that takes a user’s input as a song title and returns the list of songs that should be played in order; like a radio.
                             </p>

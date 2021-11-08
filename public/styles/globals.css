@@ -4,22 +4,22 @@
 
 @layer base {
     body {
-        @apply bg-[#07070D] text-[#F9EFF1] text-lg font-normal lg:mx-12;
+        @apply bg-[#07070D] text-[#F9EFF1] text-base lg:text-lg font-normal lg:mx-12;
     }
     h1 {
-        @apply text-4xl font-bold;
+        @apply text-3xl lg:text-4xl font-bold;
     }
     h2 {
-        @apply text-2xl font-bold;
+        @apply text-xl lg:text-2xl font-bold;
     }
     h3 {
-        @apply text-lg font-bold;
+        @apply text-base lg:text-lg font-bold;
     }
     a {
         @apply underline hover:text-[#F8D106];
     }
     p {
-        @apply lg:leading-relaxed;
+        @apply text-base lg:text-lg lg:leading-relaxed;
     }
 }
 

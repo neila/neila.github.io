@@ -56,8 +56,8 @@ export default function ideas({ postsList }) {
                                         pathname: `/ideas/${encodeURIComponent(id)}`
                                     }}>
                                     <div>
-                                        <h3 className=' truncate'>{id}</h3>
-                                        <small className=' truncate'>{dateFormat(date, "yyyy-mm-dd", true)}, {tags}</small>
+                                        <h3 className='truncate text-base lg:text-lg'>{id}</h3>
+                                        <p className='truncate text-xs lg:text-sm'>{dateFormat(date, "yyyy-mm-dd", true)}, {tags}</p>
                                     </div>
                                 </Link>
                             </div>
