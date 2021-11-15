@@ -57,7 +57,7 @@ export default function ideas({ postsList }) {
                                     }}>
                                     <div>
                                         <h3 className='truncate text-base lg:text-lg'>{id}</h3>
-                                        <p className='truncate text-xs lg:text-sm'>{dateFormat(date, "yyyy-mm-dd", true)}, {tags}</p>
+                                        <p className='truncate text-xs lg:text-sm'>{dateFormat(date, "yyyy-mm-dd", true)} | {tags}</p>
                                     </div>
                                 </Link>
                             </div>
