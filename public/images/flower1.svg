@@ -44,40 +44,40 @@
           </stop>
         </linearGradient>
   </defs>
-  <use xlink:href="#r1"/>
+  <use xlink:href="#r1" stroke="white"/>
   <use xlink:href="#r1" transform="rotate(60 160 160)" stroke="url(#skyGradient)"/>
-  <use xlink:href="#r1" transform="rotate(120 160 160)"/>
+  <use xlink:href="#r1" transform="rotate(120 160 160)" stroke="white"/>
   <use xlink:href="#r1" transform="rotate(180 160 160)" stroke="url(#skyGradient)"/>
-  <use xlink:href="#r1" transform="rotate(240 160 160)"/>
-  <use xlink:href="#r1" transform="rotate(300 160 160)"  stroke="url(#skyGradient)"/>
-  <use xlink:href="#r2" transform="rotate(30 160 160)"  stroke="url(#tropicGradient)"/>
-  <use xlink:href="#r2" transform="rotate(90 160 160)"/>
-  <use xlink:href="#r2" transform="rotate(150 160 160)"  stroke="url(#tropicGradient)"/>
-  <use xlink:href="#r2" transform="rotate(210 160 160)"/>
-  <use xlink:href="#r2" transform="rotate(270 160 160)"  stroke="url(#tropicGradient)"/>
-  <use xlink:href="#r2" transform="rotate(330 160 160)"/>
-  <use xlink:href="#r3"/>
-  <use xlink:href="#r3" transform="rotate(60 160 160)"  stroke="url(#skyGradient)"/>
-  <use xlink:href="#r3" transform="rotate(120 160 160)"/>
-  <use xlink:href="#r3" transform="rotate(180 160 160)"  stroke="url(#skyGradient)"/>
-  <use xlink:href="#r3" transform="rotate(240 160 160)"/>
-  <use xlink:href="#r3" transform="rotate(300 160 160)"  stroke="url(#skyGradient)"/>
-  <use xlink:href="#r4" transform="rotate(30 160 160)" />
-  <use xlink:href="#r4" transform="rotate(90 160 160)"  stroke="url(#tropicGradient)"/>
-  <use xlink:href="#r4" transform="rotate(150 160 160)"/>
-  <use xlink:href="#r4" transform="rotate(210 160 160)"  stroke="url(#tropicGradient)"/>
-  <use xlink:href="#r4" transform="rotate(270 160 160)"/>
+  <use xlink:href="#r1" transform="rotate(240 160 160)" stroke="white"/>
+  <use xlink:href="#r1" transform="rotate(300 160 160)" stroke="url(#skyGradient)"/>
+  <use xlink:href="#r2" transform="rotate(30 160 160)" stroke="url(#tropicGradient)"/>
+  <use xlink:href="#r2" transform="rotate(90 160 160)" stroke="coral"/>
+  <use xlink:href="#r2" transform="rotate(150 160 160)" stroke="url(#tropicGradient)"/>
+  <use xlink:href="#r2" transform="rotate(210 160 160)" stroke="coral"/>
+  <use xlink:href="#r2" transform="rotate(270 160 160)" stroke="url(#tropicGradient)"/>
+  <use xlink:href="#r2" transform="rotate(330 160 160)" stroke="coral"/>
+  <use xlink:href="#r3" stroke="white"/>
+  <use xlink:href="#r3" transform="rotate(60 160 160)" stroke="url(#skyGradient)"/>
+  <use xlink:href="#r3" transform="rotate(120 160 160)" stroke="white"/>
+  <use xlink:href="#r3" transform="rotate(180 160 160)" stroke="url(#skyGradient)"/>
+  <use xlink:href="#r3" transform="rotate(240 160 160)" stroke="white"/>
+  <use xlink:href="#r3" transform="rotate(300 160 160)" stroke="url(#skyGradient)"/>
+  <use xlink:href="#r4" transform="rotate(30 160 160)" stroke="coral"/>
+  <use xlink:href="#r4" transform="rotate(90 160 160)" stroke="url(#tropicGradient)"/>
+  <use xlink:href="#r4" transform="rotate(150 160 160)" stroke="coral"/>
+  <use xlink:href="#r4" transform="rotate(210 160 160)" stroke="url(#tropicGradient)"/>
+  <use xlink:href="#r4" transform="rotate(270 160 160)" stroke="coral"/>
   <use xlink:href="#r4" transform="rotate(330 160 160)"  stroke="url(#tropicGradient)"/>
-  <use xlink:href="#r5" />
+  <use xlink:href="#r5" stroke="white"/>
   <use xlink:href="#r5" transform="rotate(60 160 160)" stroke="url(#skyGradient)"/>
-  <use xlink:href="#r5" transform="rotate(120 160 160)"/>
+  <use xlink:href="#r5" transform="rotate(120 160 160)" stroke="white"/>
   <use xlink:href="#r5" transform="rotate(180 160 160)" stroke="url(#skyGradient)"/>
-  <use xlink:href="#r5" transform="rotate(240 160 160)"/>
+  <use xlink:href="#r5" transform="rotate(240 160 160)" stroke="white"/>
   <use xlink:href="#r5" transform="rotate(300 160 160)" stroke="url(#skyGradient)"/>
   <use xlink:href="#r6" transform="rotate(30 160 160)"  stroke="url(#tropicGradient)"/>
-  <use xlink:href="#r6" transform="rotate(90 160 160)"/>
+  <use xlink:href="#r6" transform="rotate(90 160 160)" stroke="coral"/>
   <use xlink:href="#r6" transform="rotate(150 160 160)"  stroke="url(#skyGradient)"/>
   <use xlink:href="#r6" transform="rotate(210 160 160)"  stroke="url(#tropicGradient)"/>
-  <use xlink:href="#r6" transform="rotate(270 160 160)"/>
+  <use xlink:href="#r6" transform="rotate(270 160 160)" stroke="white"/>
   <use xlink:href="#r6" transform="rotate(330 160 160)"  stroke="url(#skyGradient)"/>
 </svg>
