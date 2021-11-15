@@ -32,7 +32,7 @@ export default function algorap() {
                         <div className="lg:w-4/6 2xl:w-1/2 lg:ml-32 2xl:ml-48 mt-10 2xl:mt-16 left-2 ">
 
                             <h3><em>
-                                Aim: <br /> Computationally generate a rap album
+                                Aim: <br /> Computationally generate a rap album <br /> 
                                 #MachineLearning #NLP #Music
                             </em></h3>
                             <br />

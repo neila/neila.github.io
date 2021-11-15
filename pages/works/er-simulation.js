@@ -36,7 +36,7 @@ export default function ERsim() {
                         <div className="md:w-4/6 lg:w-1/2 md:ml-32 lg:ml-48 mt-10 lg:mt-16 left-2 ">
 
                             <h3><em>
-                                Aim: <br /> Optimizing emergency medical response time in central London area
+                                Aim: <br /> Optimizing emergency medical response time in central London area  <br /> 
                                 #simulation #network #optimization
                             </em></h3>
                             <br />
