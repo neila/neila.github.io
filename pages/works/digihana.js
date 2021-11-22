@@ -5,9 +5,9 @@ import Footer from '../../components/Footer';
 import flower1 from '/public/images/flower1.svg';
 import flower2 from '/public/images/flower2.svg';
 
-const Title = ({digi, hana, colord, colorh}) => <div className="mt-5 mb-7 justify-center flex"><h1 className={colord}> {digi} </h1><h1 className={colorh}> {hana} </h1></div>
+const Title = ({digi, hana, colord, colorh}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={colord}> {digi} <span className={colorh}> {hana} </span></h1></div>
 
-export default function radio() {
+export default function digihana() {
     return (
         <div className=''>
             <Head>
@@ -18,13 +18,13 @@ export default function radio() {
             <Header />
 
             <div className="min-h-full px-8 lg:mx-24 relative">
-                <div className='px-8 justify-between flex relative'>
+                <div className='px-2 justify-between flex relative'>
 
                     <div className='h-full flex-grow relative'>
                         <Title digi="DIGI" hana="HANA" colord="bg-clip-text text-transparent bg-gradient-to-b from-[#22C1C3] to-[#FDBB2D]" colorh="bg-clip-text text-transparent bg-gradient-to-b from-[#833AB4] to-[#FD1D1D]"/>
 
-                        <div className="lg:w-4/6 2xl:w-1/2 lg:ml-32 2xl:ml-48 mt-10 2xl:mt-16 left-2 ">
-                            <div className="flex"><Image src={flower1} /><Image src={flower2} /></div>
+                        <div className="lg:w-4/6 2xl:w-1/2 lg:ml-32 2xl:ml-48 mt-10 2xl:mt-16 left-2">
+                        <div className="flex"><Image src={flower1} /><Image src={flower2} /></div>
                             <br />
                             <p>
                                 <a href="https://digihana.neila1.repl.co/" className="text-[#22C1C3]">DigiHana</a> is a web application that allows users to mint their own digital flower; a hana. 
@@ -38,7 +38,7 @@ export default function radio() {
                             </p>
                             <br />
                             <p>
-                                Collection ID 0x5b54de188a660dbf5e2ba6935ce1d70669348ea0
+                                Collection ID <br /> <span class="text-xs lg:text-lg">0x5b54de188a660dbf5e2ba6935ce1d70669348ea0</span>
                             </p>
                             <p>
                                 <a href='https://rinkeby.rarible.com/collection/0x5b54de188a660dbf5e2ba6935ce1d70669348ea0' className='text-[#fbdb04]'>Rarible</a> / <a href='https://testnets.opensea.io/collection/flowernft-azuwzflo4x' className='text-[#2081E2]'>Opensea</a>
@@ -53,7 +53,7 @@ export default function radio() {
                             <br />
                             <p>
                                 If there's enough interest, I hope to release it on the main Ethereum network. 
-                                If anyone is willing to contribute some ETH to do this, my wallet is 0xd202014D97C95eC6aE01a0e947fD352b54d6effd.
+                                If anyone is willing to contribute some ETH to do this, my wallet is <br /><span class="text-xs lg:text-lg">0xd202014D97C95eC6aE01a0e947fD352b54d6effd</span>.
                             </p>
                         </div>
 
@@ -66,3 +66,5 @@ export default function radio() {
         </div>
     )
 }
+
+

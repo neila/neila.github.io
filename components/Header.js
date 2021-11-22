@@ -5,7 +5,7 @@ import Icon from "/public/images/Icon.png"
 
 function Header() {
     return (
-        <header className="flex flex-none justify-between sticky top-0 border-b z-10 bg-[#07070D]">
+        <header className="flex justify-between sticky top-0 border-b z-10 bg-[#07070D]">
             
             {/*Logo*/}
             <div className="mx-4 mt-2">

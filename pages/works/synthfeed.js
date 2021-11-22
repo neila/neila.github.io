@@ -17,7 +17,7 @@ export default function synthfeed() {
             <Header />
 
             <div className="min-h-full px-8 lg:mx-24 relative">
-                <div className='px-8 justify-between flex relative'>
+                <div className='px-2 justify-between flex relative'>
 
                     <div className='h-full flex-grow relative text-[#6BADDC]'>
                         <Title section="SynthFeed" color="text-[#00CC30]" />

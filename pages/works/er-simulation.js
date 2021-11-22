@@ -21,6 +21,7 @@ export default function ERsim() {
                 <title>NHS - Sho Hihara</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+
             <Header />
 
             <div className="min-h-full px-8 lg:mx-24 relative bg-[#EDFF21] text-black z-0">

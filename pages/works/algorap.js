@@ -24,12 +24,12 @@ export default function algorap() {
             <Header />
 
             <div className="min-h-full px-8 lg:mx-24 relative">
-                <div className='px-8 justify-between flex relative'>
+                <div className='px-2 justify-between flex relative'>
 
                     <div className='h-full flex-grow relative text-[#F8DCAD]'>
                         <Title section="AlgoRap" color="text-[#FE0000]" />
 
-                        <div className="lg:w-4/6 2xl:w-1/2 lg:ml-32 2xl:ml-48 mt-10 2xl:mt-16 left-2 ">
+                        <div className="lg:w-4/6 2xl:w-1/2 lg:ml-32 2xl:ml-48 mt-10 2xl:mt-16 left-2">
 
                             <h3><em>
                                 Aim: <br /> Computationally generate a rap album <br /> 
