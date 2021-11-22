@@ -8,17 +8,17 @@ function Header() {
         <header className="flex justify-between sticky top-0 border-b z-10 bg-[#07070D]">
             
             {/*Logo*/}
-            <div className="mx-4 mt-2">
+            <div className="mx-4 my-2">
                 <Link href='/'>
                     {/* <Image 
                     className = "object-contain rounded-full cursor-pointer align-left" 
                     src = {Icon}
                     width={80} 
                     height={80}/> */}
-                    <div className="text-2xl lg:text-3xl font-extrabold absolute w-0 cursor-pointer">
+                    <div className="text-2xl lg:text-3xl font-extrabold w-0 leading-tight cursor-pointer">
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-purple-500">
                             Sho Hihara
-                        </span>
+                        </span>      
                     </div>
                 </Link>
             </div>
