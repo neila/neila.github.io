@@ -66,11 +66,15 @@ export default function ERsim() {
                             <br />
                             
                             <p>
-                                Medical emergency events were probabilistically generated across all nodes, with higher crime neighborhoods having a higher probability of such emergencies happening. The crime rate data was obtained from the <a href='https://www.met.police.uk/sd/stats-and-data/met/crime-data-dashboard/'>London Metropolitan Police database</a>. While crime a holistic term that is not necessarily a direct cause of medical emergencies, nor all medical emergencies arise from reported crime, it was assumed as an approximate indicator of the probability of ambulance request in each node. 
+                                Medical emergency events were probabilistically generated across all nodes, with higher crime neighborhoods having a higher probability of such emergencies happening. 
+                                The crime rate data was obtained from the <a href='https://www.met.police.uk/sd/stats-and-data/met/crime-data-dashboard/'>London Metropolitan Police database</a>.
+                                Reported crime is not necessarily a direct cause of medical emergencies, nor all medical emergencies arise from reported crime. 
+                                However, it was assumed as an approximate indicator of the probability of ambulance request in each node, due to the difficulty of obtaining datasets directly logging ambulance requests. 
                             </p>
                             <br />
                             <p>
-                                Using the travel time data from Q1/20, a simulation was run 300 times, each with 1000 total medical emergencies. The ambulance velocity was controlled at 20 km/h.(±2σ). This is the controlled set of simulations.
+                                Using the travel time data from Q1/20, a simulation was run 300 times, each with 1000 total medical emergencies. 
+                                The ambulance velocity was controlled at 20 km/h.(±2σ). This is the controlled set of simulations.
                             </p>
 
                             <br />

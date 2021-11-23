@@ -38,7 +38,7 @@ export default function digihana() {
                             </p>
                             <br />
                             <p>
-                                Collection ID <br /> <span class="text-xs lg:text-lg">0x5b54de188a660dbf5e2ba6935ce1d70669348ea0</span>
+                                Collection ID <br /> <span class="text-xs sm:text-lg">0x5b54de188a660dbf5e2ba6935ce1d70669348ea0</span>
                             </p>
                             <p>
                                 <a href='https://rinkeby.rarible.com/collection/0x5b54de188a660dbf5e2ba6935ce1d70669348ea0' className='text-[#fbdb04]'>Rarible</a> / <a href='https://testnets.opensea.io/collection/flowernft-azuwzflo4x' className='text-[#2081E2]'>Opensea</a>
@@ -53,7 +53,7 @@ export default function digihana() {
                             <br />
                             <p>
                                 If there's enough interest, I hope to release it on the main Ethereum network. 
-                                If anyone is willing to contribute some ETH to do this, my wallet is <br /><span class="text-xs lg:text-lg">0xd202014D97C95eC6aE01a0e947fD352b54d6effd</span>.
+                                If anyone is willing to contribute some ETH to do this, my wallet is <br /><span class="text-xs sm:text-lg">0xd202014D97C95eC6aE01a0e947fD352b54d6effd</span>.
                             </p>
                         </div>
 
