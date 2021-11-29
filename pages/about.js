@@ -113,6 +113,12 @@ export default function about() {
                                 <Image src='https://cryptologos.cc/logos/ethereum-eth-logo.svg' alt='Ethereum Logo' layout='fill'/>
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
+                                <Image src='https://solana.com/branding/new/logomark/logomark-gradient.svg' alt='Solana Logo' layout='fill'/>
+                            </div>
+                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
+                                <Image src='https://www.rust-lang.org/logos/rust-logo-512x512.png' alt='Rust Logo' layout='fill'/>
+                            </div>
+                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
                                 <Image src='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' alt='Python Logo' layout='fill'/>
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
