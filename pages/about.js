@@ -110,10 +110,7 @@ export default function about() {
                                 <Image src='https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png' alt='Next.js Logo' layout='fill'/>
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://cryptologos.cc/logos/ethereum-eth-logo.svg' alt='Ethereum Logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://solana.com/branding/new/logomark/logomark-gradient.svg' alt='Solana Logo' layout='fill'/>
+                                <Image src='https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png' alt='Vercel Logo' layout='fill'/>
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
                                 <Image src='https://www.rust-lang.org/logos/rust-logo-512x512.png' alt='Rust Logo' layout='fill'/>
@@ -128,10 +125,13 @@ export default function about() {
                                 <Image src='https://s3.eu-west-2.amazonaws.com/jamescross/images/frontEndTrio.png' alt='Trinity Logo' layout='fill'/>
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png' alt='Vercel Logo' layout='fill'/>
+                                <Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg' alt='git logo' layout='fill' />
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg' alt='git logo' layout='fill' />
+                                <Image src='https://cryptologos.cc/logos/ethereum-eth-logo.svg' alt='Ethereum Logo' layout='fill'/>
+                            </div>
+                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
+                                <Image src='https://solana.com/branding/new/logomark/logomark-gradient.svg' alt='Solana Logo' layout='fill'/>
                             </div>
                             
                         </div>
