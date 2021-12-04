@@ -26,7 +26,7 @@ export default function synthfeed() {
                             <p>
                                 <a href='https://synthfeed.com/' className="text-[#00CC30]">SynthFeed</a> is an online feedback platform for music producers to get targeted feedback from professionals on creative and technical aspects of their work.
                                 Currently, the professional artists providing feedback on SynthFeed have accumulated in total multiple billion streams across different platforms.
-                                Upon rounds of design iterations, we lanched the service on October 2020.
+                                Upon rounds of design iterations, we launched the service on October 2020.
                             </p>
                             <div className="w-5/6 mx-auto">
                                 <br />

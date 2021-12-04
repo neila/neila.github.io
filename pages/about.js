@@ -116,6 +116,9 @@ export default function about() {
                                 <Image src='https://www.rust-lang.org/logos/rust-logo-512x512.png' alt='Rust Logo' layout='fill'/>
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
+                                <Image src='https://raw.githubusercontent.com/egonelbre/gophers/master/vector/computer/gamer.svg' alt='Go logo' layout='fill'/>
+                            </div>
+                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
                                 <Image src='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' alt='Python Logo' layout='fill'/>
                             </div>
                             <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
