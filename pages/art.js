@@ -14,6 +14,22 @@ import cdflp from "/public/images/candyflippin' (oops).png"
 
 
 const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
+const ArtWork = (props) => {
+
+    return (
+        <div className={`flex flex-col ${props.colStart} ${props.colSpan} m-8`}>
+            <Image
+                className="object-contain w-full h-full cursor-pointer"
+                src={props.image}
+            />
+            <div className="w-full">
+                <div className="mx-auto w-4/5 text-center">
+                    <p className="font-hairline text-sm lg:font-thin">{props.caption}</p>
+                </div>
+            </div>
+        </div>
+    );
+}
 
 export default function art() {
 
@@ -32,94 +48,13 @@ export default function art() {
             {/* content */}
             <section className="">
                 <div className="lg:w-4/5 p-4 mx-auto flex flex-wrap justify-center lg:grid lg:grid-cols-6">
-                    
-
-                        <div className="flex flex-col col-span-3">
-                            <Image 
-                            className = "object-contain w-full h-full cursor-pointer" 
-                            src = {dghn} />
-                            <div className="w-full">
-                                <div className='mx-auto w-4/5 text-center'>
-                                    <p className='font-hairline text-sm lg:font-thin'>零華</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div className="flex flex-col col-start-4 col-span-2">
-                            <Image 
-                            className = "object-contain w-full h-full cursor-pointer" 
-                            src = {bbl} 
-                            placeholder='blur'/>
-                            <div className="w-full">
-                                <div className='mx-auto w-4/5 text-center'>
-                                    <p className='font-hairline text-sm lg:font-thin'>Your Love Can Start A Universe</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col col-start-2 col-span-2 m-8">
-                            <Image 
-                            className = "object-contain w-full h-full cursor-pointer" 
-                            src = {btt} 
-                            placeholder='blur'/>
-                            <div className="w-full">
-                                <div className='mx-auto w-4/5 text-center'>
-                                    <p className='font-hairline text-sm lg:font-thin'>Eaten By Growth</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div className="flex flex-col col-start-4 col-span-3 m-8">
-                            <Image 
-                            className = "object-contain w-full h-full cursor-pointer" 
-                            src = {gsh} 
-                            placeholder='blur'/>
-                            <div className="w-full">
-                                <div className='mx-auto w-4/5 text-center'>
-                                    <p className='font-hairline text-sm lg:font-thin'>GALACTIC SUPERHIGHWAY</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div className="flex flex-col col-start-1 col-span-2 m-8">
-                            <Image 
-                            className = "object-contain w-full h-full cursor-pointer" 
-                            src = {drd} 
-                            placeholder='blur'/>
-                            <div className="w-full">
-                                <div className='mx-auto w-4/5 text-center'>
-                                    <p className='font-hairline text-sm lg:font-thin'>Deep reason (depression)</p>
-                                </div>
-                            </div>
-                        </div>
-
-                       
-                        <div className="flex flex-col col-span-2 m-8">
-                            <Image 
-                            className = "object-contain w-full h-full cursor-pointer" 
-                            src = {p35} 
-                            placeholder='blur'/>
-                            <div className="w-full">
-                                <div className='mx-auto w-4/5 text-center'>
-                                    <p className='font-hairline text-sm lg:font-thin'>Polygon 3.5</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col col-span-2 m-8">
-                            <Image 
-                            className = "object-contain w-full h-full cursor-pointer" 
-                            src = {cdflp} 
-                            placeholder='blur'/>
-                            <div className="w-full">
-                                <div className='mx-auto w-4/5 text-center'>
-                                    <p className='font-hairline text-sm lg:font-thin'>Candyflippin' (oops)</p>
-                                </div>
-                            </div>
-                        </div>
-                        
+                    <ArtWork colStart="col-start-1" colSpan="col-span-3" image={dghn} caption="零華" />
+                    <ArtWork colStart="col-start-4" colSpan="col-span-2" image={bbl} caption="Your Love Can Start A Universe" />
+                    <ArtWork colStart="col-start-2" colSpan="col-span-2" image={btt} caption="Eaten By Growth" />
+                    <ArtWork colStart="col-start-4" colSpan="col-span-3" image={gsh} caption="GALACTIC SUPERHIGHWAY" />
+                    <ArtWork colStart="col-start-1" colSpan="col-span-2" image={drd} caption="Deep Reason (depression)" />
+                    <ArtWork colStart="col-start-3" colSpan="col-span-2" image={p35} caption="Polygon 3.5" />
+                    <ArtWork colStart="col-start-5" colSpan="col-span-2" image={cdflp} caption="Candyflippin' (oops)" />
                 </div>
             </section>
 

@@ -8,6 +8,18 @@ import {LocationMarkerIcon} from "@heroicons/react/outline";
 
 const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
 
+const ToolLogo = (props) => {
+    return (
+        <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
+            <Image 
+                src = {props.logolink}
+                alt = {props.logoname + " logo"}
+                layout = "fill"
+            />
+        </div>
+    )
+}
+
 export default function about() {
     return (
         <div>
@@ -21,7 +33,7 @@ export default function about() {
             <Title section="ABOUT" color="text-[#01CDFF]"/>
 
             {/* profile pic */}
-            {/* Breathing Halftone later */}
+            {/* td: breathing Halftone effect */}
             <div className="h-32 w-32 lg:w-72 lg:h-72 mx-auto overflow-hidden flex justify-center">
                     <Image 
                         src = {profilePic}
@@ -81,12 +93,6 @@ export default function about() {
                                         <li>Scenario optimization</li> <li>Game theory simulations</li> <li>Computational physics</li>
                                     </ul>
                                 </li>
-                                {/* <li>
-                                    Consulting
-                                    <ul className='list-none ml-12'>
-                                        <li>Business Intelligence</li> <li>Data analytics</li> <li>Brand management</li>
-                                    </ul>
-                                </li> */}
                             </ul>
                         </div>
                     </section>
@@ -97,46 +103,19 @@ export default function about() {
                             <h2 > Current Toolkit</h2>
                         </div>
                         <div className="lg:w-full flex flex-wrap gap-1 justify-start">
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png' alt='Notion Logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg' alt='Figma Logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' alt='React Logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png' alt='Next.js Logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png' alt='Vercel Logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://www.rust-lang.org/logos/rust-logo-512x512.png' alt='Rust Logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://raw.githubusercontent.com/egonelbre/gophers/master/vector/computer/gamer.svg' alt='Go logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' alt='Python Logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg' alt='PyTorch Logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://s3.eu-west-2.amazonaws.com/jamescross/images/frontEndTrio.png' alt='Trinity Logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg' alt='git logo' layout='fill' />
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://cryptologos.cc/logos/ethereum-eth-logo.svg' alt='Ethereum Logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://solana.com/branding/new/logomark/logomark-gradient.svg' alt='Solana Logo' layout='fill'/>
-                            </div>
-                            
+                            <ToolLogo logolink='https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png' logoname='Notion'/>
+                            <ToolLogo logolink='https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg' logoname='Figma'/>
+                            <ToolLogo logolink='https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' logoname='React'/>
+                            <ToolLogo logolink='https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png' logoname='Next.js'/>
+                            <ToolLogo logolink='https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png' logoname='Vercel'/>
+                            <ToolLogo logolink='https://www.rust-lang.org/logos/rust-logo-512x512.png' logoname='Rust'/>
+                            <ToolLogo logolink='https://raw.githubusercontent.com/egonelbre/gophers/master/vector/computer/gamer.svg' logoname='Golang'/>
+                            <ToolLogo logolink='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' logoname='Python'/>
+                            <ToolLogo logolink='https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg' logoname='PyTorch'/>
+                            <ToolLogo logolink='https://s3.eu-west-2.amazonaws.com/jamescross/images/frontEndTrio.png' logoname='Frontend'/>
+                            <ToolLogo logolink='https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg' logoname='Git'/>
+                            <ToolLogo logolink='https://cryptologos.cc/logos/ethereum-eth-logo.svg' logoname='Ethereum'/>
+                            <ToolLogo logolink='https://solana.com/branding/new/logomark/logomark-gradient.svg' logoname='Solana'/>
                         </div>
                     </section>
                     <section className="lg:flex space-x-0 space-y-1 lg:space-x-10 items-start">
@@ -144,21 +123,11 @@ export default function about() {
                             <h2>Past Tools</h2>
                         </div>
                         <div className="lg:w-full flex flex-wrap gap-1 justify-start">
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://www.r-project.org/logo/Rlogo.svg' alt='R Logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://upload.wikimedia.org/wikipedia/commons/2/20/Mathematica_Logo.svg' alt='Mathematica Logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://starbeamrainbowlabs.com/images/logos/swi-prolog.svg' alt='SWI-Prolog Logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://upload.wikimedia.org/wikipedia/commons/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg' alt='MS Office Logo' layout='fill'/>
-                            </div>
-                            <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
-                                <Image src='https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg' alt='Firebase logo' layout='fill' />
-                            </div>
+                            <ToolLogo logolink='https://www.r-project.org/logo/Rlogo.svg' logoname='R'/>
+                            <ToolLogo logolink='https://upload.wikimedia.org/wikipedia/commons/2/20/Mathematica_Logo.svg' logoname='Mathematica'/>
+                            <ToolLogo logolink='https://starbeamrainbowlabs.com/images/logos/swi-prolog.svg' logoname='Prolog'/>
+                            <ToolLogo logolink='https://upload.wikimedia.org/wikipedia/commons/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg' logoname='Microsoft Office'/>
+                            <ToolLogo logolink='https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg' logoname='Firebase'/>
                         </div>
                     </section>
                     
