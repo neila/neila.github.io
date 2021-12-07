@@ -54,7 +54,7 @@ export default function art() {
                     <ArtWork colStart="col-start-4" colSpan="col-span-3" image={gsh} caption="GALACTIC SUPERHIGHWAY" />
                     <ArtWork colStart="col-start-1" colSpan="col-span-2" image={drd} caption="Deep Reason (depression)" />
                     <ArtWork colStart="col-start-3" colSpan="col-span-2" image={p35} caption="Polygon 3.5" />
-                    <ArtWork colStart="col-start-5" colSpan="col-span-2" image={cdflp} caption="Candyflippin' (oops)" />
+                    <ArtWork colStart="col-start-5" colSpan="col-span-2" image={cdflp} caption="Candy Kiss" />
                 </div>
             </section>
 
