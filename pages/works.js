@@ -13,10 +13,11 @@ import Digihana from '/public/images/digihana.png';
 
 const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
 const WorkTriangleIcon = (props) => {
+    const {pagepath, updown, image} = props;
     return(
-        <Link href={props.pagepath}>
-            <div className={`h-36 w-36 lg:h-72 lg:w-72 flex relative ${props.updown} cursor-pointer`}>
-                <Image className="h-full w-full object-cover" src = {props.image} />     
+        <Link href={pagepath}>
+            <div className={`h-36 w-36 lg:h-72 lg:w-72 flex relative ${updown} cursor-pointer`}>
+                <Image className="h-full w-full object-cover" src = {image} />     
             </div>
         </Link>
     )

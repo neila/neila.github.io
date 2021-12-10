@@ -15,16 +15,16 @@ import cdflp from "/public/images/candyflippin' (oops).png"
 
 const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
 const ArtWork = (props) => {
-
+    const {colStart, colSpan, image, caption} = props;
     return (
-        <div className={`flex flex-col ${props.colStart} ${props.colSpan} m-8`}>
+        <div className={`flex flex-col ${colStart} ${colSpan} m-8`}>
             <Image
                 className="object-contain w-full h-full cursor-pointer"
-                src={props.image}
+                src={image}
             />
             <div className="w-full">
                 <div className="mx-auto w-4/5 text-center">
-                    <p className="font-hairline text-sm lg:font-thin">{props.caption}</p>
+                    <p className="font-hairline text-sm lg:font-thin">{caption}</p>
                 </div>
             </div>
         </div>

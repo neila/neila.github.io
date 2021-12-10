@@ -9,11 +9,12 @@ import {LocationMarkerIcon} from "@heroicons/react/outline";
 const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
 
 const ToolLogo = (props) => {
+    const {logolink, logoname} = props;
     return (
         <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
             <Image 
-                src = {props.logolink}
-                alt = {props.logoname + " logo"}
+                src = {logolink}
+                alt = {logoname + " logo"}
                 layout = "fill"
             />
         </div>
@@ -109,7 +110,7 @@ export default function about() {
                             <ToolLogo logolink='https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png' logoname='Next.js'/>
                             <ToolLogo logolink='https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png' logoname='Vercel'/>
                             <ToolLogo logolink='https://www.rust-lang.org/logos/rust-logo-512x512.png' logoname='Rust'/>
-                            <ToolLogo logolink='https://raw.githubusercontent.com/egonelbre/gophers/master/vector/computer/gamer.svg' logoname='Golang'/>
+                            <ToolLogo logolink='https://raw.githubusercontent.com/egonelbre/gophers/master/vector/superhero/standing.svg' logoname='Golang'/>
                             <ToolLogo logolink='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' logoname='Python'/>
                             <ToolLogo logolink='https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg' logoname='PyTorch'/>
                             <ToolLogo logolink='https://s3.eu-west-2.amazonaws.com/jamescross/images/frontEndTrio.png' logoname='Frontend'/>
