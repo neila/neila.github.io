@@ -11,7 +11,7 @@ const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-g
 const ToolLogo = (props) => {
     const {logolink, logoname} = props;
     return (
-        <div className="w-20 h-20 lg:h-30 lg:w-30 relative m-2">
+        <div className="w-20 h-20 lg:h-30 lg:w-30 relative lg:m-2">
             <Image 
                 src = {logolink}
                 alt = {logoname + " logo"}
