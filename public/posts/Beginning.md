@@ -1,6 +1,7 @@
 ---
 type: "post"
-date: "2021-06-16"
+date_created: "2021-06-16"
+last_edited: "2021-06-16"
 tags: "#thoughts #archiving"
 ---
 

@@ -11,7 +11,7 @@ const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-g
 const ToolLogo = (props) => {
     const {logolink, logoname} = props;
     return (
-        <div className="w-20 h-20 lg:h-30 lg:w-30 relative">
+        <div className="w-20 h-20 lg:h-30 lg:w-30 relative m-2">
             <Image 
                 src = {logolink}
                 alt = {logoname + " logo"}
@@ -106,14 +106,14 @@ export default function about() {
                         <div className="lg:w-full flex flex-wrap gap-1 justify-start">
                             <ToolLogo logolink='https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png' logoname='Notion'/>
                             <ToolLogo logolink='https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg' logoname='Figma'/>
+                            <ToolLogo logolink='https://s3.eu-west-2.amazonaws.com/jamescross/images/frontEndTrio.png' logoname='Frontend'/>
                             <ToolLogo logolink='https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' logoname='React'/>
                             <ToolLogo logolink='https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png' logoname='Next.js'/>
-                            <ToolLogo logolink='https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png' logoname='Vercel'/>
+                            <ToolLogo logolink='https://raw.githubusercontent.com/nodejs/nodejs.org/main/static/images/logo-hexagon.svg' logoname='Node.js'/>
+                            <ToolLogo logolink='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' logoname='Python'/>
                             <ToolLogo logolink='https://www.rust-lang.org/logos/rust-logo-512x512.png' logoname='Rust'/>
                             <ToolLogo logolink='https://raw.githubusercontent.com/egonelbre/gophers/master/vector/superhero/standing.svg' logoname='Golang'/>
-                            <ToolLogo logolink='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' logoname='Python'/>
-                            <ToolLogo logolink='https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg' logoname='PyTorch'/>
-                            <ToolLogo logolink='https://s3.eu-west-2.amazonaws.com/jamescross/images/frontEndTrio.png' logoname='Frontend'/>
+                            <ToolLogo logolink='https://raw.githubusercontent.com/docker/docker.github.io/master/images/engine.svg' logoname='Docker'/>
                             <ToolLogo logolink='https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg' logoname='Git'/>
                             <ToolLogo logolink='https://cryptologos.cc/logos/ethereum-eth-logo.svg' logoname='Ethereum'/>
                             <ToolLogo logolink='https://solana.com/branding/new/logomark/logomark-gradient.svg' logoname='Solana'/>

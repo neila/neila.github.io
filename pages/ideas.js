@@ -50,14 +50,14 @@ export default function ideas({ postsList }) {
 
                     <ul className='space-y-2 flex flex-col px-0'>
                         
-                        {postsList.map(({ id, date, tags}) => (
+                        {postsList.map(({ id, date_created, tags}) => (
                             <div key={id} className="rounded-md align-middle px-3 bg-gradient-to-r cursor-pointer from-purple-700 via-blue-400 to-green-500 hover:from-pink-500 hover:to-yellow-500">
                                 <Link href={{
                                         pathname: `/ideas/${encodeURIComponent(id)}`
                                     }}>
                                     <div>
                                         <h3 className='truncate text-base lg:text-lg'>{id}</h3>
-                                        <p className='truncate text-xs lg:text-sm'>{dateFormat(date, "yyyy-mm-dd", true)} | {tags}</p>
+                                        <p className='truncate text-xs lg:text-sm'>{dateFormat(date_created, "yyyy-mm-dd", true)} | {tags}</p>
                                     </div>
                                 </Link>
                             </div>
@@ -103,7 +103,7 @@ export async function getStaticProps() {
     })
 
     const sorted_allPostsData = allPostsData.sort((a, b) => {
-        if (a.date < b.date) {
+        if (a.date_created < b.date_created) {
             return 1
         } else {
             return -1

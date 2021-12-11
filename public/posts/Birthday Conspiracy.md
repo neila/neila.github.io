@@ -1,6 +1,7 @@
 ---
 type: "#note"
-date: "2021-09-30"
+date_created: "2021-09-30"
+last_edited: "2021-09-30"
 tags: "#ramble #birthday #Michelin"
 ---
 
