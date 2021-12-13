@@ -9,7 +9,8 @@ import gsh from '/public/images/galactic_superhighway.png';
 import btt from '/public/images/biggerthanthou.png';
 import p35 from '/public/images/polygon35.png';
 import dghn from '/public/images/flower2.svg';
-import cdflp from "/public/images/candyflippin' (oops).png"
+import cdflp from "/public/images/candyflippin' (oops).png";
+import rwkng from '/public/images/RUNAWAY_KING.jpg';
 
 
 
@@ -48,13 +49,14 @@ export default function art() {
             {/* content */}
             <section className="">
                 <div className="lg:w-4/5 p-4 mx-auto flex flex-wrap justify-center lg:grid lg:grid-cols-6">
-                    <ArtWork colStart="col-start-1" colSpan="col-span-3" image={dghn} caption="零華" />
-                    <ArtWork colStart="col-start-4" colSpan="col-span-2" image={bbl} caption="Your Love Can Start A Universe" />
-                    <ArtWork colStart="col-start-2" colSpan="col-span-2" image={btt} caption="Eaten By Growth" />
+                    <ArtWork colStart="col-start-1" colSpan="col-span-2" image={rwkng} caption="RUNAWAY KING" />
+                    <ArtWork colStart="col-start-3" colSpan="col-span-2" image={dghn} caption="零華" />
+                    <ArtWork colStart="col-start-5" colSpan="col-span-2" image={bbl} caption="Your Love Can Start A Universe" />
+                    <ArtWork colStart="col-start-1" colSpan="col-span-2" image={cdflp} caption="Candy effect" />
+                    <ArtWork colStart="col-start-3" colSpan="col-span-2" image={btt} caption="Eaten By Growth" />
+                    <ArtWork colStart="col-start-5" colSpan="col-span-2" image={p35} caption="Polygon 3.5" />
+                    <ArtWork colStart="col-start-2" colSpan="col-span-2" image={drd} caption="Deep Reason (depression)" />
                     <ArtWork colStart="col-start-4" colSpan="col-span-3" image={gsh} caption="GALACTIC SUPERHIGHWAY" />
-                    <ArtWork colStart="col-start-1" colSpan="col-span-2" image={drd} caption="Deep Reason (depression)" />
-                    <ArtWork colStart="col-start-3" colSpan="col-span-2" image={p35} caption="Polygon 3.5" />
-                    <ArtWork colStart="col-start-5" colSpan="col-span-2" image={cdflp} caption="Candy Kiss" />
                 </div>
             </section>
 
