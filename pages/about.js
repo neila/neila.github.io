@@ -111,7 +111,8 @@ export default function about() {
                             <ToolLogo logolink='https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png' logoname='Next.js'/>
                             <ToolLogo logolink='https://raw.githubusercontent.com/nodejs/nodejs.org/main/static/images/logo-hexagon.svg' logoname='Node.js'/>
                             <ToolLogo logolink='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' logoname='Python'/>
-                            <ToolLogo logolink='https://www.rust-lang.org/logos/rust-logo-512x512.png' logoname='Rust'/>
+                            {/*<ToolLogo logolink='https://www.rust-lang.org/logos/rust-logo-512x512.png' logoname='Rust'/>
+                            <ToolLogo logolink='https://raw.githubusercontent.com/haskell-infra/hl/master/design/logo.svg' logoname='Haskell'/>*/}
                             <ToolLogo logolink='https://raw.githubusercontent.com/egonelbre/gophers/master/vector/superhero/standing.svg' logoname='Golang'/>
                             <ToolLogo logolink='https://raw.githubusercontent.com/docker/docker.github.io/master/images/engine.svg' logoname='Docker'/>
                             <ToolLogo logolink='https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg' logoname='Git'/>

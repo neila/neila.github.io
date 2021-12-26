@@ -12,9 +12,8 @@ import dghn from '/public/images/flower2.svg';
 import cdflp from "/public/images/candyflippin' (oops).png";
 import rwkng from '/public/images/RUNAWAY_KING.jpg';
 
-
-
 const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
+
 const ArtWork = (props) => {
     const {colStart, colSpan, image, caption} = props;
     return (

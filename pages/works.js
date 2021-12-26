@@ -9,9 +9,8 @@ import AmbulancePic from '/public/images/nhs.jpg';
 import Radio from '/public/images/radio.jpg';
 import Digihana from '/public/images/digihana.png';
 
-
-
 const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
+
 const WorkTriangleIcon = (props) => {
     const {pagepath, updown, image} = props;
     return(

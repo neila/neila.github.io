@@ -53,7 +53,7 @@ export default function algorap() {
                             <br />
                             <h2>Generating Lyrics</h2>
                             <p>
-                                To generate rap verses, AlgoRap finetunes OpenAI’s GPT-2, an unsupervised, general-purpose generative language model based on Transformer architecture. 
+                                To generate rap verses, AlgoRap finetunes OpenAI's GPT-2, an unsupervised, general-purpose generative language model based on Transformer architecture. 
                                 The approach is called the PPLM (Plug-and-Play Language Model), which combines a pretrained language model with an attribute model to fine-tunes the final output to the style of our choice - in this case, rap lyrics.
                             </p>
                             <br />
@@ -63,8 +63,8 @@ export default function algorap() {
                                 To fine-tune the GPT-2 for customized output, it requires a modest-sized (&lt;10MB) dataset of existing rap lyrics. 
                                 To collect this amount of lyrical data, I used a combination of Spotify and Genius APIs to scrape the lyrics data from online databases. 
                                 Spotify is a music streaming service with millions of songs on its catalogue, and Genius is a digital media company whose website essentially acts a lyrical database.
-                                One of Spotify’s popular features are the genre-categorized playlists. 
-                                Below is an example of some of Spotify’s featured hip hop playlists. 
+                                One of Spotify's popular features are the genre-categorized playlists. 
+                                Below is an example of some of Spotify's featured hip hop playlists. 
                                 Songs that are in at least one of these Spotify official hip hop playlists were chosen as the lyrical input data for AlgoRap.
                             </p>
                             <br />
@@ -96,7 +96,7 @@ export default function algorap() {
                                 <li>My verses are criminal</li>
                                 <li>Efforts are minimal</li>
                                 <li>Attack is subliminal</li>
-                                <li>We’ll put you in a critical</li>
+                                <li>We'll put you in a critical</li>
                                 <li>When we invisible</li>
                             </ul>
                             <p>
@@ -119,9 +119,9 @@ export default function algorap() {
                             <p>
                                 Music data is extremely high dimensional. At any given point of a song, which is of arbitrary finite length, 
                                 there are 48 different pitches (and that is by limiting ourselves within a four octave range of the chromatic scale) that can be played by a single piano.
-                                With rest and release, 50. Even if we assume tempos didn’t exist, and 1/16th is the shortest note one can play, mere two measures of this song would have 5032 possibilities.
+                                With rest and release, 50. Even if we assume tempos didn't exist, and 1/16th is the shortest note one can play, mere two measures of this song would have 5032 possibilities.
                                 Note that this is already limited within the western chromatic scale of expression. 
-                                So attempting to construct a creative song entirely randomly is nowhere near as fruitful as looking for a speck of gold in the Sahara. 
+                                So attempting to construct a creative song entirely randomly is, at best, as fruitful as looking for a speck of gold in the Sahara. 
                                 The challenge, therefore, is to limit the search of this “musical space” from any possible combinations of notes, to sounds that are nice for us to hear.
                             </p>
                             <br />
@@ -147,7 +147,7 @@ export default function algorap() {
                             </p>
                             <br />
                             <p>
-                                The encoding architecture used was Child et. al (2019)’s Sparse Transformers, pre-trained on 2 million parameters (Dhariwal et. al, 2020). 
+                                The encoding architecture used was Child et. al (2019)'s Sparse Transformers, pre-trained on 2 million parameters (Dhariwal et. al, 2020). 
                                 The model was then conditioned to audio files of hip hop songs, with the aim to reduce the output entropy and generate audio that better expresses the qualities specific to hip-hop. 
                                 The generated lyrics from earlier were provided to the model as a context prompt to generate the final latent representation.
                                 Finally, during the decoding, it generates a novel compressed representation conditioned on the provided lyrics, which is upsampled back up to raw audio.
