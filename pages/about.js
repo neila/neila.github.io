@@ -56,7 +56,8 @@ export default function about() {
                            
                             <div className='flex justify-center w-full'>
                                 <div className='flex object-center font-normal p-2 pr-10 rounded-md bg-[#7D8491] max-w-prose whitespace-nowrap'>
-                                    <HeroIcon Icon={LocationMarkerIcon}/><a className='hover:text-red-600' href='https://www.youtube.com/watch?v=QsZlY0Vz4-o'>New York City, USA</a>
+                                    {/*<HeroIcon Icon={LocationMarkerIcon} /> <a className='hover:text-red-600' href='https://www.youtube.com/watch?v=_ydMlTassYc'>New York City, USA</a>*/}
+                                    <HeroIcon Icon={LocationMarkerIcon} /> <a className='hover:text-red-600' href='https://www.youtube.com/watch?v=SZzjw2UfUEk'>Tokyo, Japan</a>
                                 </div>
                             </div>
                         </div>
