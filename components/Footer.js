@@ -17,7 +17,7 @@ function Footer() {
     <>
         <footer className="flex-row m-5 justify-between items-center h-auto">
             <div className="flex flexbox items-center justify-center">
-                <a href="mailto:sho@uni.minerva.edu"><FooterItem title="CONTACT" Icon={AtSymbolIcon} /></a>
+                {/* <a href="mailto:sho@uni.minerva.edu"><FooterItem title="CONTACT" Icon={AtSymbolIcon} /></a> */}
                 {/* <div onClick={showModal}><FooterItem title="SUPPORT" Icon={CashIcon}/></div> */}
                 {/* <FooterItem  title="SUPPORT" Icon={GiftIcon} />   */}
             </div>
