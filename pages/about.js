@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Link from 'next/link';
 import HeroIcon from '../components/HeroIcon';
 import profilePic from '/public/images/profilePic.png';
 import {LocationMarkerIcon} from "@heroicons/react/outline";
@@ -54,12 +55,13 @@ export default function about() {
                             <p> I like questioning things; perhaps even more than finding answers to them. </p>
                             <p> I seek joy in the <a href='https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things'>small things</a>, like sleeping in makeshift spaces, or finding evidence of cultural context in everyday life. </p>
                            
-                            <div className='flex justify-center w-full'>
-                                <div className='flex object-center font-normal p-2 pr-10 rounded-md bg-[#7D8491] max-w-prose whitespace-nowrap'>
+                                <div className='flex flex-row items-center font-normal p-2 w-min mx-auto rounded-md bg-[#7D8491] whitespace-nowrap'>
                                     {/*<HeroIcon Icon={LocationMarkerIcon} /> <a className='hover:text-red-600' href='https://www.youtube.com/watch?v=_ydMlTassYc'>New York City, USA</a>*/}
-                                    <HeroIcon Icon={LocationMarkerIcon} /> <a className='hover:text-red-600' href='https://www.youtube.com/watch?v=SZzjw2UfUEk'>Tokyo, Japan</a>
+                                    <div className="h-6 w-6 mx-1">
+                                        <HeroIcon Icon={LocationMarkerIcon} />
+                                    </div> 
+                                    <Link href="https://www.youtube.com/watch?v=SZzjw2UfUEk" ><a className='hover:text-red-600 mr-1' target="_blank">Tokyo, Japan</a></Link>
                                 </div>
-                            </div>
                         </div>
                     </section>
                     
@@ -72,15 +74,15 @@ export default function about() {
                             {/*<SkillTree classNamecontent='w-full h-screen bg-purple-400 rounded-md border-double border-4 border-light-blue-500'/>*/}
                             <ul className='list-disc list-inside leading-snug space-y-3'>
                                 <li>
-                                    Web development
+                                    Web design & development
                                     <ul className='list-none ml-12'>
-                                        <li>Headless CMS</li> <li>Responsive web design</li> <li>Progressive enhancement</li>
+                                        <li>DRY patterns/modular programming</li> <li>Responsive web design</li> <li>IxD</li>
                                     </ul>
                                 </li>
                                 <li>
-                                    Iterative design
+                                    Blockchain & web3
                                     <ul className='list-none ml-12'>
-                                        <li>DRY patterns/modular programming</li> <li>Agile development</li> <li>IxD</li>
+                                        <li>ETH contracts/SOL programs</li>NFT minting<li></li> <li>dApps</li>
                                     </ul>
                                 </li>
                                 <li>
