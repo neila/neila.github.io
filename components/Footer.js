@@ -8,10 +8,11 @@ import Image from "next/image";
 
 function Footer() {
 
-    const [DonateModal, setDonateModal] = useState(false);
-    const showModal = () => { setDonateModal(true); console.log('happening') };
-    const closeModal = () => { setDonateModal(false) };
+    // const [DonateModal, setDonateModal] = useState(false);
+    // const showModal = () => { setDonateModal(true); console.log('happening') };
+    // const closeModal = () => { setDonateModal(false) };
 
+    const currentYear = new Date().getFullYear();
 
     return (
     <>
@@ -23,7 +24,7 @@ function Footer() {
             </div>
 
             <p className="text-center text-xs lg:text-base">
-                All rights reserved. Sho Hihara ©︎ 2021
+                &copy; 2021-{currentYear} Sho Hihara. All rights reserved.
             </p>
 
         </footer>
