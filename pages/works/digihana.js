@@ -5,7 +5,7 @@ import Footer from '../../components/Footer';
 import flower1 from '/public/images/flower1.svg';
 import flower2 from '/public/images/flower2.svg';
 
-const Title = ({digi, hana, colord, colorh}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={colord}> {digi} <span className={colorh}> {hana} </span></h1></div>
+const Title = ({digi, hana, colord, colorh}) => <div className="mt-5 mb-7 text-center"><h1><span className={colord} children={digi} /><span className={colorh} children={hana}/></h1></div>
 
 export default function digihana() {
     return (
@@ -27,7 +27,7 @@ export default function digihana() {
                         <div className="flex"><Image src={flower1} /><Image src={flower2} /></div>
                             <br />
                             <p>
-                                <a href="https://digihana.neila1.repl.co/" className="text-[#22C1C3]">DigiHana</a> is a web application that allows users to mint their own digital flower; a hana. 
+                                <a href="https://digihana.neila1.repl.co/" className="text-[#22C1C3]" target="_blank">DigiHana</a> is a web application that allows users to mint their own digital flower; a hana. 
                                 Each token is unique and its pattern is generated on the fly, as you would anticipate a physical flower's bloom. 
                             </p>
                             <br />
@@ -38,10 +38,10 @@ export default function digihana() {
                             </p>
                             <br />
                             <p>
-                                Collection ID <br /> <span class="text-xs sm:text-lg">0x5b54de188a660dbf5e2ba6935ce1d70669348ea0</span>
+                                Collection ID <br /> <span className="text-xs sm:text-lg">0x5b54de188a660dbf5e2ba6935ce1d70669348ea0</span>
                             </p>
                             <p>
-                                <a href='https://rinkeby.rarible.com/collection/0x5b54de188a660dbf5e2ba6935ce1d70669348ea0' className='text-[#fbdb04]'>Rarible</a> / <a href='https://testnets.opensea.io/collection/flowernft-azuwzflo4x' className='text-[#2081E2]'>Opensea</a>
+                                <a href='https://rinkeby.rarible.com/collection/0x5b54de188a660dbf5e2ba6935ce1d70669348ea0' className='text-[#fbdb04]' target="_blank">Rarible</a> / <a href='https://testnets.opensea.io/collection/flowernft-azuwzflo4x' className='text-[#2081E2]' target="_blank">Opensea</a>
                             </p>
                             <br />
                             <p>
@@ -53,7 +53,7 @@ export default function digihana() {
                             <br />
                             <p>
                                 If there's enough interest, I hope to release it on the main Ethereum network. 
-                                If anyone is willing to contribute some ETH to do this, my wallet is <br /><span class="text-xs sm:text-lg">0xd202014D97C95eC6aE01a0e947fD352b54d6effd</span>.
+                                If anyone is willing to contribute some ETH to do this, my wallet is <br /><span className="text-xs sm:text-lg">0xd202014D97C95eC6aE01a0e947fD352b54d6effd</span>.
                             </p>
                         </div>
 

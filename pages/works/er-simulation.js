@@ -43,7 +43,7 @@ export default function ERsim() {
                             <br />
 
                             <p>
-                                Using dataset obtained from the <a href='https://movement.uber.com/'>Uber Movement database</a>, I constructed a network representation of the central London area. Each node within the network represents a local region, and the edges contain the information of average travel time between each node as edge weights.
+                                Using dataset obtained from the <a href='https://movement.uber.com/' className="hover:text-[#00A499]" target="_blank">Uber Movement database</a>, I constructed a network representation of the central London area. Each node within the network represents a local region, and the edges contain the information of average travel time between each node as edge weights.
                             </p>
 
                             <br />
@@ -67,7 +67,7 @@ export default function ERsim() {
                             
                             <p>
                                 Medical emergency events were probabilistically generated across all nodes, with higher crime neighborhoods having a higher probability of such emergencies happening. 
-                                The crime rate data was obtained from the <a href='https://www.met.police.uk/sd/stats-and-data/met/crime-data-dashboard/'>London Metropolitan Police database</a>.
+                                The crime rate data was obtained from the <a href='https://www.met.police.uk/sd/stats-and-data/met/crime-data-dashboard/' className="hover:text-[#00A499]" target="_blank">London Metropolitan Police database</a>.
                                 Reported crime is not necessarily a direct cause of medical emergencies, nor all medical emergencies arise from reported crime. 
                                 However, it was assumed as an approximate indicator of the probability of ambulance request in each node, due to the difficulty of obtaining datasets directly logging ambulance requests. 
                             </p>

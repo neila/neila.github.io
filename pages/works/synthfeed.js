@@ -24,14 +24,14 @@ export default function synthfeed() {
 
                         <div className="lg:w-4/6 2xl:w-1/2 lg:ml-32 2xl:ml-48 mt-10 lg:mt-16 left-2 ">
                             <p>
-                                <a href='https://synthfeed.com/' className="text-[#00CC30]">SynthFeed</a> is an online feedback platform for music producers to get targeted feedback from professionals on creative and technical aspects of their work.
+                                <a href='https://synthfeed.com/' className="text-[#00CC30]" target="_blank">SynthFeed</a> is an online feedback platform for music producers to get targeted feedback from professionals on creative and technical aspects of their work.
                                 Currently, the professional artists providing feedback on SynthFeed have accumulated in total multiple billion streams across different platforms.
                                 Upon rounds of design iterations, we launched the service on October 2020.
                             </p>
                             <div className="w-5/6 mx-auto">
                                 <br />
                                 <Image src = {Synthfeed1} />
-                                <a href='https://synthfeed.com/feedback-report-demo' className='text-'>feedback demo</a>
+                                <a href='https://synthfeed.com/feedback-report-demo' className='text-[#00CC30]' target="_blank">feedback demo</a>
                                 <br />
                             </div>
                             <p>

@@ -14,13 +14,12 @@ export default class extends React.Component {
     particlesInit(main) {
         
         console.log(main);
-        // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+        // initialize the tsParticles instance (main) here, adding custom shapes or presets
     }
     
     particlesLoaded(main) {
         
         console.log(main);
-        //https://codepen.io/matteobruni/pen/QWyZOKr
 
     };
 

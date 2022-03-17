@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Link from 'next/link';
 import HeroIcon from '../components/HeroIcon';
 import profilePic from '/public/images/profilePic.png';
 import {LocationMarkerIcon} from "@heroicons/react/outline";
@@ -51,16 +50,15 @@ export default function about() {
                     {/* intro */}
                     <section className="lg:flex flex-col items-start">
                         <div className="lg:w-4/5 mx-auto leading-snug space-y-5">
-                            <p> <a href='https://www.youtube.com/watch?v=UL5x60lpGIE'>Konnichiwa</a>. I'm Sho, a creative developer from Japan. <em>Time</em>'s 2006 person of the year. </p>
+                            <p> <a href='https://www.youtube.com/watch?v=UL5x60lpGIE' target="_blank">Konnichiwa</a>. I'm Sho, a creative developer from Japan. <em>Time</em>'s 2006 person of the year. </p>
                             <p> I like questioning things; perhaps even more than finding answers to them. </p>
-                            <p> I seek joy in the <a href='https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things'>small things</a>, like sleeping in makeshift spaces, or finding evidence of cultural context in everyday life. </p>
+                            <p> I seek joy in the <a href='https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things' target="_blank">small things</a>, like sleeping in makeshift spaces, or finding evidence of cultural context in everyday life. </p>
                            
                                 <div className='flex flex-row items-center font-normal p-2 w-min mx-auto rounded-md bg-[#7D8491] whitespace-nowrap'>
-                                    {/*<HeroIcon Icon={LocationMarkerIcon} /> <a className='hover:text-red-600' href='https://www.youtube.com/watch?v=_ydMlTassYc'>New York City, USA</a>*/}
                                     <div className="h-6 w-6 mx-1">
                                         <HeroIcon Icon={LocationMarkerIcon} />
                                     </div> 
-                                    <Link href="https://www.youtube.com/watch?v=SZzjw2UfUEk" ><a className='hover:text-red-600 mr-1' target="_blank">Tokyo, Japan</a></Link>
+                                    <a className='hover:text-red-600 mr-1' href="https://www.youtube.com/watch?v=SZzjw2UfUEk" target="_blank">Tokyo, Japan</a>
                                 </div>
                         </div>
                     </section>

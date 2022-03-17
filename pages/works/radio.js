@@ -19,16 +19,16 @@ export default function radio() {
             <div className="min-h-full px-8 lg:mx-24 relative">
                 <div className='px-2 justify-between flex relative'>
 
-                    <div className='h-full flex-grow relative text-[#94988C]'>
+                    <div className='h-full flex-grow relative text-[#C9CBC5]'>
                         <Title section="Radio algorithm" color="text-[#6CC417]"/>
 
                         <div className="lg:w-4/6 2xl:w-1/2 lg:ml-32 2xl:ml-48 mt-10 2xl:mt-16 left-2 ">
                             <p>
-                                I implemented an algorithm that takes a user’s input as a song title and returns the list of songs that should be played in order; like a radio.
+                                I implemented an algorithm that takes a user's input as a song title and returns the list of songs that should be played in order; like a radio.
                             </p>
                             <br />
                             <p>
-                                The algorithm uses a dataset of songs that I found online (originally obtained from Spotify) to build a <a href='https://www.dgp.toronto.edu/public_user/JamesStewart/378notes/16redBlack/'>Red-Black tree</a> based on how close each song in the dataset are to the initial song specified by the user.
+                                The algorithm uses a dataset of songs that I found online (originally obtained from Spotify) to build a <a href='https://www.dgp.toronto.edu/public_user/JamesStewart/378notes/16redBlack/' className="hover:text-[#6CC417]" target="_blank">Red-Black tree</a> based on how close each song in the dataset are to the initial song specified by the user.
                                 Two songs being <em>close</em> is defined as having similar characteristics in terms of attributes such as acousticness or tempo. By playing songs in order from closest to furthest, I expect the radio to play in such a way that transitions between each song are smooth and the atmosphere is never abruptly ruined.
                             </p>
                             <br />

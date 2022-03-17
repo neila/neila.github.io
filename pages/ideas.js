@@ -32,13 +32,13 @@ export default function ideas({ postsList }) {
                     {/* intro */}
                     <section className="lg:flex items-start">
                             <div className="lg:w-4/5 mx-auto leading-snug space-y-5">
-                                <p> My biological brain is far too <a href='https://doi.apa.org/doiLanding?doi=10.1037%2F0278-7393.20.5.1063'>forgetful</a>. 
+                                <p> My biological brain is far too <a href='https://doi.apa.org/doiLanding?doi=10.1037%2F0278-7393.20.5.1063' target="_blank">forgetful</a>. 
                                     The raw thoughts that continuously pass through my mind can only accumulate for so long. 
                                     Despite the constant mental wrestling, I feel often left stranded in the ponderer's void, with no wisdom to bear.</p>
                                 <p>I find this quite unfortunate, since all brilliant ideas are raw thoughts at the point of its inception. 
                                     I created this space to nurture these seeds of imagination, so that they can grow into something bigger. 
                                     In the conscious and continuous effort to acknolwedge and appreciate the everchanging present, lies the art of spontaneous creativity. 
-                                    I named this page after the <a href='https://en.wikipedia.org/wiki/Idea'>ancient Greek word</a>, to which we still owe its use today.</p>
+                                    I named this page after the <a href='https://en.wikipedia.org/wiki/Idea' target="_blank">ancient Greek word</a>, to which we still owe its use today.</p>
                                 <div className="relative lg:w-3/5 mx-auto">
                                     <blockquote className="relative p-4 text-xl italic border-l-4 text-center">
                                         <p className="mb-4">"Ego cogito, ergo sum"</p>
@@ -81,8 +81,6 @@ export async function getStaticProps() {
     const postsDirectory = path.join(process.cwd(), 'public/posts')
     const fileNames = fs.readdirSync(postsDirectory, 'utf8')
 
-    // ALL NOTES TO BE PUBLISHED MUST BE IN /posts. THE DIRECTORY CANNOT HAVE ANY NESTED FOLDERS.
-
     const allPostsData = fileNames.map(fileName => {
 
         // Remove ".md" from file name to get id
@@ -93,12 +91,12 @@ export async function getStaticProps() {
         const fileContents = fs.readFileSync(fullPath, 'utf8')
 
         // Use gray-matter to parse the post metadata section
-        const matterResult = matter(fileContents)
+        const postMetadata = matter(fileContents).data
 
         // Combine the data with the id
         return {
             id,
-            ...matterResult.data
+            ...postMetadata
         }
     })
 
