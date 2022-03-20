@@ -16,6 +16,7 @@ const ToolLogo = (props) => {
                 src = {logolink}
                 alt = {logoname + " logo"}
                 layout = "fill"
+                className="opacity-100"
             />
         </div>
     )
@@ -84,13 +85,13 @@ export default function about() {
                                     </ul>
                                 </li>
                                 <li>
-                                    Machine learning
+                                    Machine learning & AI
                                     <ul className='list-none ml-12'>
                                         <li>NLP</li> <li>Analytical forecasting</li> <li>Recommendation systems</li>
                                     </ul>
                                 </li>
                                 <li>
-                                    Simulation and modeling
+                                    Simulation & modeling
                                     <ul className='list-none ml-12'>
                                         <li>Scenario optimization</li> <li>Game theory simulations</li> <li>Computational physics</li>
                                     </ul>
@@ -112,13 +113,13 @@ export default function about() {
                             <ToolLogo logolink='https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png' logoname='Next.js'/>
                             <ToolLogo logolink='https://raw.githubusercontent.com/nodejs/nodejs.org/main/static/images/logo-hexagon.svg' logoname='Node.js'/>
                             <ToolLogo logolink='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' logoname='Python'/>
-                            {/*<ToolLogo logolink='https://www.rust-lang.org/logos/rust-logo-512x512.png' logoname='Rust'/>
-                            <ToolLogo logolink='https://raw.githubusercontent.com/haskell-infra/hl/master/design/logo.svg' logoname='Haskell'/>*/}
                             <ToolLogo logolink='https://raw.githubusercontent.com/egonelbre/gophers/master/vector/superhero/standing.svg' logoname='Golang'/>
+                            {/* <ToolLogo logolink='https://www.rust-lang.org/logos/rust-logo-512x512.png' logoname='Rust'/>  */}
+                            {/* <ToolLogo logolink='https://raw.githubusercontent.com/cormullion/julia-logo-graphics/master/images/julia-dots.svg' logoname='Julia'/> */}
+                            {/* <ToolLogo logolink='https://raw.githubusercontent.com/haskell-infra/hl/master/design/logo.svg' logoname='Haskell'/> */}
                             <ToolLogo logolink='https://raw.githubusercontent.com/docker/docker.github.io/master/images/engine.svg' logoname='Docker'/>
                             <ToolLogo logolink='https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg' logoname='Git'/>
-                            <ToolLogo logolink='https://cryptologos.cc/logos/ethereum-eth-logo.svg' logoname='Ethereum'/>
-                            <ToolLogo logolink='https://solana.com/branding/new/logomark/logomark-gradient.svg' logoname='Solana'/>
+                            <ToolLogo logolink='https://gist.githubusercontent.com/neila/13512d1b818c0cfb974088ff3abf2656/raw/b7dc04fc8474d06c442c2df796305c1905eeb58b/solidity_logo_blue.svg' logoname='Solidity'/>
                         </div>
                     </section>
                     <section className="lg:flex space-x-0 space-y-1 lg:space-x-10 items-start">
