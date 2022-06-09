@@ -2,14 +2,16 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import HeroIcon from '../components/HeroIcon';
 import profilePic from '/public/images/profilePic.png';
 import {LocationMarkerIcon} from "@heroicons/react/outline";
 
-const Title = ({section, color}) => <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
+const Title = ({section, color}) => {
+    return(
+        <div className="mt-5 mb-7 text-center flex-grow-0"><h1 className={color}> {section} </h1></div>
+        )
+    }
 
-const ToolLogo = (props) => {
-    const {logolink, logoname} = props;
+const ToolLogo = ({logolink, logoname}) => {
     return (
         <div className="w-20 h-20 lg:h-30 lg:w-30 relative lg:m-2">
             <Image 
@@ -37,11 +39,11 @@ export default function about() {
             {/* profile pic */}
             {/* td: breathing Halftone effect */}
             <div className="h-32 w-32 lg:w-72 lg:h-72 mx-auto overflow-hidden flex justify-center">
-                    <Image 
-                        src = {profilePic}
-                        alt = 'profile image'
-                        className="lg:rounded-3xl align-middle border-none"
-                    />
+                <Image 
+                    src = {profilePic}
+                    alt = 'profile image'
+                    className="lg:rounded-3xl align-middle border-none"
+                />
             </div>
 
             {/*-- content - */}
@@ -51,52 +53,14 @@ export default function about() {
                     {/* intro */}
                     <section className="lg:flex flex-col items-start">
                         <div className="lg:w-4/5 mx-auto leading-snug space-y-5">
-                            <p> <a href='https://www.youtube.com/watch?v=UL5x60lpGIE' target="_blank">Konnichiwa</a>. I'm Sho, a creative developer from Japan. <em>Time</em>'s 2006 person of the year. </p>
+                            <p> <a href='https://www.youtube.com/watch?v=UL5x60lpGIE' target="_blank">Konnichiwa</a>. I'm cohurin, a creative developer from Japan. <em>Time</em>'s 2006 person of the year. </p>
                             <p> I like questioning things; perhaps even more than finding answers to them. </p>
                             <p> I seek joy in the <a href='https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things' target="_blank">small things</a>, like sleeping in makeshift spaces, or finding evidence of cultural context in everyday life. </p>
                            
                                 <div className='flex flex-row items-center font-normal p-2 w-min mx-auto rounded-md bg-[#7D8491] whitespace-nowrap'>
-                                    <div className="h-6 w-6 mx-1">
-                                        <HeroIcon Icon={LocationMarkerIcon} />
-                                    </div> 
-                                    <a className='hover:text-red-600 mr-1' href="https://www.youtube.com/watch?v=SZzjw2UfUEk" target="_blank">Tokyo, Japan</a>
+                                    <div className="h-6 w-6 mx-1"> <LocationMarkerIcon /> </div> 
+                                    <a className='hover:text-red-500 mr-1' href="https://www.youtube.com/watch?v=SZzjw2UfUEk" target="_blank">Tokyo, Japan</a>
                                 </div>
-                        </div>
-                    </section>
-                    
-                    {/* skills */}
-                    <section className="lg:flex space-x-0 lg:space-x-10 items-start">
-                        <div className="space-y-1 transform lg:w-0 lg:rotate-270 lg:translate-y-10 lg:sticky top-72">
-                            <h2>Skills</h2>
-                        </div>
-                        <div className="lg:w-full mx-auto leading-snug space-y-5">
-                            {/*<SkillTree classNamecontent='w-full h-screen bg-purple-400 rounded-md border-double border-4 border-light-blue-500'/>*/}
-                            <ul className='list-disc list-inside leading-snug space-y-3'>
-                                <li>
-                                    Web design & development
-                                    <ul className='list-none ml-12'>
-                                        <li>DRY patterns/modular programming</li> <li>Responsive web design</li> <li>IxD</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Blockchain & web3
-                                    <ul className='list-none ml-12'>
-                                        <li>ETH contracts/SOL programs</li>NFT minting<li></li> <li>dApps</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Machine learning & AI
-                                    <ul className='list-none ml-12'>
-                                        <li>NLP</li> <li>Analytical forecasting</li> <li>Recommendation systems</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Simulation & modeling
-                                    <ul className='list-none ml-12'>
-                                        <li>Scenario optimization</li> <li>Game theory simulations</li> <li>Computational physics</li>
-                                    </ul>
-                                </li>
-                            </ul>
                         </div>
                     </section>
 
@@ -134,9 +98,45 @@ export default function about() {
                             <ToolLogo logolink='https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg' logoname='Firebase'/>
                         </div>
                     </section>
+
+                    {/* skills */}
+                    <section className="lg:flex space-x-0 lg:space-x-10 items-start">
+                        <div className="space-y-1 transform lg:w-0 lg:rotate-270 lg:translate-y-10 lg:sticky top-72">
+                            <h2>Skills</h2>
+                        </div>
+                        <div className="lg:w-full mx-auto leading-snug space-y-5">
+                            {/*<SkillTree classNamecontent='w-full h-screen bg-purple-400 rounded-md border-double border-4 border-light-blue-500'/>*/}
+                            <ul className='list-disc list-inside leading-snug space-y-3'>
+                                <li>
+                                    Web design & development
+                                    <ul className='list-none ml-12'>
+                                        <li>DRY patterns/modular programming</li> <li>Responsive web design</li> <li>IxD</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Blockchain & web3
+                                    <ul className='list-none ml-12'>
+                                        <li>smart contracts</li>DeFi<li></li> <li>dApps</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Machine learning & AI
+                                    <ul className='list-none ml-12'>
+                                        <li>NLP</li> <li>Analytical forecasting</li> <li>Recommendation systems</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Simulation & modeling
+                                    <ul className='list-none ml-12'>
+                                        <li>Scenario optimization</li> <li>Game theory simulations</li> <li>Computational physics</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
                     
                     {/* education */}
-                    <section className="lg:flex space-x-0 space-y-1 lg:space-x-10 items-start">
+                    {/* <section className="lg:flex space-x-0 space-y-1 lg:space-x-10 items-start">
                         <div className="transform lg:w-0 lg:rotate-270 lg:translate-y-24 lg:sticky top-72">
                             <h2>Education</h2>
                         </div>
@@ -144,10 +144,10 @@ export default function about() {
                             <div>🎓 Minerva University '21 (B.Sc.)</div>
                             <div>🎓 Pearson College UWC '17 (IB Diploma)</div>
                         </ul>
-                    </section>
+                    </section> */}
                     
                     {/* awards */}
-                    <section className="lg:flex space-x-0 space-y-1 lg:space-x-10 items-start">
+                    {/* <section className="lg:flex space-x-0 space-y-1 lg:space-x-10 items-start">
                         <div className="transform lg:w-0 lg:rotate-270  lg:translate-y-16 lg:sticky top-72">
                             <h2>Awards</h2>
                         </div>
@@ -155,7 +155,7 @@ export default function about() {
                             <div>🏆 Fellow, '17-pres. // Masason foundation</div>
                             <div>🏆 National committee scholar '15-'17 // United World Colleges Japan</div>
                         </ul>
-                    </section>
+                    </section> */}
 
                 </div>
             </div> 
