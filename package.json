@@ -27,11 +27,8 @@
     },
     "devDependencies": {
         "autoprefixer": "^10.2.6",
-        "eslint": "8.20.0",
-        "eslint-config-next": "12.2.2",
         "postcss": "^8.3.5",
         "prettier": "^2.7.1",
-        "prettier-plugin-tailwindcss": "^0.1.12",
         "tailwindcss": "^2.2.4"
     }
 }
