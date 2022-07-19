@@ -1,35 +1,30 @@
-import{
-    AtSymbolIcon,
-    CashIcon
-} from "@heroicons/react/outline";
-import FooterItem from "./FooterItem";
-import { useState } from "react";
-import Image from "next/image";
+import { AtSymbolIcon, CashIcon } from '@heroicons/react/outline'
+import FooterItem from './FooterItem'
+import { useState } from 'react'
+import Image from 'next/image'
 
 function Footer() {
-
     // const [DonateModal, setDonateModal] = useState(false);
     // const showModal = () => { setDonateModal(true); console.log('happening') };
     // const closeModal = () => { setDonateModal(false) };
 
-    const currentYear = new Date().getFullYear();
+    const currentYear = new Date().getFullYear()
 
     return (
-    <>
-        <footer className="flex-row m-5 justify-between items-center h-auto">
-            <div className="flex flexbox items-center justify-center">
-                {/* <a href="mailto:mail@mail.com"><FooterItem title="CONTACT" Icon={AtSymbolIcon} /></a> */}
-                {/* <div onClick={showModal}><FooterItem title="SUPPORT" Icon={CashIcon}/></div> */}
-                {/* <FooterItem  title="SUPPORT" Icon={GiftIcon} />   */}
-            </div>
+        <>
+            <footer className="m-5 h-auto flex-row items-center justify-between">
+                <div className="flexbox flex items-center justify-center">
+                    {/* <a href="mailto:mail@mail.com"><FooterItem title="CONTACT" Icon={AtSymbolIcon} /></a> */}
+                    {/* <div onClick={showModal}><FooterItem title="SUPPORT" Icon={CashIcon}/></div> */}
+                    {/* <FooterItem  title="SUPPORT" Icon={GiftIcon} />   */}
+                </div>
 
-            <p className="text-center text-xs lg:text-base">
-                &copy; 2021-{currentYear} cohurin. All rights reserved.
-            </p>
+                <p className="text-center text-xs lg:text-base">
+                    &copy; 2021-{currentYear} cohurin. All rights reserved.
+                </p>
+            </footer>
 
-        </footer>
-
-        {/* {DonateModal ? (
+            {/* {DonateModal ? (
             <div className="z-40 items-center justify-center flex fixed inset-0" onClick={() => setDonateModal(false)}>
                 
                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col bg-white outline-none focus:outline-none" onClick={(e) => {e.stopPropagation(); setDonateModal(true)}}>
@@ -60,8 +55,8 @@ function Footer() {
 
             </div>
         ) : null} */}
-    </>
-    );
+        </>
+    )
 }
 
 export default Footer
