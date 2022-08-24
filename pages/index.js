@@ -4,22 +4,22 @@ import Nav_home from '../components/Nav_home'
 import Background from '../components/Background'
 
 export default function Home() {
-    return (
-        <div className="">
-            <div>
-                <Head>
-                    <title>Sho Hihara</title>
-                    <link rel="icon" href="/favicon.ico" />
-                </Head>
+  return (
+    <div className="">
+      <div>
+        <Head>
+          <title>cohurin</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-                <Header_home />
+        <Header_home />
 
-                <Background />
+        <Background />
 
-                {/* <Canvas /> */}
+        {/* <Canvas /> */}
 
-                <Nav_home />
-            </div>
-        </div>
-    )
+        <Nav_home />
+      </div>
+    </div>
+  )
 }

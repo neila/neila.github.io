@@ -1,7 +1,7 @@
 {
-    "functions": {
-        "pages/utils/**": {
-            "excludeFiles": "{public}/**"
-        }
+  "functions": {
+    "pages/utils/**": {
+      "excludeFiles": "{public}/**"
     }
+  }
 }
