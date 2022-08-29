@@ -21,7 +21,7 @@ that i need to behave <br />
 that i need to put on an act
 
 why must i feel <br />
-like must surveil myself <br />
+like I must surveil myself <br />
 and present myself <br />
 as something i am not
 
