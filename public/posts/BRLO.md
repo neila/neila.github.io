@@ -55,6 +55,7 @@ the artist and the mathematician <br />
 the anarchist in the market
 
 because life just is <br />
+and things just are <br />
 and i am just me <br />
 and i am just free
 
