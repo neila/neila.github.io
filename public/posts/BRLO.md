@@ -48,7 +48,7 @@ just <br />
 is.
 
 i am the good and the bad <br />
-the beauty and ugly <br />
+the beauty and the ugly <br />
 the sober and the high <br />
 the monk and the warrior <br />
 the artist and the mathematician <br />
