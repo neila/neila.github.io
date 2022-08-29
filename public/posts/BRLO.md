@@ -7,7 +7,7 @@ tags: '#me'
 
 # BRLO
 
-why it is so hard <br />
+why is it so hard <br />
 to just be who i am
 
 i am free <br />
