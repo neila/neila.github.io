@@ -6,7 +6,7 @@ import Graph from '../../components/Graph'
 import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote } from 'next-mdx-remote'
 
-export default function post({ content }) {
+export default function post({ content }: any) {
   return (
     <div>
       <Head>
@@ -31,9 +31,11 @@ export default function post({ content }) {
   )
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps(context: any) {
   const { params } = context
-  const { data, content } = getAllPosts().find((item) => item.id === params.id)
+  const { data, content }: any = getAllPosts().find(
+    (item) => item.id === params.id
+  )
   const mdxSource = await serialize(content)
 
   return {
@@ -44,7 +46,7 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(['id'])
+  const posts = getAllPosts()
 
   return {
     paths: posts.map((item) => ({
