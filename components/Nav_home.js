@@ -4,7 +4,7 @@ const PageLink = ({ refPage, pageName, color }) => {
   return (
     <Link href={refPage}>
       <div
-        className={`underline text-[${color}] cursor-pointer font-light lg:text-lg lg:no-underline lg:hover:underline`}
+        className={`underline text-[${color}] cursor-pointer font-light desktop:text-lg desktop:no-underline desktop:hover:underline`}
       >
         {pageName}
       </div>
@@ -14,7 +14,7 @@ const PageLink = ({ refPage, pageName, color }) => {
 
 function Nav_home() {
   return (
-    <nav className="fixed bottom-3 right-3 z-10 flex flex-col items-end lg:mb-10 lg:mr-7 lg:space-y-1">
+    <nav className="fixed bottom-3 right-3 z-10 flex flex-col items-end desktop:mb-10 desktop:mr-7 desktop:space-y-1">
       <PageLink refPage="/works" pageName="works" color="#26F7A0" />
       <PageLink refPage="/art" pageName="art" color="#F726DB" />
       <PageLink refPage="/ideas" pageName="ἰδέα" color="#FFDF00" />

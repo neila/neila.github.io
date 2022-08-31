@@ -1,10 +1,23 @@
 module.exports = {
-  mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './utils/**/*.{js,ts,jsx,tsx}',
+    // './hooks/**/*.{js,ts,jsx,tsx}',
+    // './locales/**/*.{js,ts,jsx,tsx}',
+  ],
   darkMode: 'class', // or 'media' or 'true/false'
   theme: {
     rotate: {
       270: '270deg',
+    },
+    screens: {
+      mobile: '320px',
+      tablet: '481px',
+      laptop: '769px',
+      desktop: '1025px',
+      monitor: '1201px',
+      bigmonitor: '1441px',
     },
     fontWeight: {
       hairline: 100,

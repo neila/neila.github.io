@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Header from '../../components/Header'
+
 import Footer from '../../components/Footer'
+import Header from '../../components/Header'
 import Synthfeed1 from '/public/images/Synthfeed_home.png'
 
 const Title = ({ section, color }) => (
@@ -20,12 +21,12 @@ export default function synthfeed() {
 
       <Header />
 
-      <div className="relative min-h-full px-8 lg:mx-24">
+      <div className="relative min-h-full px-8 desktop:mx-24">
         <div className="relative flex justify-between px-2">
           <div className="relative h-full flex-grow text-[#6BADDC]">
             <Title section="SynthFeed" color="text-[#00CC30]" />
 
-            <div className="left-2 mt-10 lg:ml-32 lg:mt-16 lg:w-4/6 2xl:ml-48 2xl:w-1/2 ">
+            <div className="left-2 mt-10 desktop:ml-32 desktop:mt-16 desktop:w-4/6 bigmonitor:ml-48 bigmonitor:w-1/2 ">
               <p>
                 <a
                   href="https://synthfeed.com/"

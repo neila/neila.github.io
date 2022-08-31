@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Header from '../../components/Header'
+
 import Footer from '../../components/Footer'
+import Header from '../../components/Header'
 import Songrec from '/public/images/songrec.png'
 
 const Title = ({ section, color }) => (
@@ -20,12 +21,12 @@ export default function radio() {
 
       <Header />
 
-      <div className="relative min-h-full px-8 lg:mx-24">
+      <div className="relative min-h-full px-8 desktop:mx-24">
         <div className="relative flex justify-between px-2">
           <div className="relative h-full flex-grow text-[#C9CBC5]">
             <Title section="Radio algorithm" color="text-[#6CC417]" />
 
-            <div className="left-2 mt-10 lg:ml-32 lg:w-4/6 2xl:ml-48 2xl:mt-16 2xl:w-1/2 ">
+            <div className="left-2 mt-10 desktop:ml-32 desktop:w-4/6 bigmonitor:ml-48 bigmonitor:mt-16 bigmonitor:w-1/2 ">
               <p>
                 I implemented an algorithm that takes a user's input as a song
                 title and returns the list of songs that should be played in

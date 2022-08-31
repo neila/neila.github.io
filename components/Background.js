@@ -120,7 +120,7 @@ const Background = () => {
     <>
       <Particles init={particlesInit} options={options} />
 
-      <Particles
+      {/* <Particles
         width="100%"
         height="100vh"
         id="tsparticles"
@@ -340,7 +340,7 @@ const Background = () => {
           },
           retina_detect: true,
         }}
-      />
+      /> */}
     </>
   )
 }

@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Header from '../../components/Header'
+
 import Footer from '../../components/Footer'
+import Header from '../../components/Header'
+import LondonBridges from '/public/images/LondonBridges.png'
 import LondonGeo from '/public/images/LondonGeo.png'
 import LondonNetwork from '/public/images/LondonNetwork.png'
-import LondonBridges from '/public/images/LondonBridges.png'
 import Sim1 from '/public/images/Sim1.png'
 import Sim2 from '/public/images/Sim2.png'
 import Sim3 from '/public/images/Sim3.png'
@@ -28,7 +29,7 @@ export default function ERsim() {
 
       <Header />
 
-      <div className="relative z-0 min-h-full bg-[#EDFF21] px-8 text-black lg:mx-24">
+      <div className="relative z-0 min-h-full bg-[#EDFF21] px-8 text-black desktop:mx-24">
         <div className="relative flex justify-between px-8">
           <div className="absolute inset-y-0  -left-8 h-full w-1/12 bg-[#005EB8] "></div>
           <div className="absolute inset-y-0  -left-1 h-full w-1/12 bg-[#00A499] "></div>
@@ -38,7 +39,7 @@ export default function ERsim() {
           <div className="relative h-full flex-grow">
             <Title section="London: Emergency response simulation" />
 
-            <div className="left-2 mt-10 md:ml-32 md:w-4/6 lg:ml-48 lg:mt-16 lg:w-1/2 ">
+            <div className="left-2 mt-10 laptop:ml-32 laptop:w-4/6 desktop:ml-48 desktop:mt-16 desktop:w-1/2 ">
               <h3>
                 <em>
                   Aim: <br /> Optimizing emergency medical response time in
@@ -64,15 +65,15 @@ export default function ERsim() {
               </p>
 
               <br />
-              <div className="items-center justify-start lg:flex lg:flex-row">
-                <div className="lg:w-4/6 2xl:w-1/2">
+              <div className="items-center justify-start desktop:flex desktop:flex-row">
+                <div className="desktop:w-4/6 bigmonitor:w-1/2">
                   <Image
                     className="h-full w-full rounded-full object-cover"
                     src={LondonGeo}
                     alt="London regions, visualized"
                   />
                 </div>
-                <div className="lg:w-4/6 2xl:w-1/2">
+                <div className="desktop:w-4/6 bigmonitor:w-1/2">
                   <Image
                     className="h-full w-full object-cover"
                     src={LondonNetwork}

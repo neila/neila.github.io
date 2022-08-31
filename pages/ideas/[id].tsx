@@ -1,10 +1,11 @@
-import { getAllPosts } from '../../utils/postid'
+import { MDXRemote } from 'next-mdx-remote'
+import { serialize } from 'next-mdx-remote/serialize'
 import Head from 'next/head'
-import Header from '../../components/Header'
+
 import Footer from '../../components/Footer'
 import Graph from '../../components/Graph'
-import { serialize } from 'next-mdx-remote/serialize'
-import { MDXRemote } from 'next-mdx-remote'
+import Header from '../../components/Header'
+import { getAllPosts } from '../../utils/postid'
 
 export default function post({ content }: any) {
   return (
@@ -15,8 +16,8 @@ export default function post({ content }: any) {
 
       <Header />
 
-      <div className="mx-auto mt-10 lg:w-2/3">
-        <div className="prose p-3 lg:prose-lg lg:p-8">
+      <div className="mx-auto mt-10 desktop:w-2/3">
+        <div className="prose p-3 desktop:prose-lg desktop:p-8">
           <MDXRemote {...content} />
         </div>
 
@@ -34,7 +35,7 @@ export default function post({ content }: any) {
 export async function getStaticProps(context: any) {
   const { params } = context
   const { data, content }: any = getAllPosts().find(
-    (item) => item.id === params.id
+    (item) => item.id === params.id,
   )
   const mdxSource = await serialize(content)
 

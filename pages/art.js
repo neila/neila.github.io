@@ -1,15 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Header from '../components/Header'
+
 import Footer from '../components/Footer'
+import Header from '../components/Header'
 import bbl from '/public/images/bigbanglove.png'
-import drd from '/public/images/deepreason_depression.png'
-import gsh from '/public/images/galactic_superhighway.png'
 import btt from '/public/images/biggerthanthou.png'
-import p35 from '/public/images/polygon35.png'
-import dghn from '/public/images/flower2.svg'
 import cdflp from "/public/images/candyflippin' (oops).png"
+import drd from '/public/images/deepreason_depression.png'
+import dghn from '/public/images/flower2.svg'
+import gsh from '/public/images/galactic_superhighway.png'
+import p35 from '/public/images/polygon35.png'
 import rwkng from '/public/images/RUNAWAY_KING.jpg'
 
 const Title = ({ section, color }) => (
@@ -28,7 +29,7 @@ const ArtWork = (props) => {
       />
       <div className="w-full">
         <div className="mx-auto w-4/5 text-center">
-          <p className="text-sm font-hairline lg:font-thin">{caption}</p>
+          <p className="text-sm font-hairline desktop:font-thin">{caption}</p>
         </div>
       </div>
     </div>
@@ -50,7 +51,7 @@ export default function art() {
 
       {/* content */}
       <section className="">
-        <div className="mx-auto flex flex-wrap justify-center p-4 lg:grid lg:w-4/5 lg:grid-cols-6">
+        <div className="mx-auto flex flex-wrap justify-center p-4 desktop:grid desktop:w-4/5 desktop:grid-cols-6">
           <ArtWork
             colStart="col-start-1"
             colSpan="col-span-2"

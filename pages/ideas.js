@@ -1,13 +1,14 @@
+import dateFormat from 'dateformat'
+import fs from 'fs'
+import matter from 'gray-matter'
 import Head from 'next/head'
 import Link from 'next/link'
-import Header from '../components/Header'
+import path from 'path'
+import React from 'react'
+
 import Footer from '../components/Footer'
 import Graph from '../components/Graph'
-import React from 'react'
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-import dateFormat from 'dateformat'
+import Header from '../components/Header'
 
 const Title = ({ section, color }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
@@ -32,11 +33,10 @@ export default function ideas({ postsList }) {
       <div className="min-h-full p-8">
         <div className="mx-auto max-w-4xl space-y-16">
           {/* intro */}
-          <section className="items-start lg:flex">
-            <div className="mx-auto space-y-5 leading-snug lg:w-4/5">
+          <section className="items-start desktop:flex">
+            <div className="mx-auto space-y-5 leading-snug desktop:w-4/5">
               <p>
-                {' '}
-                My biological brain is far too{' '}
+                My biological brain is far too
                 <a
                   href="https://doi.apa.org/doiLanding?doi=10.1037%2F0278-7393.20.5.1063"
                   target="_blank"
@@ -60,7 +60,7 @@ export default function ideas({ postsList }) {
                 </a>
                 , to which we still owe its use today.
               </p>
-              <div className="relative mx-auto lg:w-3/5">
+              <div className="relative mx-auto desktop:w-3/5">
                 <blockquote className="relative border-l-4 p-4 text-center text-xl italic">
                   <p className="mb-4">"Ego cogito, ergo sum"</p>
                   <cite className="ml-16 text-base">- René Descartes</cite>
@@ -81,8 +81,8 @@ export default function ideas({ postsList }) {
                   }}
                 >
                   <div>
-                    <h3 className="truncate text-base lg:text-lg">{id}</h3>
-                    <p className="truncate text-xs lg:text-sm">
+                    <h3 className="truncate text-base desktop:text-lg">{id}</h3>
+                    <p className="truncate text-xs desktop:text-sm">
                       {dateFormat(date_created, 'yyyy-mm-dd', true)} | {tags}
                     </p>
                   </div>

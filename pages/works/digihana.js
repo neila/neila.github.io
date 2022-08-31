@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Header from '../../components/Header'
+
 import Footer from '../../components/Footer'
+import Header from '../../components/Header'
 import flower1 from '/public/images/flower1.svg'
 import flower2 from '/public/images/flower2.svg'
 
@@ -24,7 +25,7 @@ export default function digihana() {
 
       <Header />
 
-      <div className="relative min-h-full px-8 lg:mx-24">
+      <div className="relative min-h-full px-8 desktop:mx-24">
         <div className="relative flex justify-between px-2">
           <div className="relative h-full flex-grow">
             <Title
@@ -34,7 +35,7 @@ export default function digihana() {
               colorh="bg-clip-text text-transparent bg-gradient-to-b from-[#833AB4] to-[#FD1D1D]"
             />
 
-            <div className="left-2 mt-10 lg:ml-32 lg:w-4/6 2xl:ml-48 2xl:mt-16 2xl:w-1/2">
+            <div className="left-2 mt-10 desktop:ml-32 desktop:w-4/6 bigmonitor:ml-48 bigmonitor:mt-16 bigmonitor:w-1/2">
               <div className="flex">
                 <Image src={flower1} />
                 <Image src={flower2} />
@@ -69,7 +70,7 @@ export default function digihana() {
               <br />
               <p>
                 Collection ID <br />{' '}
-                <span className="text-xs sm:text-lg">
+                <span className="text-xs tablet:text-lg">
                   0x5b54de188a660dbf5e2ba6935ce1d70669348ea0
                 </span>
               </p>
@@ -105,7 +106,7 @@ export default function digihana() {
                 If there's enough interest, I hope to release it on the main
                 Ethereum network. If anyone is willing to contribute some ETH to
                 do this, my wallet is <br />
-                <span className="text-xs sm:text-lg">
+                <span className="text-xs tablet:text-lg">
                   0xd202014D97C95eC6aE01a0e947fD352b54d6effd
                 </span>
                 .
