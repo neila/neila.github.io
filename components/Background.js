@@ -1,31 +1,129 @@
-import React from 'react'
+import { useCallback, useMemo } from 'react'
 import Particles from 'react-tsparticles'
+import { loadFull } from 'tsparticles'
+import { tsparticles } from 'tsparticles-engine'
 
-export default class extends React.Component {
-  constructor(props) {
-    super(props)
+const Background = () => {
+  const options = useMemo(() => {
+    return {
+      fpsLimit: 60,
+      interactivity: {
+        detectsOn: 'canvas',
+        events: {
+          resize: true,
+          onClick: {
+            enable: true,
+            mode: 'push',
+          },
+          onHover: {
+            enable: true,
+            mode: 'repulse',
+          },
+        },
+        modes: {
+          push: {
+            quantity: 40,
+          },
+          repulse: {
+            distance: 80,
+            duration: 1.0,
+          },
+        },
+      },
+      // particles: {
+      //   color: {
+      //     value: '#f00',
+      //   },
+      //   move: {
+      //     enable: true,
+      //     speed: { min: 1, max: 3 },
+      //   },
+      //   size: {
+      //     value: { min: 1, max: 3 },
+      //   },
+      // },
+      particles: {
+        color: {
+          value: '#f00',
+          animation: {
+            enable: true,
+            speed: 10,
+            sync: true,
+          },
+        },
+        move: {
+          enable: true,
+          speed: { min: 1, max: 3 },
+          direction: 'none',
+          trail: {
+            enable: true,
+            fillColor: '#000000',
+            length: 100,
+          },
+          straight: false,
+          random: false,
+          bounce: false,
+          out_mode: 'out',
+          warp: true,
+          noise: {
+            enable: true,
+            delay: {
+              value: 0.01,
+            },
+          },
+        },
+        number: {
+          density: {
+            enable: true,
+            value_area: 800,
+          },
+          value: 0,
+        },
+        opacity: {
+          anim: {
+            enable: false,
+            opacity_min: 0.1,
+            speed: 1,
+            sync: false,
+          },
+          random: true,
+          value: 0.5,
+        },
+        shape: {
+          character: {
+            fill: false,
+            font: 'Verdana',
+            style: '',
+            value: '*',
+            weight: '400',
+          },
+          polygon: {
+            nb_sides: 5,
+          },
+          stroke: {
+            color: 'random',
+            width: 0,
+          },
+          type: 'circle',
+        },
+        size: {
+          value: 1,
+        },
+      },
+    }
+  }, [])
 
-    this.particlesInit = this.particlesInit.bind(this)
-    this.particlesLoaded = this.particlesLoaded.bind(this)
-  }
+  const particlesInit = useCallback((engine) => {
+    loadFull(engine)
+  }, [])
+  return (
+    <>
+      <Particles init={particlesInit} options={options} />
 
-  particlesInit(main) {
-    console.log(main)
-    // initialize the tsParticles instance (main) here, adding custom shapes or presets
-  }
-
-  particlesLoaded(main) {
-    console.log(main)
-  }
-
-  render() {
-    return (
       <Particles
         width="100%"
         height="100vh"
         id="tsparticles"
-        init={this.particlesInit}
-        loaded={this.particlesLoaded}
         options={{
           fps_limit: 60,
           emitters: [
@@ -227,12 +325,6 @@ export default class extends React.Component {
                 value: '*',
                 weight: '400',
               },
-              image: {
-                height: 100,
-                replace_color: true,
-                src: 'images/github.svg',
-                width: 500,
-              },
               polygon: {
                 nb_sides: 5,
               },
@@ -249,6 +341,8 @@ export default class extends React.Component {
           retina_detect: true,
         }}
       />
-    )
-  }
+    </>
+  )
 }
+
+export default Background
