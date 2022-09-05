@@ -125,7 +125,7 @@ export default function about() {
                 logoname="Node.js"
               />
               <ToolLogo
-                logolink="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                logolink="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
                 logoname="Python"
               />
               {/* <ToolLogo logolink='https://raw.githubusercontent.com/cormullion/julia-logo-graphics/master/images/julia-dots.svg' logoname='Julia'/> */}
