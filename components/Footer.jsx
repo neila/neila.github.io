@@ -1,14 +1,15 @@
-import { AtSymbolIcon, CashIcon } from '@heroicons/react/outline'
-import FooterItem from './FooterItem'
-import { useState } from 'react'
-import Image from 'next/image'
+import { AtSymbolIcon, CashIcon } from "@heroicons/react/outline";
+import Image from "next/image";
+import { useState } from "react";
+
+import FooterItem from "./FooterItem";
 
 function Footer() {
   // const [DonateModal, setDonateModal] = useState(false);
   // const showModal = () => { setDonateModal(true); console.log('happening') };
   // const closeModal = () => { setDonateModal(false) };
 
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <>
@@ -19,14 +20,14 @@ function Footer() {
           {/* <FooterItem  title="SUPPORT" Icon={GiftIcon} />   */}
         </div>
 
-        <p className="text-center text-xs lg:text-base">
-          &copy; 2021-{currentYear} cohurin. All rights reserved.
+        <p className="text-center text-xs desktop:text-base">
+          &copy; 2021-{currentYear} SHØ. All rights reserved.
         </p>
       </footer>
 
       {/* {DonateModal ? (
             <div className="z-40 items-center justify-center flex fixed inset-0" onClick={() => setDonateModal(false)}>
-                
+
                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col bg-white outline-none focus:outline-none" onClick={(e) => {e.stopPropagation(); setDonateModal(true)}}>
 
                     <div className="flex flex-row relative pt-6 pl-6 pr-6 h-16 space-x-4 text-left">
@@ -38,7 +39,7 @@ function Footer() {
                          </div>
                     </div>
 
-                    <div className="flex items-center justify-center lg:justify-start p-3 lg:p-6 rounded-b">
+                    <div className="flex items-center justify-center desktop:justify-start p-3 desktop:p-6 rounded-b">
                         <button
                             className="bg-red-500 text-white font-bold text-sm px-6 py-3 rounded shadow outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                             type="button"
@@ -48,7 +49,7 @@ function Footer() {
                             className="text-black background-transparent font-bold text-sm px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                             type="button"
                             onClick={(e) => {e.stopPropagation(); setDonateModal(false)}}
-                        > Cancel </button>    
+                        > Cancel </button>
                     </div>
 
                 </div>
@@ -56,7 +57,7 @@ function Footer() {
             </div>
         ) : null} */}
     </>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

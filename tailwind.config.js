@@ -1,10 +1,23 @@
 module.exports = {
-  mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'class', // or 'media' or 'true/false'
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./utils/**/*.{js,ts,jsx,tsx}",
+    // './hooks/**/*.{js,ts,jsx,tsx}',
+    // './locales/**/*.{js,ts,jsx,tsx}',
+  ],
+  darkMode: "class", // or 'media' or 'true/false'
   theme: {
     rotate: {
-      270: '270deg',
+      270: "270deg",
+    },
+    screens: {
+      mobile: "320px",
+      tablet: "481px",
+      laptop: "769px",
+      desktop: "1025px",
+      monitor: "1201px",
+      bigmonitor: "1441px",
     },
     fontWeight: {
       hairline: 100,
@@ -18,51 +31,51 @@ module.exports = {
       black: 900,
     },
     fontSize: {
-      xs: '.60rem',
-      sm: '.875rem',
-      tiny: '.875rem',
-      base: '1rem',
-      lg: '1.125rem',
-      xl: '1.25rem',
-      '2xl': '1.5rem',
-      '3xl': '1.875rem',
-      '4xl': '2.25rem',
-      '5xl': '3rem',
-      '6xl': '4rem',
-      '7xl': '5rem',
+      xs: ".60rem",
+      sm: ".875rem",
+      tiny: ".875rem",
+      base: "1rem",
+      lg: "1.125rem",
+      xl: "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "6xl": "4rem",
+      "7xl": "5rem",
     },
     listStyleType: {
-      none: 'none',
-      disc: 'disc',
-      decimal: 'decimal',
-      square: 'square',
+      none: "none",
+      disc: "disc",
+      decimal: "decimal",
+      square: "square",
     },
     extend: {
       typography: {
         DEFAULT: {
           css: {
-            color: '#F9EFF1',
+            color: "#F9EFF1",
             a: {
-              color: '#F9EFF1',
-              '&:hover': {
-                color: '#F8D106',
+              color: "#F9EFF1",
+              "&:hover": {
+                color: "#F8D106",
               },
             },
             h1: {
-              color: '#F9EFF1',
-              fontWeight: '800',
+              color: "#F9EFF1",
+              fontWeight: "800",
             },
             h2: {
-              color: '#F9EFF1',
-              fontWeight: '700',
+              color: "#F9EFF1",
+              fontWeight: "700",
             },
             h3: {
-              color: '#F9EFF1',
-              fontWeight: '600',
+              color: "#F9EFF1",
+              fontWeight: "600",
             },
             h4: {
-              color: '#F9EFF1',
-              fontWeight: '500',
+              color: "#F9EFF1",
+              fontWeight: "500",
             },
           },
         },
@@ -71,11 +84,11 @@ module.exports = {
   },
   variants: {
     extend: {
-      animation: ['group-hover'],
+      animation: ["group-hover"],
     },
   },
   plugins: [
-    require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/typography'),
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/typography"),
   ],
-}
+};

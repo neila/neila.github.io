@@ -1,34 +1,46 @@
 {
+  "name": "akira-portfolio",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix --dir src",
-    "format": "prettier --write --ignore-path .gitignore './**/**/*.{js,jsx,ts,tsx,json}'"
+    "prettier:check": "prettier --ignore-unknown --no-error-on-unmatched-pattern --ignore-path .gitignore --check .",
+    "prettier:format": "prettier --ignore-unknown --no-error-on-unmatched-pattern --ignore-path .gitignore --write ."
   },
   "dependencies": {
-    "@heroicons/react": "^1.0.3",
-    "@loadable/component": "^5.15.0",
-    "@tailwindcss/aspect-ratio": "^0.2.1",
-    "@tailwindcss/typography": "^0.4.1",
-    "dateformat": "^4.5.1",
-    "deploy": "^1.0.3",
-    "fs": "^0.0.1-security",
-    "gray-matter": "^4.0.3",
-    "next": "12",
-    "next-mdx-remote": "^3.0.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-tsparticles": "^1.33.3",
-    "remark": "13",
-    "remark-html": "13",
-    "tslib": "^2.3.1"
+    "@heroicons/react": "^2.0.10",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-particles": "^2.2.4",
+    "tsparticles": "^2.2.4"
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.4",
+    "@trivago/prettier-plugin-sort-imports": "^3.3.0",
+    "@types/node": "18.7.14",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
     "autoprefixer": "^10.2.6",
+    "dateformat": "^5.0.3",
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "gray-matter": "^4.0.3",
+    "next-mdx-remote": "^3.0.4",
     "postcss": "^8.3.5",
     "prettier": "^2.7.1",
-    "tailwindcss": "^2.2.4"
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "remark": "13",
+    "remark-html": "13",
+    "tailwindcss": "^3.1.8",
+    "tslib": "^2.3.1",
+    "typescript": "4.8.2"
   }
 }

@@ -1,7 +1,13 @@
 module.exports = {
-  arrowParens: 'always',
-  singleQuote: true,
+  trailingComma: "all",
   tabWidth: 2,
-  semi: false,
-  tailwindConfig: './tailwind.config.js',
-}
+  singleQuote: false,
+  arrowParens: "always",
+  semi: true,
+  tailwindConfig: "./tailwind.config.js",
+  importOrder: ["^[./]", "^@/(.*)$"],
+  importOrderSeparation: true,
+  importOrderSortSpecifiers: true,
+  importOrderGroupNamespaceSpecifiers: true,
+  importOrderCaseInsensitive: true,
+};

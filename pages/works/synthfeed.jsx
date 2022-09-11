@@ -1,45 +1,46 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
-import Synthfeed1 from '/public/images/Synthfeed_home.png'
+import Head from "next/head";
+import Image from "next/image";
+
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import Synthfeed1 from "/public/images/Synthfeed_home.png";
 
 const Title = ({ section, color }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
     <h1 className={color}> {section} </h1>
   </div>
-)
+);
 
 export default function synthfeed() {
   return (
     <div className="">
       <Head>
-        <title>Synthfeed - cohurin</title>
+        <title>Synthfeed - SHØ</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
 
-      <div className="relative min-h-full px-8 lg:mx-24">
+      <div className="relative min-h-full px-8 desktop:mx-24">
         <div className="relative flex justify-between px-2">
           <div className="relative h-full flex-grow text-[#6BADDC]">
             <Title section="SynthFeed" color="text-[#00CC30]" />
 
-            <div className="left-2 mt-10 lg:ml-32 lg:mt-16 lg:w-4/6 2xl:ml-48 2xl:w-1/2 ">
+            <div className="left-2 mt-10 desktop:ml-32 desktop:mt-16 desktop:w-4/6 bigmonitor:ml-48 bigmonitor:w-1/2 ">
               <p>
                 <a
                   href="https://synthfeed.com/"
                   className="text-[#00CC30]"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   SynthFeed
-                </a>{' '}
+                </a>{" "}
                 is an online feedback platform for music producers to get
                 targeted feedback from professionals on creative and technical
-                aspects of their work. Currently, the professional artists
-                providing feedback on SynthFeed have accumulated in total
-                multiple billion streams across different platforms. Upon rounds
-                of design iterations, we launched the service on October 2020.
+                aspects of their work. Synthfeed&apos;s professional artists
+                have accumulated in total multiple billion streams across
+                different platforms.
               </p>
               <div className="mx-auto w-5/6">
                 <br />
@@ -48,21 +49,16 @@ export default function synthfeed() {
                   href="https://synthfeed.com/feedback-report-demo"
                   className="text-[#00CC30]"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   feedback demo
                 </a>
                 <br />
               </div>
-              <p>
-                I joined the team in June 2020 until service launch to assist
-                the website design and development process, including color,
-                typography, and UI.
-              </p>
               <br />
               <p>
-                <b>Client side:</b> Vue.js + Vuetify UI framework. <br />
-                <b>Backend:</b> firebase authentication, file storage/audio
-                player, user access levels, cloud analytics.
+                Vue.js + Vuetify UI framework, firebase authentication, file
+                storage/audio player, user access levels, cloud analytics
               </p>
             </div>
 
@@ -71,5 +67,5 @@ export default function synthfeed() {
         </div>
       </div>
     </div>
-  )
+  );
 }

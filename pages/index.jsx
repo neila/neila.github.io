@@ -1,14 +1,15 @@
-import Head from 'next/head'
-import Header_home from '../components/Header_home'
-import Nav_home from '../components/Nav_home'
-import Background from '../components/Background'
+import Head from "next/head";
+
+import Background from "../components/Background";
+import Header_home from "../components/Header_home";
+import Nav_home from "../components/Nav_home";
 
 export default function Home() {
   return (
     <div className="">
       <div>
         <Head>
-          <title>cohurin</title>
+          <title>SHØ</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -21,5 +22,5 @@ export default function Home() {
         <Nav_home />
       </div>
     </div>
-  )
+  );
 }

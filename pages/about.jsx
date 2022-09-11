@@ -1,30 +1,31 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import profilePic from '/public/images/profilePic.png'
-import { LocationMarkerIcon } from '@heroicons/react/outline'
+import { MapPinIcon } from "@heroicons/react/24/outline";
+import Head from "next/head";
+import Image from "next/image";
+
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import profilePic from "/public/images/profilePic.png";
 
 const Title = ({ section, color }) => {
   return (
     <div className="mt-5 mb-7 flex-grow-0 text-center">
       <h1 className={color}> {section} </h1>
     </div>
-  )
-}
+  );
+};
 
 const ToolLogo = ({ logolink, logoname }) => {
   return (
-    <div className="lg:h-30 lg:w-30 relative h-20 w-20 lg:m-2">
+    <div className="desktop:h-30 desktop:w-30 relative h-20 w-20 desktop:m-2">
       <Image
         src={logolink}
-        alt={logoname + ' logo'}
+        alt={logoname + " logo"}
         layout="fill"
         className="opacity-100"
       />
     </div>
-  )
-}
+  );
+};
 
 export default function about() {
   return (
@@ -40,11 +41,11 @@ export default function about() {
 
       {/* profile pic */}
       {/* td: breathing Halftone effect */}
-      <div className="mx-auto flex h-32 w-32 justify-center overflow-hidden lg:h-72 lg:w-72">
+      <div className="mx-auto flex h-32 w-32 justify-center overflow-hidden desktop:h-72 desktop:w-72">
         <Image
           src={profilePic}
           alt="profile image"
-          className="border-none align-middle lg:rounded-3xl"
+          className="border-none align-middle rounded-full"
         />
       </div>
 
@@ -52,46 +53,43 @@ export default function about() {
       <div className="min-h-full p-8">
         <div className="mx-auto max-w-4xl space-y-24">
           {/* intro */}
-          <section className="flex-col items-start lg:flex">
-            <div className="mx-auto space-y-5 leading-snug lg:w-4/5">
+          <section className="flex-col items-start desktop:flex">
+            <div className="mx-auto space-y-5 leading-snug desktop:w-4/5">
               <p>
-                {' '}
                 <a
                   href="https://www.youtube.com/watch?v=UL5x60lpGIE"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Konnichiwa
                 </a>
-                . I'm cohurin, a creative developer from Japan. <em>Time</em>'s
-                2006 person of the year.{' '}
+                . I&apos;m SHØ, a creative developer from Japan. <em>Time</em>
+                &apos;s 2006 person of the year.
               </p>
               <p>
-                {' '}
                 I like questioning things; perhaps even more than finding
-                answers to them.{' '}
+                answers to them.
               </p>
               <p>
-                {' '}
-                I seek joy in the{' '}
+                I seek joy in the{" "}
                 <a
                   href="https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   small things
                 </a>
                 , like sleeping in makeshift spaces, or finding evidence of
-                cultural context in everyday life.{' '}
+                cultural context in everyday life.
               </p>
 
               <div className="mx-auto flex w-min flex-row items-center whitespace-nowrap rounded-md bg-[#7D8491] p-2 font-normal">
-                <div className="mx-1 h-6 w-6">
-                  {' '}
-                  <LocationMarkerIcon />{' '}
-                </div>
+                <MapPinIcon className="mx-1 h-6 w-6" />
                 <a
                   className="mr-1 hover:text-red-500"
                   href="https://www.youtube.com/watch?v=SZzjw2UfUEk"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Tokyo, Japan
                 </a>
@@ -100,11 +98,11 @@ export default function about() {
           </section>
 
           {/* tools */}
-          <section className="items-start space-x-0 space-y-1 lg:flex lg:space-x-10">
-            <div className="top-72 transform space-y-1 lg:sticky lg:w-0 lg:translate-y-10 lg:rotate-270">
+          <section className="items-start space-x-0 space-y-1 desktop:flex desktop:space-x-10">
+            <div className="top-72 transform space-y-1 desktop:sticky desktop:w-0 desktop:translate-y-10 desktop:rotate-270">
               <h2> Current Toolkit</h2>
             </div>
-            <div className="flex flex-wrap justify-start gap-1 lg:w-full">
+            <div className="flex flex-wrap justify-start gap-1 desktop:w-full">
               <ToolLogo
                 logolink="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png"
                 logoname="Notion"
@@ -130,7 +128,7 @@ export default function about() {
                 logoname="Node.js"
               />
               <ToolLogo
-                logolink="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                logolink="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
                 logoname="Python"
               />
               {/* <ToolLogo logolink='https://raw.githubusercontent.com/cormullion/julia-logo-graphics/master/images/julia-dots.svg' logoname='Julia'/> */}
@@ -148,11 +146,11 @@ export default function about() {
               />
             </div>
           </section>
-          <section className="items-start space-x-0 space-y-1 lg:flex lg:space-x-10">
-            <div className="top-72 transform space-y-1 lg:sticky lg:w-0 lg:translate-y-10 lg:rotate-270">
+          <section className="items-start space-x-0 space-y-1 desktop:flex desktop:space-x-10">
+            <div className="top-72 transform space-y-1 desktop:sticky desktop:w-0 desktop:translate-y-10 desktop:rotate-270">
               <h2>Past Tools</h2>
             </div>
-            <div className="flex flex-wrap justify-start gap-1 lg:w-full">
+            <div className="flex flex-wrap justify-start gap-1 desktop:w-full">
               <ToolLogo
                 logolink="https://www.r-project.org/logo/Rlogo.svg"
                 logoname="R"
@@ -177,17 +175,17 @@ export default function about() {
           </section>
 
           {/* skills */}
-          <section className="items-start space-x-0 lg:flex lg:space-x-10">
-            <div className="top-72 transform space-y-1 lg:sticky lg:w-0 lg:translate-y-10 lg:rotate-270">
+          <section className="items-start space-x-0 desktop:flex desktop:space-x-10">
+            <div className="top-72 transform space-y-1 desktop:sticky desktop:w-0 desktop:translate-y-10 desktop:rotate-270">
               <h2>Skills</h2>
             </div>
-            <div className="mx-auto space-y-5 leading-snug lg:w-full">
+            <div className="mx-auto space-y-5 leading-snug desktop:w-full">
               {/*<SkillTree classNamecontent='w-full h-screen bg-purple-400 rounded-md border-double border-4 border-light-blue-500'/>*/}
               <ul className="list-inside list-disc space-y-3 leading-snug">
                 <li>
                   Web design & development
                   <ul className="ml-12 list-none">
-                    <li>DRY patterns/modular programming</li>{' '}
+                    <li>DRY patterns/modular programming</li>{" "}
                     <li>Responsive web design</li> <li>IxD</li>
                   </ul>
                 </li>
@@ -200,15 +198,15 @@ export default function about() {
                 <li>
                   Machine learning & AI
                   <ul className="ml-12 list-none">
-                    <li>NLP</li> <li>Analytical forecasting</li>{' '}
+                    <li>NLP</li> <li>Analytical forecasting</li>{" "}
                     <li>Recommendation systems</li>
                   </ul>
                 </li>
                 <li>
                   Simulation & modeling
                   <ul className="ml-12 list-none">
-                    <li>Scenario optimization</li>{' '}
-                    <li>Game theory simulations</li>{' '}
+                    <li>Scenario optimization</li>
+                    <li>Game theory simulations</li>
                     <li>Computational physics</li>
                   </ul>
                 </li>
@@ -217,22 +215,22 @@ export default function about() {
           </section>
 
           {/* education */}
-          {/* <section className="lg:flex space-x-0 space-y-1 lg:space-x-10 items-start">
-                        <div className="transform lg:w-0 lg:rotate-270 lg:translate-y-24 lg:sticky top-72">
+          {/* <section className="desktop:flex space-x-0 space-y-1 desktop:space-x-10 items-start">
+                        <div className="transform desktop:w-0 desktop:rotate-270 desktop:translate-y-24 desktop:sticky top-72">
                             <h2>Education</h2>
                         </div>
-                        <ul className="lg:w-full mx-auto leading-snug space-y-3">
+                        <ul className="desktop:w-full mx-auto leading-snug space-y-3">
                             <div>🎓 Minerva University '21 (B.Sc.)</div>
                             <div>🎓 Pearson College UWC '17 (IB Diploma)</div>
                         </ul>
                     </section> */}
 
           {/* awards */}
-          {/* <section className="lg:flex space-x-0 space-y-1 lg:space-x-10 items-start">
-                        <div className="transform lg:w-0 lg:rotate-270  lg:translate-y-16 lg:sticky top-72">
+          {/* <section className="desktop:flex space-x-0 space-y-1 desktop:space-x-10 items-start">
+                        <div className="transform desktop:w-0 desktop:rotate-270  desktop:translate-y-16 desktop:sticky top-72">
                             <h2>Awards</h2>
                         </div>
-                        <ul className="lg:w-full mx-auto leading-snug space-y-3">
+                        <ul className="desktop:w-full mx-auto leading-snug space-y-3">
                             <div>🏆 Fellow, '17-pres. // Masason foundation</div>
                             <div>🏆 National committee scholar '15-'17 // United World Colleges Japan</div>
                         </ul>
@@ -243,5 +241,5 @@ export default function about() {
       {/* Lower menu + copyright */}
       <Footer />
     </div>
-  )
+  );
 }
