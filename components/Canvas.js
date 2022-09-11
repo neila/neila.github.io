@@ -28,7 +28,7 @@ function Canvas(props) {
 
     context.fillStyle = 'white'
     context.font = '30px Verdana'
-    context.fillText('cohurin', 0, 40)
+    context.fillText('SH0', 0, 40)
 
     const dataCoordinates = context.getImageData(0, 0, 200, 100)
 
