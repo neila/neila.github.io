@@ -97,6 +97,46 @@ export default function about() {
             </div>
           </section>
 
+          {/* skills */}
+          <section className="items-start space-x-0 desktop:flex desktop:space-x-10">
+            <div className="top-72 transform space-y-1 desktop:sticky desktop:w-0 desktop:translate-y-10 desktop:rotate-270">
+              <h2>Skills</h2>
+            </div>
+            <div className="mx-auto space-y-5 leading-snug desktop:w-full">
+              {/*<SkillTree classNamecontent='w-full h-screen bg-purple-400 rounded-md border-double border-4 border-light-blue-500'/>*/}
+              <ul className="list-inside list-disc space-y-3 leading-snug">
+                <li>
+                  Web design & development
+                  <ul className="ml-12 list-none">
+                    <li>DRY patterns/modular programming</li>{" "}
+                    <li>Responsive web design</li> <li>IxD</li>
+                  </ul>
+                </li>
+                <li>
+                  Blockchain & web3
+                  <ul className="ml-12 list-none">
+                    <li>smart contracts</li>DeFi<li></li> <li>dApps</li>
+                  </ul>
+                </li>
+                <li>
+                  Machine learning & AI
+                  <ul className="ml-12 list-none">
+                    <li>NLP</li> <li>Analytical forecasting</li>{" "}
+                    <li>Recommendation systems</li>
+                  </ul>
+                </li>
+                <li>
+                  Simulation & modeling
+                  <ul className="ml-12 list-none">
+                    <li>Scenario optimization</li>
+                    <li>Game theory simulations</li>
+                    <li>Computational physics</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </section>
+
           {/* tools */}
           <section className="items-start space-x-0 space-y-1 desktop:flex desktop:space-x-10">
             <div className="top-72 transform space-y-1 desktop:sticky desktop:w-0 desktop:translate-y-10 desktop:rotate-270">
@@ -171,46 +211,6 @@ export default function about() {
                 logolink="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg"
                 logoname="Firebase"
               />
-            </div>
-          </section>
-
-          {/* skills */}
-          <section className="items-start space-x-0 desktop:flex desktop:space-x-10">
-            <div className="top-72 transform space-y-1 desktop:sticky desktop:w-0 desktop:translate-y-10 desktop:rotate-270">
-              <h2>Skills</h2>
-            </div>
-            <div className="mx-auto space-y-5 leading-snug desktop:w-full">
-              {/*<SkillTree classNamecontent='w-full h-screen bg-purple-400 rounded-md border-double border-4 border-light-blue-500'/>*/}
-              <ul className="list-inside list-disc space-y-3 leading-snug">
-                <li>
-                  Web design & development
-                  <ul className="ml-12 list-none">
-                    <li>DRY patterns/modular programming</li>{" "}
-                    <li>Responsive web design</li> <li>IxD</li>
-                  </ul>
-                </li>
-                <li>
-                  Blockchain & web3
-                  <ul className="ml-12 list-none">
-                    <li>smart contracts</li>DeFi<li></li> <li>dApps</li>
-                  </ul>
-                </li>
-                <li>
-                  Machine learning & AI
-                  <ul className="ml-12 list-none">
-                    <li>NLP</li> <li>Analytical forecasting</li>{" "}
-                    <li>Recommendation systems</li>
-                  </ul>
-                </li>
-                <li>
-                  Simulation & modeling
-                  <ul className="ml-12 list-none">
-                    <li>Scenario optimization</li>
-                    <li>Game theory simulations</li>
-                    <li>Computational physics</li>
-                  </ul>
-                </li>
-              </ul>
             </div>
           </section>
 
