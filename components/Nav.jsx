@@ -4,7 +4,7 @@ const PageLink = ({ refPage, pageName, color }) => {
   return (
     <Link href={refPage}>
       <a
-        className={`text-[${color}] cursor-pointer underline text-lg font-light  desktop:text-2xl desktop:no-underline desktop:hover:underline`}
+        className={`text-[${color}] cursor-pointer underline text-lg font-light desktop:text-2xl desktop:no-underline desktop:hover:underline`}
       >
         {pageName}
       </a>

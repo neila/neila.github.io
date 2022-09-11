@@ -5,11 +5,11 @@ import Top from "/public/images/Top.png";
 
 function Header_home() {
   return (
-    <header className="stick container fixed top-0 z-10 flex flex-none">
+    <header className="fixed z-10">
       {/*Logo*/}
       <Link href="/">
         <Image
-          className="align-left cursor-pointer rounded-full object-contain"
+          className="cursor-pointer rounded-full "
           src={Top}
           width={80}
           height={80}

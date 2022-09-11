@@ -6,7 +6,7 @@ import Top from "/public/images/Top.png";
 
 function Header() {
   return (
-    <header className="sticky top-0 z-10 flex items-center align-middle justify-between border-b bg-[#07070D]">
+    <header className="sticky top-0 z-10 flex justify-between border-b bg-[#07070D]">
       {/*Logo*/}
       <Link href="/">
         <Image
