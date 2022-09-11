@@ -1,13 +1,13 @@
-import { MDXRemote } from 'next-mdx-remote'
-import { serialize } from 'next-mdx-remote/serialize'
-import Head from 'next/head'
+import { MDXRemote } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote/serialize";
+import Head from "next/head";
 
-import Footer from '../../components/Footer'
-import Graph from '../../components/Graph'
-import Header from '../../components/Header'
-import { getAllPosts } from '../../utils/postid'
+import Footer from "../../components/Footer";
+import Graph from "../../components/Graph";
+import Header from "../../components/Header";
+import { getAllPosts } from "../../utils/postid";
 
-export default function post({ content }: any) {
+export default function post({ content }) {
   return (
     <div>
       <Head>
@@ -29,25 +29,23 @@ export default function post({ content }: any) {
 
       <Footer />
     </div>
-  )
+  );
 }
 
-export async function getStaticProps(context: any) {
-  const { params } = context
-  const { data, content }: any = getAllPosts().find(
-    (item) => item.id === params.id,
-  )
-  const mdxSource = await serialize(content)
+export async function getStaticProps(context) {
+  const { params } = context;
+  const { data, content } = getAllPosts().find((item) => item.id === params.id);
+  const mdxSource = await serialize(content);
 
   return {
     props: {
       content: mdxSource,
     },
-  }
+  };
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts()
+  const posts = getAllPosts();
 
   return {
     paths: posts.map((item) => ({
@@ -56,5 +54,5 @@ export async function getStaticPaths() {
       },
     })),
     fallback: false,
-  }
+  };
 }

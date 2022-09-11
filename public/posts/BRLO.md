@@ -1,8 +1,8 @@
 ---
-type: '#note'
-date_created: '2022-08-28'
-last_edited: '2021-08-29'
-tags: '#me'
+type: "#note"
+date_created: "2022-08-28"
+last_edited: "2021-08-29"
+tags: "#me"
 ---
 
 # BRLO

@@ -1,22 +1,22 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head";
+import Image from "next/image";
 
-import Footer from '../../components/Footer'
-import Header from '../../components/Header'
-import Algorap1 from '/public/images/Algorap1.svg'
-import Algorap2 from '/public/images/Algorap2.png'
-import Algorap3 from '/public/images/Algorap3.png'
-import Algorap4 from '/public/images/Algorap4.png'
-import Algorap5 from '/public/images/Algorap5.svg'
-import Algorap6_1 from '/public/images/Algorap6_1.png'
-import Algorap6_2 from '/public/images/Algorap6_2.png'
-import Algorap6_3 from '/public/images/Algorap6_3.png'
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import Algorap1 from "/public/images/Algorap1.svg";
+import Algorap2 from "/public/images/Algorap2.png";
+import Algorap3 from "/public/images/Algorap3.png";
+import Algorap4 from "/public/images/Algorap4.png";
+import Algorap5 from "/public/images/Algorap5.svg";
+import Algorap6_1 from "/public/images/Algorap6_1.png";
+import Algorap6_2 from "/public/images/Algorap6_2.png";
+import Algorap6_3 from "/public/images/Algorap6_3.png";
 
 const Title = ({ section, color }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
     <h1 className={color}> {section} </h1>
   </div>
-)
+);
 
 export default function algorap() {
   return (
@@ -43,7 +43,7 @@ export default function algorap() {
               <br />
 
               <p>
-                AlgoRap's songwriting process is divided into three major
+                AlgoRap&apos;s songwriting process is divided into three major
                 subtasks.
               </p>
               <ol className="p-2">
@@ -62,9 +62,9 @@ export default function algorap() {
               <br />
               <h2>Generating Lyrics</h2>
               <p>
-                To generate rap verses, AlgoRap finetunes OpenAI's GPT-2, an
-                unsupervised, general-purpose generative language model based on
-                Transformer architecture. The approach is called the PPLM
+                To generate rap verses, AlgoRap finetunes OpenAI&apos;s GPT-2,
+                an unsupervised, general-purpose generative language model based
+                on Transformer architecture. The approach is called the PPLM
                 (Plug-and-Play Language Model), which combines a pretrained
                 language model with an attribute model to fine-tunes the final
                 output to the style of our choice - in this case, rap lyrics.
@@ -80,11 +80,11 @@ export default function algorap() {
                 databases. Spotify is a music streaming service with millions of
                 songs on its catalogue, and Genius is a digital media company
                 whose website essentially acts a lyrical database. One of
-                Spotify's popular features are the genre-categorized playlists.
-                Below is an example of some of Spotify's featured hip hop
-                playlists. Songs that are in at least one of these Spotify
-                official hip hop playlists were chosen as the lyrical input data
-                for AlgoRap.
+                Spotify&apos;s popular features are the genre-categorized
+                playlists. Below is an example of some of Spotify&apos;s
+                featured hip hop playlists. Songs that are in at least one of
+                these Spotify official hip hop playlists were chosen as the
+                lyrical input data for AlgoRap.
               </p>
               <br />
               <Image src={Algorap3} className="rounded" />
@@ -125,7 +125,7 @@ export default function algorap() {
                 <li>My verses are criminal</li>
                 <li>Efforts are minimal</li>
                 <li>Attack is subliminal</li>
-                <li>We'll put you in a critical</li>
+                <li>We&apos;ll put you in a critical</li>
                 <li>When we invisible</li>
               </ul>
               <p>
@@ -141,14 +141,15 @@ export default function algorap() {
                 <li>What is a magic ring?</li>
               </ul>
               <p>
-                See{' '}
+                See{" "}
                 <a
                   href="https://drive.google.com/drive/folders/13w_n7UNzEaPrk6yLpNp_0GsYC9sB8-I7?usp=sharing"
                   className="hover:text-[#FE0000]"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   here
-                </a>{' '}
+                </a>{" "}
                 for more examples of the generated lyrics.
               </p>
               <br />
@@ -159,8 +160,8 @@ export default function algorap() {
                 different pitches (and that is by limiting ourselves within a
                 four octave range of the chromatic scale) that can be played by
                 a single piano. With rest and release, 50. Even if we assume
-                tempos didn't exist, and 1/16th is the shortest note one can
-                play, mere two measures of this song would have 5032
+                tempos didn&apos;t exist, and 1/16th is the shortest note one
+                can play, mere two measures of this song would have 5032
                 possibilities. Note that this is already limited within the
                 western chromatic scale of expression. So attempting to
                 construct a creative song entirely randomly is, at best, as
@@ -206,38 +207,41 @@ export default function algorap() {
               </p>
               <br />
               <p>
-                The encoding architecture used was Child et. al (2019)'s Sparse
-                Transformers, pre-trained on 2 million parameters (Dhariwal et.
-                al, 2020). The model was then conditioned to audio files of hip
-                hop songs, with the aim to reduce the output entropy and
-                generate audio that better expresses the qualities specific to
-                hip-hop. The generated lyrics from earlier were provided to the
-                model as a context prompt to generate the final latent
-                representation. Finally, during the decoding, it generates a
-                novel compressed representation conditioned on the provided
-                lyrics, which is upsampled back up to raw audio.
+                The encoding architecture used was Child et. al (2019)&apos;s
+                Sparse Transformers, pre-trained on 2 million parameters
+                (Dhariwal et. al, 2020). The model was then conditioned to audio
+                files of hip hop songs, with the aim to reduce the output
+                entropy and generate audio that better expresses the qualities
+                specific to hip-hop. The generated lyrics from earlier were
+                provided to the model as a context prompt to generate the final
+                latent representation. Finally, during the decoding, it
+                generates a novel compressed representation conditioned on the
+                provided lyrics, which is upsampled back up to raw audio.
               </p>
               <p className="p-3 text-center text-[#60A5FA]">
                 <a
                   href="https://drive.google.com/file/d/1rGHbY77GsPKjaz7iGXGG8GcbK6YgHfCs/view?usp=sharing"
                   className="hover:text-[#FE0000]"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Top layer (most coarse)
-                </a>{' '}
+                </a>{" "}
                 &nbsp;&nbsp;&nbsp;
                 <a
                   href="https://drive.google.com/file/d/1dYaSYmoiFRly4UHiXboThcEkR6AG794D/view?usp=sharing"
                   className="hover:text-[#FE0000]"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Middle layer
-                </a>{' '}
+                </a>{" "}
                 &nbsp;&nbsp;&nbsp;
                 <a
                   href="https://drive.google.com/file/d/1zCJPl7INAitD8bbsQG0vylZ3Vnw-Y5gY/view?usp=sharing"
                   className="hover:text-[#FE0000]"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Bottom layer (least coarse)
                 </a>
@@ -256,12 +260,13 @@ export default function algorap() {
               <br />
               <p>
                 I curated a collection of eight songs generated by AlgoRap into
-                an album. It can be accessed via this{' '}
+                an album. It can be accessed via this{" "}
                 <b>
                   <a
                     href="https://drive.google.com/drive/folders/14UNyi2h6KXJwaVIbGr9zz5nVQomnJtae?usp=sharing"
                     className="text-[#FE0000]"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     ALBUM LINK
                   </a>
@@ -275,5 +280,5 @@ export default function algorap() {
         </div>
       </div>
     </div>
-  )
+  );
 }

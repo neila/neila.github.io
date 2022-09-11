@@ -1,15 +1,15 @@
-import { AtSymbolIcon, CashIcon } from '@heroicons/react/outline'
-import Image from 'next/image'
-import { useState } from 'react'
+import { AtSymbolIcon, CashIcon } from "@heroicons/react/outline";
+import Image from "next/image";
+import { useState } from "react";
 
-import FooterItem from './FooterItem'
+import FooterItem from "./FooterItem";
 
 function Footer() {
   // const [DonateModal, setDonateModal] = useState(false);
   // const showModal = () => { setDonateModal(true); console.log('happening') };
   // const closeModal = () => { setDonateModal(false) };
 
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <>
@@ -57,7 +57,7 @@ function Footer() {
             </div>
         ) : null} */}
     </>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

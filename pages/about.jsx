@@ -1,31 +1,31 @@
-import { MapPinIcon } from '@heroicons/react/24/outline'
-import Head from 'next/head'
-import Image from 'next/image'
+import { MapPinIcon } from "@heroicons/react/24/outline";
+import Head from "next/head";
+import Image from "next/image";
 
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import profilePic from '/public/images/profilePic.png'
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import profilePic from "/public/images/profilePic.png";
 
 const Title = ({ section, color }) => {
   return (
     <div className="mt-5 mb-7 flex-grow-0 text-center">
       <h1 className={color}> {section} </h1>
     </div>
-  )
-}
+  );
+};
 
 const ToolLogo = ({ logolink, logoname }) => {
   return (
     <div className="desktop:h-30 desktop:w-30 relative h-20 w-20 desktop:m-2">
       <Image
         src={logolink}
-        alt={logoname + ' logo'}
+        alt={logoname + " logo"}
         layout="fill"
         className="opacity-100"
       />
     </div>
-  )
-}
+  );
+};
 
 export default function about() {
   return (
@@ -59,21 +59,23 @@ export default function about() {
                 <a
                   href="https://www.youtube.com/watch?v=UL5x60lpGIE"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Konnichiwa
                 </a>
-                . I'm SHØ, a creative developer from Japan. <em>Time</em>'s 2006
-                person of the year.
+                . I&apos;m SHØ, a creative developer from Japan. <em>Time</em>
+                &apos;s 2006 person of the year.
               </p>
               <p>
                 I like questioning things; perhaps even more than finding
                 answers to them.
               </p>
               <p>
-                I seek joy in the{' '}
+                I seek joy in the{" "}
                 <a
                   href="https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   small things
                 </a>
@@ -87,6 +89,7 @@ export default function about() {
                   className="mr-1 hover:text-red-500"
                   href="https://www.youtube.com/watch?v=SZzjw2UfUEk"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Tokyo, Japan
                 </a>
@@ -182,7 +185,7 @@ export default function about() {
                 <li>
                   Web design & development
                   <ul className="ml-12 list-none">
-                    <li>DRY patterns/modular programming</li>{' '}
+                    <li>DRY patterns/modular programming</li>{" "}
                     <li>Responsive web design</li> <li>IxD</li>
                   </ul>
                 </li>
@@ -195,7 +198,7 @@ export default function about() {
                 <li>
                   Machine learning & AI
                   <ul className="ml-12 list-none">
-                    <li>NLP</li> <li>Analytical forecasting</li>{' '}
+                    <li>NLP</li> <li>Analytical forecasting</li>{" "}
                     <li>Recommendation systems</li>
                   </ul>
                 </li>
@@ -238,5 +241,5 @@ export default function about() {
       {/* Lower menu + copyright */}
       <Footer />
     </div>
-  )
+  );
 }

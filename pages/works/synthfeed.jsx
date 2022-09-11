@@ -1,15 +1,15 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head";
+import Image from "next/image";
 
-import Footer from '../../components/Footer'
-import Header from '../../components/Header'
-import Synthfeed1 from '/public/images/Synthfeed_home.png'
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import Synthfeed1 from "/public/images/Synthfeed_home.png";
 
 const Title = ({ section, color }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
     <h1 className={color}> {section} </h1>
   </div>
-)
+);
 
 export default function synthfeed() {
   return (
@@ -32,14 +32,15 @@ export default function synthfeed() {
                   href="https://synthfeed.com/"
                   className="text-[#00CC30]"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   SynthFeed
-                </a>{' '}
+                </a>{" "}
                 is an online feedback platform for music producers to get
                 targeted feedback from professionals on creative and technical
-                aspects of their work. Synthfeed's professional artists have
-                accumulated in total multiple billion streams across different
-                platforms.
+                aspects of their work. Synthfeed&apos;s professional artists
+                have accumulated in total multiple billion streams across
+                different platforms.
               </p>
               <div className="mx-auto w-5/6">
                 <br />
@@ -48,6 +49,7 @@ export default function synthfeed() {
                   href="https://synthfeed.com/feedback-report-demo"
                   className="text-[#00CC30]"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   feedback demo
                 </a>
@@ -65,5 +67,5 @@ export default function synthfeed() {
         </div>
       </div>
     </div>
-  )
+  );
 }

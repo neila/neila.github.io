@@ -1,8 +1,8 @@
 ---
-type: '#note'
-date_created: '2021-09-30'
-last_edited: '2021-09-30'
-tags: '#ramble #birthday #Michelin'
+type: "#note"
+date_created: "2021-09-30"
+last_edited: "2021-09-30"
+tags: "#ramble #birthday #Michelin"
 ---
 
 # Birthday Conspiracy

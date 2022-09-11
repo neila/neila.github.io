@@ -6,7 +6,7 @@ function FooterItem({ Icon, title }) {
         {title}
       </p>
     </div>
-  )
+  );
 }
 
-export default FooterItem
+export default FooterItem;

@@ -1,8 +1,8 @@
 ---
-type: 'daily'
-date_created: '2021-07-28'
-last_edited: '2021-07-28'
-tags: '#digital-garden'
+type: "daily"
+date_created: "2021-07-28"
+last_edited: "2021-07-28"
+tags: "#digital-garden"
 ---
 
 # Digital Garden

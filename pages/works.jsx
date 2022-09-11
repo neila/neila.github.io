@@ -1,23 +1,23 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
 
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import Digihana from '/public/images/digihana.png'
-import AmbulancePic from '/public/images/nhs.jpg'
-import Radio from '/public/images/radio.jpg'
-import Rap from '/public/images/rap.jpg'
-import Synthfeed from '/public/images/Synthfeed.png'
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Digihana from "/public/images/digihana.png";
+import AmbulancePic from "/public/images/nhs.jpg";
+import Radio from "/public/images/radio.jpg";
+import Rap from "/public/images/rap.jpg";
+import Synthfeed from "/public/images/Synthfeed.png";
 
 const Title = ({ section, color }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
     <h1 className={color}> {section} </h1>
   </div>
-)
+);
 
 const WorkTriangleIcon = (props) => {
-  const { pagepath, updown, image } = props
+  const { pagepath, updown, image } = props;
   return (
     <Link href={pagepath}>
       <div
@@ -26,8 +26,8 @@ const WorkTriangleIcon = (props) => {
         <Image className="h-full w-full object-cover" src={image} />
       </div>
     </Link>
-  )
-}
+  );
+};
 
 export default function works() {
   return (
@@ -76,5 +76,5 @@ export default function works() {
       {/* Lower menu + copyright */}
       <Footer />
     </div>
-  )
+  );
 }

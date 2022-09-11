@@ -1,8 +1,8 @@
-import { useCallback, useMemo } from 'react'
-import Particles from 'react-particles'
-import { loadFull } from 'tsparticles'
-import type { Engine } from 'tsparticles-engine'
-import { ISourceOptions } from 'tsparticles-engine'
+import { useCallback, useMemo } from "react";
+import Particles from "react-particles";
+import { loadFull } from "tsparticles";
+import type { Engine } from "tsparticles-engine";
+import { ISourceOptions } from "tsparticles-engine";
 
 const Background = () => {
   // options documentation: https://particles.js.org/docs/interfaces/Options_Interfaces_IOptions.IOptions.html
@@ -16,16 +16,16 @@ const Background = () => {
       fpsLimit: 120,
       fullScreen: true,
       interactivity: {
-        detectsOn: 'canvas',
+        detectsOn: "canvas",
         events: {
           resize: true,
           onClick: {
             enable: true,
-            mode: 'push',
+            mode: "push",
           },
           onHover: {
             enable: true,
-            mode: 'repulse',
+            mode: "repulse",
           },
         },
         modes: {
@@ -55,7 +55,7 @@ const Background = () => {
       particles: {
         bounce: {},
         color: {
-          value: '#f00',
+          value: "#f00",
           animation: {
             enable: true,
             sync: true,
@@ -64,12 +64,12 @@ const Background = () => {
         move: {
           enable: true,
           speed: { min: 1, max: 5 },
-          direction: 'none',
+          direction: "none",
           trail: { enable: true, fillColor: null, length: 100 },
           straight: false,
           random: false,
           bounce: false,
-          out_mode: 'out',
+          out_mode: "out",
           warp: true,
           noise: { enable: true, delay: { value: 0.01 } },
         },
@@ -85,14 +85,14 @@ const Background = () => {
         shape: {
           character: {
             fill: false,
-            font: 'Verdana',
-            style: '',
-            value: '*',
-            weight: '400',
+            font: "Verdana",
+            style: "",
+            value: "*",
+            weight: "400",
           },
           polygon: { nb_sides: 5 },
-          stroke: { color: 'random', width: 0 },
-          type: 'circle',
+          stroke: { color: "random", width: 0 },
+          type: "circle",
         },
         size: { value: 1 },
       },
@@ -101,18 +101,18 @@ const Background = () => {
       responsive: [],
       themes: [],
       zlayers: 100,
-    }
-  }, [])
+    };
+  }, []);
 
   const particlesInit = useCallback(async (engine: Engine) => {
     // await loadFireflyPreset(engine)
-    await loadFull(engine)
-  }, [])
+    await loadFull(engine);
+  }, []);
   return (
     <>
       <Particles init={particlesInit} options={options as ISourceOptions} />
     </>
-  )
+  );
   // <Particles
   //   width="100%"
   //   height="100vh"
@@ -334,6 +334,6 @@ const Background = () => {
   //     retina_detect: true,
   //   }}
   // />
-}
+};
 
-export default Background
+export default Background;

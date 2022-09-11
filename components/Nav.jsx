@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 const PageLink = ({ refPage, pageName, color }) => {
   return (
@@ -9,8 +9,8 @@ const PageLink = ({ refPage, pageName, color }) => {
         {pageName}
       </a>
     </Link>
-  )
-}
+  );
+};
 
 function Nav() {
   return (
@@ -20,7 +20,7 @@ function Nav() {
       <PageLink refPage="/ideas" pageName="ἰδέα" color="#FFDF00" />
       <PageLink refPage="/about" pageName="about" color="#01CDFF" />
     </nav>
-  )
+  );
 }
 
-export default Nav
+export default Nav;

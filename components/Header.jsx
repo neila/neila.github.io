@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
-import Nav from './Nav'
-import Top from '/public/images/Top.png'
+import Nav from "./Nav";
+import Top from "/public/images/Top.png";
 
 function Header() {
   return (
@@ -18,7 +18,7 @@ function Header() {
       </Link>
       <Nav />
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

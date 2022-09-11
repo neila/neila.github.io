@@ -1,23 +1,23 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head";
+import Image from "next/image";
 
-import Footer from '../../components/Footer'
-import Header from '../../components/Header'
-import LondonBridges from '/public/images/LondonBridges.png'
-import LondonGeo from '/public/images/LondonGeo.png'
-import LondonNetwork from '/public/images/LondonNetwork.png'
-import Sim1 from '/public/images/Sim1.png'
-import Sim2 from '/public/images/Sim2.png'
-import Sim3 from '/public/images/Sim3.png'
-import Sim4 from '/public/images/Sim4.png'
-import Sim5 from '/public/images/Sim5.png'
-import Sim6 from '/public/images/Sim6.png'
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import LondonBridges from "/public/images/LondonBridges.png";
+import LondonGeo from "/public/images/LondonGeo.png";
+import LondonNetwork from "/public/images/LondonNetwork.png";
+import Sim1 from "/public/images/Sim1.png";
+import Sim2 from "/public/images/Sim2.png";
+import Sim3 from "/public/images/Sim3.png";
+import Sim4 from "/public/images/Sim4.png";
+import Sim5 from "/public/images/Sim5.png";
+import Sim6 from "/public/images/Sim6.png";
 
 const Title = ({ section, color }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
     <h1 className={color}> {section} </h1>
   </div>
-)
+);
 
 export default function ERsim() {
   return (
@@ -50,11 +50,12 @@ export default function ERsim() {
               <br />
 
               <p>
-                Using dataset obtained from the{' '}
+                Using dataset obtained from the{" "}
                 <a
                   href="https://movement.uber.com/"
                   className="hover:text-[#00A499]"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Uber Movement database
                 </a>
@@ -87,11 +88,12 @@ export default function ERsim() {
                 Medical emergency events were probabilistically generated across
                 all nodes, with higher crime neighborhoods having a higher
                 probability of such emergencies happening. The crime rate data
-                was obtained from the{' '}
+                was obtained from the{" "}
                 <a
                   href="https://www.met.police.uk/sd/stats-and-data/met/crime-data-dashboard/"
                   className="hover:text-[#00A499]"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   London Metropolitan Police database
                 </a>
@@ -186,5 +188,5 @@ export default function ERsim() {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
-import Top from '/public/images/Top.png'
+import Top from "/public/images/Top.png";
 
 function Header_home() {
   return (
@@ -16,7 +16,7 @@ function Header_home() {
         />
       </Link>
     </header>
-  )
+  );
 }
 
-export default Header_home
+export default Header_home;
