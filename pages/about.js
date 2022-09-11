@@ -62,7 +62,7 @@ export default function about() {
                 >
                   Konnichiwa
                 </a>
-                . I'm Sho, a creative developer from Japan. <em>Time</em>'s 2006
+                . I'm SH0, a creative developer from Japan. <em>Time</em>'s 2006
                 person of the year.
               </p>
               <p>
