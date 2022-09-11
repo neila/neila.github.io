@@ -3,18 +3,18 @@ import Link from 'next/link'
 const PageLink = ({ refPage, pageName, color }) => {
   return (
     <Link href={refPage}>
-      <div
-        className={`underline text-[${color}] cursor-pointer font-light desktop:text-lg desktop:no-underline desktop:hover:underline`}
+      <a
+        className={`text-[${color}] cursor-pointer underline text-lg font-light  desktop:text-2xl desktop:no-underline desktop:hover:underline`}
       >
         {pageName}
-      </div>
+      </a>
     </Link>
   )
 }
 
-function Nav_home() {
+function Nav() {
   return (
-    <nav className="fixed bottom-3 right-3 z-10 flex flex-col items-end desktop:mb-10 desktop:mr-7 desktop:space-y-1">
+    <nav className="my-6 mx-4 flex flex-row space-x-2 desktop:space-x-4">
       <PageLink refPage="/works" pageName="works" color="#26F7A0" />
       <PageLink refPage="/art" pageName="art" color="#F726DB" />
       <PageLink refPage="/ideas" pageName="ἰδέα" color="#FFDF00" />
@@ -23,4 +23,4 @@ function Nav_home() {
   )
 }
 
-export default Nav_home
+export default Nav
