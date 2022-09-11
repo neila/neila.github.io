@@ -9,7 +9,7 @@ export default function Home() {
     <div className="">
       <div>
         <Head>
-          <title>SH0</title>
+          <title>SHØ</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 

@@ -22,7 +22,7 @@ export default function algorap() {
   return (
     <div className="">
       <Head>
-        <title>AlgoRap - SH0</title>
+        <title>AlgoRap - SHØ</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

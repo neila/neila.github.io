@@ -21,7 +21,7 @@ function Footer() {
         </div>
 
         <p className="text-center text-xs desktop:text-base">
-          &copy; 2021-{currentYear} SH0. All rights reserved.
+          &copy; 2021-{currentYear} SHØ. All rights reserved.
         </p>
       </footer>
 

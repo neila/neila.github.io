@@ -15,7 +15,7 @@ export default function synthfeed() {
   return (
     <div className="">
       <Head>
-        <title>Synthfeed - SH0</title>
+        <title>Synthfeed - SHØ</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -37,10 +37,9 @@ export default function synthfeed() {
                 </a>{' '}
                 is an online feedback platform for music producers to get
                 targeted feedback from professionals on creative and technical
-                aspects of their work. Currently, the professional artists
-                providing feedback on SynthFeed have accumulated in total
-                multiple billion streams across different platforms. Upon rounds
-                of design iterations, we launched the service on October 2020.
+                aspects of their work. Synthfeed's professional artists have
+                accumulated in total multiple billion streams across different
+                platforms.
               </p>
               <div className="mx-auto w-5/6">
                 <br />
@@ -54,16 +53,10 @@ export default function synthfeed() {
                 </a>
                 <br />
               </div>
-              <p>
-                I joined the team in June 2020 until service launch to assist
-                the website design and development process, including color,
-                typography, and UI.
-              </p>
               <br />
               <p>
-                <b>Client side:</b> Vue.js + Vuetify UI framework. <br />
-                <b>Backend:</b> firebase authentication, file storage/audio
-                player, user access levels, cloud analytics.
+                Vue.js + Vuetify UI framework, firebase authentication, file
+                storage/audio player, user access levels, cloud analytics
               </p>
             </div>
 
