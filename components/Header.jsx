@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Nav from "./Nav";
-import Top from "/public/images/Top.png";
+import Top from "/public/images/top_o.png";
 
 function Header() {
   return (

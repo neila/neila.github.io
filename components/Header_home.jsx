@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Top from "/public/images/Top.png";
+import Top from "/public/images/top_o.png";
 
 function Header_home() {
   return (
