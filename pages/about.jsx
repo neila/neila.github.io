@@ -45,7 +45,7 @@ export default function about() {
         <Image
           src={profilePic}
           alt="profile image"
-          className="border-none align-middle rounded-full grayscale hover:grayscale-0"
+          className="border-none align-middle rounded-3xl grayscale hover:grayscale-0"
         />
       </div>
 
