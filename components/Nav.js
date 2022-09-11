@@ -3,11 +3,11 @@ import Link from 'next/link'
 const PageLink = ({ refPage, pageName, color }) => {
   return (
     <Link href={refPage}>
-      <div
+      <a
         className={`text-[${color}] cursor-pointer text-lg font-light underline desktop:text-2xl desktop:no-underline desktop:hover:underline`}
       >
         {pageName}
-      </div>
+      </a>
     </Link>
   )
 }

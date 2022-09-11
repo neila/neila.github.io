@@ -45,7 +45,7 @@ export default function about() {
         <Image
           src={profilePic}
           alt="profile image"
-          className="border-none align-middle desktop:rounded-3xl"
+          className="border-none align-middle rounded-full"
         />
       </div>
 
@@ -70,7 +70,7 @@ export default function about() {
                 answers to them.
               </p>
               <p>
-                I seek joy in the
+                I seek joy in the{' '}
                 <a
                   href="https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things"
                   target="_blank"

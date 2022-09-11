@@ -36,7 +36,7 @@ export default function ideas({ postsList }) {
           <section className="items-start desktop:flex">
             <div className="mx-auto space-y-5 leading-snug desktop:w-4/5">
               <p>
-                My biological brain is far too
+                My biological brain is far too{' '}
                 <a
                   href="https://doi.apa.org/doiLanding?doi=10.1037%2F0278-7393.20.5.1063"
                   target="_blank"
