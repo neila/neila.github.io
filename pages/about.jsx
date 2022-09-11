@@ -216,25 +216,25 @@ export default function about() {
 
           {/* education */}
           {/* <section className="desktop:flex space-x-0 space-y-1 desktop:space-x-10 items-start">
-                        <div className="transform desktop:w-0 desktop:rotate-270 desktop:translate-y-24 desktop:sticky top-72">
-                            <h2>Education</h2>
-                        </div>
-                        <ul className="desktop:w-full mx-auto leading-snug space-y-3">
-                            <div>🎓 Minerva University '21 (B.Sc.)</div>
-                            <div>🎓 Pearson College UWC '17 (IB Diploma)</div>
-                        </ul>
-                    </section> */}
+            <div className="transform desktop:w-0 desktop:rotate-270 desktop:translate-y-24 desktop:sticky top-72">
+              <h2>Education</h2>
+            </div>
+            <ul className="desktop:w-full mx-auto leading-snug space-y-3">
+              <div>🎓 Minerva University '21 (B.Sc.)</div>
+              <div>🎓 Pearson College UWC '17 (IB Diploma)</div>
+            </ul>
+          </section> */}
 
           {/* awards */}
           {/* <section className="desktop:flex space-x-0 space-y-1 desktop:space-x-10 items-start">
-                        <div className="transform desktop:w-0 desktop:rotate-270  desktop:translate-y-16 desktop:sticky top-72">
-                            <h2>Awards</h2>
-                        </div>
-                        <ul className="desktop:w-full mx-auto leading-snug space-y-3">
-                            <div>🏆 Fellow, '17-pres. // Masason foundation</div>
-                            <div>🏆 National committee scholar '15-'17 // United World Colleges Japan</div>
-                        </ul>
-                    </section> */}
+            <div className="transform desktop:w-0 desktop:rotate-270  desktop:translate-y-16 desktop:sticky top-72">
+              <h2>Awards</h2>
+            </div>
+            <ul className="desktop:w-full mx-auto leading-snug space-y-3">
+              <div>🏆 Fellow, '17-pres. // Masason foundation</div>
+              <div>🏆 Scholar, '15-'17 // United World Colleges Japan</div>
+            </ul>
+          </section> */}
         </div>
       </div>
 
