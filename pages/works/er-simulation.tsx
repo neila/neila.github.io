@@ -13,9 +13,9 @@ import Sim4 from "/public/images/Sim4.png";
 import Sim5 from "/public/images/Sim5.png";
 import Sim6 from "/public/images/Sim6.png";
 
-const Title = ({ section, color }) => (
+const Title = (params: { section: string; color?: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
-    <h1 className={color}> {section} </h1>
+    <h1 className={params.color}> {params.section} </h1>
   </div>
 );
 

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -12,13 +12,18 @@ import gsh from "/public/images/galactic_superhighway.png";
 import p35 from "/public/images/polygon35.png";
 import rwkng from "/public/images/RUNAWAY_KING.jpg";
 
-const Title = ({ section, color }) => (
+const Title = (params: { section: string; color: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
-    <h1 className={color}> {section} </h1>
+    <h1 className={params.color}> {params.section} </h1>
   </div>
 );
 
-const ArtWork = (props) => {
+const ArtWork = (props: {
+  colStart: string;
+  colSpan: string;
+  image: StaticImageData;
+  caption: string;
+}) => {
   const { colStart, colSpan, image, caption } = props;
   return (
     <div className={`flex flex-col ${colStart} ${colSpan} m-8`}>

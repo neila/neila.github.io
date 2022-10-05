@@ -5,9 +5,9 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Synthfeed1 from "/public/images/Synthfeed_home.png";
 
-const Title = ({ section, color }) => (
+const Title = (params: { section: string; color: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
-    <h1 className={color}> {section} </h1>
+    <h1 className={params.color}> {params.section} </h1>
   </div>
 );
 

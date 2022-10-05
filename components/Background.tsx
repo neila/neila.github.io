@@ -1,5 +1,5 @@
 import { useCallback, useMemo } from "react";
-import Particles from "react-particles";
+import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import type { Engine } from "tsparticles-engine";
 import { ISourceOptions } from "tsparticles-engine";

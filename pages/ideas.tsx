@@ -10,9 +10,9 @@ import Footer from "../components/Footer";
 import Graph from "../components/Graph";
 import Header from "../components/Header";
 
-const Title = ({ section, color }) => (
+const Title = (params: { section: string; color: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
-    <h1 className={color}> {section} </h1>
+    <h1 className={params.color}> {params.section} </h1>
   </div>
 );
 
@@ -75,25 +75,30 @@ export default function ideas({ postsList }) {
           </section>
 
           <ul className="flex flex-col space-y-2 px-0">
-            {postsList.map(({ id, date_created, tags }) => (
-              <div
-                key={id}
-                className="cursor-pointer rounded-md bg-gradient-to-r from-purple-700 via-blue-400 to-green-500 px-3 align-middle hover:from-pink-500 hover:to-yellow-500"
-              >
-                <Link
-                  href={{
-                    pathname: `/ideas/${encodeURIComponent(id)}`,
-                  }}
+            {postsList.map(
+              (post: { id: string; date_created: string; tags: string }) => (
+                <div
+                  key={post.id}
+                  className="cursor-pointer rounded-md bg-gradient-to-r from-purple-700 via-blue-400 to-green-500 px-3 align-middle hover:from-pink-500 hover:to-yellow-500"
                 >
-                  <div>
-                    <h3 className="truncate text-base desktop:text-lg">{id}</h3>
-                    <p className="truncate text-xs desktop:text-sm">
-                      {dateFormat(date_created, "yyyy-mm-dd", true)} | {tags}
-                    </p>
-                  </div>
-                </Link>
-              </div>
-            ))}
+                  <Link
+                    href={{
+                      pathname: `/ideas/${encodeURIComponent(post.id)}`,
+                    }}
+                  >
+                    <div>
+                      <h3 className="truncate text-base desktop:text-lg">
+                        {post.id}
+                      </h3>
+                      <p className="truncate text-xs desktop:text-sm">
+                        {dateFormat(post.date_created, "yyyy-mm-dd", true)} |{" "}
+                        {post.tags}
+                      </p>
+                    </div>
+                  </Link>
+                </div>
+              ),
+            )}
           </ul>
         </div>
       </div>
@@ -112,7 +117,7 @@ export async function getStaticProps() {
   const postsDirectory = path.join(process.cwd(), "public/posts");
   const fileNames = fs.readdirSync(postsDirectory, "utf8");
 
-  const allPostsData = fileNames.map((fileName) => {
+  const allPostsData = fileNames.map((fileName: string) => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, "");
 
@@ -130,7 +135,7 @@ export async function getStaticProps() {
     };
   });
 
-  const sorted_allPostsData = allPostsData.sort((a, b) => {
+  const sorted_allPostsData = allPostsData.sort((a: any, b: any) => {
     if (a.date_created < b.date_created) {
       return 1;
     } else {

@@ -12,9 +12,9 @@ import Algorap6_1 from "/public/images/Algorap6_1.png";
 import Algorap6_2 from "/public/images/Algorap6_2.png";
 import Algorap6_3 from "/public/images/Algorap6_3.png";
 
-const Title = ({ section, color }) => (
+const Title = (params: { section: string; color: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
-    <h1 className={color}> {section} </h1>
+    <h1 className={params.color}> {params.section} </h1>
   </div>
 );
 
