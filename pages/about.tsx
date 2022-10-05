@@ -6,20 +6,20 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import profilePic from "/public/images/profilePic.png";
 
-const Title = ({ section, color }) => {
+const Title = (params: { section: string; color: string }) => {
   return (
     <div className="mt-5 mb-7 flex-grow-0 text-center">
-      <h1 className={color}> {section} </h1>
+      <h1 className={params.color}> {params.section} </h1>
     </div>
   );
 };
 
-const ToolLogo = ({ logolink, logoname }) => {
+const ToolLogo = (params: { logolink: string; logoname: string }) => {
   return (
     <div className="desktop:h-30 desktop:w-30 relative h-20 w-20 desktop:m-2">
       <Image
-        src={logolink}
-        alt={logoname + " logo"}
+        src={params.logolink}
+        alt={params.logoname + " logo"}
         layout="fill"
         className="opacity-100"
       />
@@ -83,10 +83,10 @@ export default function about() {
                 cultural context in everyday life.
               </p>
 
-              <div className="mx-auto flex w-min flex-row items-center whitespace-nowrap rounded-md bg-[#7D8491] p-2 font-normal">
-                <MapPinIcon className="mx-1 h-6 w-6" />
+              <div className="mx-auto flex w-min flex-row items-center whitespace-nowrap rounded-md bg-[#F9EFF1] p-2 font-normal">
+                <MapPinIcon className="mx-1 h-6 w-6 text-red-400" />
                 <a
-                  className="mr-1 hover:text-red-500"
+                  className="mr-1 text-red-400 hover:text-orange-400"
                   href="https://www.youtube.com/watch?v=SZzjw2UfUEk"
                   target="_blank"
                   rel="noreferrer"

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 import Footer from "../components/Footer";
@@ -10,13 +10,17 @@ import Radio from "/public/images/radio.jpg";
 import Rap from "/public/images/rap.jpg";
 import Synthfeed from "/public/images/Synthfeed.png";
 
-const Title = ({ section, color }) => (
+const Title = (params: { section: string; color: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
-    <h1 className={color}> {section} </h1>
+    <h1 className={params.color}> {params.section} </h1>
   </div>
 );
 
-const WorkTriangleIcon = (props) => {
+const WorkTriangleIcon = (props: {
+  pagepath: string;
+  updown: string;
+  image: StaticImageData;
+}) => {
   const { pagepath, updown, image } = props;
   return (
     <Link href={pagepath}>

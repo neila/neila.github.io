@@ -1,12 +1,16 @@
 import Link from "next/link";
 
-const PageLink = ({ refPage, pageName, color }) => {
+const PageLink = (params: {
+  refPage: string;
+  pageName: string;
+  color: string;
+}) => {
   return (
-    <Link href={refPage}>
+    <Link href={params.refPage}>
       <a
-        className={`underline text-[${color}] cursor-pointer font-light desktop:text-2xl desktop:no-underline desktop:hover:underline`}
+        className={`underline text-[${params.color}] cursor-pointer font-light desktop:text-2xl desktop:no-underline desktop:hover:underline`}
       >
-        {pageName}
+        {params.pageName}
       </a>
     </Link>
   );

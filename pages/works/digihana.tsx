@@ -6,11 +6,16 @@ import Header from "../../components/Header";
 import flower1 from "/public/images/flower1.svg";
 import flower2 from "/public/images/flower2.svg";
 
-const Title = ({ digi, hana, colord, colorh }) => (
+const Title = (params: {
+  digi: string;
+  hana: string;
+  colord: string;
+  colorh: string;
+}) => (
   <div className="mt-5 mb-7 text-center">
     <h1>
-      <span className={colord}>{digi}</span>
-      <span className={colorh}>{hana}</span>
+      <span className={params.colord}>{params.digi}</span>
+      <span className={params.colorh}>{params.hana}</span>
     </h1>
   </div>
 );
