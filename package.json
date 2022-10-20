@@ -1,15 +1,23 @@
 {
   "name": "akira-portfolio",
   "version": "0.1.0",
+  "description": "SHØ porfolio site",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint --fix --dir src",
-    "prettier:check": "prettier --ignore-unknown --no-error-on-unmatched-pattern --ignore-path .gitignore --check .",
-    "prettier:format": "prettier --ignore-unknown --no-error-on-unmatched-pattern --ignore-path .gitignore --write ."
+  "main": "pages/_app.tsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neila/akira-portfolio.git"
   },
+  "author": "SHØ <neila@users.noreply.github.com> (https://akxra.art/)",
+  "contributors": [
+    "SHØ <neila@users.noreply.github.com> (https://akxra.art/)"
+  ],
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/neila/akira-portfolio/issues"
+  },
+  "homepage": "https://akxra.art",
+  "packageManager": "yarn@3.0.0",
   "dependencies": {
     "@heroicons/react": "^2.0.10",
     "next": "12.3.1",
@@ -43,5 +51,12 @@
     "tslib": "^2.3.1",
     "typescript": "4.8.2"
   },
-  "packageManager": "yarn@3.0.0"
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint --fix --dir src",
+    "prettier:check": "prettier --ignore-unknown --no-error-on-unmatched-pattern --ignore-path .gitignore --check .",
+    "prettier:format": "prettier --ignore-unknown --no-error-on-unmatched-pattern --ignore-path .gitignore --write ."
+  }
 }
