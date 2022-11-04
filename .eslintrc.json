@@ -1,13 +1,4 @@
 {
   "extends": ["plugin:@typescript-eslint/recommended", "next", "prettier"],
-  "rules": {
-    "import/order": [
-      "error",
-      {
-        "alphabetize": {
-          "order": "asc"
-        }
-      }
-    ]
-  }
+  "rules": {}
 }
