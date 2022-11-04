@@ -1,14 +1,24 @@
-import dateFormat from "dateformat";
 import fs from "fs";
-import matter from "gray-matter";
+
+import path from "path";
+
 import Head from "next/head";
 import Link from "next/link";
-import path from "path";
-import React from "react";
 
 import Footer from "../components/Footer";
 import Graph from "../components/Graph";
 import Header from "../components/Header";
+import dateFormat from "dateformat";
+import matter from "gray-matter";
+import React from "react";
+
+type Post = {
+  id: string;
+  type: string;
+  date_created: string;
+  last_edited: string;
+  tagas: string;
+};
 
 const Title = (params: { section: string; color: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
@@ -135,7 +145,7 @@ export async function getStaticProps() {
     };
   });
 
-  const sorted_allPostsData = allPostsData.sort((a: any, b: any) => {
+  const sorted_allPostsData = allPostsData.sort((a: Post, b: Post) => {
     if (a.date_created < b.date_created) {
       return 1;
     } else {
