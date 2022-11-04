@@ -1,8 +1,8 @@
-import { AtSymbolIcon, CashIcon } from "@heroicons/react/outline";
 import Image from "next/image";
-import { useState } from "react";
 
 import FooterItem from "./FooterItem";
+import { AtSymbolIcon, CashIcon } from "@heroicons/react/outline";
+import { useState } from "react";
 
 function Footer() {
   // const [DonateModal, setDonateModal] = useState(false);
