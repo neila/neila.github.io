@@ -16,6 +16,7 @@
 /build
 
 # misc
+tsconfig.tsbuildinfo
 .DS_Store
 *.pem
 

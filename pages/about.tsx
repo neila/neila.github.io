@@ -1,10 +1,10 @@
-import { MapPinIcon } from "@heroicons/react/24/outline";
 import Head from "next/head";
 import Image from "next/image";
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import profilePic from "/public/images/profilePic.png";
+import { MapPinIcon } from "@heroicons/react/24/outline";
 
 const Title = (params: { section: string; color: string }) => {
   return (
