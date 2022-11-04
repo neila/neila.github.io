@@ -6,6 +6,6 @@ const buildEslintCommand = (filenames) =>
     .join(" --file ")}`;
 
 module.exports = {
-  "**/*": ["prettier --ignore-unknown --no-error-on-unmatched-pattern --write"],
   "**/*.{js,jsx,ts,tsx}": [buildEslintCommand],
+  "**/*": ["yarn prettier:check"],
 };
