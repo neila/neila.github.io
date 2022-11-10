@@ -26,7 +26,7 @@ export default function radio() {
           <div className="relative h-full flex-grow text-[#C9CBC5]">
             <Title section="Radio algorithm" color="text-[#6CC417]" />
 
-            <div className="left-2 mt-10 desktop:ml-32 desktop:w-4/6 bigmonitor:ml-48 bigmonitor:mt-16 bigmonitor:w-1/2 ">
+            <div className="left-2 mt-10 desktop:ml-32 desktop:w-4/6 bigmonitor:ml-48 bigmonitor:mt-16 bigmonitor:w-1/2">
               <p>
                 I implemented an algorithm that takes a user&apos;s input as a
                 song title and returns the list of songs that should be played

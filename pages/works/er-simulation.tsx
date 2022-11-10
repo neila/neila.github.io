@@ -39,7 +39,7 @@ export default function ERsim() {
           <div className="relative h-full flex-grow">
             <Title section="London: Emergency response simulation" />
 
-            <div className="left-2 mt-10 laptop:ml-32 laptop:w-4/6 desktop:ml-48 desktop:mt-16 desktop:w-1/2 ">
+            <div className="left-2 mt-10 laptop:ml-32 laptop:w-4/6 desktop:ml-48 desktop:mt-16 desktop:w-1/2">
               <h3>
                 <em>
                   Aim: <br /> Optimizing emergency medical response time in

@@ -26,7 +26,7 @@ export default function synthfeed() {
           <div className="relative h-full flex-grow text-[#6BADDC]">
             <Title section="SynthFeed" color="text-[#00CC30]" />
 
-            <div className="left-2 mt-10 desktop:ml-32 desktop:mt-16 desktop:w-4/6 bigmonitor:ml-48 bigmonitor:w-1/2 ">
+            <div className="left-2 mt-10 desktop:ml-32 desktop:mt-16 desktop:w-4/6 bigmonitor:ml-48 bigmonitor:w-1/2">
               <p>
                 <a
                   href="https://synthfeed.com/"
