@@ -1,11 +1,11 @@
 const path = require("path");
 
 const buildEslintCommand = (filenames) =>
-  `next lint --file ${filenames
+  `yarn lint ${filenames
     .map((f) => path.relative(process.cwd(), f))
-    .join(" --file ")}`;
+    .join(" ")}`;
 
 module.exports = {
   "**/*.{js,jsx,ts,tsx}": [buildEslintCommand],
-  "**/*": ["yarn prettier:check"],
+  "**/*": ["yarn format"],
 };
