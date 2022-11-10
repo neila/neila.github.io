@@ -68,11 +68,11 @@ function Canvas(props) {
           this.x -= dir_X;
           this.y -= dir_Y;
         } else {
-          if (this.X != this.baseX) {
+          if (this.X !== this.baseX) {
             let dx = this.x - this.baseX;
             this.x -= dx / 10;
           }
-          if (this.Y != this.baseY) {
+          if (this.Y !== this.baseY) {
             let dy = this.y - this.baseY;
             this.y -= dy / 10;
           }
@@ -107,7 +107,7 @@ function Canvas(props) {
           let dist = Math.sqrt(dx ** 2 + dy ** 2);
 
           opacityValue = 1 - dist / 8;
-          context.strokeStyle = "rgba(255,255,255," + opacityValue + ")";
+          context.strokeStyle = `rgba(255,255,255,${opacityValue})`;
 
           if (dist < 8) {
             context.lineWidth = 2;

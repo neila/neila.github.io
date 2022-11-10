@@ -61,7 +61,7 @@ export default function radio() {
                 catalogue of songs.
               </p>
               <br />
-              <Image src={Songrec} />
+              <Image src={Songrec} alt="" />
               <br />
               <p>
                 <a

@@ -19,7 +19,7 @@ const ToolLogo = (params: { logolink: string; logoname: string }) => {
     <div className="desktop:h-30 desktop:w-30 relative h-20 w-20 desktop:m-2">
       <Image
         src={params.logolink}
-        alt={params.logoname + " logo"}
+        alt={`${params.logoname} logo`}
         layout="fill"
         className="opacity-100"
       />
@@ -84,9 +84,9 @@ export default function about() {
               </p>
 
               <div className="mx-auto flex w-min flex-row items-center whitespace-nowrap rounded-md bg-[#F9EFF1] p-2 font-normal">
-                <MapPinIcon className="mx-1 h-6 w-6 text-red-400" />
+                <MapPinIcon className="mx-1 h-6 w-6 text-red-600" />
                 <a
-                  className="mr-1 text-red-400 hover:text-orange-400"
+                  className="mr-1 text-red-600 hover:text-blue-400"
                   href="https://www.youtube.com/watch?v=SZzjw2UfUEk"
                   target="_blank"
                   rel="noreferrer"
@@ -108,20 +108,24 @@ export default function about() {
                 <li>
                   Web design & development
                   <ul className="ml-12 list-none">
-                    <li>DRY patterns/modular programming</li>{" "}
-                    <li>Responsive web design</li> <li>IxD</li>
+                    <li>DRY patterns/modular programming</li>
+                    <li>Responsive web design</li>
+                    <li>IxD</li>
                   </ul>
                 </li>
                 <li>
                   Blockchain & web3
                   <ul className="ml-12 list-none">
-                    <li>smart contracts</li>DeFi<li></li> <li>dApps</li>
+                    <li>smart contracts</li>
+                    <li>DeFi</li>
+                    <li>dApps</li>
                   </ul>
                 </li>
                 <li>
                   Machine learning & AI
                   <ul className="ml-12 list-none">
-                    <li>NLP</li> <li>Analytical forecasting</li>{" "}
+                    <li>NLP</li>
+                    <li>Analytical forecasting</li>
                     <li>Recommendation systems</li>
                   </ul>
                 </li>

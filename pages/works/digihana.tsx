@@ -42,8 +42,8 @@ export default function digihana() {
 
             <div className="left-2 mt-10 desktop:ml-32 desktop:w-4/6 bigmonitor:ml-48 bigmonitor:mt-16 bigmonitor:w-1/2">
               <div className="flex">
-                <Image src={flower1} />
-                <Image src={flower2} />
+                <Image src={flower1} alt="" />
+                <Image src={flower2} alt="" />
               </div>
               <br />
               <p>

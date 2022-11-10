@@ -6,12 +6,12 @@ const PageLink = (params: {
   color: string;
 }) => {
   return (
-    <Link href={params.refPage}>
-      <a
-        className={`underline text-[${params.color}] cursor-pointer font-light desktop:text-2xl desktop:no-underline desktop:hover:underline`}
-      >
-        {params.pageName}
-      </a>
+    <Link
+      href={params.refPage}
+      passHref={true}
+      className={`underline text-[${params.color}] cursor-pointer font-light desktop:text-2xl desktop:no-underline desktop:hover:underline`}
+    >
+      {params.pageName}
     </Link>
   );
 };

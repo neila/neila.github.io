@@ -44,7 +44,7 @@ export default function synthfeed() {
               </p>
               <div className="mx-auto w-5/6">
                 <br />
-                <Image src={Synthfeed1} />
+                <Image src={Synthfeed1} alt="" />
                 <a
                   href="https://synthfeed.com/feedback-report-demo"
                   className="text-[#00CC30]"

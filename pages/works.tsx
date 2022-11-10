@@ -27,7 +27,11 @@ const WorkTriangleIcon = (props: {
       <div
         className={`relative flex h-36 w-36 desktop:h-72 desktop:w-72 ${updown} cursor-pointer`}
       >
-        <Image className="h-full w-full object-cover" src={image} />
+        <Image
+          className="h-full w-full object-cover"
+          alt={pagepath.split("/").pop()}
+          src={image}
+        />
       </div>
     </Link>
   );

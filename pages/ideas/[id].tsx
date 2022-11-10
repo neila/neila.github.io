@@ -7,11 +7,11 @@ import Graph from "../../components/Graph";
 import Header from "../../components/Header";
 import { getAllPosts } from "../../utils/postid";
 
-export default function post({ content }) {
+export default function post({ content, id }) {
   return (
     <div>
       <Head>
-        <title></title>
+        <title>{id} - SHØ</title>
       </Head>
 
       <Header />
@@ -34,12 +34,15 @@ export default function post({ content }) {
 
 export async function getStaticProps(context) {
   const { params } = context;
-  const { data, content } = getAllPosts().find((item) => item.id === params.id);
+  const { data, content, id } = getAllPosts().find(
+    (item) => item.id === params.id,
+  );
   const mdxSource = await serialize(content);
 
   return {
     props: {
       content: mdxSource,
+      id: id,
     },
   };
 }

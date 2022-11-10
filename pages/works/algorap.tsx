@@ -58,7 +58,7 @@ export default function algorap() {
                 sub-components, which are original rap songs.
               </p>
               <br />
-              <Image src={Algorap1} />
+              <Image src={Algorap1} alt="" />
               <br />
               <h2>Generating Lyrics</h2>
               <p>
@@ -70,7 +70,7 @@ export default function algorap() {
                 output to the style of our choice - in this case, rap lyrics.
               </p>
               <br />
-              <Image src={Algorap2} />
+              <Image src={Algorap2} alt="" />
               <br />
               <p>
                 To fine-tune the GPT-2 for customized output, it requires a
@@ -87,7 +87,7 @@ export default function algorap() {
                 lyrical input data for AlgoRap.
               </p>
               <br />
-              <Image src={Algorap3} className="rounded" />
+              <Image src={Algorap3} className="rounded" alt="" />
               <br />
 
               <p>
@@ -115,7 +115,7 @@ export default function algorap() {
                 language model.
               </p>
               <br />
-              <Image src={Algorap4} />
+              <Image src={Algorap4} alt="" />
               <br />
               <p>
                 The model produces good outputs now and then, such as the
@@ -192,7 +192,7 @@ export default function algorap() {
                 I use.
               </p>
               <br />
-              <Image src={Algorap5} />
+              <Image src={Algorap5} alt="" />
               <br />
               <p>
                 The above illustration shows the three-step encoding process,
@@ -253,9 +253,9 @@ export default function algorap() {
               </p>
               <br />
               <div className="mx-auto w-4/6 justify-center">
-                <Image src={Algorap6_1} />
-                <Image src={Algorap6_2} />
-                <Image src={Algorap6_3} />
+                <Image src={Algorap6_1} alt="" />
+                <Image src={Algorap6_2} alt="" />
+                <Image src={Algorap6_3} alt="" />
               </div>
               <br />
               <p>

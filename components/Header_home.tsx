@@ -10,6 +10,7 @@ function Header_home() {
       <Link href="/">
         <Image
           className="cursor-pointer rounded-full "
+          alt="SHØ logo"
           src={Top}
           width={80}
           height={80}

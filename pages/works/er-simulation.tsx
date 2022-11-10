@@ -31,10 +31,10 @@ export default function ERsim() {
 
       <div className="relative z-0 min-h-full bg-[#EDFF21] px-8 text-black desktop:mx-24">
         <div className="relative flex justify-between px-8">
-          <div className="absolute inset-y-0  -left-8 h-full w-1/12 bg-[#005EB8] "></div>
-          <div className="absolute inset-y-0  -left-1 h-full w-1/12 bg-[#00A499] "></div>
-          <div className="absolute inset-y-0 -right-8 h-full w-1/12 bg-[#005EB8]"></div>
-          <div className="absolute inset-y-0 -right-1 h-full w-1/12 bg-[#00A499]"></div>
+          <div className="absolute inset-y-0 -left-8 h-full w-1/12 bg-[#005EB8]" />
+          <div className="absolute inset-y-0 -left-1 h-full w-1/12 bg-[#00A499]" />
+          <div className="absolute inset-y-0 -right-8 h-full w-1/12 bg-[#005EB8]" />
+          <div className="absolute inset-y-0 -right-1 h-full w-1/12 bg-[#00A499]" />
 
           <div className="relative h-full flex-grow">
             <Title section="London: Emergency response simulation" />
@@ -113,7 +113,7 @@ export default function ERsim() {
               </p>
 
               <br />
-              <Image src={Sim1} />
+              <Image src={Sim1} alt="" />
               <br />
 
               <p>
@@ -125,7 +125,7 @@ export default function ERsim() {
               </p>
 
               <br />
-              <Image src={Sim2} />
+              <Image src={Sim2} alt="" />
               <br />
 
               <p>
@@ -145,7 +145,7 @@ export default function ERsim() {
               </p>
 
               <br />
-              <Image src={Sim3} />
+              <Image src={Sim3} alt="" />
               <br />
 
               <p>
@@ -160,7 +160,7 @@ export default function ERsim() {
               </p>
 
               <br />
-              <Image src={Sim4} />
+              <Image src={Sim4} alt="" />
               <br />
 
               <p>
