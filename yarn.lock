@@ -1056,7 +1056,7 @@ __metadata:
     tailwindcss: ^3.1.8
     tslib: ^2.3.1
     tsparticles: ^2.5.3
-    typescript: 4.8.2
+    typescript: 4.9.3
   languageName: unknown
   linkType: soft
 
@@ -4842,23 +4842,23 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-typescript@4.8.2:
-  version: 4.8.2
-  resolution: "typescript@npm:4.8.2"
+typescript@4.9.3:
+  version: 4.9.3
+  resolution: "typescript@npm:4.9.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 7f5b81d0d558c9067f952c7af52ab7f19c2e70a916817929e4a5b256c93990bf3178eccb1ac8a850bc75df35f6781b6f4cb3370ce20d8b1ded92ed462348f628
+  checksum: 17b8f816050b412403e38d48eef0e893deb6be522d6dc7caf105e54a72e34daf6835c447735fd2b28b66784e72bfbf87f627abb4818a8e43d1fa8106396128dc
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.8.2#~builtin<compat/typescript>":
-  version: 4.8.2
-  resolution: "typescript@patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=d8b4e7"
+"typescript@patch:typescript@4.9.3#~builtin<compat/typescript>":
+  version: 4.9.3
+  resolution: "typescript@patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d8b4e7"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: fa56d8bd836ac84180c8bb908056308bebe119498e6924ca9946231fb43b0f363f5894eda604be591252693f98106467a48d3b56387b62d4ed8d3f48bd8a3161
+  checksum: c61b948d9181e52c3b12874f61e067720dd35f3e2ef0e77e5fdc314a1d15bbfd53e66a9110d3347d471632f9a4871d338df967e264fd20715431c6463f64546d
   languageName: node
   linkType: hard
 
