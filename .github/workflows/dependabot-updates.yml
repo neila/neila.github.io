@@ -16,7 +16,7 @@ jobs:
         uses: dependabot/fetch-metadata@v1.3.5
         with:
           github-token: '${{ secrets.GITHUB_TOKEN }}'
-     - name: Approve & enable auto-merge for Dependabot PR
+      - name: Approve & enable auto-merge for Dependabot PR
         if: |
           steps.metadata.outputs.update-type == 'version-update:semver-patch' ||
           (steps.metadata.outputs.update-type == 'version-update:semver-minor' && steps.metadata.outputs.dependency-type == 'direct:development')
