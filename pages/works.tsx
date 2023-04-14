@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/legacy/image";
 import Link from "next/link";
 
 import Footer from "../components/Footer";
