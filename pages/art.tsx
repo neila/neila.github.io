@@ -31,6 +31,10 @@ const ArtWork = (props: {
         className="h-full w-full cursor-pointer object-contain"
         src={image}
         alt={caption}
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+        }}
       />
       <div className="w-full">
         <div className="mx-auto w-4/5 text-center">

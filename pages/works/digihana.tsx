@@ -42,8 +42,22 @@ export default function digihana() {
 
             <div className="left-2 mt-10 desktop:ml-32 desktop:w-4/6 bigmonitor:ml-48 bigmonitor:mt-16 bigmonitor:w-1/2">
               <div className="flex">
-                <Image src={flower1} alt="" />
-                <Image src={flower2} alt="" />
+                <Image
+                  src={flower1}
+                  alt=""
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                  }}
+                />
+                <Image
+                  src={flower2}
+                  alt=""
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                  }}
+                />
               </div>
               <br />
               <p>
