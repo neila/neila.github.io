@@ -188,10 +188,6 @@ export default function about() {
                 logoname="Github actions"
               />
               <ToolLogo
-                logolink="https://brandslogos.com/wp-content/uploads/images/aws-logo-vector.svg"
-                logoname="AWS"
-              />
-              <ToolLogo
                 logolink="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg"
                 logoname="Firebase"
               />
