@@ -20,8 +20,9 @@ const ToolLogo = (params: { logolink: string; logoname: string }) => {
       <Image
         src={params.logolink}
         alt={`${params.logoname} logo`}
-        layout="fill"
         className="opacity-100"
+        fill
+        sizes="100vw"
       />
     </div>
   );
@@ -46,6 +47,10 @@ export default function about() {
           src={profilePic}
           alt="profile image"
           className="border-none align-middle rounded-3xl grayscale hover:grayscale-0"
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+          }}
         />
       </div>
 
@@ -148,28 +153,16 @@ export default function about() {
             </div>
             <div className="flex flex-wrap justify-start gap-1 desktop:w-full">
               <ToolLogo
-                logolink="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png"
-                logoname="Notion"
+                logolink="https://raw.githubusercontent.com/microsoft/TypeScript-Website/b89d197063b6849bbfc2edfb033f6082be950636/packages/typescriptlang-org/static/icons/ts-logo-512.png"
+                logoname="Typescript"
               />
               <ToolLogo
-                logolink="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-                logoname="Figma"
+                logolink="https://gist.githubusercontent.com/neila/13512d1b818c0cfb974088ff3abf2656/raw/9f105955b3053e5eead76770b370f582a1732ff7/solidity_logo_white.svg"
+                logoname="Solidity"
               />
               <ToolLogo
-                logolink="https://s3.eu-west-2.amazonaws.com/jamescross/images/frontEndTrio.png"
-                logoname="Frontend"
-              />
-              <ToolLogo
-                logolink="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                logoname="React"
-              />
-              <ToolLogo
-                logolink="https://assets.vercel.com/image/upload/v1607554385/repositories/next-js/next-logo.png"
-                logoname="Next.js"
-              />
-              <ToolLogo
-                logolink="https://raw.githubusercontent.com/nodejs/nodejs.org/main/static/images/logo-hexagon.svg"
-                logoname="Node.js"
+                logolink='https://www.rust-lang.org/logos/rust-logo-512x512.png'
+                logoname='Rust'
               />
               <ToolLogo
                 logolink="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
@@ -177,16 +170,34 @@ export default function about() {
               />
               {/* <ToolLogo logolink='https://raw.githubusercontent.com/cormullion/julia-logo-graphics/master/images/julia-dots.svg' logoname='Julia'/> */}
               {/* <ToolLogo logolink='https://raw.githubusercontent.com/egonelbre/gophers/master/vector/superhero/standing.svg' logoname='Golang'/> */}
-              {/* <ToolLogo logolink='https://www.rust-lang.org/logos/rust-logo-512x512.png' logoname='Rust'/>  */}
-              <ToolLogo
-                logolink="https://gist.githubusercontent.com/neila/13512d1b818c0cfb974088ff3abf2656/raw/9f105955b3053e5eead76770b370f582a1732ff7/solidity_logo_white.svg"
-                logoname="Solidity"
-              />
               {/* <ToolLogo logolink='https://raw.githubusercontent.com/haskell-infra/hl/master/design/logo.svg' logoname='Haskell'/> */}
-              {/* <ToolLogo logolink='https://raw.githubusercontent.com/docker/docker.github.io/master/images/engine.svg' logoname='Docker'/> */}
+              <ToolLogo
+                logolink="https://raw.githubusercontent.com/nodejs/nodejs.org/cb4ba73335f6590f42b08f4cda65291e5f2b7599/public/static/images/logo-hexagon.svg"
+                logoname="Node.js"
+              />
+              <ToolLogo
+                logolink='https://raw.githubusercontent.com/docker/docs/7bdcde7f1a36f79e798a9f7321b687e9807fde8d/assets/images/engine.svg'
+                logoname='Docker'
+              />
               <ToolLogo
                 logolink="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
                 logoname="Git"
+              />
+              <ToolLogo
+                logolink="https://avatars.githubusercontent.com/u/44036562"
+                logoname="Github actions"
+              />
+              <ToolLogo
+                logolink="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg"
+                logoname="Firebase"
+              />
+              <ToolLogo
+                logolink="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+                logoname="Figma"
+              />
+              <ToolLogo
+                logolink="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png"
+                logoname="Notion"
               />
             </div>
           </section>
@@ -196,12 +207,12 @@ export default function about() {
             </div>
             <div className="flex flex-wrap justify-start gap-1 desktop:w-full">
               <ToolLogo
-                logolink="https://www.r-project.org/logo/Rlogo.svg"
-                logoname="R"
-              />
-              <ToolLogo
                 logolink="https://upload.wikimedia.org/wikipedia/commons/2/20/Mathematica_Logo.svg"
                 logoname="Mathematica"
+              />
+              <ToolLogo
+                logolink="https://www.r-project.org/logo/Rlogo.svg"
+                logoname="R"
               />
               <ToolLogo
                 logolink="https://starbeamrainbowlabs.com/images/logos/swi-prolog.svg"
@@ -210,10 +221,6 @@ export default function about() {
               <ToolLogo
                 logolink="https://upload.wikimedia.org/wikipedia/commons/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg"
                 logoname="Microsoft Office"
-              />
-              <ToolLogo
-                logolink="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg"
-                logoname="Firebase"
               />
             </div>
           </section>

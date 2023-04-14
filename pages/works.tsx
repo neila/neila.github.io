@@ -31,6 +31,10 @@ const WorkTriangleIcon = (props: {
           className="h-full w-full object-cover"
           alt={pagepath.split("/").pop()}
           src={image}
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+          }}
         />
       </div>
     </Link>
