@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 import Top from "/public/images/top_o.png";
@@ -14,7 +14,10 @@ function Header_home() {
           src={Top}
           width={80}
           height={80}
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </Link>
     </header>
   );

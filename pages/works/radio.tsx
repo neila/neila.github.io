@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
@@ -61,7 +61,13 @@ export default function radio() {
                 catalogue of songs.
               </p>
               <br />
-              <Image src={Songrec} alt="" />
+              <Image
+                src={Songrec}
+                alt=""
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               <br />
               <p>
                 <a

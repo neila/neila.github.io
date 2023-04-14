@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import FooterItem from "./FooterItem";
 import { AtSymbolIcon, CashIcon } from "@heroicons/react/outline";

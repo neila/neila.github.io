@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
@@ -44,7 +44,13 @@ export default function synthfeed() {
               </p>
               <div className="mx-auto w-5/6">
                 <br />
-                <Image src={Synthfeed1} alt="" />
+                <Image
+                  src={Synthfeed1}
+                  alt=""
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
                 <a
                   href="https://synthfeed.com/feedback-report-demo"
                   className="text-[#00CC30]"

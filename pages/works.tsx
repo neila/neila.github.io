@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image, { StaticImageData } from "next/legacy/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 import Footer from "../components/Footer";
@@ -31,7 +31,10 @@ const WorkTriangleIcon = (props: {
           className="h-full w-full object-cover"
           alt={pagepath.split("/").pop()}
           src={image}
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </div>
     </Link>
   );

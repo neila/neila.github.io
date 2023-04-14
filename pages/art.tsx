@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image, { StaticImageData } from "next/legacy/image";
+import Image, { StaticImageData } from "next/image";
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -31,7 +31,10 @@ const ArtWork = (props: {
         className="h-full w-full cursor-pointer object-contain"
         src={image}
         alt={caption}
-      />
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />
       <div className="w-full">
         <div className="mx-auto w-4/5 text-center">
           <p className="text-sm font-hairline desktop:font-thin">{caption}</p>

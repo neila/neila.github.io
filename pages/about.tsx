@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -20,8 +20,9 @@ const ToolLogo = (params: { logolink: string; logoname: string }) => {
       <Image
         src={params.logolink}
         alt={`${params.logoname} logo`}
-        layout="fill"
         className="opacity-100"
+        fill
+        sizes="100vw"
       />
     </div>
   );
@@ -46,6 +47,10 @@ export default function about() {
           src={profilePic}
           alt="profile image"
           className="border-none align-middle rounded-3xl grayscale hover:grayscale-0"
+          style={{
+            maxWidth: "100%",
+            height: "auto",
+          }}
         />
       </div>
 
@@ -181,6 +186,10 @@ export default function about() {
               <ToolLogo
                 logolink="https://avatars.githubusercontent.com/u/44036562"
                 logoname="Github actions"
+              />
+              <ToolLogo
+                logolink="https://brandslogos.com/wp-content/uploads/images/aws-logo-vector.svg"
+                logoname="AWS"
               />
               <ToolLogo
                 logolink="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg"

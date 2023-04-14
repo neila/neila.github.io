@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 import Nav from "./Nav";
@@ -15,7 +15,10 @@ function Header() {
           src={Top}
           width={80}
           height={80}
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </Link>
       <Nav />
     </header>
