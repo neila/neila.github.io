@@ -2,13 +2,10 @@ name: update dependency
 
 on: pull_request_target
 
-permissions:
-  pull-requests: write
-  contents: write
-
 jobs:
   dependabot:
     runs-on: ubuntu-latest
+    permissions: write-all
     if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
       - name: Dependabot metadata
@@ -16,7 +13,7 @@ jobs:
         uses: dependabot/fetch-metadata@v1.3.5
         with:
           github-token: '${{ secrets.GITHUB_TOKEN }}'
-      - name: Approve & enable auto-merge for Dependabot PR
+      - name: Auto approve PR
         if: ${{steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor'}}
         run: |
           gh pr review --approve "$PR_URL"
