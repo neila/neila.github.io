@@ -47,15 +47,17 @@ export default function digihana() {
                   alt=""
                   style={{
                     maxWidth: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
                 <Image
                   src={flower2}
                   alt=""
                   style={{
                     maxWidth: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
               </div>
               <br />
               <p>

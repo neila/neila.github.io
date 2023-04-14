@@ -33,8 +33,9 @@ const WorkTriangleIcon = (props: {
           src={image}
           style={{
             maxWidth: "100%",
-            height: "auto"
-          }} />
+            height: "auto",
+          }}
+        />
       </div>
     </Link>
   );

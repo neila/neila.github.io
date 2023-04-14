@@ -49,8 +49,9 @@ export default function synthfeed() {
                   alt=""
                   style={{
                     maxWidth: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
                 <a
                   href="https://synthfeed.com/feedback-report-demo"
                   className="text-[#00CC30]"

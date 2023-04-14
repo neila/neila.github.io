@@ -66,8 +66,9 @@ export default function radio() {
                 alt=""
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
               <br />
               <p>
                 <a

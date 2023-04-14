@@ -33,8 +33,9 @@ const ArtWork = (props: {
         alt={caption}
         style={{
           maxWidth: "100%",
-          height: "auto"
-        }} />
+          height: "auto",
+        }}
+      />
       <div className="w-full">
         <div className="mx-auto w-4/5 text-center">
           <p className="text-sm font-hairline desktop:font-thin">{caption}</p>

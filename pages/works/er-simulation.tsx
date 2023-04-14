@@ -74,8 +74,9 @@ export default function ERsim() {
                     alt="London regions, visualized"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
-                    }} />
+                      height: "auto",
+                    }}
+                  />
                 </div>
                 <div className="desktop:w-4/6 bigmonitor:w-1/2">
                   <Image
@@ -84,8 +85,9 @@ export default function ERsim() {
                     alt="Regions encoded as a network"
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
-                    }} />
+                      height: "auto",
+                    }}
+                  />
                 </div>
               </div>
               <br />
@@ -124,8 +126,9 @@ export default function ERsim() {
                 alt=""
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
               <br />
 
               <p>
@@ -142,8 +145,9 @@ export default function ERsim() {
                 alt=""
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
               <br />
 
               <p>
@@ -159,8 +163,9 @@ export default function ERsim() {
                 alt="The 7 London bridges"
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
               <br />
 
               <p>
@@ -174,8 +179,9 @@ export default function ERsim() {
                 alt=""
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
               <br />
 
               <p>
@@ -195,8 +201,9 @@ export default function ERsim() {
                 alt=""
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
               <br />
 
               <p>
@@ -214,15 +221,17 @@ export default function ERsim() {
                 alt="Emergency response time, per region node."
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
               <Image
                 src={Sim6}
                 alt="Warmer colors indicate slower response, colder colors faster."
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
               <br />
             </div>
             <Footer />

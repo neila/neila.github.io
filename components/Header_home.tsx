@@ -16,8 +16,9 @@ function Header_home() {
           height={80}
           style={{
             maxWidth: "100%",
-            height: "auto"
-          }} />
+            height: "auto",
+          }}
+        />
       </Link>
     </header>
   );

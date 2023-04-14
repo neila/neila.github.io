@@ -17,8 +17,9 @@ function Header() {
           height={80}
           style={{
             maxWidth: "100%",
-            height: "auto"
-          }} />
+            height: "auto",
+          }}
+        />
       </Link>
       <Nav />
     </header>

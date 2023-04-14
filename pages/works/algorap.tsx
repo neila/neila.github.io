@@ -63,8 +63,9 @@ export default function algorap() {
                 alt=""
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
               <br />
               <h2>Generating Lyrics</h2>
               <p>
@@ -81,8 +82,9 @@ export default function algorap() {
                 alt=""
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
               <br />
               <p>
                 To fine-tune the GPT-2 for customized output, it requires a
@@ -105,8 +107,9 @@ export default function algorap() {
                 alt=""
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
               <br />
 
               <p>
@@ -139,8 +142,9 @@ export default function algorap() {
                 alt=""
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
               <br />
               <p>
                 The model produces good outputs now and then, such as the
@@ -222,8 +226,9 @@ export default function algorap() {
                 alt=""
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
               <br />
               <p>
                 The above illustration shows the three-step encoding process,
@@ -289,22 +294,25 @@ export default function algorap() {
                   alt=""
                   style={{
                     maxWidth: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
                 <Image
                   src={Algorap6_2}
                   alt=""
                   style={{
                     maxWidth: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
                 <Image
                   src={Algorap6_3}
                   alt=""
                   style={{
                     maxWidth: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
               </div>
               <br />
               <p>
