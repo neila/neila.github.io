@@ -207,12 +207,12 @@ export default function about() {
             </div>
             <div className="flex flex-wrap justify-start gap-1 desktop:w-full">
               <ToolLogo
-                logolink="https://www.r-project.org/logo/Rlogo.svg"
-                logoname="R"
-              />
-              <ToolLogo
                 logolink="https://upload.wikimedia.org/wikipedia/commons/2/20/Mathematica_Logo.svg"
                 logoname="Mathematica"
+              />
+              <ToolLogo
+                logolink="https://www.r-project.org/logo/Rlogo.svg"
+                logoname="R"
               />
               <ToolLogo
                 logolink="https://starbeamrainbowlabs.com/images/logos/swi-prolog.svg"
