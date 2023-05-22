@@ -1,14 +1,15 @@
+import { NextPage } from "next";
 import Head from "next/head";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Digihana from "/public/images/digihana.png";
-import AmbulancePic from "/public/images/nhs.jpg";
-import Radio from "/public/images/radio.jpg";
-import Rap from "/public/images/rap.jpg";
-import Synthfeed from "/public/images/Synthfeed.png";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Synthfeed from "public/images/Synthfeed.png";
+import Digihana from "public/images/digihana.png";
+import AmbulancePic from "public/images/nhs.jpg";
+import Radio from "public/images/radio.jpg";
+import Rap from "public/images/rap.jpg";
 
 const Title = (params: { section: string; color: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
@@ -41,7 +42,7 @@ const WorkTriangleIcon = (props: {
   );
 };
 
-export default function works() {
+const works: NextPage = () => {
   return (
     <div className="works">
       <Head>
@@ -89,4 +90,6 @@ export default function works() {
       <Footer />
     </div>
   );
-}
+};
+
+export default works;

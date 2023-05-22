@@ -1,16 +1,17 @@
+import { NextPage } from "next";
 import Head from "next/head";
 import Image, { StaticImageData } from "next/image";
 
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import bbl from "/public/images/bigbanglove.png";
-import btt from "/public/images/biggerthanthou.png";
-import cdflp from "/public/images/candyflippin' (oops).png";
-import drd from "/public/images/deepreason_depression.png";
-import dghn from "/public/images/flower2.svg";
-import gsh from "/public/images/galactic_superhighway.png";
-import p35 from "/public/images/polygon35.png";
-import rwkng from "/public/images/RUNAWAY_KING.jpg";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import rwkng from "public/images/RUNAWAY_KING.jpg";
+import bbl from "public/images/bigbanglove.png";
+import btt from "public/images/biggerthanthou.png";
+import cdflp from "public/images/candyflippin' (oops).png";
+import drd from "public/images/deepreason_depression.png";
+import dghn from "public/images/flower2.svg";
+import gsh from "public/images/galactic_superhighway.png";
+import p35 from "public/images/polygon35.png";
 
 const Title = (params: { section: string; color: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
@@ -45,7 +46,7 @@ const ArtWork = (props: {
   );
 };
 
-export default function art() {
+const art: NextPage = () => {
   return (
     <div className="art">
       <Head>
@@ -116,4 +117,6 @@ export default function art() {
       <Footer />
     </div>
   );
-}
+};
+
+export default art;

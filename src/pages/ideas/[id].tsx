@@ -2,16 +2,16 @@ import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import Head from "next/head";
 
-import Footer from "../../components/Footer";
-import Graph from "../../components/Graph";
-import Header from "../../components/Header";
-import { getAllPosts } from "../../utils/postid";
+import Footer from "@/components/Footer";
+import Graph from "@/components/Graph";
+import Header from "@/components/Header";
+import { getAllPosts } from "@/utils/postid";
 
 export default function post({ content, id }) {
   return (
     <div>
       <Head>
-        <title>{id} - SHØ</title>
+        <title>{`${id} - SHØ`}</title>
       </Head>
 
       <Header />

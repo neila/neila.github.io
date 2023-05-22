@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import profilePic from "/public/images/profilePic.png";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import { MapPinIcon } from "@heroicons/react/24/outline";
+import profilePic from "public/images/profilePic.png";
 
 const Title = (params: { section: string; color: string }) => {
   return (
@@ -28,7 +28,7 @@ const ToolLogo = (params: { logolink: string; logoname: string }) => {
   );
 };
 
-export default function about() {
+const about = () => {
   return (
     <div>
       <Head>
@@ -161,8 +161,8 @@ export default function about() {
                 logoname="Solidity"
               />
               <ToolLogo
-                logolink='https://www.rust-lang.org/logos/rust-logo-512x512.png'
-                logoname='Rust'
+                logolink="https://www.rust-lang.org/logos/rust-logo-512x512.png"
+                logoname="Rust"
               />
               <ToolLogo
                 logolink="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
@@ -176,8 +176,8 @@ export default function about() {
                 logoname="Node.js"
               />
               <ToolLogo
-                logolink='https://raw.githubusercontent.com/docker/docs/7bdcde7f1a36f79e798a9f7321b687e9807fde8d/assets/images/engine.svg'
-                logoname='Docker'
+                logolink="https://raw.githubusercontent.com/docker/docs/7bdcde7f1a36f79e798a9f7321b687e9807fde8d/assets/images/engine.svg"
+                logoname="Docker"
               />
               <ToolLogo
                 logolink="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
@@ -253,4 +253,6 @@ export default function about() {
       <Footer />
     </div>
   );
-}
+};
+
+export default about;

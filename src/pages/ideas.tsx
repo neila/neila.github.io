@@ -1,16 +1,16 @@
 import fs from "fs";
 
-import path from "path";
-
 import Head from "next/head";
 import Link from "next/link";
+import React from "react";
 
-import Footer from "../components/Footer";
-import Graph from "../components/Graph";
-import Header from "../components/Header";
 import dateFormat from "dateformat";
 import matter from "gray-matter";
-import React from "react";
+import path from "path";
+
+import Footer from "@/components/Footer";
+import Graph from "@/components/Graph";
+import Header from "@/components/Header";
 
 type Post = {
   id: string;
@@ -26,7 +26,7 @@ const Title = (params: { section: string; color: string }) => (
   </div>
 );
 
-export default function ideas({ postsList }) {
+const ideas = ({ postsList }) => {
   return (
     <div>
       <Head>
@@ -121,7 +121,7 @@ export default function ideas({ postsList }) {
       <Footer />
     </div>
   );
-}
+};
 
 export async function getStaticProps() {
   const postsDirectory = path.join(process.cwd(), "public/posts");
@@ -160,3 +160,5 @@ export async function getStaticProps() {
     },
   };
 }
+
+export default ideas;
