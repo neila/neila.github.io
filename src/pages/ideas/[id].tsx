@@ -1,4 +1,4 @@
-import { MDXRemote } from "next-mdx-remote";
+import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import Head from "next/head";
 
@@ -6,8 +6,17 @@ import Footer from "@/components/Footer";
 import Graph from "@/components/Graph";
 import Header from "@/components/Header";
 import { getAllPosts } from "@/utils/postid";
+import { NextPage } from "next";
 
-export default function post({ content, id }) {
+type PostProps = {
+  content: MDXRemoteSerializeResult<
+    Record<string, unknown>,
+    Record<string, unknown>
+  >;
+  id: string;
+};
+
+const post: NextPage<PostProps> = ({ content, id }) => {
   return (
     <div>
       <Head>
@@ -30,7 +39,7 @@ export default function post({ content, id }) {
       <Footer />
     </div>
   );
-}
+};
 
 export async function getStaticProps(context) {
   const { params } = context;
@@ -59,3 +68,5 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
+
+export default post;
