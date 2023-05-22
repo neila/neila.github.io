@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "SHØ porfolio site",
   "private": true,
-  "main": "pages/_app.tsx",
+  "main": "src/pages/_app.tsx",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/neila/akira-portfolio.git"
