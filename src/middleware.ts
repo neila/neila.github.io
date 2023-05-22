@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 import { generateNonce } from "@/utils/randomNonce";
 
 export const config = {
-  matcher: ["/((?!api|_next|favicon.ico).*)", "/"],
+  matcher: ["/((?!api|_next|ideas|favicon.ico).*)", "/"],
 };
 
 const generateCspHeader = (nonce: string): string => {
