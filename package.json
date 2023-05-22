@@ -1,6 +1,6 @@
 {
   "name": "akira-portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "SHØ porfolio site",
   "private": true,
   "main": "pages/_app.tsx",
