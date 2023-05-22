@@ -1,12 +1,8 @@
+/** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./utils/**/*.{js,ts,jsx,tsx}",
-    // './hooks/**/*.{js,ts,jsx,tsx}',
-    // './locales/**/*.{js,ts,jsx,tsx}',
-  ],
-  darkMode: "class", // or 'media' or 'true/false'
+  darkMode: "class",
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     rotate: {
       270: "270deg",

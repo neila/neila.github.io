@@ -4,12 +4,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "baseUrl": ".",
     "paths": {
-      "@api/*": ["pages/api/*"],
-      "@lib/*": ["lib/*"],
-      "@components/*": ["lib/components/*"],
-      "@components": ["lib/components/index"],
-      "@db/*": ["db/*"],
-      "@db": ["db/index"]
+      "@/*": ["./src/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
@@ -24,6 +19,14 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["**/*.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
+  "include": [
+    "**/*.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    "next-env.d.ts",
+    "next.config.js"
+  ],
   "exclude": ["node_modules"]
 }

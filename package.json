@@ -17,9 +17,9 @@
     "url": "https://github.com/neila/akira-portfolio/issues"
   },
   "homepage": "https://akxra.art",
-  "packageManager": "yarn@3.0.0",
+  "packageManager": "yarn@3.5.1",
   "dependencies": {
-    "next": "^13.0.2",
+    "next": "^13.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-tsparticles": "^2.9.3",
@@ -27,26 +27,25 @@
   },
   "devDependencies": {
     "@heroicons/react": "^2.0.10",
-    "@tailwindcss/aspect-ratio": "^0.4.0",
-    "@tailwindcss/typography": "^0.5.4",
-    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@tailwindcss/aspect-ratio": "latest",
+    "@tailwindcss/typography": "latest",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.52.0",
-    "autoprefixer": "^10.2.6",
+    "autoprefixer": "latest",
     "dateformat": "^5.0.3",
     "gray-matter": "^4.0.3",
     "lint-staged": "^13.1.2",
     "next-mdx-remote": "^4.4.1",
-    "postcss": "^8.4.21",
+    "postcss": "latest",
     "remark": "14",
     "remark-html": "15",
-    "rome": "^11.0.0",
+    "rome": "^12.0.0",
     "simple-git-hooks": "^2.7.0",
-    "tailwindcss": "^3.3.1",
+    "tailwindcss": "latest",
     "tslib": "^2.5.0",
-    "typescript": "4.9.5"
+    "typescript": "^5.0.3"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

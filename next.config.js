@@ -1,5 +1,8 @@
 module.exports = {
+  experimental: { appDir: false },
   reactStrictMode: true,
+  swcMinify: true,
+
   images: {
     domains: [
       "avatars.githubusercontent.com",
@@ -12,8 +15,5 @@ module.exports = {
       "www.r-project.org",
       "www.rust-lang.org",
     ],
-  },
-  serverRuntimeConfig: {
-    PROJECT_ROOT: __dirname,
   },
 };

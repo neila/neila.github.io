@@ -11,6 +11,5 @@ const buildFormatCommand = (filenames) =>
     .join(" ")} `;
 
 module.exports = {
-  "**/*.{js,jsx,ts,tsx}": [buildLintCommand],
-  "**/*.{md,json,js,jsx,ts,tsx}": [buildFormatCommand],
+  "**/*.{js,jsx,ts,tsx}": [buildLintCommand, buildFormatCommand],
 };
