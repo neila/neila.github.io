@@ -5,11 +5,12 @@ import Link from "next/link";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Synthfeed from "public/images/Synthfeed.png";
-import Digihana from "public/images/digihana.png";
-import AmbulancePic from "public/images/nhs.jpg";
-import Radio from "public/images/radio.jpg";
-import Rap from "public/images/rap.jpg";
+
+import Synthfeed from "public/images/works/Synthfeed.png";
+import Digihana from "public/images/works/digihana.png";
+import AmbulancePic from "public/images/works/nhs.jpg";
+import Radio from "public/images/works/radio.jpg";
+import Rap from "public/images/works/rap.jpg";
 
 const Title = (params: { section: string; color: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">

@@ -3,8 +3,9 @@ import Image from "next/image";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import flower1 from "public/images/flower1.svg";
-import flower2 from "public/images/flower2.svg";
+
+import flower1 from "public/images/art/reika1.svg";
+import flower2 from "public/images/art/reika2.svg";
 
 const Title = (params: {
   digi: string;

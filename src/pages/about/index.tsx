@@ -1,10 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import { MapPinIcon } from "@heroicons/react/24/outline";
+
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { MapPinIcon } from "@heroicons/react/24/outline";
-import profilePic from "public/images/profilePic.png";
+
+import profilePic from "public/images/about/profilePic.png";
 
 const Title = (params: { section: string; color: string }) => {
   return (
@@ -153,52 +155,32 @@ const about = () => {
             </div>
             <div className="flex flex-wrap justify-start gap-1 desktop:w-full">
               <ToolLogo
-                logolink="https://raw.githubusercontent.com/microsoft/TypeScript-Website/b89d197063b6849bbfc2edfb033f6082be950636/packages/typescriptlang-org/static/icons/ts-logo-512.png"
-                logoname="Typescript"
+                logolink="https://raw.githubusercontent.com/docker/docs/7bdcde7f1a36f79e798a9f7321b687e9807fde8d/assets/images/engine.svg"
+                logoname="Docker"
               />
               <ToolLogo
-                logolink="https://gist.githubusercontent.com/neila/13512d1b818c0cfb974088ff3abf2656/raw/9f105955b3053e5eead76770b370f582a1732ff7/solidity_logo_white.svg"
-                logoname="Solidity"
+                logolink="https://raw.githubusercontent.com/golang/website/967d7e407b063cd376ff9cae89e0f4e49b6b8210/_content/images/gophers/blue.svg"
+                logoname="Golang"
+              />
+              <ToolLogo
+                logolink="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
+                logoname="Python"
               />
               <ToolLogo
                 logolink="https://www.rust-lang.org/logos/rust-logo-512x512.png"
                 logoname="Rust"
               />
               <ToolLogo
-                logolink="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
-                logoname="Python"
+                logolink="https://gist.githubusercontent.com/neila/13512d1b818c0cfb974088ff3abf2656/raw/9f105955b3053e5eead76770b370f582a1732ff7/solidity_logo_white.svg"
+                logoname="Solidity"
+              />
+              <ToolLogo
+                logolink="https://raw.githubusercontent.com/microsoft/TypeScript-Website/b89d197063b6849bbfc2edfb033f6082be950636/packages/typescriptlang-org/static/icons/ts-logo-512.png"
+                logoname="Typescript"
               />
               {/* <ToolLogo logolink='https://raw.githubusercontent.com/cormullion/julia-logo-graphics/master/images/julia-dots.svg' logoname='Julia'/> */}
-              {/* <ToolLogo logolink='https://raw.githubusercontent.com/egonelbre/gophers/master/vector/superhero/standing.svg' logoname='Golang'/> */}
+
               {/* <ToolLogo logolink='https://raw.githubusercontent.com/haskell-infra/hl/master/design/logo.svg' logoname='Haskell'/> */}
-              <ToolLogo
-                logolink="https://raw.githubusercontent.com/nodejs/nodejs.org/cb4ba73335f6590f42b08f4cda65291e5f2b7599/public/static/images/logo-hexagon.svg"
-                logoname="Node.js"
-              />
-              <ToolLogo
-                logolink="https://raw.githubusercontent.com/docker/docs/7bdcde7f1a36f79e798a9f7321b687e9807fde8d/assets/images/engine.svg"
-                logoname="Docker"
-              />
-              <ToolLogo
-                logolink="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
-                logoname="Git"
-              />
-              <ToolLogo
-                logolink="https://avatars.githubusercontent.com/u/44036562"
-                logoname="Github actions"
-              />
-              <ToolLogo
-                logolink="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg"
-                logoname="Firebase"
-              />
-              <ToolLogo
-                logolink="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-                logoname="Figma"
-              />
-              <ToolLogo
-                logolink="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png"
-                logoname="Notion"
-              />
             </div>
           </section>
           <section className="items-start space-x-0 space-y-1 desktop:flex desktop:space-x-10">
@@ -211,16 +193,12 @@ const about = () => {
                 logoname="Mathematica"
               />
               <ToolLogo
-                logolink="https://www.r-project.org/logo/Rlogo.svg"
-                logoname="R"
-              />
-              <ToolLogo
                 logolink="https://starbeamrainbowlabs.com/images/logos/swi-prolog.svg"
                 logoname="Prolog"
               />
               <ToolLogo
-                logolink="https://upload.wikimedia.org/wikipedia/commons/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg"
-                logoname="Microsoft Office"
+                logolink="https://www.r-project.org/logo/Rlogo.svg"
+                logoname="R"
               />
             </div>
           </section>

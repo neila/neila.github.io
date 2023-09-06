@@ -3,14 +3,15 @@ import Image from "next/image";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Algorap1 from "public/images/Algorap1.svg";
-import Algorap2 from "public/images/Algorap2.png";
-import Algorap3 from "public/images/Algorap3.png";
-import Algorap4 from "public/images/Algorap4.png";
-import Algorap5 from "public/images/Algorap5.svg";
-import Algorap6_1 from "public/images/Algorap6_1.png";
-import Algorap6_2 from "public/images/Algorap6_2.png";
-import Algorap6_3 from "public/images/Algorap6_3.png";
+
+import Algorap1 from "public/images/algorap/Algorap1.svg";
+import Algorap2 from "public/images/algorap/Algorap2.png";
+import Algorap3 from "public/images/algorap/Algorap3.png";
+import Algorap4 from "public/images/algorap/Algorap4.png";
+import Algorap5 from "public/images/algorap/Algorap5.svg";
+import Algorap6_1 from "public/images/algorap/Algorap6_1.png";
+import Algorap6_2 from "public/images/algorap/Algorap6_2.png";
+import Algorap6_3 from "public/images/algorap/Algorap6_3.png";
 
 const Title = (params: { section: string; color: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
