@@ -13,7 +13,7 @@ export default async function handler(
       const dateInput: string = req.body;
       res.setHeader(
         "Set-Cookie",
-        `userDate=${dateInput}; Path=/; HttpOnly; SameSite=Strict`,
+        `userDate=${dateInput}; Path=/; HttpOnly; SameSite=lax`,
       );
       res.status(200).json({ message: "ok" });
     }
