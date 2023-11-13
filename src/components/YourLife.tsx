@@ -1,3 +1,5 @@
+// inspired by https://www.youtube.com/watch?v=arj7oStGLkU
+
 import { useEffect, useState } from "react";
 
 const Cells = () => {
@@ -24,7 +26,7 @@ const Cells = () => {
   const diffTime = +today - +birthDate;
 
   const daysSinceBirth = diffTime / (1000 * 60 * 60 * 24);
-  const daysOndeath = 365.25 * 85;
+  const daysOndeath = 365.25 * 90;
 
   const setCookie = (submitDate: string) => {
     document.cookie = `userDate=${submitDate}; path=/; expires=${today.setDate(
