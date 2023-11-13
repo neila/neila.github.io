@@ -55,7 +55,6 @@ const Cells = () => {
 
   return (
     <div className="flex flex-col flex-grow justify-center items-center">
-      <p>system birthday: {birthDay}</p>
       <p>
         your birthday:{" "}
         <input
@@ -87,12 +86,12 @@ const Cells = () => {
 
         <p className="py-4 text-center">
           {birthDay
-            ? `生後${Math.ceil(
+            ? `weeks on Earth: ${Math.ceil(
                 (+today - +birthDate) / (1000 * 60 * 60 * 24 * 7),
-              )}週目/`
+              )} / `
             : ""}
-          推定寿命
-          {Math.floor(daysOndeath / 7)}週
+          Expected life expectancy:
+          {Math.floor(daysOndeath / 7)} weeks
         </p>
       </div>
     </div>
