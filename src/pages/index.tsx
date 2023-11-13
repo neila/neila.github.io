@@ -17,7 +17,7 @@ const Home: NextPage = (props: { userDate: string | null }) => {
       {/* <Background /> */}
       {/* <Canvas /> */}
 
-      <Cells date={props.userDate} />
+      <Cells date={props.userDate !== null ? props.userDate : ""} />
     </div>
   );
 };
