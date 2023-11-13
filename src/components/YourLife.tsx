@@ -90,7 +90,7 @@ const Cells = () => {
                 (+today - +birthDate) / (1000 * 60 * 60 * 24 * 7),
               )} / `
             : ""}
-          Expected life expectancy: {Math.floor(daysOndeath / 7)} weeks
+          life expectancy: {Math.floor(daysOndeath / 7)} weeks
         </p>
       </div>
     </div>
