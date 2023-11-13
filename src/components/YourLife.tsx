@@ -88,9 +88,9 @@ const Cells = () => {
 
         <p className="py-4 text-center">
           {birthDay
-            ? `weeks on Earth: ${Math.ceil(
+            ? `on Earth: ${Math.ceil(
                 (+today - +birthDate) / (1000 * 60 * 60 * 24 * 7),
-              )} / `
+              )} weeks / `
             : ""}
           life expectancy: {Math.floor(daysOndeath / 7)} weeks
         </p>
