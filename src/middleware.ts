@@ -10,7 +10,7 @@ export const config = {
 const generateCspHeader = (nonce: string): string => {
   const csp = [
     `default-src 'strict-dynamic' 'nonce-${nonce}' 'self' `,
-    `script-src 'unsafe-eval' 'self'`,
+    `script-src 'nonce-${nonce}' 'self'`,
     "style-src 'unsafe-inline' 'self'",
     "img-src 'self' https: data:;",
     "connect-src 'self'",
