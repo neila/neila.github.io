@@ -4,7 +4,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import Top from "public/images/top_o.png";
 
-function Header() {
+const Header = () => {
   return (
     <header className="sticky top-0 z-10 flex justify-between border-b bg-[#07070D]">
       {/*Logo*/}
@@ -24,6 +24,6 @@ function Header() {
       <Nav />
     </header>
   );
-}
+};
 
 export default Header;
