@@ -8,16 +8,9 @@
   },
   "formatter": {
     "enabled": true,
-    "ignore": [".next"],
     "indentStyle": "space",
-    "indentSize": 2
-  },
-  "javascript": {
-    "formatter": {
-      "quoteStyle": "double",
-      "quoteProperties": "asNeeded",
-      "trailingComma": "all"
-    }
+    "lineWidth": 120,
+    "ignore": [".next"]
   },
   "organizeImports": {
     "enabled": true
