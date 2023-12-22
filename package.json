@@ -9,9 +9,7 @@
     "url": "git+https://github.com/neila/akira-portfolio.git"
   },
   "author": "SHØ <neila@users.noreply.github.com> (https://akxra.art/)",
-  "contributors": [
-    "SHØ <neila@users.noreply.github.com> (https://akxra.art/)"
-  ],
+  "contributors": ["SHØ <neila@users.noreply.github.com> (https://akxra.art/)"],
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/neila/akira-portfolio/issues"
@@ -54,9 +52,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "yarn run rome check .",
-    "lint:fix": "yarn run rome check . --apply",
-    "format": "yarn run rome format .",
-    "format:fix": "yarn run rome format . --write"
+    "lint": "yarn run biome lint ./src",
+    "format": "yarn run biome format ./src",
+    "check": "yarn run biome check ./src",
+    "clean": "yarn run biome check ./src --apply"
   }
 }

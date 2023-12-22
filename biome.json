@@ -1,7 +1,6 @@
 {
   "linter": {
     "enabled": true,
-    "ignore": [".next"],
     "rules": {
       "recommended": true
     }
@@ -9,8 +8,7 @@
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
-    "lineWidth": 120,
-    "ignore": [".next"]
+    "lineWidth": 80
   },
   "organizeImports": {
     "enabled": true

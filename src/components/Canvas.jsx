@@ -21,7 +21,7 @@ function Canvas(props) {
     };
 
     //update mouse coordinates
-    window.addEventListener("mousemove", function (event) {
+    window.addEventListener("mousemove", (event) => {
       mouse.x = event.x;
       mouse.y = event.y;
     });
