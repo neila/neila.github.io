@@ -11,14 +11,14 @@ const BaseLayout: FC<{ children: ReactNode }> = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <body className="px-2 border">
+      <div className="px-2">
         <TopMenu />
 
         <main>{children}</main>
 
         {/* Lower menu + copyright */}
         <Footer />
-      </body>
+      </div>
     </>
   );
 };
