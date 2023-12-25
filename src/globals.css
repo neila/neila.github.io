@@ -4,32 +4,35 @@
 
 @layer base {
   body {
-    @apply bg-neutral-700 text-neutral-base
+    @apply bg-neutral-700 text-neutral-base text-1.25
   }
   h1 {
-    @apply font-7 text-2.25;
+    @apply font-7 text-2.25 pb-4;
   }
   h2 {
-    @apply font-6 text-2;
+    @apply font-6 text-2 pb-4;
   }
   h3 {
-    @apply font-5 text-1.875;
+    @apply font-5 text-1.875 pb-4;
   }
   h4 {
-    @apply font-4 text-1.5;
+    @apply font-4 text-1.5 pb-4;
   }
   p {
-    @apply font-3 text-1.25 leading-relaxed;
+    @apply font-3 text-1.25 leading-relaxed pb-4;
   }
   a {
-    @apply underline text-info hover:text-warning;
+    @apply underline decoration-1 text-neutral-300 hover:text-neutral-400;
+  }
+  ul {
+    @apply list-disc list-inside pb-4;
   }
 }
 
 
 @layer components {
   .top-heading {
-    @apply font-7 text-4;
+    @apply font-7 text-[2.5rem];
   }
 }
 
