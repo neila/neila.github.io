@@ -22,18 +22,12 @@
     @apply font-3 text-1.25 leading-relaxed;
   }
   a {
-    @apply underline text-info hover:text-success;
+    @apply underline text-info hover:text-warning;
   }
 }
 
 
 @layer components {
-  .header {
-    @apply fixed top-0 z-50 flex w-full flex-row items-center justify-between shadow-md backdrop-blur-sm;
-  }
-  .btn {
-    @apply cursor-pointer rounded-2xl px-6 py-3 drop-shadow-xl;
-  }
   .top-heading {
     @apply font-7 text-4;
   }
