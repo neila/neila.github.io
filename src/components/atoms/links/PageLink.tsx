@@ -10,8 +10,7 @@ export const PageLink = (props: {
       href={props.href}
       passHref={true}
       className="no-underline py-2 px-12 relative hover:z-10
-      outline-dotted outline-success hover:outline-warning
-      text-success hover:text-warning"
+      hover:text-success outline-1 outline-dotted"
     >
       {props.children}
     </Link>
