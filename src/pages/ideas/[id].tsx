@@ -4,7 +4,7 @@ import Head from "next/head";
 
 import Footer from "@/components/Footer";
 import Graph from "@/components/Graph";
-import Header from "@/components/Header";
+import Header from "@/components/TopMenu";
 import { getAllPosts } from "@/utils/postid";
 import { NextPage } from "next";
 

@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Header from "@/components/TopMenu";
 
 import Algorap1 from "public/images/algorap/Algorap1.svg";
 import Algorap2 from "public/images/algorap/Algorap2.png";
