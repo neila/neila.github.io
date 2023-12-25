@@ -1,6 +1,5 @@
 import BaseLayout from "@/components/layouts/Base";
 import Image from "next/image";
-import Link from "next/link";
 import pp from "public/images/about/profilePic.png";
 
 const Work = () => {
@@ -9,11 +8,12 @@ const Work = () => {
       {/* <h1>Work</h1> */}
       {/* TODO (8): acts as abstract until work is better documented upon which this turns into work section */}
       <p>
-        <span className="text-2.25 font-5">I</span> am a freelance developer and
-        researcher. I work in a variety of fields including web development
-        (sysadmin, frontend), cybersecurity (web applications, cryptography,
-        OSINT research), machine learning (NLP, forecast systems), and
-        simulations modeling (agent-based modeling, newtonian systems).
+        <span className="text-2.25 font-5 leading-[1.25rem]">I</span> am a
+        freelance developer and researcher. I work in a variety of fields
+        including web development (sysadmin, frontend), cybersecurity (web
+        applications, cryptography, OSINT research), machine learning (NLP,
+        forecast systems), and simulations modeling (agent-based modeling,
+        newtonian systems).
       </p>
     </section>
   );
@@ -80,7 +80,7 @@ const Contact = () => {
           <p className="text-1.125">
             Email: <a href="mailto:neila@akxra.art">neila@akxra.art</a>
             <br />
-            (PGP public key{" "}
+            (PGP pubkey{" "}
             <a href="https://keybase.io/neila/pgp_keys.asc">
               0xA605E499C3DD8A55
             </a>
