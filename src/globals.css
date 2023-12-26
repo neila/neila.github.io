@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-neutral-700 text-neutral-base text-1.25
+    @apply bg-neutral-700 text-neutral-base text-1.125 font-serif
   }
   h1 {
     @apply font-7 text-2.25 pb-4;
@@ -19,7 +19,7 @@
     @apply font-4 text-1.5 pb-4;
   }
   p {
-    @apply font-3 text-1.25 leading-relaxed pb-4;
+    @apply font-3 text-1.125 leading-relaxed pb-4;
   }
   a {
     @apply underline decoration-1 text-neutral-300 hover:text-neutral-400;
