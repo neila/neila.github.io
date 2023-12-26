@@ -1,5 +1,5 @@
-function graph() {
+const graph = () => {
   return <div />;
-}
+};
 
 export default graph;

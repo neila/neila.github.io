@@ -44,6 +44,8 @@ const WorkTriangleIcon = (props: {
 };
 
 const works: NextPage = () => {
+  const archived = true;
+
   return (
     <div className="works">
       <Head>
@@ -60,27 +62,27 @@ const works: NextPage = () => {
       <section className="">
         <div className="relative mx-auto flex flex-wrap justify-center p-4 desktop:w-3/4 bigmonitor:w-4/6">
           <WorkTriangleIcon
-            pagepath="/works/algorap"
+            pagepath={`${archived ? "/_archives" : ""}/works/algorap`}
             image={Rap}
             updown="clip-tri-up"
           />
           <WorkTriangleIcon
-            pagepath="/works/synthfeed"
+            pagepath={`${archived ? "/_archives" : ""}/works/synthfeed`}
             image={Synthfeed}
             updown="clip-tri-down"
           />
           <WorkTriangleIcon
-            pagepath="/works/digihana"
+            pagepath={`${archived ? "/_archives" : ""}/works/digihana`}
             image={Digihana}
             updown="clip-tri-up"
           />
           <WorkTriangleIcon
-            pagepath="/works/er-simulation"
+            pagepath={`${archived ? "/_archives" : ""}/works/er-simulation`}
             image={AmbulancePic}
             updown="clip-tri-down"
           />
           <WorkTriangleIcon
-            pagepath="/works/radio"
+            pagepath={`${archived ? "/_archives" : ""}/works/radio`}
             image={Radio}
             updown="clip-tri-up"
           />

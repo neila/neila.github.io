@@ -1,12 +1,9 @@
-import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
-import { serialize } from "next-mdx-remote/serialize";
-import Head from "next/head";
-
-import Footer from "@/components/Footer";
-import Graph from "@/components/Graph";
-import Header from "@/components/Header";
+import BaseLayout from "@/components/layouts/Base";
+import Graph from "@/utils/Graph";
 import { getAllPosts } from "@/utils/postid";
 import { NextPage } from "next";
+import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote/serialize";
 
 type PostProps = {
   content: MDXRemoteSerializeResult<
@@ -18,26 +15,20 @@ type PostProps = {
 
 const post: NextPage<PostProps> = ({ content, id }) => {
   return (
-    <div>
-      <Head>
-        <title>{`${id} - SHØ`}</title>
-      </Head>
+    <>
+      <BaseLayout>
+        <div className="mt-8 mx-auto desktop:w-2/3">
+          <article className="px-2">
+            <MDXRemote {...content} />
+          </article>
 
-      <Header />
-
-      <div className="mx-auto mt-10 desktop:w-2/3">
-        <div className="prose p-3 desktop:prose-lg desktop:p-8">
-          <MDXRemote {...content} />
+          <div id="graph-container">
+            {/*display post network graph*/}
+            <Graph />
+          </div>
         </div>
-
-        <div id="graph-container">
-          {/*display post network graph*/}
-          <Graph />
-        </div>
-      </div>
-
-      <Footer />
-    </div>
+      </BaseLayout>
+    </>
   );
 };
 
