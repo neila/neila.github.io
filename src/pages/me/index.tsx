@@ -58,11 +58,11 @@ const Work = () => {
       <p>
         I'm a a strong believer of the power of open communities, and work
         actively with <a href="https://ethereumjapan.org">some</a> as well as
-        helped to start <a href="https://unchain.tech/">a few</a>. The mere act
-        of openly sharing the products of our work and wit provides the audience
-        the option to assess its true value with their own eyes. When
-        irreplaceble value is indeed found in these beholding eyes, they also
-        become eager to collaborate and participate in its further development.
+        helped to launch <a href="https://unchain.tech/">a few</a>. It seems to
+        me that open access, naturally, asks of its audience to assess its true
+        value with their own eyes. When irreplaceble value is indeed found in
+        these beholding eyes, it is also far easier for them to contribute,
+        collaborate, and participate in its further development.
       </p>
     </section>
   );
