@@ -26,7 +26,7 @@ const Cells = () => {
   const diffTime = +today - +birthDate;
 
   const daysSinceBirth = diffTime / (1000 * 60 * 60 * 24);
-  const daysOndeath = 365.25 * 90;
+  const daysOndeath = Math.floor(365.25 * 76.5);
 
   const setCookie = (submitDate: string) => {
     document.cookie = `userDate=${submitDate}; path=/; expires=${today.setDate(
