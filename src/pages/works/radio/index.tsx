@@ -3,7 +3,8 @@ import Image from "next/image";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Songrec from "public/images/songrec.png";
+
+import Songrec from "public/images/radio/songrec.png";
 
 const Title = (params: { section: string; color: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
