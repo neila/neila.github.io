@@ -1,243 +1,142 @@
-import Head from "next/head";
+import BaseLayout from "@/components/layouts/Base";
 import Image from "next/image";
+import Link from "next/link";
+import pp from "public/images/about/profilePic.png";
 
-import { MapPinIcon } from "@heroicons/react/24/outline";
-
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-
-import profilePic from "public/images/about/profilePic.png";
-import { useState } from "react";
-
-const Title = (params: { section: string; color: string }) => {
+const Work = () => {
   return (
-    <div className="mt-5 mb-7 flex-grow-0 text-center">
-      <h1 className={params.color}> {params.section} </h1>
-    </div>
+    <section id="abstract" className="py-4">
+      {/* <h1>Work</h1> */}
+      {/* TODO (8): acts as abstract until work is better documented upon which this turns into work section */}
+      <p>
+        <span className="text-2.25 font-5">I</span> am a freelance developer and
+        researcher. I work in a variety of fields including web development
+        (sysadmin, frontend), cybersecurity (web applications, cryptography,
+        OSINT research), machine learning (NLP, forecast systems), and
+        simulations modeling (agent-based modeling, newtonian systems).
+      </p>
+    </section>
   );
 };
 
-const ToolLogo = (params: { logolink: string; logoname: string }) => {
-  const [paddingTop, setPaddingTop] = useState("0");
-
+const ProfilePic = () => {
   return (
-    <div className="relative" style={{ paddingTop }}>
-      {/* <div className="desktop:h-30 desktop:w-30 relative h-20 w-20 desktop:m-2"> */}
+    <div
+      className="flex justify-center mx-auto p-2 desktop:p-4
+      max-h-36 max-w-36 desktop:max-h-72 desktop:max-w-72 overflow-hidden"
+    >
+      {/* TODO (9): add breathing Halftone effect */}
       <Image
-        src={params.logolink}
-        alt={`${params.logoname} logo`}
-        className="opacity-100"
-        fill
-        onLoadingComplete={({ naturalWidth, naturalHeight }) => {
-          setPaddingTop(`calc(100% / (${naturalWidth} / ${naturalHeight})`);
+        src={pp}
+        alt="profile image"
+        className="border-none align-middle rounded-full grayscale hover:grayscale-0"
+        style={{
+          maxWidth: "100%",
+          height: "auto",
         }}
       />
     </div>
   );
 };
 
-const AboutMePage = () => {
+const Websites = () => {
   return (
-    <div>
-      <Head>
-        <title>ABXUT</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <section id="websites" className="py-4">
+      <h1>Websites</h1>
+      <ul>
+        <li>
+          <a rel="me" href="https://social.tchncs.de/@neila">
+            Mastodon (English)
+          </a>{" "}
+          /{" "}
+          <a href="https://bsky.app/profile/neila.bsky.social">
+            Bluesky (日本語)
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/neila">Github</a>
+        </li>
+        <li>
+          <a href="https://keybase.io/neila">Keybase</a>
+        </li>
+        <li>
+          <a href="https://lemmy.world/u/nla@discuss.tchncs.de">Lemmy</a>
+        </li>
+      </ul>
+      <p>
+        I have no association with <code>neila.com</code>, the Spanish metal
+        band on bandcamp, or with the RnB artist from Florida.
+      </p>
+    </section>
+  );
+};
 
-      <Header />
+const Contact = () => {
+  return (
+    <section id="contact" className="py-4">
+      <h1>Contact</h1>
+      <div className="desktop:flex justify-evenly desktop:text-center">
+        <div id="liame" className="">
+          <p className="text-1.125">
+            Email: <a href="mailto:neila@akxra.art">neila@akxra.art</a>
+            <br />
+            (PGP public key{" "}
+            <a href="https://keybase.io/neila/pgp_keys.asc">
+              0xA605E499C3DD8A55
+            </a>
+            )
+          </p>
+        </div>
 
-      <Title section="ABOUT" color="text-[#01CDFF]" />
+        <div id="margelet">
+          <p className="text-1.125">
+            Telegram: <a href="https://t.me/n_eila">n_eila</a>
+          </p>
+        </div>
 
-      {/* profile pic */}
-      {/* td: breathing Halftone effect */}
-      <div className="mx-auto flex h-32 w-32 justify-center overflow-hidden desktop:h-72 desktop:w-72">
-        <Image
-          src={profilePic}
-          alt="profile image"
-          className="border-none align-middle rounded-3xl grayscale hover:grayscale-0"
-          style={{
-            maxWidth: "100%",
-            height: "auto",
-          }}
-        />
-      </div>
+        {/* TODO (7): add SimpleX */}
 
-      {/*-- content - */}
-      <div className="min-h-full p-8">
-        <div className="mx-auto max-w-4xl space-y-24">
-          {/* intro */}
-          <section className="flex-col items-start desktop:flex">
-            <div className="mx-auto space-y-5 leading-snug desktop:w-4/5">
-              <p>
-                <a
-                  href="https://www.youtube.com/watch?v=UL5x60lpGIE"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Konnichiwa
-                </a>
-                . I&apos;m SHØ, a creative developer from Japan. <em>Time</em>
-                &apos;s 2006 person of the year.
-              </p>
-              <p>
-                I like questioning things; perhaps even more than finding
-                answers to them.
-              </p>
-              <p>
-                I seek joy in the{" "}
-                <a
-                  href="https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  small things
-                </a>
-                , like sleeping in makeshift spaces, or finding evidence of
-                cultural context in everyday life.
-              </p>
+        <div id="xirtam">
+          <p className="text-1.125">
+            Matrix: <a href="matrix:n@tchncs.de">n@tchncs.de</a>
+          </p>
+        </div>
 
-              <div className="mx-auto w-min items-center whitespace-nowrap rounded-md p-2 font-normal">
-                <MapPinIcon className="mx-1 h-6 w-6 text-red-600" />
-                <a
-                  className="mr-1 text-red-600 hover:text-blue-400"
-                  href="https://www.youtube.com/watch?v=SZzjw2UfUEk"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Tokyo, Japan
-                </a>
-              </div>
-            </div>
-          </section>
-
-          {/* skills */}
-          <section className="items-start space-x-0 desktop:flex desktop:space-x-10">
-            <div className="top-72 transform space-y-1 desktop:sticky desktop:w-0 desktop:translate-y-10 desktop:rotate-270">
-              <h2>Skills</h2>
-            </div>
-            <div className="mx-auto space-y-5 leading-snug desktop:w-full">
-              {/*<SkillTree classNamecontent='w-full h-screen bg-purple-400 rounded-md border-double border-4 border-light-blue-500'/>*/}
-              <ul className="list-inside list-disc space-y-3 leading-snug">
-                <li>
-                  Web design & development
-                  <ul className="ml-12 list-none">
-                    <li>DRY patterns/modular programming</li>
-                    <li>Responsive web design</li>
-                    <li>IxD</li>
-                  </ul>
-                </li>
-                <li>
-                  Blockchain & web3
-                  <ul className="ml-12 list-none">
-                    <li>smart contracts</li>
-                    <li>DeFi</li>
-                    <li>dApps</li>
-                  </ul>
-                </li>
-                <li>
-                  Machine learning & AI
-                  <ul className="ml-12 list-none">
-                    <li>NLP</li>
-                    <li>Analytical forecasting</li>
-                    <li>Recommendation systems</li>
-                  </ul>
-                </li>
-                <li>
-                  Simulation & modeling
-                  <ul className="ml-12 list-none">
-                    <li>Scenario optimization</li>
-                    <li>Game theory simulations</li>
-                    <li>Computational physics</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          {/* tools */}
-          <section className="items-start space-x-0 space-y-1 desktop:flex desktop:space-x-10">
-            <div className="top-72 transform space-y-1 desktop:sticky desktop:w-0 desktop:translate-y-10 desktop:rotate-270">
-              <h2> Current Toolkit</h2>
-            </div>
-            {/* make sure that the logos don't fill the screen on browsers without
-            javascript */}
-            {/* <div className="flex flex-wrap justify-start gap-1 desktop:w-full">
-              <ToolLogo
-                logolink="https://raw.githubusercontent.com/docker/docs/7bdcde7f1a36f79e798a9f7321b687e9807fde8d/assets/images/engine.svg"
-                logoname="Docker"
-              />
-              <ToolLogo
-                logolink="https://raw.githubusercontent.com/golang/website/967d7e407b063cd376ff9cae89e0f4e49b6b8210/_content/images/gophers/blue.svg"
-                logoname="Golang"
-              />
-              <ToolLogo
-                logolink="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
-                logoname="Python"
-              />
-              <ToolLogo
-                logolink="https://www.rust-lang.org/logos/rust-logo-512x512.png"
-                logoname="Rust"
-              />
-              <ToolLogo
-                logolink="https://gist.githubusercontent.com/neila/13512d1b818c0cfb974088ff3abf2656/raw/9f105955b3053e5eead76770b370f582a1732ff7/solidity_logo_white.svg"
-                logoname="Solidity"
-              />
-              <ToolLogo
-                logolink="https://raw.githubusercontent.com/microsoft/TypeScript-Website/b89d197063b6849bbfc2edfb033f6082be950636/packages/typescriptlang-org/static/icons/ts-logo-512.png"
-                logoname="Typescript"
-              />
-              {/* <ToolLogo logolink='https://raw.githubusercontent.com/cormullion/julia-logo-graphics/master/images/julia-dots.svg' logoname='Julia'/> */}
-
-            {/* <ToolLogo logolink='https://raw.githubusercontent.com/haskell-infra/hl/master/design/logo.svg' logoname='Haskell'/> */}
-            {/*</div> */}
-          </section>
-          <section className="items-start space-x-0 space-y-1 desktop:flex desktop:space-x-10">
-            <div className="top-72 transform space-y-1 desktop:sticky desktop:w-0 desktop:translate-y-10 desktop:rotate-270">
-              <h2>Past Tools</h2>
-            </div>
-            <div className="flex flex-wrap justify-start gap-1 desktop:w-full">
-              <ToolLogo
-                logolink="https://upload.wikimedia.org/wikipedia/commons/2/20/Mathematica_Logo.svg"
-                logoname="Mathematica"
-              />
-              <ToolLogo
-                logolink="https://starbeamrainbowlabs.com/images/logos/swi-prolog.svg"
-                logoname="Prolog"
-              />
-              <ToolLogo
-                logolink="https://www.r-project.org/logo/Rlogo.svg"
-                logoname="R"
-              />
-            </div>
-          </section>
-
-          {/* education */}
-          {/* <section className="desktop:flex space-x-0 space-y-1 desktop:space-x-10 items-start">
-            <div className="transform desktop:w-0 desktop:rotate-270 desktop:translate-y-24 desktop:sticky top-72">
-              <h2>Education</h2>
-            </div>
-            <ul className="desktop:w-full mx-auto leading-snug space-y-3">
-              <div>🎓 Minerva University '21 (B.Sc.)</div>
-              <div>🎓 Pearson College UWC '17 (IB Diploma)</div>
-            </ul>
-          </section> */}
-
-          {/* awards */}
-          {/* <section className="desktop:flex space-x-0 space-y-1 desktop:space-x-10 items-start">
-            <div className="transform desktop:w-0 desktop:rotate-270  desktop:translate-y-16 desktop:sticky top-72">
-              <h2>Awards</h2>
-            </div>
-            <ul className="desktop:w-full mx-auto leading-snug space-y-3">
-              <div>🏆 Fellow, '17-pres. // Masason foundation</div>
-              <div>🏆 Scholar, '15-'17 // United World Colleges Japan</div>
-            </ul>
-          </section> */}
+        <div id="ppmx">
+          <p className="text-1.125">
+            XMPP: <a href="xmpp:n@jabbers.one">n@jabbers.one</a>
+          </p>
         </div>
       </div>
+    </section>
+  );
+};
 
-      {/* Lower menu + copyright */}
-      <Footer />
-    </div>
+const AboutMePage = () => {
+  return (
+    <>
+      <BaseLayout className="px-4">
+        <article className="laptop:max-w-5xl mx-auto">
+          <h1 className="top-heading text-center">
+            <span className="text-[3rem]">A</span>BOUT{" "}
+            <span className="text-[3rem]">N</span>EILA
+          </h1>
+
+          {/* <h4 className="py-4 text-center">
+            This page is about me. For information about this website, see the{" "}
+            <Link href="/about">About page</Link>.
+          </h4> */}
+
+          <ProfilePic />
+
+          <Work />
+
+          <Websites />
+
+          <Contact />
+        </article>
+      </BaseLayout>
+    </>
   );
 };
 
