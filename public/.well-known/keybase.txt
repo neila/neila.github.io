@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/neila
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://akxra.art
+  * I am neila (https://keybase.io/neila) on keybase.
+  * I have a public key ASCpch2OctcoPf7JaCn6vUiI5TGuVj2de9dvizWCZi2O1Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120a9721d8e72d7283dfec96829fabd4888e531ae563d9d7bd76f8b3582662d8ed50a",
+      "host": "keybase.io",
+      "kid": "0120a9721d8e72d7283dfec96829fabd4888e531ae563d9d7bd76f8b3582662d8ed50a",
+      "uid": "ebec9e77293f0713ca6da5a5a5087e19",
+      "username": "neila"
+    },
+    "merkle_root": {
+      "ctime": 1688434391,
+      "hash": "4aa86e4c69bc9f0d10701ee9c7b70d2f35242f4efbbdaa6c3278ec4b67295b1c45ab8865030b11e4e154d1e064e99dedce2022c887e26312b3ccafca59c9d0ab",
+      "hash_meta": "dbc7b1c74aef809ce52e1680619c53471963caf4135f547a14bc417f35405473",
+      "seqno": 24639508
+    },
+    "service": {
+      "entropy": "mxgrSp8k5sOJc93q/jkXyYgz",
+      "hostname": "akxra.art",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.4"
+  },
+  "ctime": 1688434410,
+  "expire_in": 504576000,
+  "prev": "dd843edc1df1400b8d1a5e357604d0a4bb8709f0b7c7b27a8eaa2755ebd6c837",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgqXIdjnLXKD3+yWgp+r1IiOUxrlY9nXvXb4s1gmYtjtUKp3BheWxvYWTESpcCCMQg3YQ+3B3xQAuNGl41dgTQpLuHCfC3x7J6jqonVevWyDfEIIcfuI/8MBls2LWqfo8v19o3SmDofkadJ8tqcP1O0CiTAgHCo3NpZ8RAEmWM70+FW6XM+T2Mo0xLzuKhTiHultyojKs/ZZu2bMS2JqrYTxuTuJ5+t6JdpkFcDXDZPjrvQXe6744R6nOVA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPhzXWcjxrZsVh9KM/6j8l92fX3BBwxiaDpHGuNt+QmVo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/neila
+
+==================================================================

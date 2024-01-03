@@ -1,0 +1,5 @@
+Contact: https://keybase.io/neila
+Expires: 2024-07-04T01:51:00.000Z
+Encryption: https://keybase.io/neila/pgp_keys.asc
+Preferred-Languages: en, ja
+Canonical: https://akxra.art/.well-known/security.txt
