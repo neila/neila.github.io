@@ -18,10 +18,10 @@ const CustomDocument = (props: NoncedDocument) => {
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:url" content="akxra.art" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="UNCHAIN" />
+        <meta property="og:title" content="akxra.art" />
         <meta
           property="og:image"
-          content="https://www.unchain.tech/UNCHAIN_banner.png"
+          content="https://akxra.art/images/profilePic.png"
         />
         <meta property="og:description" content="sho's website" />
         <meta name="description" content="sho's website" />
