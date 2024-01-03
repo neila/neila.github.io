@@ -58,12 +58,13 @@ const Work = () => {
       <p>
         I'm a a strong believer of the power of open communities, and work
         actively with <a href="https://ethereumjapan.org">some</a> as well as
-        established <a href="https://unchain.tech/">a few</a>. It seems to me
-        the mere act of openly sharing products of our work and wit, as if there
-        was nothing to protect and extract to begin with, provides individuals
-        the option to assess its true value with their own eyes. When
-        irreplaceble value is indeed found in these beholding eyes, they also
-        become eager to participate in its further development and production.
+        helped to start <a href="https://unchain.tech/">a few</a>. It seems to
+        me the mere act of openly sharing products of our work and wit, as if
+        there was nothing to protect and extract to begin with, provides
+        individuals the option to assess its true value with their own eyes.
+        When irreplaceble value is indeed found in these beholding eyes, they
+        also become eager to participate in its further development and
+        production.
       </p>
     </section>
   );
