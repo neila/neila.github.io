@@ -1,25 +1,23 @@
 import { NextPage } from "next";
 import Head from "next/head";
 
-import Background from "@/components/Background";
-import Header_home from "@/components/Header_home";
-import Nav_home from "@/components/Nav_home";
+import Header from "@/components/Header";
+import Cells from "@/components/YourLife";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="flex flex-col h-screen">
       <Head>
         <title>SHØ</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header_home />
+      <Header />
 
-      <Background />
-
+      {/* <Background /> */}
       {/* <Canvas /> */}
 
-      <Nav_home />
+      <Cells />
     </div>
   );
 };
