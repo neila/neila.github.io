@@ -1,8 +1,7 @@
 import { useCallback, useMemo } from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
-import type { Engine } from "tsparticles-engine";
-import { ISourceOptions } from "tsparticles-engine";
+import Particles from "react-particles";
+import type { Container, Engine, ISourceOptions } from "tsparticles-engine";
+import { loadSlim } from "tsparticles-slim";
 
 const Background = () => {
   // options documentation: https://particles.js.org/docs/interfaces/Options_Interfaces_IOptions.IOptions.html
@@ -40,18 +39,6 @@ const Background = () => {
       },
       ManualParticles: [],
       motion: { disable: true },
-      // particles: {
-      //   color: {
-      //     value: '#f00',
-      //   },
-      //   move: {
-      //     enable: true,
-      //     speed: { min: 1, max: 3 },
-      //   },
-      //   size: {
-      //     value: { min: 1, max: 3 },
-      //   },
-      // },
       particles: {
         bounce: {},
         color: {
@@ -105,12 +92,24 @@ const Background = () => {
   }, []);
 
   const particlesInit = useCallback(async (engine: Engine) => {
-    // await loadFireflyPreset(engine)
-    await loadFull(engine);
+    console.log(engine);
+    await loadSlim(engine);
   }, []);
+
+  const particlesLoaded = useCallback(
+    async (container: Container | undefined) => {
+      await console.log(container);
+    },
+    [],
+  );
+
   return (
     <>
-      <Particles init={particlesInit} options={options as ISourceOptions} />
+      <Particles
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={options as ISourceOptions}
+      />
     </>
   );
   // <Particles
