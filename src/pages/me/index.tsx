@@ -1,6 +1,7 @@
 import BaseLayout from "@/components/layouts/Base";
 import { walletAddress } from "@/utils/constants";
 import Image from "next/image";
+import Link from "next/link";
 import pp from "public/images/about/profilePic.png";
 
 const ProfilePic = () => {
@@ -149,7 +150,7 @@ const Contact = () => {
       <div className="desktop:flex justify-evenly desktop:text-center">
         <div id="liame" className="">
           <p className="text-1.125">
-            Email: <a href="mailto:neila@akxra.art">neila@akxra.art</a>
+            Email: <a href="mailto:neila@tuta.io">neila@tuta.io</a>
             <br />
             (PGP pubkey{" "}
             <a href="https://keybase.io/neila/pgp_keys.asc">
@@ -175,7 +176,7 @@ const Contact = () => {
 
         <div id="ppmx">
           <p className="text-1.125">
-            XMPP: <a href="xmpp:n@jabbers.one">n@jabbers.one</a>
+            XMPP: <a href="xmpp:n@xmpp.co">n@xmpp.co</a>
           </p>
         </div>
       </div>
@@ -201,7 +202,7 @@ const AboutMePage = () => {
           <ProfilePic />
 
           <Work />
-          <DonateToAddresses />
+          {/* <DonateToAddresses /> */}
 
           <Websites />
 
