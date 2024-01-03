@@ -1,9 +1,12 @@
 import Footer from "@/components/Footer";
-import TopMenu from "@/components/Header";
+import Header from "@/components/Header";
 import Head from "next/head";
 import { FC, ReactNode } from "react";
 
-const BaseLayout: FC<{ children: ReactNode }> = ({ children }) => {
+const BaseLayout: FC<{ className?: string; children: ReactNode }> = ({
+  className,
+  children,
+}) => {
   return (
     <>
       <Head>
@@ -12,9 +15,9 @@ const BaseLayout: FC<{ children: ReactNode }> = ({ children }) => {
       </Head>
 
       <div className="px-2">
-        <TopMenu />
+        <Header />
 
-        <main>{children}</main>
+        <main className={className}>{children}</main>
 
         {/* Lower menu + copyright */}
         <Footer />
