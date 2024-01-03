@@ -1,10 +1,10 @@
-import { NextPage } from "next";
+import { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 
 import Header from "@/components/Header";
 import Cells from "@/components/YourLife";
 
-const Home: NextPage = () => {
+const Home: NextPage = (props: { userDate: string | null }) => {
   return (
     <div className="flex flex-col h-screen">
       <Head>
@@ -17,9 +17,16 @@ const Home: NextPage = () => {
       {/* <Background /> */}
       {/* <Canvas /> */}
 
-      <Cells />
+      <Cells date={props.userDate} />
     </div>
   );
+};
+
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  const { req } = ctx;
+  const userDate = req.cookies.userDate || null;
+
+  return { props: { userDate } };
 };
 
 export default Home;
