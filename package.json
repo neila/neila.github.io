@@ -9,9 +9,7 @@
     "url": "git+https://github.com/neila/akira-portfolio.git"
   },
   "author": "SHØ <neila@users.noreply.github.com> (https://akxra.art/)",
-  "contributors": [
-    "SHØ <neila@users.noreply.github.com> (https://akxra.art/)"
-  ],
+  "contributors": ["SHØ <neila@users.noreply.github.com> (https://akxra.art/)"],
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/neila/akira-portfolio/issues"
@@ -31,12 +29,12 @@
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/typography": "^0.5.4",
     "@types/node": "^18.15.11",
-    "@types/react": "^18.2.43",
+    "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
     "autoprefixer": "^10.2.6",
     "dateformat": "^5.0.3",
     "gray-matter": "^4.0.3",
-    "lint-staged": "^15.1.0",
+    "lint-staged": "^15.2.0",
     "next-mdx-remote": "^4.4.1",
     "postcss": "^8.4.32",
     "remark": "15",
@@ -44,7 +42,7 @@
     "simple-git-hooks": "^2.7.0",
     "tailwindcss": "^3.3.6",
     "tslib": "^2.5.3",
-    "typescript": "^5.0.3"
+    "typescript": "^5.3.3"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
