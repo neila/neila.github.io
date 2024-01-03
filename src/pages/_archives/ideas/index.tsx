@@ -9,8 +9,8 @@ import dateFormat from "dateformat";
 import matter from "gray-matter";
 
 import Footer from "@/components/Footer";
-import Graph from "@/components/Graph";
 import Header from "@/components/Header";
+import Graph from "@/utils/Graph";
 
 type Post = {
   id: string;

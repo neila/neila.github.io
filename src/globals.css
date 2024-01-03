@@ -4,36 +4,39 @@
 
 @layer base {
   body {
-    @apply bg-[#07070D] text-base font-normal text-[#F9EFF1] desktop:mx-12 desktop:text-lg;
+    @apply bg-neutral-700 text-neutral-base text-1.125 font-serif
   }
   h1 {
-    @apply text-3xl font-bold desktop:text-4xl;
+    @apply font-7 text-2.25 pb-4;
   }
   h2 {
-    @apply text-xl font-bold desktop:text-2xl;
+    @apply font-6 text-2 pb-4;
   }
   h3 {
-    @apply text-base font-bold desktop:text-lg;
+    @apply font-5 text-1.875 pb-4;
   }
-  a {
-    @apply underline hover:text-[#F8D106];
+  h4 {
+    @apply font-4 text-1.5 pb-4;
   }
   p {
-    @apply text-base desktop:text-lg desktop:leading-relaxed;
+    @apply font-3 text-1.125 leading-relaxed pb-4;
+  }
+  a {
+    @apply underline decoration-1 text-neutral-300 hover:text-neutral-400;
+  }
+  ul {
+    @apply list-disc list-inside pb-4;
   }
 }
 
+
+@layer components {
+  .top-heading {
+    @apply font-7 text-[2.5rem];
+  }
+}
+
+
 @layer utilities {
-  .clip-tri-up {
-    clip-path: polygon(50% 7%, 100% 93.5%, 0 93.5%);
-     {
-      /*equilateral triangle. */
-    }
-  }
-  .clip-tri-down {
-    clip-path: polygon(0 7%, 100% 7%, 50% 93.5%);
-     {
-      /*must be wrapped in square element*/
-    }
-  }
+
 }

@@ -1,0 +1,55 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  setup:
+    uses: ./.github/workflows/_setup.yml
+
+  build:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v4
+        with:
+          static_site_generator: next
+      - uses: actions/cache@v3
+        with:
+          path: |
+            ${{ github.workspace }}/node_modules
+            ${{ github.workspace }}/.yarn/cache
+          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}-nodemodules
+      - uses: actions/cache@v3
+        with:
+          path: .next/cache
+          key:  ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}-build-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+      - name: build
+        run: yarn build
+      - name: upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

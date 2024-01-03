@@ -13,7 +13,7 @@ type NoncedDocument = DocumentInitialProps & { nonce: string };
 
 const CustomDocument = (props: NoncedDocument) => {
   return (
-    <Html prefix="og: https://ogp.me/ns#" nonce={props.nonce}>
+    <Html prefix="og: https://ogp.me/ns#" nonce={props.nonce} className="dark">
       <Head nonce={props.nonce}>
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:url" content="akxra.art" />

@@ -1,28 +1,27 @@
-import Image from "next/image";
-import Link from "next/link";
-
-import Nav from "@/components/Nav";
-import Top from "public/images/top_o.png";
+import { PageLink } from "@/components/atoms/links/PageLink";
 
 const Header = () => {
+  const MainMenu = () => {
+    return (
+      <nav id="menu" className="py-2 flex justify-center">
+        <h3 className="-space-x-[24px] leading-[57px]">
+          {/* TODO (3): replace with drop cap */}
+          <PageLink href="/">🏠</PageLink>&emsp;
+          {/* <PageLink href="/about">SITE</PageLink>&emsp; */}
+          <PageLink href="/me">ME</PageLink>&emsp;
+          <PageLink href="/blog">BLOG</PageLink>
+          {/* <PageLink href="/changelog">CHANGES</PageLink> */}
+        </h3>
+      </nav>
+    );
+  };
+
   return (
-    <header className="sticky top-0 z-10 flex justify-between border-b bg-[#07070D]">
-      {/*Logo*/}
-      <Link href="/">
-        <Image
-          className="cursor-pointer rounded-full"
-          alt="SHØ logo"
-          src={Top}
-          width={80}
-          height={80}
-          style={{
-            maxWidth: "100%",
-            height: "auto",
-          }}
-        />
-      </Link>
-      <Nav />
-    </header>
+    <>
+      <div className="py-2 justify-center">
+        <MainMenu />
+      </div>
+    </>
   );
 };
 
