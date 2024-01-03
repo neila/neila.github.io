@@ -22,7 +22,8 @@
     @apply font-3 text-1.125 leading-relaxed pb-4;
   }
   a {
-    @apply underline decoration-1 text-neutral-300 hover:text-neutral-400;
+    @apply text-neutral-300 hover:text-neutral-400
+    underline underline-offset-4 decoration-1 decoration-dotted;
   }
   ul {
     @apply list-disc list-inside pb-4;
