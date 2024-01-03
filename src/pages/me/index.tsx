@@ -3,6 +3,72 @@ import { walletAddress } from "@/utils/constants";
 import Image from "next/image";
 import pp from "public/images/about/profilePic.png";
 
+const ProfilePic = () => {
+  return (
+    <div
+      className="flex justify-center mx-auto p-2 desktop:p-4
+      max-h-36 max-w-36 desktop:max-h-72 desktop:max-w-72 overflow-hidden"
+    >
+      {/* TODO (9): add breathing Halftone effect */}
+      <Image
+        src={pp}
+        alt="profile image"
+        className="border-none align-middle rounded-full grayscale hover:grayscale-0"
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+        }}
+      />
+    </div>
+  );
+};
+
+const Work = () => {
+  return (
+    <section id="abstract" className="py-4">
+      {/* <h1>Work</h1> */}
+      {/* TODO (8): acts as abstract until work is better documented upon which this turns into work section */}
+      <p>
+        <span className="text-2.25 font-5 leading-[1.25rem]">I</span> am a
+        freelance developer and researcher. I work in a variety of fields
+        including web development (sysadmin, frontend), cybersecurity (web
+        applications, cryptography, OSINT research), and machine learning (NLP,
+        forecast systems).{" "}
+        {/* and simulations modeling (agent-based modeling, newtonian systems). */}
+        I have worked for, published in, or consulted for:{" "}
+        <em>
+          <a href="https://www.nhk.or.jp/">NHK</a> (2022)
+        </em>
+        ,{" "}
+        <em>
+          <a href="https://www.henkaku.center/en">CIT</a> (2022)
+        </em>
+        ,{" "}
+        <em>
+          <a href="https://www.wolfram.com/">Wolfram Research</a> (2020)
+        </em>
+        ,{" "}
+        <em>
+          <a href="https://nikkei.com/">Nikkei</a> (2017-2019)
+        </em>
+        , and <em>private clients (2017-)</em>; everything on this website
+        should be considered my own viewpoint or writing unless otherwise
+        specified by a representative.
+      </p>
+      <p>
+        I'm a a strong believer of the power of open communities, and work
+        actively with <a href="https://ethereumjapan.org">some</a> as well as
+        established <a href="https://unchain.tech/">a few</a>. It seems to me
+        the mere act of openly sharing products of our work and wit, as if there
+        was nothing to protect and extract to begin with, provides individuals
+        the option to assess its true value with their own eyes. When
+        irreplaceble value is indeed found in these beholding eyes, they also
+        become eager to participate in its further development and production.
+      </p>
+    </section>
+  );
+};
+
 const DonateToAddresses = () => {
   return (
     <div className="border border-1 p-2 my-2">
@@ -41,43 +107,6 @@ const DonateToAddresses = () => {
           </code>
         </li>
       </ul>
-    </div>
-  );
-};
-
-const Work = () => {
-  return (
-    <section id="abstract" className="py-4">
-      {/* <h1>Work</h1> */}
-      {/* TODO (8): acts as abstract until work is better documented upon which this turns into work section */}
-      <p>
-        <span className="text-2.25 font-5 leading-[1.25rem]">I</span> am a
-        freelance developer and researcher. I work in a variety of fields
-        including web development (sysadmin, frontend), cybersecurity (web
-        applications, cryptography, OSINT research), and machine learning (NLP,
-        forecast systems).
-        {/* and simulations modeling (agent-based modeling, newtonian systems). */}
-      </p>
-    </section>
-  );
-};
-
-const ProfilePic = () => {
-  return (
-    <div
-      className="flex justify-center mx-auto p-2 desktop:p-4
-      max-h-36 max-w-36 desktop:max-h-72 desktop:max-w-72 overflow-hidden"
-    >
-      {/* TODO (9): add breathing Halftone effect */}
-      <Image
-        src={pp}
-        alt="profile image"
-        className="border-none align-middle rounded-full grayscale hover:grayscale-0"
-        style={{
-          maxWidth: "100%",
-          height: "auto",
-        }}
-      />
     </div>
   );
 };
