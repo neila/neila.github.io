@@ -39,7 +39,7 @@
     "lint-staged": "^15.1.0",
     "next-mdx-remote": "^4.4.1",
     "postcss": "^8.4.31",
-    "remark": "14",
+    "remark": "15",
     "remark-html": "16",
     "rome": "^12.1.3",
     "simple-git-hooks": "^2.7.0",
