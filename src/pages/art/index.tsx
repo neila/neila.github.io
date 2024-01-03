@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image, { type StaticImageData } from "next/image";
 
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Header from "@/components/TopMenu";
 
 import rwkng from "public/images/art/RUNAWAY_KING.jpg";
 import bbl from "public/images/art/bigbanglove.png";

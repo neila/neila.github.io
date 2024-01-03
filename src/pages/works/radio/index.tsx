@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Header from "@/components/TopMenu";
 
 import Songrec from "public/images/radio/songrec.png";
 

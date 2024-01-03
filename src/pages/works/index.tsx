@@ -4,7 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Header from "@/components/TopMenu";
 
 import Synthfeed from "public/images/works/Synthfeed.png";
 import Digihana from "public/images/works/digihana.png";
