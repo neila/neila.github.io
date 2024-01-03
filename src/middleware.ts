@@ -24,7 +24,7 @@ const generateCspHeader = (nonce: string): string => {
   return csp;
 };
 
-export const middleware = (req: NextRequest): NextResponse | void => {
+export const middleware = (req: NextRequest): NextResponse => {
   const newNonce = generateNonce();
   const newCsp = generateCspHeader(newNonce);
 

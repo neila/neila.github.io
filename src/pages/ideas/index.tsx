@@ -4,9 +4,9 @@ import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 
+import path from "path";
 import dateFormat from "dateformat";
 import matter from "gray-matter";
-import path from "path";
 
 import Footer from "@/components/Footer";
 import Graph from "@/components/Graph";
@@ -148,9 +148,8 @@ export async function getStaticProps() {
   const sorted_allPostsData = allPostsData.sort((a: Post, b: Post) => {
     if (a.date_created < b.date_created) {
       return 1;
-    } else {
-      return -1;
     }
+    return -1;
   });
   const postsList = JSON.parse(JSON.stringify(sorted_allPostsData));
 

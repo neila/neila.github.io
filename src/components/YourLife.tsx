@@ -34,6 +34,7 @@ const Cells = () => {
     )}`;
   };
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <intended only to run on initial mount>
   useEffect(() => {
     const cookie = getCookie();
     if (cookie) {
@@ -41,6 +42,7 @@ const Cells = () => {
     }
   }, []);
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <func useCookie() is not a dependency>
   useEffect(() => {
     setCookie(birthDay);
   }, [birthDay]);
