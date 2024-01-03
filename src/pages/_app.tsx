@@ -7,7 +7,7 @@ export const config = {
   unstable_runtimeJS: false,
 };
 
-const PF = ({ Component, pageProps }: AppProps) => {
+const Main = ({ Component, pageProps }: AppProps) => {
   const [mounted, setMounted] = useState(false);
   const [mountCount, setMountCount] = useState(0);
 
@@ -25,4 +25,4 @@ const PF = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-export default PF;
+export default Main;
