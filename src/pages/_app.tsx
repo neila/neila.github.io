@@ -18,10 +18,10 @@ const Main = ({ Component, pageProps }: AppProps) => {
   }, []);
 
   return (
-    <main>
+    <>
       <p>{mountCount}</p>
       <Component {...pageProps} />
-    </main>
+    </>
   );
 };
 
