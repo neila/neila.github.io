@@ -1,6 +1,49 @@
 import BaseLayout from "@/components/layouts/Base";
+import { walletAddress } from "@/utils/constants";
 import Image from "next/image";
 import pp from "public/images/about/profilePic.png";
+
+const DonateToAddresses = () => {
+  return (
+    <div className="border border-1 p-2 my-2">
+      <p className="text-1">
+        To help make ends meet, I accept small (or large, if you insist)
+        donations in cryptocurrencies. <br />
+        If you appreciate my work, please consider showing your support.
+      </p>
+
+      <ul
+        className="font-sans font-3 text-1
+        space-y-2 pb-2 max-w-full list-outside list-none"
+      >
+        <li>
+          Bitcoin:{" "}
+          <code className="break-words text-pink-500">
+            {walletAddress.bitcoin}
+          </code>
+        </li>
+        <li>
+          Ethereum:{" "}
+          <code className="break-words text-pink-500">
+            {walletAddress.ethereum}
+          </code>
+        </li>
+        <li>
+          DAI/USDT/USDC (Polygon):{" "}
+          <code className="break-words text-pink-500">
+            {walletAddress.polygon}
+          </code>
+        </li>
+        <li>
+          Monero:{" "}
+          <code className="break-words max-w-full text-pink-500">
+            {walletAddress.monero}
+          </code>
+        </li>
+      </ul>
+    </div>
+  );
+};
 
 const Work = () => {
   return (
@@ -11,9 +54,9 @@ const Work = () => {
         <span className="text-2.25 font-5 leading-[1.25rem]">I</span> am a
         freelance developer and researcher. I work in a variety of fields
         including web development (sysadmin, frontend), cybersecurity (web
-        applications, cryptography, OSINT research), machine learning (NLP,
-        forecast systems), and simulations modeling (agent-based modeling,
-        newtonian systems).
+        applications, cryptography, OSINT research), and machine learning (NLP,
+        forecast systems).
+        {/* and simulations modeling (agent-based modeling, newtonian systems). */}
       </p>
     </section>
   );
@@ -64,8 +107,8 @@ const Websites = () => {
         </li>
       </ul>
       <p>
-        I have no association with <code>neila.com</code>, the Spanish metal
-        band on bandcamp, or with the RnB artist from Florida.
+        I have no association with <code>neila.com</code> or with any locations
+        in Spain, the metal band on bandcamp, or the RnB artist from Florida.
       </p>
     </section>
   );
@@ -130,6 +173,7 @@ const AboutMePage = () => {
           <ProfilePic />
 
           <Work />
+          <DonateToAddresses />
 
           <Websites />
 
