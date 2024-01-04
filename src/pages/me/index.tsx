@@ -188,7 +188,7 @@ const AboutMePage = () => {
   return (
     <>
       <BaseLayout className="px-4">
-        <article className="laptop:max-w-5xl mx-auto">
+        <article className="laptop:max-w-6xl mx-auto">
           <h1 className="top-heading text-center">
             <span className="text-[3rem]">A</span>BOUT{" "}
             <span className="text-[3rem]">N</span>EILA
@@ -202,7 +202,7 @@ const AboutMePage = () => {
           <ProfilePic />
 
           <Work />
-          {/* <DonateToAddresses /> */}
+          <DonateToAddresses />
 
           <Websites />
 

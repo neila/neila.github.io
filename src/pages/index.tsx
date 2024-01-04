@@ -7,7 +7,7 @@ const HomePage: NextPage = () => {
   return (
     <>
       <article>
-        <BaseLayout className="px-4">
+        <BaseLayout className="px-4 laptop:max-w-6xl mx-auto">
           <h1 className="top-heading">Neila</h1>
 
           {/* abstract */}
