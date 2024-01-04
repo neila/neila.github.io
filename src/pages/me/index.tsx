@@ -202,7 +202,7 @@ const AboutMePage = () => {
           <ProfilePic />
 
           <Work />
-          <DonateToAddresses />
+          {/* <DonateToAddresses /> */}
 
           <Websites />
 

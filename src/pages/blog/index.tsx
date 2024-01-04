@@ -9,9 +9,9 @@ import Link from "next/link";
 import React from "react";
 
 const BlogIndexPage = (props: { postsList: blogPostType[] }) => {
-  const DecartesQuote = () => {
+  const Quote = () => {
     return (
-      <div className="mx-auto desktop:w-3/5 pt-4">
+      <div className="mx-auto desktop:w-3/5 py-4">
         <blockquote className="border-l-4 p-2 text-center italic">
           <p>&quot;Ego cogito, ergo sum&quot;</p>
           <cite className="ml-16 text-1">- René Descartes</cite>
@@ -23,20 +23,16 @@ const BlogIndexPage = (props: { postsList: blogPostType[] }) => {
     return (
       <>
         {props.postsList.map((post: blogPostType) => (
-          <Link
-            href={{
-              pathname: `/blog/${encodeURIComponent(post.id)}`,
-            }}
-            key={post.id}
-            className="no-underline"
-          >
-            <p className="outline rounded-md truncate p-2 my-2">
-              <span className="float-start">{post.id}</span>
-              <span className="float-end">
-                {dateFormat(post.date_created, "yyyy-mm-dd")}
-              </span>
-            </p>
-          </Link>
+          <li key={post.id}>
+            <Link
+              href={{
+                pathname: `/blog/${encodeURIComponent(post.id)}`,
+                // TODO (9): parse url to simpler format
+              }}
+            >
+              {post.id}
+            </Link>
+          </li>
         ))}
       </>
     );
@@ -44,12 +40,9 @@ const BlogIndexPage = (props: { postsList: blogPostType[] }) => {
 
   return (
     <>
-      <BaseLayout className="px-4">
-        <article>
-          <section
-            id="abstract"
-            className="leading-snug mx-auto desktop:w-4/5 pt-8 pb-16"
-          >
+      <BaseLayout className="leading-snug">
+        <article className="laptop:max-w-6xl mx-auto">
+          <section id="abstract">
             <p>
               My biological brain is far too{" "}
               <a
@@ -72,11 +65,15 @@ const BlogIndexPage = (props: { postsList: blogPostType[] }) => {
               acknolwedge and appreciate the everchanging present, lies the art
               of spontaneous creativity.
             </p>
-            <DecartesQuote />
+            <Quote />
           </section>
 
-          <section id="bloglinks" className="mx-auto max-w-4xl space-y-16">
-            {/* <PostLinksList /> */}
+          <section id="bloglinks" className="pt-8">
+            {/* TODO (3) map sections by tag */}
+            <h2>Posts</h2>
+            <ul>
+              <PostLinksList />
+            </ul>
           </section>
 
           <section id="graph-container">
