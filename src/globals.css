@@ -35,7 +35,7 @@
     }
   }
   pre {
-    @apply text-neutral-300 bg-neutral-black rounded p-1 my-2;
+    @apply text-neutral-300 bg-neutral-black rounded p-1 my-2 text-wrap;
     & > code {
       @apply px-0 text-wrap;
     }
