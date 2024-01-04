@@ -56,16 +56,16 @@ An expired key should be considered **outdated**. It does **not** mean that the 
 # open key editor
 gpg --edit-key keyID
 
-########## inside editor ##########
-# #select key (N = index)         #
-# gpg > key N                     #
-#                                 #
-# #set new expiry                 #
-# gpg > expire                    #
-#                                 #
-# #save                           #
-# gpg > save                      #
-###################################
+##### inside editor ######
+#select key (N = index)
+gpg > key N
+
+#set new expiry
+gpg > expire
+
+# save
+gpg > save
+
 ```
 
 On the other hand, revocation means that key will not be used again thereafter. Importantly, key revocation **includes a reason**. Unless it is revoked due to compromise, they key should still be considered trustworthy. A signature with a key that is revoked due to no longer being used is still a valid signature.

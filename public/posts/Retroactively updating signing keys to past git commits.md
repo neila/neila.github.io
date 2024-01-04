@@ -15,25 +15,23 @@ First, I updated the UID associated with my key. In my situation, it was only th
 # open key editor
 gpg --edit-key keyID
 
-############### inside editor ##########################
-# # add new UID                                        #
-# gpg > adduid                                         #
-# Real name: YourName (doesn't have to be real)        #
-# Email address: You@Email.com                         #
-#                                                      #
-# # update UID trust level                             #
-# gpg > trust                                          #
-#                                                      #
-# #select old UID (N = index)                          #
-# gpg > uid N                                          #
-#                                                      #
-# # remove old UID                                     #
-# gpg > deluid                                         #
-#                                                      #
-# # save key                                           #
-# gpg > save                                           #
-#                                                      #
-########################################################
+####### inside editor ########
+# add new UID
+gpg > adduid
+Real name: YourName
+Email address: You@Email.com
+
+# update UID trust level
+gpg > trust
+
+# select old UID (N = index)
+gpg > uid N
+
+# remove old UID
+gpg > deluid
+
+# save key
+gpg > save
 ```
 
 ## Updating git config to use the new signing key
