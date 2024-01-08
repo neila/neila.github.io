@@ -4,9 +4,9 @@ https://keybase.io/neila
 
 I hereby claim:
 
-  * I am an admin of https://akxra.art
+  * I am an admin of https://neila.github.io
   * I am neila (https://keybase.io/neila) on keybase.
-  * I have a public key ASCpch2OctcoPf7JaCn6vUiI5TGuVj2de9dvizWCZi2O1Qo
+  * I have a public key with fingerprint 7E30 0102 93AC 094B 363F  DF8D A605 E499 C3DD 8A55
 
 To do so, I am signing this object:
 
@@ -14,39 +14,59 @@ To do so, I am signing this object:
   "body": {
     "key": {
       "eldest_kid": "0120a9721d8e72d7283dfec96829fabd4888e531ae563d9d7bd76f8b3582662d8ed50a",
+      "fingerprint": "7e30010293ac094b363fdf8da605e499c3dd8a55",
       "host": "keybase.io",
-      "kid": "0120a9721d8e72d7283dfec96829fabd4888e531ae563d9d7bd76f8b3582662d8ed50a",
+      "key_id": "a605e499c3dd8a55",
+      "kid": "01165ea1ebdb055cb0563c5949d0db9c68c2aa9ee165a54aa4e19de8220c4fbb92d80a",
       "uid": "ebec9e77293f0713ca6da5a5a5087e19",
       "username": "neila"
     },
     "merkle_root": {
-      "ctime": 1688434391,
-      "hash": "4aa86e4c69bc9f0d10701ee9c7b70d2f35242f4efbbdaa6c3278ec4b67295b1c45ab8865030b11e4e154d1e064e99dedce2022c887e26312b3ccafca59c9d0ab",
-      "hash_meta": "dbc7b1c74aef809ce52e1680619c53471963caf4135f547a14bc417f35405473",
-      "seqno": 24639508
+      "ctime": 1704722622,
+      "hash_meta": "cf742145a421492c42164fa36e5e205cfed651ee41b2e8d745ab8853491d054a",
+      "seqno": 25321213
+    },
+    "revoke": {
+      "sig_ids": [
+        "f3ba4bcc739cbd9b585285256b7a27dd85a05b82e3358dc4ebda813241b015fb0f"
+      ]
     },
     "service": {
-      "entropy": "mxgrSp8k5sOJc93q/jkXyYgz",
-      "hostname": "akxra.art",
+      "hostname": "neila.github.io",
       "protocol": "https:"
     },
     "type": "web_service_binding",
-    "version": 2
+    "version": 1
   },
-  "client": {
-    "name": "keybase.io go client",
-    "version": "6.0.4"
-  },
-  "ctime": 1688434410,
-  "expire_in": 504576000,
-  "prev": "dd843edc1df1400b8d1a5e357604d0a4bb8709f0b7c7b27a8eaa2755ebd6c837",
-  "seqno": 8,
+  "ctime": 1704722659,
+  "expire_in": 157680000,
+  "prev": "61b4ff81e33bc82d20c91a81265f47cf352a2e1d145a11a78974ddad5bf132a8",
+  "seqno": 25,
   "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgqXIdjnLXKD3+yWgp+r1IiOUxrlY9nXvXb4s1gmYtjtUKp3BheWxvYWTESpcCCMQg3YQ+3B3xQAuNGl41dgTQpLuHCfC3x7J6jqonVevWyDfEIIcfuI/8MBls2LWqfo8v19o3SmDofkadJ8tqcP1O0CiTAgHCo3NpZ8RAEmWM70+FW6XM+T2Mo0xLzuKhTiHultyojKs/ZZu2bMS2JqrYTxuTuJ5+t6JdpkFcDXDZPjrvQXe6744R6nOVA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPhzXWcjxrZsVh9KM/6j8l92fX3BBwxiaDpHGuNt+QmVo3RhZ80CAqd2ZXJzaW9uAQ==
+-----BEGIN PGP MESSAGE-----
+
+owFtUzuIFFkU7fE32jCyoA6DCDJlOMPM+3860UjBaGNXbd7nvu6ie6raqppRGcZE
+0InEzGQCNTEwWzNdlkXMxEww2xUM/ASaLCwLG+yt3h0QsV7xHlXvnHvPPfe9u3N7
+O935y/+s/nXg2Ou/Z15+9B3Y6fy5mfkyXs96m9kIpguMI9RNf5THrJcRyoizmtFo
+QLOomeExQbDKMJucj8IYA5JTB1LxaKP2UatkPJeGKcWQFSVx2XKW8mIA1aTKiwbD
+auCEUMIsd4FY4bniKSYTnSIShLWBx2iclEgclnXLQHHe1bCSl/gPP/pTed/B7+qm
+SoKj4KMnUgacFA/SChtJ9DYoE5hzFgBhTgrnBFAbwTBGgkjeW5Q+1b0+DQceawat
+UXAimvLgVHSyHcRoZLbAGqrCrQGiC8jHLttaztagGo2hX5Vl0zobmrzdp5oIzZhi
+DKtz9bC/Bo1DWkhaMCqka2fLAi5KJMcVSGBEhgRRSQogqGdgokakN0ZyYWkkWAOK
+qOFKUWY9JjmjjHKUUMFGOYI2e50P0LQ66/2UJe6d8L9dC0FzG3y0XhrJ8JXKa8c0
+mikdkd4w4NjJGAT66AzlDHMTKpMnKbu01earNvIwDd/26ev6VwZ5M1z3/zVsUpVN
+Gcoxbg6bZlL3Wnea65MWfRV8//84fZ8XEQ8KMjagqvOyQLcQ+Y1x0i5ncG2SV9DP
+W4TUyhB82jywgSEV9SIlQ1G9D4ZFbKqlqB+pSeiQuGSOAY2t2ZQ6bawWMboofcIa
+nfnaSdTpBhgT7Stcs15BttXdvrOvM9/tqPnFfWeWzK21E9u9kzeWFnfv1v497cVa
+WBiOsNLVVTyt9Uo5gWIymKyU1aDTPfTDLvT+h5nOH5+OVDd3+u9uzx78nG3/fHHp
+3tG5lM89fzt4Wpx+cHZxprNzav3V+Mfjb34/9OzxuYfm0YVfDrx/IbrnD3efPPr1
+zJfZfwE=
+=7kEi
+-----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.

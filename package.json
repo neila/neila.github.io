@@ -6,14 +6,14 @@
   "main": "src/pages/_app.tsx",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neila/akira-portfolio.git"
+    "url": "git+https://github.com/neila/neila.github.io.git"
   },
   "author": "neila <40727091+neila@users.noreply.github.com>",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/neila/akira-portfolio/issues"
+    "url": "https://github.com/neila/neila.github.io/issues"
   },
-  "homepage": "https://akxra.art",
+  "homepage": "https://neila.github.io",
   "packageManager": "yarn@3.5.1",
   "dependencies": {
     "next": "^13.4.19",
