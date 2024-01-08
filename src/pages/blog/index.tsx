@@ -40,7 +40,7 @@ const BlogIndexPage = (props: { postsList: blogPostType[] }) => {
 
   return (
     <>
-      <BaseLayout className="leading-snug">
+      <BaseLayout pageTitle="blogs" className="leading-snug">
         <article className="laptop:max-w-6xl mx-auto">
           <section id="abstract">
             <p>

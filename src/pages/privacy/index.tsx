@@ -7,7 +7,7 @@ const PrivacyPage: NextPage = () => {
   return (
     <>
       <article>
-        <BaseLayout className="px-4">
+        <BaseLayout pageTitle="privacy" className="px-4">
           {/* abstract */}
           <section id="privacy statement">
             <h1>Privacy policy</h1>

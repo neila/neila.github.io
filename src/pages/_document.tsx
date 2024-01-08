@@ -13,20 +13,23 @@ type NoncedDocument = DocumentInitialProps & { nonce: string };
 
 const CustomDocument = (props: NoncedDocument) => {
   return (
-    <Html prefix="og: https://ogp.me/ns#" nonce={props.nonce} className="dark">
+    <Html
+      prefix="og: https://ogp.me/ns#"
+      nonce={props.nonce}
+      lang="en"
+      className="dark"
+    >
       <Head nonce={props.nonce}>
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:url" content="akxra.art" />
+        <meta property="og:url" content="neila.github.io" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="akxra.art" />
+        <meta property="og:title" content="neila.github.io" />
         <meta
           property="og:image"
-          content="https://akxra.art/images/profilePic.png"
+          content="https://neila.github.io/images/profilePic.png"
         />
-        <meta property="og:description" content="sho's website" />
-        <meta name="description" content="sho's website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@zsh0x" />
+        <meta property="og:description" content="website by neila" />
+        <meta name="description" content="website by neila" />
         <meta property="csp-nonce" content={props.nonce} />
       </Head>
 

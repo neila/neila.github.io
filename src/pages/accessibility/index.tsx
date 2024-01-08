@@ -7,7 +7,7 @@ const AccessibilityPage: NextPage = () => {
   return (
     <>
       <article>
-        <BaseLayout className="px-4">
+        <BaseLayout pageTitle="Accessibility" className="px-4">
           {/* TODO (3): Probably turn this page into the site design page */}
           <section id="accessibility">
             <h1>Accessibility</h1>

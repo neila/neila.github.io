@@ -4,7 +4,7 @@ import Link from "next/link";
 const AboutSitePage = () => {
   return (
     <>
-      <BaseLayout>
+      <BaseLayout pageTitle="About this website">
         <h1 className="top-heading text-center leading-[8rem]">
           {/* TODO (5): automate capitalization of first word in headings */}
           <span className="text-[3rem]">A</span>BOUT{" "}

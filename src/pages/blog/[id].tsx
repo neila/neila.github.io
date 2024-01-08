@@ -16,7 +16,7 @@ type PostProps = {
 const post: NextPage<PostProps> = ({ content, id }) => {
   return (
     <>
-      <BaseLayout>
+      <BaseLayout pageTitle={id}>
         <div className="mt-8 mx-auto desktop:w-2/3">
           <article className="px-2">
             <MDXRemote {...content} />

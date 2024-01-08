@@ -3,7 +3,7 @@ import BaseLayout from "@/components/layouts/Base";
 const ChangelogPage = () => {
   return (
     <>
-      <BaseLayout>
+      <BaseLayout pageTitle="Changelog">
         <h1 className="top-heading text-center">
           <span className="text-[3rem]">C</span>HANGELOG
         </h1>
