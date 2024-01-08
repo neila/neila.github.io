@@ -11,7 +11,9 @@ const BaseLayout: FC<{
   return (
     <>
       <Head>
-        <title>{pageTitle ? `${pageTitle} | ` : ""}neila.github.io</title>
+        <title>{`${
+          pageTitle ? `${pageTitle} | neila.github.io` : "neila.github.io"
+        }`}</title>
         <meta name="description" content="website by neila" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

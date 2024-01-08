@@ -187,7 +187,7 @@ const Contact = () => {
 const AboutMePage = () => {
   return (
     <>
-      <BaseLayout pageTitle="About neila" className="px-4">
+      <BaseLayout pageTitle="About Neila" className="px-4">
         <article className="laptop:max-w-6xl mx-auto">
           <h1 className="top-heading text-center">
             <span className="text-[3rem]">A</span>BOUT{" "}
