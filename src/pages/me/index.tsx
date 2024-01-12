@@ -131,9 +131,9 @@ const Websites = () => {
         <li>
           <a href="https://keybase.io/neila">Keybase</a>
         </li>
-        <li>
+        {/* <li>
           <a href="https://lemmy.world/u/nla@discuss.tchncs.de">Lemmy</a>
-        </li>
+        </li> */}
       </ul>
       <p>
         I have no association with <code>neila.com</code> or with any locations
@@ -148,15 +148,23 @@ const Contact = () => {
     <section id="contact" className="py-4">
       <h1>Contact</h1>
       <div className="desktop:flex justify-evenly desktop:text-center">
-        <div id="liame" className="">
-          <p className="text-1.125">
-            Email: <a href="mailto:neila@tuta.io">neila@tuta.io</a>
-            <br />
-            (PGP pubkey{" "}
-            <a href="https://keybase.io/neila/pgp_keys.asc">
-              0xA605E499C3DD8A55
-            </a>
-            )
+        <div id="liame">
+          <p className="text-1.125 break-words desktop:max-w-72">
+            Email: <a href="mailto:neila@akxra.art">neila@akxra.art</a>
+            <br />{" "}
+            <span className="text-[0.85rem]">
+              (PGP:{" "}
+              <a href="https://keybase.io/neila/pgp_keys.asc">
+                0xA605E499C3DD8A55
+              </a>
+              )
+            </span>
+          </p>
+        </div>
+
+        <div id="ppmx">
+          <p className="text-1.125 break-words desktop:max-w-60">
+            XMPP: <a href="xmpp:n@step.im">n@step.im</a>
           </p>
         </div>
 
@@ -168,17 +176,11 @@ const Contact = () => {
 
         {/* TODO (7): add SimpleX */}
 
-        <div id="xirtam">
+        {/* <div id="xirtam">
           <p className="text-1.125">
             Matrix: <a href="matrix:n@tchncs.de">n@tchncs.de</a>
           </p>
-        </div>
-
-        <div id="ppmx">
-          <p className="text-1.125">
-            XMPP: <a href="xmpp:n@xmpp.co">n@xmpp.co</a>
-          </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );
