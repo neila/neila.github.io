@@ -115,8 +115,33 @@ const Websites = () => {
   return (
     <section id="websites" className="py-4">
       <h1>Websites</h1>
+      <p>
+        In light of the deterioration of dialogue on certain social platforms, I
+        am gradually migrating some of my online presence to federated
+        alternatives; where there is less inflamattory aggression or
+        manipulative attempts to hijack my attention.
+      </p>
       <ul>
         <li>
+          <a href="https://github.com/neila">Github</a>
+        </li>
+        <li>
+          <a
+            href="https://www.reddit.com/user/nla/"
+            className="line-through decoration-double active:pointer-events-none"
+          >
+            Reddit
+          </a>{" "}
+          ⇒ <a href="https://lemmy.world/u/nla@discuss.tchncs.de">Lemmy</a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/zsh0x"
+            className="line-through decoration-double active:pointer-events-none"
+          >
+            Twitter
+          </a>{" "}
+          ⇒{" "}
           <a rel="me" href="https://social.tchncs.de/@neila">
             Mastodon (English)
           </a>{" "}
@@ -124,12 +149,6 @@ const Websites = () => {
           <a href="https://bsky.app/profile/neila.bsky.social">
             Bluesky (日本語)
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/neila">Github</a>
-        </li>
-        <li>
-          <a href="https://lemmy.world/u/nla@discuss.tchncs.de">Lemmy</a>
         </li>
       </ul>
       <p>
@@ -214,7 +233,7 @@ const AboutMePage = () => {
 
           <Work />
           {/* <DonateToAddresses /> */}
-          {/* <Websites /> */}
+          <Websites />
 
           <Contact />
         </article>
