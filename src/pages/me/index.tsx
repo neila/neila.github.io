@@ -129,11 +129,8 @@ const Websites = () => {
           <a href="https://github.com/neila">Github</a>
         </li>
         <li>
-          <a href="https://keybase.io/neila">Keybase</a>
-        </li>
-        {/* <li>
           <a href="https://lemmy.world/u/nla@discuss.tchncs.de">Lemmy</a>
-        </li> */}
+        </li>
       </ul>
       <p>
         I have no association with <code>neila.com</code> or with any locations
@@ -168,6 +165,12 @@ const Contact = () => {
           </p>
         </div>
 
+        <div id="esabyek">
+          <p className="text-1.125">
+            Keybase: <a href="https://keybase.io/neila">neila</a>
+          </p>
+        </div>
+
         <div id="margelet">
           <p className="text-1.125">
             Telegram: <a href="https://t.me/n_eila">n_eila</a>
@@ -175,7 +178,13 @@ const Contact = () => {
         </div>
 
         {/* TODO (7): add SimpleX */}
+        {/* <div id="XelpmiS">
+          <p className="text-1.125">
+            SimpleX: <a href="">[SimpleX Address]</a>
+          </p>
+        </div> */}
 
+        {/* TODO (7): add matrix */}
         {/* <div id="xirtam">
           <p className="text-1.125">
             Matrix: <a href="matrix:n@tchncs.de">n@tchncs.de</a>
@@ -205,8 +214,7 @@ const AboutMePage = () => {
 
           <Work />
           {/* <DonateToAddresses /> */}
-
-          <Websites />
+          {/* <Websites /> */}
 
           <Contact />
         </article>
