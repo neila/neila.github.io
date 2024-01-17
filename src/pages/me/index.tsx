@@ -94,11 +94,14 @@ const DonateToAddresses = () => {
             {walletAddress.ethereum}
           </code>
         </li>
-        <li>
-          DAI/USDT/USDC (Polygon):{" "}
+        <li className="group">
+          DAI/USDT/USDC:{" "}
           <code className="break-words text-pink-500">
             {walletAddress.polygon}
-          </code>
+          </code>{" "}
+          <span className="text-[0.75rem] leading-4 invisible group-hover:visible">
+            (Accepting on: Polygon PoS, Optimism, Arbitrum, Scroll)
+          </span>
         </li>
         <li>
           Monero:{" "}
@@ -123,18 +126,6 @@ const Websites = () => {
       </p>
       <ul>
         <li>
-          <a href="https://github.com/neila">Github</a>
-        </li>
-        <li>
-          <a
-            href="https://www.reddit.com/user/nla/"
-            className="line-through decoration-double active:pointer-events-none"
-          >
-            Reddit
-          </a>{" "}
-          ⇒ <a href="https://lemmy.world/u/nla@discuss.tchncs.de">Lemmy</a>
-        </li>
-        <li>
           <a
             href="https://twitter.com/zsh0x"
             className="line-through decoration-double active:pointer-events-none"
@@ -146,6 +137,18 @@ const Websites = () => {
             Mastodon
           </a>{" "}
           / <a href="https://bsky.app/profile/unchain.tech">Bluesky</a>
+        </li>
+        <li>
+          <a
+            href="https://www.reddit.com/user/nla/"
+            className="line-through decoration-double active:pointer-events-none"
+          >
+            Reddit
+          </a>{" "}
+          ⇒ <a href="https://lemmy.world/u/nla@discuss.tchncs.de">Lemmy</a>
+        </li>
+        <li>
+          <a href="https://github.com/neila">Github</a>
         </li>
       </ul>
       <p>
@@ -229,7 +232,9 @@ const AboutMePage = () => {
           <ProfilePic />
 
           <Work />
-          {/* <DonateToAddresses /> */}
+
+          <DonateToAddresses />
+
           <Websites />
 
           <Contact />
