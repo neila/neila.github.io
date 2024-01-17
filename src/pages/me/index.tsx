@@ -145,10 +145,7 @@ const Websites = () => {
           <a rel="me" href="https://social.tchncs.de/@neila">
             Mastodon (English)
           </a>{" "}
-          /{" "}
-          <a href="https://bsky.app/profile/neila.bsky.social">
-            Bluesky (日本語)
-          </a>
+          / <a href="https://bsky.app/profile/unchain.tech">Bluesky (日本語)</a>
         </li>
       </ul>
       <p>
@@ -166,7 +163,7 @@ const Contact = () => {
       <div className="desktop:flex justify-evenly desktop:text-center">
         <div id="liame">
           <p className="text-1.125 break-words desktop:max-w-72">
-            Email: <a href="mailto:neila@akxra.art">neila@akxra.art</a>
+            Email: <a href="mailto:neila@unchain.tech">neila@unchain.tech</a>
             <br />{" "}
             <span className="text-[0.85rem]">
               (PGP:{" "}
