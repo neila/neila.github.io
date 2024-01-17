@@ -143,9 +143,9 @@ const Websites = () => {
           </a>{" "}
           ⇒{" "}
           <a rel="me" href="https://social.tchncs.de/@neila">
-            Mastodon (English)
+            Mastodon
           </a>{" "}
-          / <a href="https://bsky.app/profile/unchain.tech">Bluesky (日本語)</a>
+          / <a href="https://bsky.app/profile/unchain.tech">Bluesky</a>
         </li>
       </ul>
       <p>
