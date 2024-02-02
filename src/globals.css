@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neutral-700 text-neutral-base text-1.125 font-serif
+  }
+  h1 {
+    @apply font-7 text-2.25 pb-4;
+  }
+  h2 {
+    @apply font-6 text-2 py-4;
+  }
+  h3 {
+    @apply font-5 text-1.875 pb-4;
+  }
+  h4 {
+    @apply font-4 text-1.5 pb-4;
+  }
+  p {
+    @apply font-3 text-1.125 leading-relaxed pb-4;
+  }
+  a {
+    @apply text-neutral-300 hover:text-neutral-400
+    underline underline-offset-4 decoration-1 decoration-dotted;
+  }
+  ul {
+    @apply list-disc list-inside pb-4 before:float-left;
+    & > li {
+      @apply font-3 text-1.125 leading-relaxed break-words;
+      & > p {
+        @apply inline;
+      }
+    }
+  }
+  pre {
+    @apply text-neutral-300 bg-neutral-black rounded p-1 my-2 text-wrap;
+    & > code {
+      @apply px-0 text-wrap;
+    }
+  }
+  code {
+    @apply text-neutral-300 bg-neutral-black rounded px-1 text-wrap;
+  }
+}
+
+
+@layer components {
+  .top-heading {
+    @apply font-7 text-[2.5rem];
+  }
+}
+
+
+@layer utilities {
+
+}
