@@ -189,12 +189,12 @@ const Contact = () => {
             Telegram: <a href="https://t.me/neilasan">neilasan</a>
           </p>
         </div>
-      </div>
 
-      <div id="ppmx">
-        <p className="text-1.125 break-words desktop:max-w-60">
-          XMPP: <a href="xmpp:neila@xmpp.is">neila@xmpp.is</a>
-        </p>
+        <div id="ppmx">
+          <p className="text-1.125 break-words desktop:max-w-60">
+            XMPP: <a href="xmpp:neila@xmpp.is">neila@xmpp.is</a>
+          </p>
+        </div>
       </div>
     </section>
   );
