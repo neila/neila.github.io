@@ -31,10 +31,12 @@ const Work = () => {
       {/* TODO (8): acts as abstract until work is better documented upon which this turns into work section */}
       <p>
         <span className="text-2.25 font-5 leading-[1.25rem]">I</span> am a
-        freelance developer and researcher. I work in a variety of fields
-        including web development (sysadmin, frontend), cybersecurity (web
-        applications, cryptography, OSINT research), and machine learning (NLP,
-        forecast systems).{" "}
+        researcher and software developer. I work in a variety of fields
+        including web development{/*(sysadmin, frontend)*/}, machine learning
+        {/*(NLP, forecast systems)*/}, and cybersecurity
+        {/*(web
+        applications, cryptography, OSINT research)*/}
+        .{" "}
         {/* and simulations modeling (agent-based modeling, newtonian systems). */}
         I have worked for, published in, or consulted for:{" "}
         <em>
@@ -54,16 +56,17 @@ const Work = () => {
         </em>
         , and <em>private clients (2017-)</em>; everything on this website
         should be considered my own viewpoint or writing unless otherwise
-        specified by a representative.
+        specified by a representative or publication.
       </p>
       <p>
         I'm a a strong believer of the power of open communities, and work
         actively with <a href="https://ethereumjapan.org">some</a> as well as
         helped to launch <a href="https://unchain.tech/">a few</a>. It seems to
-        me that open access, naturally, asks of its audience to assess its true
-        value with their own eyes. When irreplaceble value is indeed found in
-        these beholding eyes, it is also far easier for them to contribute,
-        collaborate, and participate in its further development.
+        me that open access naturally asks of its audience to assess the true
+        value of the work with their own eyes instead of a price tag; where
+        irreplaceble value is found, it is also far easier for them to
+        contribute, collaborate, and participate in its further development
+        rather than merely consuming.
       </p>
     </section>
   );
@@ -74,8 +77,8 @@ const DonateToAddresses = () => {
     <div className="border border-1 p-2 my-2">
       <p className="text-1">
         To help make ends meet, I accept small (or large, if you insist)
-        donations in cryptocurrencies. <br />
-        If you appreciate my work, please consider showing your support.
+        donations in cryptocurrencies. If you appreciate my work, please
+        consider showing your support.
       </p>
 
       <ul
@@ -118,43 +121,29 @@ const Websites = () => {
   return (
     <section id="websites" className="py-4">
       <h1>Websites</h1>
-      <p>
-        In light of the deterioration of dialogue on certain social platforms, I
-        am gradually migrating some of my online presence to federated
-        alternatives; where there is less inflamattory aggression or
-        manipulative attempts to hijack my attention.
-      </p>
       <ul>
         <li>
-          <a
-            href="https://twitter.com/zsh0x"
-            className="line-through decoration-double active:pointer-events-none"
-          >
-            Twitter
-          </a>{" "}
-          ⇒{" "}
-          <a rel="me" href="https://social.tchncs.de/@neila">
-            Mastodon
-          </a>{" "}
-          / <a href="https://bsky.app/profile/unchain.tech">Bluesky</a>
+          <p>Microblog - </p>
+          <a href="https://bsky.app/profile/unchain.tech">Bluesky</a>,{" "}
+          <a href="https://twitter.com/zsh0x">Twitter/X</a>
         </li>
         <li>
-          <a
-            href="https://www.reddit.com/user/nla/"
-            className="line-through decoration-double active:pointer-events-none"
-          >
-            Reddit
-          </a>{" "}
-          ⇒ <a href="https://lemmy.world/u/nla@discuss.tchncs.de">Lemmy</a>
-        </li>
-        <li>
+          <p>Forge - </p>
           <a href="https://github.com/neila">Github</a>
         </li>
+        {/* <li>
+          <a rel="me" href="https://social.tchncs.de/@neila">
+            Mastodon
+          </a>
+        </li>
+        <li>
+          <a href="https://lemmy.world/u/nla@discuss.tchncs.de">Lemmy</a>
+        </li> */}
       </ul>
-      <p>
+      {/* <p>
         I have no association with <code>neila.com</code> or with any locations
         in Spain, the metal band on bandcamp, or the RnB artist from Florida.
-      </p>
+      </p> */}
     </section>
   );
 };
@@ -166,7 +155,7 @@ const Contact = () => {
       <div className="desktop:flex justify-evenly desktop:text-center">
         <div id="liame">
           <p className="text-1.125 break-words desktop:max-w-72">
-            Email: <a href="mailto:neila@unchain.tech">neila@unchain.tech</a>
+            Email: <a href="mailto:sh0@choco.la">sh0@choco.la</a>
             <br />{" "}
             <span className="text-[0.85rem]">
               (PGP:{" "}
@@ -175,6 +164,12 @@ const Contact = () => {
               </a>
               )
             </span>
+          </p>
+        </div>
+
+        <div id="ppmx">
+          <p className="text-1.125 break-words desktop:max-w-60">
+            XMPP: <a href="xmpp:sh0@xmpp.jp">sh0@xmpp.jp</a>
           </p>
         </div>
 
@@ -189,12 +184,6 @@ const Contact = () => {
             Telegram: <a href="https://t.me/neilasan">neilasan</a>
           </p>
         </div>
-
-        <div id="ppmx">
-          <p className="text-1.125 break-words desktop:max-w-60">
-            XMPP: <a href="xmpp:neila@xmpp.is">neila@xmpp.is</a>
-          </p>
-        </div>
       </div>
     </section>
   );
@@ -207,7 +196,7 @@ const AboutMePage = () => {
         <article className="laptop:max-w-6xl mx-auto">
           <h1 className="top-heading text-center">
             <span className="text-[3rem]">A</span>BOUT{" "}
-            <span className="text-[3rem]">N</span>EILA
+            <span className="text-[3rem]">S</span>HO
           </h1>
 
           {/* <h4 className="py-4 text-center">
@@ -219,7 +208,7 @@ const AboutMePage = () => {
 
           <Work />
 
-          <DonateToAddresses />
+          {/* <DonateToAddresses /> */}
 
           <Websites />
 
