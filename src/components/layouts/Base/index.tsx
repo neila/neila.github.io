@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Head from "next/head";
-import { FC, ReactNode } from "react";
+import type { FC, ReactNode } from "react";
 
 const BaseLayout: FC<{
   pageTitle?: string;

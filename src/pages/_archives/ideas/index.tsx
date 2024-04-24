@@ -1,10 +1,10 @@
-import fs from "fs";
+import fs from "node:fs";
 
 import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 
-import path from "path";
+import path from "node:path";
 import dateFormat from "dateformat";
 import matter from "gray-matter";
 

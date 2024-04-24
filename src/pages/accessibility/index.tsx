@@ -1,5 +1,5 @@
 import BaseLayout from "@/components/layouts/Base";
-import { NextPage } from "next";
+import type { NextPage } from "next";
 
 import Link from "next/link";
 
