@@ -1,3 +1,4 @@
+import { LinkWithIcon } from "@/components/atoms/links/LinkWithIcon";
 import BaseLayout from "@/components/layouts/Base";
 import type { NextPage } from "next";
 
@@ -7,7 +8,7 @@ const HomePage: NextPage = () => {
   return (
     <>
       <BaseLayout className="px-4 laptop:max-w-6xl mx-auto">
-        <h1 className="top-heading">Sho Hihara</h1>
+        <h1 className="top-heading">Welcome,</h1>
 
         <div id="abstract">
           <p>This is the website of Sho Hihara.</p>
@@ -17,8 +18,14 @@ const HomePage: NextPage = () => {
             {/* For website features & implementation, see the{" "}
             <Link href="/design">Design page</Link>.<br /> */}
             For information about myself and contact information see{" "}
-            <Link href="/me">My page</Link>.
-            {/* <br />For site updates, see the <Link href="/changelog">Changelog</Link>. */}
+            <LinkWithIcon url="/me" text="My page" />.
+            <br />
+            For site updates, see the{" "}
+            <LinkWithIcon
+              url="https://github.com/neila/neila.github.io/commits/main/"
+              text="Changelog"
+            />
+            .
           </p>
         </div>
       </BaseLayout>

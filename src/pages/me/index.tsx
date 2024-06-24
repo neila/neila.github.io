@@ -1,3 +1,4 @@
+import { LinkWithIcon } from "@/components/atoms/links/LinkWithIcon";
 import BaseLayout from "@/components/layouts/Base";
 import { walletAddress } from "@/utils/constants";
 import Image from "next/image";
@@ -7,8 +8,8 @@ import pp from "public/images/about/profilePic.png";
 const ProfilePic = () => {
   return (
     <div
-      className="flex justify-center mx-auto p-2 desktop:p-4
-      max-h-36 max-w-36 desktop:max-h-72 desktop:max-w-72 overflow-hidden"
+      className="flex justify-center mx-auto p-2 laptop:p-4
+      max-h-36 max-w-36 laptop:max-h-72 laptop:max-w-72 overflow-hidden"
     >
       {/* TODO (9): add breathing Halftone effect */}
       <Image
@@ -30,43 +31,49 @@ const Work = () => {
       {/* <h1>Work</h1> */}
       {/* TODO (8): acts as abstract until work is better documented upon which this turns into work section */}
       <p>
-        <span className="text-2.25 font-5 leading-[1.25rem]">I</span> am a
-        researcher and software developer. I work in a variety of fields
-        including web development{/*(sysadmin, frontend)*/}, machine learning
-        {/*(NLP, forecast systems)*/}, and cybersecurity
-        {/*(web
-        applications, cryptography, OSINT research)*/}
-        .{" "}
-        {/* and simulations modeling (agent-based modeling, newtonian systems). */}
-        I have worked for, published in, or consulted for:{" "}
-        <em>
-          <a href="https://www.nhk.or.jp/">NHK</a> (2022)
-        </em>
-        ,{" "}
-        <em>
-          <a href="https://www.henkaku.center/en">CIT</a> (2022)
-        </em>
-        ,{" "}
-        <em>
-          <a href="https://www.wolfram.com/">Wolfram Research</a> (2020)
-        </em>
-        ,{" "}
-        <em>
-          <a href="https://nikkei.com/">Nikkei</a> (2017-2019)
-        </em>
-        , and <em>private clients (2017-)</em>; everything on this website
-        should be considered my own viewpoint or writing unless otherwise
-        specified by a representative or publication.
+        <span className="text-2.25 font-5 leading-[1.25rem]">P</span>
+        rofessionally, I find myself wearing many hats over my varied interests
+        and specialities. Primarily, I see myself as an artist and entrepreneur,
+        always thinking about and working on exciting new ideas. At times, I am
+        an{" "}
+        <LinkWithIcon
+          url="/_archives/works/er-simulation"
+          text="OSINT researcher"
+        />
+        , gathering intel and compiling relevant information to pursue my (or my
+        client's) goals. Other times I am a{" "}
+        <LinkWithIcon
+          url="https://github.com/neila"
+          text="software developer"
+        />
+        , building systems and applications that help us automate, so that we
+        can focus on more important things.
       </p>
       <p>
-        I'm a a strong believer of the power of open communities, and work
-        actively with <a href="https://ethereumjapan.org">some</a> as well as
-        helped to launch <a href="https://unchain.tech/">a few</a>. It seems to
-        me that open access naturally asks of its audience to assess the true
-        value of the work with their own eyes instead of a price tag; where
-        irreplaceble value is found, it is also far easier for them to
-        contribute, collaborate, and participate in its further development
-        rather than merely consuming.
+        I have worked for, published in, or consulted for:{" "}
+        <em>
+          <LinkWithIcon url="https://www.nhk.or.jp/" text="NHK" /> (2022-2023)
+        </em>
+        ,{" "}
+        <em>
+          <LinkWithIcon url="https://www.henkaku.center/en" text="CIT" />{" "}
+          (2021-2022)
+        </em>
+        ,{" "}
+        <em>
+          <LinkWithIcon
+            url="https://www.wolfram.com/"
+            text="Wolfram Research"
+          />{" "}
+          (2020)
+        </em>
+        ,{" "}
+        <em>
+          <LinkWithIcon url="https://nikkei.com/" text="Nikkei" /> (2017-2019)
+        </em>
+        , and other <em>private clients (2017-)</em> in various industries.
+        Everything on this website should be considered my own viewpoint or
+        writing, unless otherwise specified by a representative or publication.
       </p>
     </section>
   );
@@ -123,27 +130,45 @@ const Websites = () => {
       <h1>Websites</h1>
       <ul>
         <li>
-          <p>Microblog - </p>
-          <a href="https://bsky.app/profile/unchain.tech">Bluesky</a>,{" "}
-          <a href="https://twitter.com/zsh0x">Twitter/X</a>
-        </li>
-        <li>
-          <p>Forge - </p>
-          <a href="https://github.com/neila">Github</a>
+          <LinkWithIcon url="https://twitter.com/zsh0x" text="Twitter/X" /> /{" "}
+          <LinkWithIcon
+            url="https://bsky.app/profile/unchain.tech"
+            text="Bluesky"
+          />{" "}
+          {/* /{" "}
+          <LinkWithIcon url="https://social.tchncs.de/@neila" text="Mastodon" /> */}
         </li>
         {/* <li>
-          <a rel="me" href="https://social.tchncs.de/@neila">
-            Mastodon
-          </a>
+          <LinkWithIcon url="https://discuss.tchncs.de/u/nla" text="Lemmy" />
+        </li> */}
+        <li>
+          <LinkWithIcon url="https://github.com/neila" text="Github" />
+        </li>
+      </ul>
+    </section>
+  );
+};
+
+const Projects = () => {
+  return (
+    <section id="projects" className="py-4">
+      <h1>Ongoing projects</h1>
+      <ul>
+        <li>
+          <LinkWithIcon url="https://akiyaz.io" text="Akiyaz" /> - Transforming
+          lifestyles from Japanese rural landscapes.
         </li>
         <li>
-          <a href="https://lemmy.world/u/nla@discuss.tchncs.de">Lemmy</a>
-        </li> */}
+          <LinkWithIcon url="https://www.ethtokyo.com" text="ETHTokyo" /> - An
+          annual Ethereum hackathon and conference to exchange ideas and solve
+          cutting-edge problems.
+        </li>
+        <li>
+          <LinkWithIcon url="https://www.unchain.tech" text="UNCHAIN" /> - Free
+          and open-source toolkit to learn a wide range of blockchain
+          development skills, through hands-on project development.
+        </li>
       </ul>
-      {/* <p>
-        I have no association with <code>neila.com</code> or with any locations
-        in Spain, the metal band on bandcamp, or the RnB artist from Florida.
-      </p> */}
     </section>
   );
 };
@@ -151,37 +176,44 @@ const Websites = () => {
 const Contact = () => {
   return (
     <section id="contact" className="py-4">
-      <h1>Contact</h1>
-      <div className="desktop:flex justify-evenly desktop:text-center">
+      <h1>Contact me</h1>
+      <div className="grid grid-flow-col grid-rows-3 laptop:grid-flow-row laptop:grid-cols-3 laptop:gap-4">
         <div id="liame">
-          <p className="text-1.125 break-words desktop:max-w-72">
-            Email: <a href="mailto:sh0@choco.la">sh0@choco.la</a>
-            <br />{" "}
-            <span className="text-[0.85rem]">
-              (PGP:{" "}
-              <a href="https://keybase.io/neila/pgp_keys.asc">
-                0xA605E499C3DD8A55
-              </a>
-              )
-            </span>
+          <p>
+            Email:{" "}
+            <LinkWithIcon url="mailto:sh0@disroot.org" text="sh0@disroot.org" />
           </p>
         </div>
-
         <div id="ppmx">
-          <p className="text-1.125 break-words desktop:max-w-60">
-            XMPP: <a href="xmpp:sh0@xmpp.jp">sh0@xmpp.jp</a>
+          <p>
+            XMPP: <LinkWithIcon url="xmpp:sh0@xmpp.jp" text="sh0@xmpp.jp" />
           </p>
         </div>
-
+        <div id="xirtam">
+          <p>
+            Matrix:{" "}
+            <LinkWithIcon
+              url="https://matrix.to/#/@sho:envs.net"
+              text="@sho:envs.net"
+            />
+          </p>
+        </div>
+        <div id="drocsid">
+          <p>
+            Discord:{" "}
+            <LinkWithIcon url="https://discord.com/" text="bunkadelic" />
+          </p>
+        </div>
         <div id="esabyek">
-          <p className="text-1.125">
-            Keybase: <a href="https://keybase.io/neila">neila</a>
+          <p>
+            Keybase:{" "}
+            <LinkWithIcon url="https://keybase.io/neila" text="neila" />
           </p>
         </div>
-
         <div id="margelet">
-          <p className="text-1.125">
-            Telegram: <a href="https://t.me/neilasan">neilasan</a>
+          <p>
+            Telegram:{" "}
+            <LinkWithIcon url="https://t.me/neilasan" text="neilasan" />
           </p>
         </div>
       </div>
@@ -195,8 +227,8 @@ const AboutMePage = () => {
       <BaseLayout pageTitle="About Neila" className="px-4">
         <article className="laptop:max-w-6xl mx-auto">
           <h1 className="top-heading text-center">
-            <span className="text-[3rem]">A</span>BOUT{" "}
-            <span className="text-[3rem]">S</span>HO
+            <span className="text-[4rem]">A</span>BOUT{" "}
+            <span className="text-[4rem]">S</span>HO
           </h1>
 
           {/* <h4 className="py-4 text-center">
@@ -210,7 +242,7 @@ const AboutMePage = () => {
 
           {/* <DonateToAddresses /> */}
 
-          <Websites />
+          <Projects />
 
           <Contact />
         </article>
