@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-neutral-700 text-neutral-base text-1.125 font-serif
+    @apply bg-neutral-600 text-neutral-base text-1.125 font-serif
   }
   h1 {
     @apply font-7 text-2.25 pb-4;
