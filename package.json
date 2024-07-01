@@ -31,7 +31,7 @@
     "gray-matter": "^4.0.3",
     "lint-staged": "^15.2.7",
     "next-mdx-remote": "^4.4.1",
-    "postcss": "^8.4.38",
+    "postcss": "^8.4.39",
     "remark": "15",
     "remark-html": "16",
     "serve": "^14.2.3",
