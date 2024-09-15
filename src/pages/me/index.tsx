@@ -162,8 +162,8 @@ const Projects = () => {
         </li>
         <li>
           <LinkWithIcon url="https://www.in05.org" text="IN05 Network" /> - An
-          emergent network of hackers, creators, and artists in Tokyo together
-          building a dynamic and collaborative lifestyle.
+          emergent network of creators, entrepreneurs, and hackers in Tokyo
+          together building a dynamic and collaborative lifestyle.
         </li>
         <li>
           <LinkWithIcon url="https://www.ethtokyo.com" text="ETHTokyo" /> - An
