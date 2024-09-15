@@ -93,28 +93,23 @@ const DonateToAddresses = () => {
         space-y-2 pb-2 max-w-full list-outside list-none"
       >
         <li>
-          Bitcoin:{" "}
+          BTC:{" "}
           <code className="break-words text-pink-500">
             {walletAddress.bitcoin}
           </code>
         </li>
-        <li>
-          Ethereum:{" "}
+        <li className="group">
+          ETH:{" "}
           <code className="break-words text-pink-500">
             {walletAddress.ethereum}
           </code>
-        </li>
-        <li className="group">
-          DAI/USDT/USDC:{" "}
-          <code className="break-words text-pink-500">
-            {walletAddress.polygon}
-          </code>{" "}
           <span className="text-[0.75rem] leading-4 invisible group-hover:visible">
-            (Accepting on: Polygon PoS, Optimism, Arbitrum, Scroll)
+            (stablecoins and L2s also accepted)
           </span>
         </li>
+
         <li>
-          Monero:{" "}
+          XMR:{" "}
           <code className="break-words max-w-full text-pink-500">
             {walletAddress.monero}
           </code>
@@ -127,16 +122,22 @@ const DonateToAddresses = () => {
 const Websites = () => {
   return (
     <section id="websites" className="py-4">
-      <h1>Websites</h1>
+      <h1>You can find me on</h1>
       <ul>
         <li>
-          <LinkWithIcon url="https://twitter.com/zsh0x" text="Twitter/X" /> /{" "}
+          <LinkWithIcon
+            url="https://primal.net/p/npub1rdsn99fals5lduahfzw487k7waak6aerf04gndpgfs9kxtgy4r0qecqkwc"
+            text="Nostr"
+          />
+        </li>
+        <li>
+          <LinkWithIcon url="https://social.tchncs.de/@neila" text="Mastodon" />
+        </li>
+        <li>
           <LinkWithIcon
             url="https://bsky.app/profile/unchain.tech"
             text="Bluesky"
-          />{" "}
-          {/* /{" "}
-          <LinkWithIcon url="https://social.tchncs.de/@neila" text="Mastodon" /> */}
+          />
         </li>
         {/* <li>
           <LinkWithIcon url="https://discuss.tchncs.de/u/nla" text="Lemmy" />
@@ -155,8 +156,14 @@ const Projects = () => {
       <h1>Ongoing projects</h1>
       <ul>
         <li>
-          <LinkWithIcon url="https://akiyaz.io" text="Akiyaz" /> - Transforming
-          lifestyles from Japanese rural landscapes.
+          <LinkWithIcon url="https://akiyaz.io" text="Akiyaz" /> - An A-to-Z
+          solution provider for anyone looking to build something new from the
+          rural Japanese landscape.
+        </li>
+        <li>
+          <LinkWithIcon url="https://www.in05.org" text="IN05 Network" /> - An
+          emergent network of hackers, creators, and artists in Tokyo together
+          building a dynamic and collaborative lifestyle.
         </li>
         <li>
           <LinkWithIcon url="https://www.ethtokyo.com" text="ETHTokyo" /> - An
@@ -240,9 +247,11 @@ const AboutMePage = () => {
 
           <Work />
 
-          {/* <DonateToAddresses /> */}
+          <DonateToAddresses />
 
           <Projects />
+
+          <Websites />
 
           <Contact />
         </article>
