@@ -1,9 +1,11 @@
 export const LinkWithIcon = (props: { url: string; text: string }) => {
+  let internal = false;
   const style =
     "bg-[image:var(--favicon-url)] bg-right bg-no-repeat pr-[18px] inline-block bg-contain";
   let fetchedUrl = "";
   if (props.url.startsWith("/")) {
     fetchedUrl = "/favicon.ico";
+    internal = true;
   } else if (props.url.startsWith("mailto:")) {
     fetchedUrl =
       "https://www.google.com/s2/favicons?domain=https://webmail.disroot.org&sz=256";
@@ -21,7 +23,7 @@ export const LinkWithIcon = (props: { url: string; text: string }) => {
     <>
       <a
         href={props.url}
-        target="_blank"
+        target={internal ? "" : "_blank"}
         rel="noreferrer"
         className={style}
         style={
