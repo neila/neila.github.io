@@ -124,14 +124,17 @@ const Websites = () => {
     <section id="websites" className="py-4">
       <h1>You can find me on</h1>
       <ul>
-        <li>
+        {/* <li>
           <LinkWithIcon
             url="https://primal.net/p/npub1rdsn99fals5lduahfzw487k7waak6aerf04gndpgfs9kxtgy4r0qecqkwc"
             text="Nostr"
           />
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <LinkWithIcon url="https://social.tchncs.de/@neila" text="Mastodon" />
+        </li> neila */}
+        <li>
+          <LinkWithIcon url="https://twitter.com/zsh0x" text="Twitter" />
         </li>
         <li>
           <LinkWithIcon
@@ -141,10 +144,10 @@ const Websites = () => {
         </li>
         {/* <li>
           <LinkWithIcon url="https://discuss.tchncs.de/u/nla" text="Lemmy" />
-        </li> */}
-        <li>
+        </li> neila */}
+        {/* <li>
           <LinkWithIcon url="https://github.com/neila" text="Github" />
-        </li>
+        </li> */}
       </ul>
     </section>
   );
@@ -153,13 +156,13 @@ const Websites = () => {
 const Projects = () => {
   return (
     <section id="projects" className="py-4">
-      <h1>Ongoing projects</h1>
+      <h1>Projects</h1>
       <ul>
-        <li>
+        {/* <li>
           <LinkWithIcon url="https://akiyaz.io" text="Akiyaz" /> - An A-to-Z
           solution provider for anyone looking to build something new from the
           rural Japanese landscape.
-        </li>
+        </li> */}
         <li>
           <LinkWithIcon url="https://www.in05.org" text="IN05 Network" /> - An
           emergent network of creators, entrepreneurs, and hackers in Tokyo
@@ -205,7 +208,7 @@ const Contact = () => {
             />
           </p>
         </div>
-        <div id="drocsid">
+        {/* <div id="drocsid">
           <p>
             Discord:{" "}
             <LinkWithIcon url="https://discord.com/" text="bunkadelic" />
@@ -222,7 +225,7 @@ const Contact = () => {
             Telegram:{" "}
             <LinkWithIcon url="https://t.me/neilasan" text="neilasan" />
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );
@@ -247,7 +250,7 @@ const AboutMePage = () => {
 
           <Work />
 
-          <DonateToAddresses />
+          {/* <DonateToAddresses /> */}
 
           <Projects />
 
