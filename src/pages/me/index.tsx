@@ -138,7 +138,7 @@ const Websites = () => {
         </li>
         <li>
           <LinkWithIcon
-            url="https://bsky.app/profile/unchain.tech"
+            url="https://bsky.app/profile/in05.org"
             text="Bluesky"
           />
         </li>
@@ -158,18 +158,18 @@ const Projects = () => {
     <section id="projects" className="py-4">
       <h1>Projects</h1>
       <ul>
+        <li>
+          <LinkWithIcon url="https://www.in05.org" text="IN05 Network" /> - An
+          emergent network of creators, entrepreneurs, and hackers in Tokyo
+          together building a dynamic and collaborative lifestyle.
+        </li>
         {/* <li>
           <LinkWithIcon url="https://akiyaz.io" text="Akiyaz" /> - An A-to-Z
           solution provider for anyone looking to build something new from the
           rural Japanese landscape.
         </li> */}
         <li>
-          <LinkWithIcon url="https://www.in05.org" text="IN05 Network" /> - An
-          emergent network of creators, entrepreneurs, and hackers in Tokyo
-          together building a dynamic and collaborative lifestyle.
-        </li>
-        <li>
-          <LinkWithIcon url="https://www.ethtokyo.com" text="ETHTokyo" /> - An
+          <LinkWithIcon url="https://ethtokyo.org" text="ETHTokyo" /> - An
           annual Ethereum hackathon and conference to exchange ideas and solve
           cutting-edge problems.
         </li>
