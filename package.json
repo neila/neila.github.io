@@ -1,7 +1,7 @@
 {
-  "name": "akira-portfolio",
-  "version": "1.0.0",
-  "description": "SHØ porfolio site",
+  "name": "neila-portfolio",
+  "version": "2.0.0",
+  "description": "neila portfolio site",
   "private": true,
   "main": "src/pages/_app.tsx",
   "repository": {
@@ -16,29 +16,29 @@
   "homepage": "https://neila.github.io",
   "packageManager": "yarn@3.5.1",
   "dependencies": {
-    "next": "^13.4.19",
-    "react": "^18.2.0",
+    "next": "^14.2.21",
+    "react": "^18.3.1",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.4.1",
-    "@heroicons/react": "^2.0.10",
+    "@biomejs/biome": "^1.8.3",
+    "@heroicons/react": "^2.1.5",
     "@types/node": "^18.15.11",
-    "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.18",
-    "autoprefixer": "^10.2.6",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.2.25",
+    "autoprefixer": "^10.4.20",
     "dateformat": "^5.0.3",
     "gray-matter": "^4.0.3",
-    "lint-staged": "^15.2.0",
+    "lint-staged": "^15.2.10",
     "next-mdx-remote": "^4.4.1",
-    "postcss": "^8.4.33",
+    "postcss": "^8.4.45",
     "remark": "15",
     "remark-html": "16",
-    "serve": "^14.2.1",
-    "simple-git-hooks": "^2.7.0",
-    "tailwindcss": "^3.4.1",
-    "tslib": "^2.5.3",
-    "typescript": "^5.3.3"
+    "serve": "^14.2.3",
+    "simple-git-hooks": "^2.11.1",
+    "tailwindcss": "^3.4.11",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.4"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
@@ -50,6 +50,6 @@
     "lint": "yarn run biome lint ./src",
     "format": "yarn run biome format ./src",
     "check": "yarn run biome check ./src",
-    "clean": "yarn run biome check ./src --apply"
+    "clean": "yarn run biome check ./src --write"
   }
 }

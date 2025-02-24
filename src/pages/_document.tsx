@@ -1,15 +1,24 @@
+import type { Metadata } from "next";
 import Document, {
-  DocumentContext,
-  DocumentInitialProps,
+  type DocumentContext,
+  type DocumentInitialProps,
   Head,
   Html,
   Main,
   NextScript,
 } from "next/document";
-
 import React from "react";
 
 type NoncedDocument = DocumentInitialProps & { nonce: string };
+
+export const metadata: Metadata = {
+  icons: {
+    icon: ["/favicon.ico?v=4"],
+    apple: ["/apple-touch-icon.png?v=4"],
+    shortcut: ["/apple-touch-icon.png"],
+  },
+  manifest: "/site.webmanifest",
+};
 
 const CustomDocument = (props: NoncedDocument) => {
   return (

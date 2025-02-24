@@ -1,5 +1,5 @@
 import BaseLayout from "@/components/layouts/Base";
-import { NextPage } from "next";
+import type { NextPage } from "next";
 
 import Link from "next/link";
 
@@ -40,8 +40,8 @@ const HomePage: NextPage = () => {
         <h2>Old Links</h2>
         <NavLinks />
 
-        <h2>Tests</h2>
-        <PageLink refPage="/_test/typography" pageName="typography" />
+        {/* <h2>Tests</h2>
+        <PageLink refPage="/_test/typography" pageName="typography" /> */}
       </BaseLayout>
     </>
   );

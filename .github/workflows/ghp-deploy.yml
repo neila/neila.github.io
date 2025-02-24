@@ -26,13 +26,13 @@ jobs:
       - uses: actions/configure-pages@v4
         with:
           static_site_generator: next
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: |
             ${{ github.workspace }}/node_modules
             ${{ github.workspace }}/.yarn/cache
           key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}-nodemodules
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: .next/cache
           key:  ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}-build-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}

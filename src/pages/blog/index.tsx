@@ -1,5 +1,5 @@
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 import BaseLayout from "@/components/layouts/Base";
 import type { blogPostType } from "@/types/blogpost";
 import Graph from "@/utils/Graph";
