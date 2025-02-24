@@ -124,26 +124,26 @@ const Websites = () => {
     <section id="websites" className="py-4">
       <h1>You can find me on</h1>
       <ul>
-        {/* <li>
-          <LinkWithIcon
-            url="https://primal.net/p/npub1rdsn99fals5lduahfzw487k7waak6aerf04gndpgfs9kxtgy4r0qecqkwc"
-            text="Nostr"
-          />
-        </li> */}
-        <li>
-          <LinkWithIcon url="https://social.tchncs.de/@neila" text="Mastodon" />
-        </li>
         <li>
           <LinkWithIcon
             url="https://bsky.app/profile/in05.org"
             text="Bluesky"
           />
         </li>
+        <li>
+          <LinkWithIcon url="https://social.tchncs.de/@neila" text="Mastodon" />
+        </li>
+        <li>
+          <LinkWithIcon
+            url="https://primal.net/p/npub1rdsn99fals5lduahfzw487k7waak6aerf04gndpgfs9kxtgy4r0qecqkwc"
+            text="Nostr"
+          />
+        </li>
+        <li>
+          <LinkWithIcon url="https://github.com/neila" text="Github" />
+        </li>
         {/* <li>
           <LinkWithIcon url="https://discuss.tchncs.de/u/nla" text="Lemmy" />
-        </li> neila */}
-        {/* <li>
-          <LinkWithIcon url="https://github.com/neila" text="Github" />
         </li> */}
       </ul>
     </section>
