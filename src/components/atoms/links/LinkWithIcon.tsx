@@ -1,7 +1,7 @@
 export const LinkWithIcon = (props: { url: string; text: string }) => {
   let internal = false;
   const style =
-    "bg-[image:var(--favicon-url)] bg-right bg-no-repeat pr-[18px] inline-block bg-contain";
+    "bg-[image:var(--favicon-url)] bg-right bg-no-repeat pr-[18px] inline-block bg-contain filter grayscale-[75%] hover:filter-none";
   let fetchedUrl = "";
   if (props.url.startsWith("/")) {
     fetchedUrl = "/favicon.ico";
