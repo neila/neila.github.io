@@ -1,13 +1,13 @@
-import Head from "next/head";
-import Image from "next/image";
+import Head from 'next/head';
+import Image from 'next/image';
 
-import { MapPinIcon } from "@heroicons/react/24/outline";
+import { MapPinIcon } from '@heroicons/react/24/outline';
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
-import profilePic from "public/images/about/profilePic.png";
-import { useState } from "react";
+import profilePic from 'public/images/about/profilePic.png';
+import { useState } from 'react';
 
 const Title = (params: { section: string; color: string }) => {
   return (
@@ -18,7 +18,7 @@ const Title = (params: { section: string; color: string }) => {
 };
 
 const ToolLogo = (params: { logolink: string; logoname: string }) => {
-  const [paddingTop, setPaddingTop] = useState("0");
+  const [paddingTop, setPaddingTop] = useState('0');
 
   return (
     <div className="relative" style={{ paddingTop }}>
@@ -56,8 +56,8 @@ const about = () => {
           alt="profile image"
           className="border-none align-middle rounded-3xl grayscale hover:grayscale-0"
           style={{
-            maxWidth: "100%",
-            height: "auto",
+            maxWidth: '100%',
+            height: 'auto',
           }}
         />
       </div>
@@ -84,7 +84,7 @@ const about = () => {
                 answers to them.
               </p>
               <p>
-                I seek joy in the{" "}
+                I seek joy in the{' '}
                 <a
                   href="https://openlibrary.org/books/OL31390125M/The_God_of_Small_Things"
                   target="_blank"

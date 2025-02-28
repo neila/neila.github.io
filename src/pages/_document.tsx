@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
 import Document, {
   type DocumentContext,
   type DocumentInitialProps,
@@ -6,18 +6,18 @@ import Document, {
   Html,
   Main,
   NextScript,
-} from "next/document";
-import React from "react";
+} from 'next/document';
+import React from 'react';
 
 type NoncedDocument = DocumentInitialProps & { nonce: string };
 
 export const metadata: Metadata = {
   icons: {
-    icon: ["/favicon.ico?v=4"],
-    apple: ["/apple-touch-icon.png?v=4"],
-    shortcut: ["/apple-touch-icon.png"],
+    icon: ['/favicon.ico?v=4'],
+    apple: ['/apple-touch-icon.png?v=4'],
+    shortcut: ['/apple-touch-icon.png'],
   },
-  manifest: "/site.webmanifest",
+  manifest: '/site.webmanifest',
 };
 
 const CustomDocument = (props: NoncedDocument) => {
@@ -30,12 +30,12 @@ const CustomDocument = (props: NoncedDocument) => {
     >
       <Head nonce={props.nonce}>
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:url" content="neila.github.io" />
+        <meta property="og:url" content="neila.in05.org" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="neila.github.io" />
+        <meta property="og:title" content="neila.in05.org" />
         <meta
           property="og:image"
-          content="https://neila.github.io/images/profilePic.png"
+          content="https://neila.in05.org/images/about/profilePic.png"
         />
         <meta property="og:description" content="website by neila" />
         <meta name="description" content="website by neila" />
@@ -54,7 +54,7 @@ CustomDocument.getInitialProps = async (
   ctx: DocumentContext,
 ): Promise<NoncedDocument> => {
   const initialProps = await Document.getInitialProps(ctx);
-  const nonce = (ctx.req?.headers["x-csp-nonce"] as string) ?? "";
+  const nonce = (ctx.req?.headers['x-csp-nonce'] as string) ?? '';
 
   return { ...initialProps, nonce: nonce };
 };

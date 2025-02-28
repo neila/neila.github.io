@@ -1,18 +1,18 @@
-import Head from "next/head";
-import Image from "next/image";
+import Head from 'next/head';
+import Image from 'next/image';
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
-import LondonBridges from "public/images/er-simulation/LondonBridges.png";
-import LondonGeo from "public/images/er-simulation/LondonGeo.png";
-import LondonNetwork from "public/images/er-simulation/LondonNetwork.png";
-import Sim1 from "public/images/er-simulation/Sim1.png";
-import Sim2 from "public/images/er-simulation/Sim2.png";
-import Sim3 from "public/images/er-simulation/Sim3.png";
-import Sim4 from "public/images/er-simulation/Sim4.png";
-import Sim5 from "public/images/er-simulation/Sim5.png";
-import Sim6 from "public/images/er-simulation/Sim6.png";
+import LondonBridges from 'public/images/er-simulation/LondonBridges.png';
+import LondonGeo from 'public/images/er-simulation/LondonGeo.png';
+import LondonNetwork from 'public/images/er-simulation/LondonNetwork.png';
+import Sim1 from 'public/images/er-simulation/Sim1.png';
+import Sim2 from 'public/images/er-simulation/Sim2.png';
+import Sim3 from 'public/images/er-simulation/Sim3.png';
+import Sim4 from 'public/images/er-simulation/Sim4.png';
+import Sim5 from 'public/images/er-simulation/Sim5.png';
+import Sim6 from 'public/images/er-simulation/Sim6.png';
 
 const Title = (params: { section: string; color?: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
@@ -51,7 +51,7 @@ export default function ERsim() {
               <br />
 
               <p>
-                Using dataset obtained from the{" "}
+                Using dataset obtained from the{' '}
                 <a
                   href="https://movement.uber.com/"
                   className="hover:text-[#00A499]"
@@ -74,8 +74,8 @@ export default function ERsim() {
                     src={LondonGeo}
                     alt="London regions, visualized"
                     style={{
-                      maxWidth: "100%",
-                      height: "auto",
+                      maxWidth: '100%',
+                      height: 'auto',
                     }}
                   />
                 </div>
@@ -85,8 +85,8 @@ export default function ERsim() {
                     src={LondonNetwork}
                     alt="Regions encoded as a network"
                     style={{
-                      maxWidth: "100%",
-                      height: "auto",
+                      maxWidth: '100%',
+                      height: 'auto',
                     }}
                   />
                 </div>
@@ -97,7 +97,7 @@ export default function ERsim() {
                 Medical emergency events were probabilistically generated across
                 all nodes, with higher crime neighborhoods having a higher
                 probability of such emergencies happening. The crime rate data
-                was obtained from the{" "}
+                was obtained from the{' '}
                 <a
                   href="https://www.met.police.uk/sd/stats-and-data/met/crime-data-dashboard/"
                   className="hover:text-[#00A499]"
@@ -126,8 +126,8 @@ export default function ERsim() {
                 src={Sim1}
                 alt=""
                 style={{
-                  maxWidth: "100%",
-                  height: "auto",
+                  maxWidth: '100%',
+                  height: 'auto',
                 }}
               />
               <br />
@@ -145,8 +145,8 @@ export default function ERsim() {
                 src={Sim2}
                 alt=""
                 style={{
-                  maxWidth: "100%",
-                  height: "auto",
+                  maxWidth: '100%',
+                  height: 'auto',
                 }}
               />
               <br />
@@ -163,8 +163,8 @@ export default function ERsim() {
                 src={LondonBridges}
                 alt="The 7 London bridges"
                 style={{
-                  maxWidth: "100%",
-                  height: "auto",
+                  maxWidth: '100%',
+                  height: 'auto',
                 }}
               />
               <br />
@@ -179,8 +179,8 @@ export default function ERsim() {
                 src={Sim3}
                 alt=""
                 style={{
-                  maxWidth: "100%",
-                  height: "auto",
+                  maxWidth: '100%',
+                  height: 'auto',
                 }}
               />
               <br />
@@ -201,8 +201,8 @@ export default function ERsim() {
                 src={Sim4}
                 alt=""
                 style={{
-                  maxWidth: "100%",
-                  height: "auto",
+                  maxWidth: '100%',
+                  height: 'auto',
                 }}
               />
               <br />
@@ -221,16 +221,16 @@ export default function ERsim() {
                 src={Sim5}
                 alt="Emergency response time, per region node."
                 style={{
-                  maxWidth: "100%",
-                  height: "auto",
+                  maxWidth: '100%',
+                  height: 'auto',
                 }}
               />
               <Image
                 src={Sim6}
                 alt="Warmer colors indicate slower response, colder colors faster."
                 style={{
-                  maxWidth: "100%",
-                  height: "auto",
+                  maxWidth: '100%',
+                  height: 'auto',
                 }}
               />
               <br />

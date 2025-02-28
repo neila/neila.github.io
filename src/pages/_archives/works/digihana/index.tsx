@@ -1,11 +1,11 @@
-import Head from "next/head";
-import Image from "next/image";
+import Head from 'next/head';
+import Image from 'next/image';
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
-import flower1 from "public/images/art/reika1.svg";
-import flower2 from "public/images/art/reika2.svg";
+import flower1 from 'public/images/art/reika1.svg';
+import flower2 from 'public/images/art/reika2.svg';
 
 const Title = (params: {
   digi: string;
@@ -47,16 +47,16 @@ export default function digihana() {
                   src={flower1}
                   alt=""
                   style={{
-                    maxWidth: "100%",
-                    height: "auto",
+                    maxWidth: '100%',
+                    height: 'auto',
                   }}
                 />
                 <Image
                   src={flower2}
                   alt=""
                   style={{
-                    maxWidth: "100%",
-                    height: "auto",
+                    maxWidth: '100%',
+                    height: 'auto',
                   }}
                 />
               </div>
@@ -69,7 +69,7 @@ export default function digihana() {
                   rel="noreferrer"
                 >
                   DigiHana
-                </a>{" "}
+                </a>{' '}
                 is a web application that allows users to mint their own digital
                 flower; a hana. Each token is unique and its pattern is
                 generated on the fly, as you would anticipate a physical
@@ -82,7 +82,7 @@ export default function digihana() {
                 adopting the common practice of storing only the metadata
                 on-chain, only to point to an external and potentially
                 vulnerable source of data, each flower data is encoded and baked
-                directly into the Ethereum blockchain. Hana owners{" "}
+                directly into the Ethereum blockchain. Hana owners{' '}
                 <em>truly</em> own their hanas, just as they own their necklaces
                 or sneakers; unless the Ethereum ecosystem itself
                 catastrophically fails, your digihanas will be semi-permanently
@@ -90,7 +90,7 @@ export default function digihana() {
               </p>
               <br />
               <p>
-                Collection ID <br />{" "}
+                Collection ID <br />{' '}
                 <span className="text-xs tablet:text-lg">
                   0x5b54de188a660dbf5e2ba6935ce1d70669348ea0
                 </span>
@@ -103,8 +103,8 @@ export default function digihana() {
                   rel="noreferrer"
                 >
                   Rarible
-                </a>{" "}
-                /{" "}
+                </a>{' '}
+                /{' '}
                 <a
                   href="https://testnets.opensea.io/collection/flowernft-azuwzflo4x"
                   className="text-[#2081E2]"

@@ -8,8 +8,8 @@ const Footer = () => {
           src="/images/alphabet_n.png"
           alt="N"
           className="mx-auto block h-8 w-8"
-        />{" "}
-        <br />{" "}
+        />{' '}
+        <br />{' '}
         <span className="text-center block">
           2021 - {currentYear} &copy; https://neila.in05.org
         </span>

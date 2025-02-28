@@ -1,15 +1,15 @@
-const path = require("path");
+const path = require('node:path');
 
 const buildLintCommand = (filenames) =>
   `npx yarn run biome lint ${filenames
     .map((f) => path.relative(process.cwd(), f))
-    .join(" ")}`;
+    .join(' ')}`;
 
 const buildFormatCommand = (filenames) =>
-  `npx yarn run biome check --linter-enabled=false ${filenames
+  `npx yarn run biome check ${filenames
     .map((f) => path.relative(process.cwd(), f))
-    .join(" ")} `;
+    .join(' ')} `;
 
 module.exports = {
-  "**/*.{js,jsx,ts,tsx}": [buildLintCommand, buildFormatCommand],
+  '**/*.{js,jsx,ts,tsx}': [buildLintCommand, buildFormatCommand],
 };

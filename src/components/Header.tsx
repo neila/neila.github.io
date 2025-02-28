@@ -1,4 +1,4 @@
-import { PageLink } from "@/components/atoms/links/PageLink";
+import { PageLink } from '@/components/atoms/links/PageLink';
 
 const Header = () => {
   const MainMenu = () => {

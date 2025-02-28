@@ -1,18 +1,18 @@
 // inspired by https://www.youtube.com/watch?v=arj7oStGLkU
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 const Cells = () => {
   const getCookie = () => {
     const value = `; ${document.cookie}`;
-    const parts = value.split("; userDate=");
+    const parts = value.split('; userDate=');
     if (parts.length === 2) {
-      return parts.pop().split(";").shift();
+      return parts.pop().split(';').shift();
     }
     return null;
   };
 
-  const [birthDay, setBirthday] = useState("");
+  const [birthDay, setBirthday] = useState('');
 
   const birthDate = new Date(birthDay);
 
@@ -49,7 +49,7 @@ const Cells = () => {
 
   const cellClickModal = (i) => {
     i + 1 < daysSinceBirth / 7
-      ? alert("過ぎ去った時間は取り戻せない！")
+      ? alert('過ぎ去った時間は取り戻せない！')
       : alert(
           `生後${i + 1}週 (${Math.floor(
             ((i + 1) * 7) / 365,
@@ -60,12 +60,12 @@ const Cells = () => {
   return (
     <div className="flex flex-col flex-grow justify-center items-center">
       <p>
-        your birthday:{" "}
+        your birthday:{' '}
         <input
           type="date"
           name="birthday"
           className="text-black"
-          value={birthDay ? birthDay : ""}
+          value={birthDay ? birthDay : ''}
           onChange={(e) => {
             setBirthday(e.target.value);
           }}
@@ -93,7 +93,7 @@ const Cells = () => {
             ? `on Earth: ${Math.ceil(
                 (+today - +birthDate) / (1000 * 60 * 60 * 24 * 7),
               )} weeks / `
-            : ""}
+            : ''}
           life expectancy: {Math.floor(daysOndeath / 7)} weeks
         </p>
       </div>

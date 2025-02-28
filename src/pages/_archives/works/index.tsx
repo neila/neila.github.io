@@ -1,16 +1,16 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image, { type StaticImageData } from "next/image";
-import Link from "next/link";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Image, { type StaticImageData } from 'next/image';
+import Link from 'next/link';
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
-import Synthfeed from "public/images/works/Synthfeed.png";
-import Digihana from "public/images/works/digihana.png";
-import AmbulancePic from "public/images/works/nhs.jpg";
-import Radio from "public/images/works/radio.jpg";
-import Rap from "public/images/works/rap.jpg";
+import Synthfeed from 'public/images/works/Synthfeed.png';
+import Digihana from 'public/images/works/digihana.png';
+import AmbulancePic from 'public/images/works/nhs.jpg';
+import Radio from 'public/images/works/radio.jpg';
+import Rap from 'public/images/works/rap.jpg';
 
 const Title = (params: { section: string; color: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
@@ -31,11 +31,11 @@ const WorkTriangleIcon = (props: {
       >
         <Image
           className="h-full w-full object-cover"
-          alt={pagepath.split("/").pop()}
+          alt={pagepath.split('/').pop()}
           src={image}
           style={{
-            maxWidth: "100%",
-            height: "auto",
+            maxWidth: '100%',
+            height: 'auto',
           }}
         />
       </div>
@@ -62,27 +62,27 @@ const works: NextPage = () => {
       <section className="">
         <div className="relative mx-auto flex flex-wrap justify-center p-4 desktop:w-3/4 bigmonitor:w-4/6">
           <WorkTriangleIcon
-            pagepath={`${archived ? "/_archives" : ""}/works/algorap`}
+            pagepath={`${archived ? '/_archives' : ''}/works/algorap`}
             image={Rap}
             updown="clip-tri-up"
           />
           <WorkTriangleIcon
-            pagepath={`${archived ? "/_archives" : ""}/works/synthfeed`}
+            pagepath={`${archived ? '/_archives' : ''}/works/synthfeed`}
             image={Synthfeed}
             updown="clip-tri-down"
           />
           <WorkTriangleIcon
-            pagepath={`${archived ? "/_archives" : ""}/works/digihana`}
+            pagepath={`${archived ? '/_archives' : ''}/works/digihana`}
             image={Digihana}
             updown="clip-tri-up"
           />
           <WorkTriangleIcon
-            pagepath={`${archived ? "/_archives" : ""}/works/er-simulation`}
+            pagepath={`${archived ? '/_archives' : ''}/works/er-simulation`}
             image={AmbulancePic}
             updown="clip-tri-down"
           />
           <WorkTriangleIcon
-            pagepath={`${archived ? "/_archives" : ""}/works/radio`}
+            pagepath={`${archived ? '/_archives' : ''}/works/radio`}
             image={Radio}
             updown="clip-tri-up"
           />

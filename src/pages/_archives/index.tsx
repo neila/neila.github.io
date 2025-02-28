@@ -1,7 +1,7 @@
-import BaseLayout from "@/components/layouts/Base";
-import type { NextPage } from "next";
+import BaseLayout from '@/components/layouts/Base';
+import type { NextPage } from 'next';
 
-import Link from "next/link";
+import Link from 'next/link';
 
 const NavLinks = () => {
   return (
