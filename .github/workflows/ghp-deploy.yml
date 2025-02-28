@@ -23,9 +23,6 @@ jobs:
     needs: setup
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v4
-        with:
-          static_site_generator: next
       - uses: actions/cache@v4
         with:
           path: |
@@ -36,6 +33,9 @@ jobs:
         with:
           path: .next/cache
           key:  ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}-build-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+      - uses: actions/configure-pages@v5
+        with:
+          static_site_generator: next
       - name: build
         run: yarn build
       - name: upload artifact

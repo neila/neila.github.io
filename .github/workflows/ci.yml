@@ -2,7 +2,11 @@ name: check
 
 on:
   push:
-    branches: "!main"
+    branches-ignore: main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   setup:
