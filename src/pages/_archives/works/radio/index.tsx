@@ -1,10 +1,10 @@
-import Head from "next/head";
-import Image from "next/image";
+import Head from 'next/head';
+import Image from 'next/image';
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
-import Songrec from "public/images/radio/songrec.png";
+import Songrec from 'public/images/radio/songrec.png';
 
 const Title = (params: { section: string; color: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
@@ -36,7 +36,7 @@ export default function radio() {
               <br />
               <p>
                 The algorithm uses a dataset of songs that I found online
-                (originally obtained from Spotify) to build a{" "}
+                (originally obtained from Spotify) to build a{' '}
                 <a
                   href="https://www.dgp.toronto.edu/public_user/JamesStewart/378notes/16redBlack/"
                   className="hover:text-[#6CC417]"
@@ -44,7 +44,7 @@ export default function radio() {
                   rel="noreferrer"
                 >
                   Red-Black tree
-                </a>{" "}
+                </a>{' '}
                 based on how close each song in the dataset are to the initial
                 song specified by the user. Two songs being <em>close</em> is
                 defined as having similar characteristics in terms of attributes
@@ -66,8 +66,8 @@ export default function radio() {
                 src={Songrec}
                 alt=""
                 style={{
-                  maxWidth: "100%",
-                  height: "auto",
+                  maxWidth: '100%',
+                  height: 'auto',
                 }}
               />
               <br />

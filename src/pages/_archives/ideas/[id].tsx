@@ -1,12 +1,12 @@
-import { MDXRemote, type MDXRemoteSerializeResult } from "next-mdx-remote";
-import { serialize } from "next-mdx-remote/serialize";
-import Head from "next/head";
+import { MDXRemote, type MDXRemoteSerializeResult } from 'next-mdx-remote';
+import { serialize } from 'next-mdx-remote/serialize';
+import Head from 'next/head';
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Graph from "@/utils/Graph";
-import { getAllPosts } from "@/utils/postid";
-import type { NextPage } from "next";
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import Graph from '@/utils/Graph';
+import { getAllPosts } from '@/utils/postid';
+import type { NextPage } from 'next';
 
 type PostProps = {
   content: MDXRemoteSerializeResult<

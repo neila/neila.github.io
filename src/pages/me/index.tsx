@@ -1,9 +1,9 @@
-import { LinkWithIcon } from "@/components/atoms/links/LinkWithIcon";
-import BaseLayout from "@/components/layouts/Base";
-import { walletAddress } from "@/utils/constants";
-import Image from "next/image";
-import Link from "next/link";
-import pp from "public/images/about/profilePic.png";
+import { LinkWithIcon } from '@/components/atoms/links/LinkWithIcon';
+import BaseLayout from '@/components/layouts/Base';
+import { walletAddress } from '@/utils/constants';
+import Image from 'next/image';
+import Link from 'next/link';
+import pp from 'public/images/about/profilePic.png';
 
 const ProfilePic = () => {
   return (
@@ -17,8 +17,8 @@ const ProfilePic = () => {
         alt="profile image"
         className="border-none align-middle rounded-full grayscale hover:grayscale-0"
         style={{
-          maxWidth: "100%",
-          height: "auto",
+          maxWidth: '100%',
+          height: 'auto',
         }}
       />
     </div>
@@ -35,13 +35,13 @@ const Work = () => {
         rofessionally, I find myself wearing many hats over my varied interests
         and specialities. Primarily, I see myself as an artist and entrepreneur,
         always thinking about and working on exciting new ideas. At times, I am
-        an{" "}
+        an{' '}
         <LinkWithIcon
           url="/_archives/works/er-simulation"
           text="OSINT researcher"
         />
         , gathering intel and compiling relevant information to pursue my (or my
-        client's) goals. Other times I am a{" "}
+        client's) goals. Other times I am a{' '}
         <LinkWithIcon
           url="https://github.com/neila"
           text="software developer"
@@ -50,24 +50,24 @@ const Work = () => {
         can focus on more important things.
       </p>
       <p>
-        I have worked for, published in, or consulted for:{" "}
+        I have worked for, published in, or consulted for:{' '}
         <em>
           <LinkWithIcon url="https://www.nhk.or.jp/" text="NHK" /> (2022-2023)
         </em>
-        ,{" "}
+        ,{' '}
         <em>
-          <LinkWithIcon url="https://www.henkaku.center/en" text="CIT" />{" "}
+          <LinkWithIcon url="https://www.henkaku.center/en" text="CIT" />{' '}
           (2021-2022)
         </em>
-        ,{" "}
+        ,{' '}
         <em>
           <LinkWithIcon
             url="https://www.wolfram.com/"
             text="Wolfram Research"
-          />{" "}
+          />{' '}
           (2020)
         </em>
-        ,{" "}
+        ,{' '}
         <em>
           <LinkWithIcon url="https://nikkei.com/" text="Nikkei" /> (2017-2019)
         </em>
@@ -93,13 +93,13 @@ const DonateToAddresses = () => {
         space-y-2 pb-2 max-w-full list-outside list-none"
       >
         <li>
-          BTC:{" "}
+          BTC:{' '}
           <code className="break-words text-pink-500">
             {walletAddress.bitcoin}
           </code>
         </li>
         <li className="group">
-          ETH:{" "}
+          ETH:{' '}
           <code className="break-words text-pink-500">
             {walletAddress.ethereum}
           </code>
@@ -109,7 +109,7 @@ const DonateToAddresses = () => {
         </li>
 
         <li>
-          XMR:{" "}
+          XMR:{' '}
           <code className="break-words max-w-full text-pink-500">
             {walletAddress.monero}
           </code>
@@ -162,8 +162,8 @@ const Projects = () => {
         </li>
         <li>
           <LinkWithIcon url="https://ethereumjp.org" text="Ethereum Japan" /> -
-          Developing Ethereum from Japan, featuring projects like{" "}
-          <LinkWithIcon url="https://ethtokyo.org" text="ETHTokyo" /> and{" "}
+          Developing Ethereum from Japan, featuring projects like{' '}
+          <LinkWithIcon url="https://ethtokyo.org" text="ETHTokyo" /> and{' '}
           <LinkWithIcon url="https://www.unchain.tech" text="UNCHAIN" />.
         </li>
         <li>
@@ -218,8 +218,8 @@ const Contact = () => {
         </div>
         <div id="ppmx">
           <p>
-            {" "}
-            <LinkWithIcon url="xmpp:n@xmpp.co" text="XMPP" />{" "}
+            {' '}
+            <LinkWithIcon url="xmpp:n@xmpp.co" text="XMPP" />{' '}
           </p>
         </div>
       </div>
@@ -233,8 +233,8 @@ const AboutMePage = () => {
       <BaseLayout pageTitle="About Neila" className="px-4">
         <article className="laptop:max-w-6xl mx-auto">
           <h1 className="top-heading text-center">
-            <span className="text-[4rem]">A</span>BOUT{" "}
-            <span className="text-[4rem]">N</span>eila
+            <span className="text-[4rem]">A</span>BOUT{' '}
+            <span className="text-[4rem]">N</span>EILA
           </h1>
 
           {/* <h4 className="py-4 text-center">

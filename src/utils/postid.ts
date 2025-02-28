@@ -1,19 +1,19 @@
-import fs from "node:fs";
+import fs from 'node:fs';
 
-import path from "node:path";
+import path from 'node:path';
 
-import matter from "gray-matter";
+import matter from 'gray-matter';
 
-const postsDirectory: string = path.join(process.cwd(), "public/posts");
+const postsDirectory: string = path.join(process.cwd(), 'public/posts');
 
 export const getAllPosts = () => {
   const allPosts = fs.readdirSync(postsDirectory);
 
   return allPosts.map((file) => {
-    const id = file.replace(".md", "");
+    const id = file.replace('.md', '');
     const fileContents = fs.readFileSync(
       path.join(postsDirectory, file),
-      "utf-8",
+      'utf-8',
     );
     // Use gray-matter to parse the post
     const { data, content } = matter(fileContents);

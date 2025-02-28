@@ -1,16 +1,16 @@
-import fs from "node:fs";
+import fs from 'node:fs';
 
-import Head from "next/head";
-import Link from "next/link";
-import React from "react";
+import Head from 'next/head';
+import Link from 'next/link';
+import React from 'react';
 
-import path from "node:path";
-import dateFormat from "dateformat";
-import matter from "gray-matter";
+import path from 'node:path';
+import dateFormat from 'dateformat';
+import matter from 'gray-matter';
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Graph from "@/utils/Graph";
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import Graph from '@/utils/Graph';
 
 type Post = {
   id: string;
@@ -46,7 +46,7 @@ const ideas = ({ postsList }) => {
           <section className="items-start desktop:flex">
             <div className="mx-auto space-y-5 leading-snug desktop:w-4/5">
               <p>
-                My biological brain is far too{" "}
+                My biological brain is far too{' '}
                 <a
                   href="https://doi.apa.org/doiLanding?doi=10.1037%2F0278-7393.20.5.1063"
                   target="_blank"
@@ -65,7 +65,7 @@ const ideas = ({ postsList }) => {
                 nurture these seeds of imagination, so that they can grow into
                 something bigger. In the conscious and continuous effort to
                 acknolwedge and appreciate the everchanging present, lies the
-                art of spontaneous creativity. I named this page after the{" "}
+                art of spontaneous creativity. I named this page after the{' '}
                 <a
                   href="https://en.wikipedia.org/wiki/Idea"
                   target="_blank"
@@ -101,7 +101,7 @@ const ideas = ({ postsList }) => {
                         {post.id}
                       </h3>
                       <p className="truncate text-xs desktop:text-sm">
-                        {dateFormat(post.date_created, "yyyy-mm-dd", true)} |{" "}
+                        {dateFormat(post.date_created, 'yyyy-mm-dd', true)} |{' '}
                         {post.tags}
                       </p>
                     </div>
@@ -124,16 +124,16 @@ const ideas = ({ postsList }) => {
 };
 
 export async function getStaticProps() {
-  const postsDirectory = path.join(process.cwd(), "public/posts");
-  const fileNames = fs.readdirSync(postsDirectory, "utf8");
+  const postsDirectory = path.join(process.cwd(), 'public/posts');
+  const fileNames = fs.readdirSync(postsDirectory, 'utf8');
 
   const allPostsData = fileNames.map((fileName: string) => {
     // Remove ".md" from file name to get id
-    const id = fileName.replace(/\.md$/, "");
+    const id = fileName.replace(/\.md$/, '');
 
     // Read markdown file as string
     const fullPath = path.join(postsDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
+    const fileContents = fs.readFileSync(fullPath, 'utf8');
 
     // Use gray-matter to parse the post metadata section
     const postMetadata = matter(fileContents).data;

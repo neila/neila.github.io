@@ -1,17 +1,17 @@
-import Head from "next/head";
-import Image from "next/image";
+import Head from 'next/head';
+import Image from 'next/image';
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
-import Algorap1 from "public/images/algorap/Algorap1.svg";
-import Algorap2 from "public/images/algorap/Algorap2.png";
-import Algorap3 from "public/images/algorap/Algorap3.png";
-import Algorap4 from "public/images/algorap/Algorap4.png";
-import Algorap5 from "public/images/algorap/Algorap5.svg";
-import Algorap6_1 from "public/images/algorap/Algorap6_1.png";
-import Algorap6_2 from "public/images/algorap/Algorap6_2.png";
-import Algorap6_3 from "public/images/algorap/Algorap6_3.png";
+import Algorap1 from 'public/images/algorap/Algorap1.svg';
+import Algorap2 from 'public/images/algorap/Algorap2.png';
+import Algorap3 from 'public/images/algorap/Algorap3.png';
+import Algorap4 from 'public/images/algorap/Algorap4.png';
+import Algorap5 from 'public/images/algorap/Algorap5.svg';
+import Algorap6_1 from 'public/images/algorap/Algorap6_1.png';
+import Algorap6_2 from 'public/images/algorap/Algorap6_2.png';
+import Algorap6_3 from 'public/images/algorap/Algorap6_3.png';
 
 const Title = (params: { section: string; color: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
@@ -63,8 +63,8 @@ export default function algorap() {
                 src={Algorap1}
                 alt=""
                 style={{
-                  maxWidth: "100%",
-                  height: "auto",
+                  maxWidth: '100%',
+                  height: 'auto',
                 }}
               />
               <br />
@@ -82,8 +82,8 @@ export default function algorap() {
                 src={Algorap2}
                 alt=""
                 style={{
-                  maxWidth: "100%",
-                  height: "auto",
+                  maxWidth: '100%',
+                  height: 'auto',
                 }}
               />
               <br />
@@ -107,8 +107,8 @@ export default function algorap() {
                 className="rounded"
                 alt=""
                 style={{
-                  maxWidth: "100%",
-                  height: "auto",
+                  maxWidth: '100%',
+                  height: 'auto',
                 }}
               />
               <br />
@@ -142,8 +142,8 @@ export default function algorap() {
                 src={Algorap4}
                 alt=""
                 style={{
-                  maxWidth: "100%",
-                  height: "auto",
+                  maxWidth: '100%',
+                  height: 'auto',
                 }}
               />
               <br />
@@ -171,7 +171,7 @@ export default function algorap() {
                 <li>What is a magic ring?</li>
               </ul>
               <p>
-                See{" "}
+                See{' '}
                 <a
                   href="https://drive.google.com/drive/folders/13w_n7UNzEaPrk6yLpNp_0GsYC9sB8-I7?usp=sharing"
                   className="hover:text-[#FE0000]"
@@ -179,7 +179,7 @@ export default function algorap() {
                   rel="noreferrer"
                 >
                   here
-                </a>{" "}
+                </a>{' '}
                 for more examples of the generated lyrics.
               </p>
               <br />
@@ -226,8 +226,8 @@ export default function algorap() {
                 src={Algorap5}
                 alt=""
                 style={{
-                  maxWidth: "100%",
-                  height: "auto",
+                  maxWidth: '100%',
+                  height: 'auto',
                 }}
               />
               <br />
@@ -263,7 +263,7 @@ export default function algorap() {
                   rel="noreferrer"
                 >
                   Top layer (most coarse)
-                </a>{" "}
+                </a>{' '}
                 &nbsp;&nbsp;&nbsp;
                 <a
                   href="https://drive.google.com/file/d/1dYaSYmoiFRly4UHiXboThcEkR6AG794D/view?usp=sharing"
@@ -272,7 +272,7 @@ export default function algorap() {
                   rel="noreferrer"
                 >
                   Middle layer
-                </a>{" "}
+                </a>{' '}
                 &nbsp;&nbsp;&nbsp;
                 <a
                   href="https://drive.google.com/file/d/1zCJPl7INAitD8bbsQG0vylZ3Vnw-Y5gY/view?usp=sharing"
@@ -294,31 +294,31 @@ export default function algorap() {
                   src={Algorap6_1}
                   alt=""
                   style={{
-                    maxWidth: "100%",
-                    height: "auto",
+                    maxWidth: '100%',
+                    height: 'auto',
                   }}
                 />
                 <Image
                   src={Algorap6_2}
                   alt=""
                   style={{
-                    maxWidth: "100%",
-                    height: "auto",
+                    maxWidth: '100%',
+                    height: 'auto',
                   }}
                 />
                 <Image
                   src={Algorap6_3}
                   alt=""
                   style={{
-                    maxWidth: "100%",
-                    height: "auto",
+                    maxWidth: '100%',
+                    height: 'auto',
                   }}
                 />
               </div>
               <br />
               <p>
                 I curated a collection of eight songs generated by AlgoRap into
-                an album. It can be accessed via this{" "}
+                an album. It can be accessed via this{' '}
                 <b>
                   <a
                     href="https://drive.google.com/drive/folders/14UNyi2h6KXJwaVIbGr9zz5nVQomnJtae?usp=sharing"

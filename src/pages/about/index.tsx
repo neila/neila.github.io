@@ -35,6 +35,7 @@ const AboutSitePage = () => {
             when I write, and it would be better to make it easy for you to find
             them.
           </p>
+
           {/* <h2>Technical specfictions</h2> */}
         </article>
       </BaseLayout>

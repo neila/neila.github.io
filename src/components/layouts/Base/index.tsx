@@ -1,7 +1,7 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Head from "next/head";
-import type { FC, ReactNode } from "react";
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import Head from 'next/head';
+import type { FC, ReactNode } from 'react';
 
 const BaseLayout: FC<{
   pageTitle?: string;
@@ -11,7 +11,7 @@ const BaseLayout: FC<{
   return (
     <>
       <Head>
-        <title>{`${pageTitle ? `${pageTitle} | neila.github.io` : "neila.github.io"}`}</title>
+        <title>{`${pageTitle ? `${pageTitle} | neila.github.io` : 'neila.github.io'}`}</title>
         <meta name="description" content="website by neila" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

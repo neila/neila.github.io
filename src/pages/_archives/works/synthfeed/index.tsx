@@ -1,9 +1,9 @@
-import Head from "next/head";
-import Image from "next/image";
+import Head from 'next/head';
+import Image from 'next/image';
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Synthfeed1 from "public/images/synthfeed/Synthfeed_home.png";
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import Synthfeed1 from 'public/images/synthfeed/Synthfeed_home.png';
 
 const Title = (params: { section: string; color: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
@@ -35,7 +35,7 @@ export default function synthfeed() {
                   rel="noreferrer"
                 >
                   SynthFeed
-                </a>{" "}
+                </a>{' '}
                 is an online feedback platform for music producers to get
                 targeted feedback from professionals on creative and technical
                 aspects of their work. Synthfeed&apos;s professional artists
@@ -48,8 +48,8 @@ export default function synthfeed() {
                   src={Synthfeed1}
                   alt=""
                   style={{
-                    maxWidth: "100%",
-                    height: "auto",
+                    maxWidth: '100%',
+                    height: 'auto',
                   }}
                 />
                 <a

@@ -1,4 +1,4 @@
-import BaseLayout from "@/components/layouts/Base";
+import BaseLayout from '@/components/layouts/Base';
 
 const ChangelogPage = () => {
   return (

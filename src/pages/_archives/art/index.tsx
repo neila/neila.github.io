@@ -1,19 +1,19 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image, { type StaticImageData } from "next/image";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Image, { type StaticImageData } from 'next/image';
 
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
-import rwkng from "public/images/art/RUNAWAY_KING.jpg";
-import bbl from "public/images/art/bigbanglove.png";
-import btt from "public/images/art/biggerthanthou.png";
+import rwkng from 'public/images/art/RUNAWAY_KING.jpg';
+import bbl from 'public/images/art/bigbanglove.png';
+import btt from 'public/images/art/biggerthanthou.png';
 import cdflp from "public/images/art/candyflippin' (oops).png";
-import drd from "public/images/art/deepreason_depression.png";
-import gsh from "public/images/art/galactic_superhighway.png";
-import p35 from "public/images/art/polygon35.png";
-import dghn from "public/images/art/reika1.svg";
-import swlp from "public/images/art/sweetlips.png";
+import drd from 'public/images/art/deepreason_depression.png';
+import gsh from 'public/images/art/galactic_superhighway.png';
+import p35 from 'public/images/art/polygon35.png';
+import dghn from 'public/images/art/reika1.svg';
+import swlp from 'public/images/art/sweetlips.png';
 
 const Art: NextPage = () => {
   const Title = (params: { section: string; color: string }) => (

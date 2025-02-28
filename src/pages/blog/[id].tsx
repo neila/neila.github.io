@@ -1,9 +1,9 @@
-import BaseLayout from "@/components/layouts/Base";
-import Graph from "@/utils/Graph";
-import { getAllPosts } from "@/utils/postid";
-import type { NextPage } from "next";
-import { MDXRemote, type MDXRemoteSerializeResult } from "next-mdx-remote";
-import { serialize } from "next-mdx-remote/serialize";
+import BaseLayout from '@/components/layouts/Base';
+import Graph from '@/utils/Graph';
+import { getAllPosts } from '@/utils/postid';
+import type { NextPage } from 'next';
+import { MDXRemote, type MDXRemoteSerializeResult } from 'next-mdx-remote';
+import { serialize } from 'next-mdx-remote/serialize';
 
 type PostProps = {
   content: MDXRemoteSerializeResult<

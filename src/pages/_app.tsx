@@ -1,5 +1,5 @@
-import type { AppProps } from "next/app";
-import "../globals.css";
+import type { AppProps } from 'next/app';
+import '../globals.css';
 
 export const config = {
   unstable_runtimeJS: false,
