@@ -132,7 +132,6 @@ const Websites = () => {
         </li>
         <li>
           <LinkWithIcon url="https://social.tchncs.de/@neila" text="Mastodon" />
-          {/* <a rel="me" href="https://social.tchncs.de/@neila">Mastodon</a> */}
         </li>
         <li>
           <LinkWithIcon
