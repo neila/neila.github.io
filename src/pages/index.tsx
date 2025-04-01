@@ -29,6 +29,7 @@ const HomePage: NextPage = () => {
           </p>
         </div>
       </BaseLayout>
+      {/* <a rel="me" href="https://social.tchncs.de/@neila">Mastodon</a> */}
     </>
   );
 };

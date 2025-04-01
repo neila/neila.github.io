@@ -4,6 +4,7 @@ import { getAllPosts } from '@/utils/postid';
 import type { NextPage } from 'next';
 import { MDXRemote, type MDXRemoteSerializeResult } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
+import Head from 'next/head';
 
 type PostProps = {
   content: MDXRemoteSerializeResult<
@@ -16,6 +17,9 @@ type PostProps = {
 const post: NextPage<PostProps> = ({ content, id }) => {
   return (
     <>
+      <Head>
+        <meta name="fediverse:creator" content="@neila@social.tchncs.de" />
+      </Head>
       <BaseLayout pageTitle={id}>
         <div className="mt-8 mx-auto desktop:w-2/3">
           <article className="px-2">
