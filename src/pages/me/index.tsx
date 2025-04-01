@@ -183,7 +183,7 @@ const Contact = () => {
       <div className="grid grid-flow-row grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-6">
         <div id="liame">
           <p>
-            <LinkWithIcon url="mailto:neila@tuta.io" text="Email" />
+            <LinkWithIcon url="mailto:n@in05.org" text="Email" />
           </p>
         </div>
         <div id="esabyek">
