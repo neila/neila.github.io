@@ -123,29 +123,41 @@ const Websites = () => {
   return (
     <section id="websites" className="py-4">
       <h1>You can find me on</h1>
-      <ul>
-        <li>
-          <LinkWithIcon
-            url="https://bsky.app/profile/in05.org"
-            text="Bluesky"
-          />
-        </li>
-        <li>
-          <LinkWithIcon url="https://social.tchncs.de/@neila" text="Mastodon" />
-        </li>
-        <li>
-          <LinkWithIcon
-            url="https://primal.net/p/npub1rdsn99fals5lduahfzw487k7waak6aerf04gndpgfs9kxtgy4r0qecqkwc"
-            text="Nostr"
-          />
-        </li>
-        <li>
-          <LinkWithIcon url="https://github.com/neila" text="Github" />
-        </li>
-        {/* <li>
-          <LinkWithIcon url="https://discuss.tchncs.de/u/nla" text="Lemmy" />
-        </li> */}
-      </ul>
+      <div className="grid grid-cols-3 gap-4">
+        <ul>
+          <h4>Socials</h4>
+          <li>
+            <LinkWithIcon
+              url="https://bsky.app/profile/in05.org"
+              text="Bluesky"
+            />
+          </li>
+          <li>
+            <LinkWithIcon
+              url="https://social.tchncs.de/@neila"
+              text="Mastodon"
+            />
+          </li>
+          <li>
+            <LinkWithIcon
+              url="https://primal.net/p/npub1rdsn99fals5lduahfzw487k7waak6aerf04gndpgfs9kxtgy4r0qecqkwc"
+              text="Nostr"
+            />
+          </li>
+        </ul>
+        <ul>
+          <h4>Forums</h4>
+          <li>
+            <LinkWithIcon url="https://discuss.tchncs.de/u/nla" text="Lemmy" />
+          </li>
+        </ul>
+        <ul>
+          <h4>Code</h4>
+          <li>
+            <LinkWithIcon url="https://github.com/neila" text="Github" />
+          </li>
+        </ul>
+      </div>
     </section>
   );
 };
@@ -156,18 +168,18 @@ const Projects = () => {
       <h1>Projects</h1>
       <ul>
         <li>
-          <LinkWithIcon url="https://akiyaz.io" text="Akiyaz" /> - An A-to-Z
+          <LinkWithIcon url="https://akiyaz.io" text="Akiyaz" /> An A-to-Z
           solution provider for anyone looking to build something new from the
           rural Japanese landscape.
         </li>
         <li>
-          <LinkWithIcon url="https://ethereumjp.org" text="Ethereum Japan" /> -
+          <LinkWithIcon url="https://ethereumjp.org" text="Ethereum Japan" />
           Developing Ethereum from Japan, featuring projects like{' '}
           <LinkWithIcon url="https://ethtokyo.org" text="ETHTokyo" /> and{' '}
           <LinkWithIcon url="https://www.unchain.tech" text="UNCHAIN" />.
         </li>
         <li>
-          <LinkWithIcon url="https://www.in05.org" text="IN05 Network" /> - An
+          <LinkWithIcon url="https://www.in05.org" text="IN05 Network" /> An
           emergent network of artists, entrepreneurs, and hackers building a
           dynamic and collaborative lifestyle.
         </li>
@@ -180,46 +192,65 @@ const Contact = () => {
   return (
     <section id="contact" className="py-4">
       <h1>Contact me</h1>
-      <div className="grid grid-flow-row grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-6">
+      <div className="grid grid-flow-row grid-cols-2 tablet:grid-cols-4 laptop:grid-cols-8">
         <div id="liame">
           <p>
-            <LinkWithIcon url="mailto:n@in05.org" text="Email" />
-          </p>
-        </div>
-        <div id="esabyek">
-          <p>
-            <LinkWithIcon url="https://keybase.io/neila" text="Keybase" />
-          </p>
-        </div>
-        <div id="xirtam">
-          <p>
             <LinkWithIcon
-              url="https://matrix.to/#/@n:tchncs.de"
-              text="Matrix"
+              url={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
+              text="Email"
             />
           </p>
         </div>
-        <div id="langis">
+        <div id="margelet">
           <p>
-            <LinkWithIcon
-              url="https://signal.me/#eu/itrjgmMW6kisZg0-GsoCExWl2IykCj6qMkdbakHahmqUHYMeWNxBwbxT89mKjm-_"
-              text="Signal"
-            />
+            <LinkWithIcon url="https://t.me/neilasan" text="Telegram" />
           </p>
         </div>
-        <div id="xelpmis">
+        <div id="noisses">
           <p>
             <LinkWithIcon
-              url="https://simplex.chat/contact#/?v=2-7&smp=smp%3A%2F%2Fh--vW7ZSkXPeOUpfxlFGgauQmXNFOzGoizak7Ult7cw%3D%40smp15.simplex.im%2FAwMOTQSKO_yoQumr27_VoyOdBp9Ztmja%23%2F%3Fv%3D1-3%26dh%3DMCowBQYDK2VuAyEAmZucr8mlaKJ8H_TDeeH8Cs04o9ufvqVyutKVWFGBYA8%253D%26srv%3Doauu4bgijybyhczbnxtlggo6hiubahmeutaqineuyy23aojpih3dajad.onion"
-              text="SimpleX"
+              url={`https://getsession.org/?${process.env.NEXT_PUBLIC_SESSION_ID}`}
+              text="Session"
             />
-            {/* https://envs.sh/2B8 */}
           </p>
         </div>
         <div id="ppmx">
           <p>
-            {' '}
-            <LinkWithIcon url="xmpp:n@xmpp.co" text="XMPP" />{' '}
+            <LinkWithIcon
+              url={`xmpp:${process.env.NEXT_PUBLIC_XMPP}`}
+              text="XMPP"
+            />
+          </p>
+        </div>
+        <div id="esabyek" hidden>
+          <p>
+            <LinkWithIcon url="https://keybase.io/neila" text="Keybase" />
+          </p>
+        </div>
+        <div id="langis" hidden>
+          <p>
+            <LinkWithIcon
+              // url="https://envs.sh/2_V"
+              url={`https://signal.me/#eu/${process.env.NEXT_PUBLIC_SIGNAL}`}
+              text="Signal"
+            />
+          </p>
+        </div>
+        <div id="xelpmis" hidden>
+          <p>
+            <LinkWithIcon
+              // url="https://envs.sh/2B8"
+              url={`https://simplex.chat/contact/#/?${process.env.NEXT_PUBLIC_SIMPLEX}.onion`}
+              text="SimpleX"
+            />
+          </p>
+        </div>
+        <div id="xirtam" hidden>
+          <p>
+            <LinkWithIcon
+              url={`https://matrix.to/#/${process.env.NEXT_PUBLIC_MATRIX}`}
+              text="Matrix"
+            />
           </p>
         </div>
       </div>
