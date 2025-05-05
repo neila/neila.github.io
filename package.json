@@ -35,7 +35,7 @@
     "postcss": "^8.4.45",
     "remark": "15",
     "remark-html": "16",
-    "serve": "^14.2.3",
+    "serve": "^14.2.4",
     "simple-git-hooks": "^2.11.1",
     "tailwindcss": "^3.4.11",
     "tslib": "^2.8.1",
