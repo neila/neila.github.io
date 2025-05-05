@@ -42,7 +42,10 @@ const CustomDocument = (props: NoncedDocument) => {
         <meta property="csp-nonce" content={props.nonce} />
       </Head>
 
-      <body nonce={props.nonce}>
+      <body
+        nonce={props.nonce}
+        className="bg-neutral-900 font-serif text-neutral-200"
+      >
         <Main />
         <NextScript nonce={props.nonce} />
       </body>

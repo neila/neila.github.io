@@ -81,7 +81,7 @@ const Work = () => {
 
 const DonateToAddresses = () => {
   return (
-    <div className="border border-1 p-2 my-2">
+    <div className="border p-2 my-2">
       <p className="text-1">
         To help make ends meet, I accept small (or large, if you insist)
         donations in cryptocurrencies. If you appreciate my work, please
@@ -277,7 +277,7 @@ const AboutMePage = () => {
 
           <Work />
 
-          {/* <DonateToAddresses /> */}
+          <DonateToAddresses />
 
           <Projects />
 
