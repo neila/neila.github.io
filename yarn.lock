@@ -3139,7 +3139,7 @@ __metadata:
     remark-html: 16
     serve: ^14.2.4
     sharp: ^0.33.5
-    simple-git-hooks: ^2.11.1
+    simple-git-hooks: ^2.13.0
     tailwindcss: ^3.4.11
     tslib: ^2.8.1
     typescript: ^5.8.3
@@ -4093,12 +4093,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-git-hooks@npm:^2.11.1":
-  version: 2.11.1
-  resolution: "simple-git-hooks@npm:2.11.1"
+"simple-git-hooks@npm:^2.13.0":
+  version: 2.13.0
+  resolution: "simple-git-hooks@npm:2.13.0"
   bin:
     simple-git-hooks: cli.js
-  checksum: e72adb15097c2d62da9f864264a13535f14389b6d3d73ee08bf52adbfc978f736fdbdae46b202599744a7eff7d08dfdf900616cefb5a8682a523051afe9f8f19
+  checksum: 0bd275524468ac143e777e9398e829a117bdd61db818d4d5481423b3b3f6a25d90cdbbefc49bc776c6dfcebade4cf7144d20e1cbc5952047482443b095b29c24
   languageName: node
   linkType: hard
 
