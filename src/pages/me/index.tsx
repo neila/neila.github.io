@@ -197,7 +197,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-4">
       <h1>Contact me</h1>
-      <div className="grid grid-flow-row grid-cols-2 tablet:grid-cols-4 laptop:grid-cols-8">
+      <div className="grid grid-flow-row grid-cols-2 tablet:grid-cols-4">
         <div id="liame">
           <p>
             <LinkWithIcon
@@ -282,7 +282,7 @@ const AboutMePage = () => {
 
           <Work />
 
-          <DonateToAddresses />
+          {/* <DonateToAddresses /> */}
 
           <Projects />
 
