@@ -52,12 +52,12 @@ const Work = () => {
       <p>
         I have worked for, published in, or consulted for:{' '}
         <em>
-          <LinkWithIcon url="https://www.nhk.or.jp/" text="NHK" /> (2022-2023)
+          <LinkWithIcon url="https://www.nhk.or.jp/" text="NHK" /> ('22-'23)
         </em>
         ,{' '}
         <em>
           <LinkWithIcon url="https://www.henkaku.center/en" text="CIT" />{' '}
-          (2021-2022)
+          ('21-'22)
         </em>
         ,{' '}
         <em>
@@ -65,13 +65,13 @@ const Work = () => {
             url="https://www.wolfram.com/"
             text="Wolfram Research"
           />{' '}
-          (2020)
+          ('20-'21)
         </em>
         ,{' '}
         <em>
-          <LinkWithIcon url="https://nikkei.com/" text="Nikkei" /> (2017-2019)
+          <LinkWithIcon url="https://nikkei.com/" text="Nikkei" /> ('17-'19)
         </em>
-        , and other <em>private clients (2017-)</em> in various industries.
+        , and other <em>private clients ('17-)</em> in various industries.
         Everything on this website should be considered my own viewpoint or
         writing, unless otherwise specified by a representative or publication.
       </p>
@@ -167,21 +167,26 @@ const Projects = () => {
     <section id="projects" className="py-4">
       <h1>Projects</h1>
       <ul>
-        <li>
+        {/* <li>
           <LinkWithIcon url="https://akiyaz.io" text="Akiyaz" /> An A-to-Z
           solution provider for anyone looking to build something new from the
           rural Japanese landscape.
-        </li>
-        <li>
-          <LinkWithIcon url="https://ethereumjp.org" text="Ethereum Japan" />
-          Developing Ethereum from Japan, featuring projects like{' '}
-          <LinkWithIcon url="https://ethtokyo.org" text="ETHTokyo" /> and{' '}
-          <LinkWithIcon url="https://www.unchain.tech" text="UNCHAIN" />.
-        </li>
+        </li> */}
         <li>
           <LinkWithIcon url="https://www.in05.org" text="IN05 Network" /> An
           emergent network of artists, entrepreneurs, and hackers building a
           dynamic and collaborative lifestyle.
+        </li>
+        <li>
+          <LinkWithIcon url="https://ethtokyo.org" text="ETHTokyo" /> An annual
+          conference and hackathon where ideas are exchanged, connections are
+          formed, and progress is made.
+        </li>
+        <li>
+          <LinkWithIcon url="https://www.unchain.tech" text="UNCHAIN" /> A
+          community where anyone come and can learn the basics of web3
+          development, taking their first steps to join the permissionless
+          ecosystem.
         </li>
       </ul>
     </section>
