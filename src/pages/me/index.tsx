@@ -197,7 +197,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-4">
       <h1>Contact me</h1>
-      <div className="grid grid-flow-row grid-cols-2 tablet:grid-cols-4">
+      <div className="grid grid-flow-row grid-cols-2 tablet:grid-cols-3">
         <div id="liame">
           <p>
             <LinkWithIcon
@@ -206,33 +206,20 @@ const Contact = () => {
             />
           </p>
         </div>
-        <div id="margelet">
-          <p>
-            <LinkWithIcon url="https://t.me/neilasan" text="Telegram" />
-          </p>
-        </div>
-        <div id="noisses">
-          <p>
-            <LinkWithIcon
-              url={`https://getsession.org/?${process.env.NEXT_PUBLIC_SESSION_ID}`}
-              text="Session"
-            />
-          </p>
-        </div>
-        <div id="ppmx">
-          <p>
-            <LinkWithIcon
-              url={`xmpp:${process.env.NEXT_PUBLIC_XMPP}`}
-              text="XMPP"
-            />
-          </p>
-        </div>
-        <div id="esabyek" hidden>
+        <div id="esabyek">
           <p>
             <LinkWithIcon url="https://keybase.io/neila" text="Keybase" />
           </p>
         </div>
-        <div id="langis" hidden>
+        <div id="xirtam">
+          <p>
+            <LinkWithIcon
+              url={`https://matrix.to/#/${process.env.NEXT_PUBLIC_MATRIX}`}
+              text="Matrix"
+            />
+          </p>
+        </div>
+        <div id="langis">
           <p>
             <LinkWithIcon
               // url="https://envs.sh/2_V"
@@ -241,7 +228,7 @@ const Contact = () => {
             />
           </p>
         </div>
-        <div id="xelpmis" hidden>
+        <div id="xelpmis">
           <p>
             <LinkWithIcon
               // url="https://envs.sh/2B8"
@@ -250,11 +237,11 @@ const Contact = () => {
             />
           </p>
         </div>
-        <div id="xirtam" hidden>
+        <div id="ppmx">
           <p>
             <LinkWithIcon
-              url={`https://matrix.to/#/${process.env.NEXT_PUBLIC_MATRIX}`}
-              text="Matrix"
+              url={`xmpp:${process.env.NEXT_PUBLIC_XMPP}`}
+              text="XMPP"
             />
           </p>
         </div>
