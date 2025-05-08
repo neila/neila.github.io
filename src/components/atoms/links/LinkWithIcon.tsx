@@ -1,4 +1,8 @@
-export const LinkWithIcon = (props: { url: string; text: string }) => {
+export const LinkWithIcon = (props: {
+  url: string;
+  text: string;
+  rel?: string;
+}) => {
   let internal = false;
   const style =
     'bg-[image:var(--favicon-url)] bg-right bg-no-repeat pr-[18px] inline-block bg-contain filter hover:grayscale';
@@ -22,7 +26,7 @@ export const LinkWithIcon = (props: { url: string; text: string }) => {
       <a
         href={props.url}
         target={internal ? '' : '_blank'}
-        rel="noreferrer"
+        rel={props.rel ?? 'noreferrer'}
         className={style}
         style={
           {

@@ -2,17 +2,22 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-4">
-      <p className="text-center text-1">
-        <img
-          src="/images/alphabet_n.png"
-          alt="N"
-          className="mx-auto block h-8 w-8"
-        />{' '}
-        <br />{' '}
-        <span className="text-center block">
-          2021 - {currentYear} &copy; https://neila.in05.org
-        </span>
+    <footer className="py-4 text-center text-sm">
+      <p>
+        <img src="/images/alphabet_n.png" alt="N" className="mx-auto h-8 w-8" />
+      </p>
+      <p className="font-mono text-xs">
+        PGP fingerprint:{' '}
+        <a
+          href="https://keybase.io/neila/pgp_keys.asc"
+          target="_blank"
+          rel="noreferrer"
+          className="no-underline hover:underline"
+        >
+          <code className="font-thin text-pink-500">
+            7E30 0102 93AC 094B 363F DF8D A605 E499 C3DD 8A55
+          </code>
+        </a>
       </p>
     </footer>
   );
