@@ -122,8 +122,8 @@ const DonateToAddresses = () => {
 const Websites = () => {
   return (
     <section id="websites" className="py-4">
-      <h1>You can find me on</h1>
-      <div className="grid grid-cols-3 gap-4">
+      <h1>Find me on</h1>
+      <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4 gap-4">
         <ul>
           <h4>Socials</h4>
           <li>
@@ -136,6 +136,7 @@ const Websites = () => {
             <LinkWithIcon
               url="https://social.tchncs.de/@neila"
               text="Mastodon"
+              rel="me"
             />
           </li>
           <li>
@@ -152,9 +153,15 @@ const Websites = () => {
           </li>
         </ul>
         <ul>
-          <h4>Code</h4>
+          <h4>Forge</h4>
+          <li>
+            <LinkWithIcon url="https://codeberg.org/neila" text="Codeberg" />
+          </li>
           <li>
             <LinkWithIcon url="https://github.com/neila" text="Github" />
+          </li>
+          <li>
+            <LinkWithIcon url="https://sr.ht/~neila/" text="Sourcehut" />
           </li>
         </ul>
       </div>
@@ -197,7 +204,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-4">
       <h1>Contact me</h1>
-      <div className="grid grid-flow-row grid-cols-2 tablet:grid-cols-3">
+      <div className="grid grid-flow-row grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4">
         <div id="liame">
           <p>
             <LinkWithIcon
@@ -206,25 +213,11 @@ const Contact = () => {
             />
           </p>
         </div>
-        <div id="esabyek">
-          <p>
-            <LinkWithIcon url="https://keybase.io/neila" text="Keybase" />
-          </p>
-        </div>
         <div id="xirtam">
           <p>
             <LinkWithIcon
               url={`https://matrix.to/#/${process.env.NEXT_PUBLIC_MATRIX}`}
               text="Matrix"
-            />
-          </p>
-        </div>
-        <div id="langis">
-          <p>
-            <LinkWithIcon
-              // url="https://envs.sh/2_V"
-              url={`https://signal.me/#eu/${process.env.NEXT_PUBLIC_SIGNAL}`}
-              text="Signal"
             />
           </p>
         </div>

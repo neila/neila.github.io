@@ -27,9 +27,16 @@ const HomePage: NextPage = () => {
             />
             .
           </p>
+          <br />
+          <p>
+            October 2016 -{' '}
+            {new Date().toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+            })}
+          </p>
         </div>
       </BaseLayout>
-      {/* <a rel="me" href="https://social.tchncs.de/@neila">Mastodon</a> */}
     </>
   );
 };
