@@ -7,10 +7,7 @@ import pp from 'public/images/about/profilePic.png';
 
 const ProfilePic = () => {
   return (
-    <div
-      className="flex justify-center mx-auto p-2 laptop:p-4
-      max-h-36 max-w-36 laptop:max-h-72 laptop:max-w-72 overflow-hidden"
-    >
+    <div className="flex justify-center mx-auto p-2 laptop:p-4 max-h-36 max-w-36 laptop:max-h-72 laptop:max-w-72 overflow-hidden">
       {/* TODO (9): add breathing Halftone effect */}
       <Image
         src={pp}
@@ -31,26 +28,24 @@ const Work = () => {
       {/* <h1>Work</h1> */}
       {/* TODO (8): acts as abstract until work is better documented upon which this turns into work section */}
       <p>
-        <span className="text-2.25 font-5 leading-[1.25rem]">P</span>
-        rofessionally, I find myself wearing many hats over my varied interests
-        and specialities. Primarily, I see myself as an artist and entrepreneur,
-        always thinking about and working on exciting new ideas. At times, I am
-        an{' '}
+        Engineer by training, entrepreneur by compulsion, artist by joy. I try
+        to keep my interests open. I can be an{' '}
         <LinkWithIcon
           url="/_archives/works/er-simulation"
           text="OSINT researcher"
         />
-        , gathering intel and compiling relevant information to pursue my (or my
-        client's) goals. Other times I am a{' '}
-        <LinkWithIcon
-          url="https://github.com/neila"
-          text="software developer"
-        />
-        , building systems and applications that help us automate, so that we
-        can focus on more important things.
+        , gathering intel and compiling critical information to help attain my
+        client's needs. Other times I am a{' '}
+        <LinkWithIcon url="https://github.com/neila" text="software engineer" />
+        , building applications, administering systems, and generally making
+        life easier.
       </p>
       <p>
         I have worked for, published in, or consulted for:{' '}
+        {/* <em>
+          <LinkWithIcon url="https://www.jt.com/" text="JT" /> ('24-)
+        </em>
+        ,{' '} */}
         <em>
           <LinkWithIcon url="https://www.nhk.or.jp/" text="NHK" /> ('22-'23)
         </em>
@@ -155,13 +150,22 @@ const Websites = () => {
         <ul>
           <h4>Forge</h4>
           <li>
-            <LinkWithIcon url="https://codeberg.org/neila" text="Codeberg" />
-          </li>
-          <li>
             <LinkWithIcon url="https://github.com/neila" text="Github" />
           </li>
           <li>
+            <LinkWithIcon url="https://codeberg.org/neila" text="Codeberg" />
+          </li>
+          <li>
             <LinkWithIcon url="https://sr.ht/~neila/" text="Sourcehut" />
+          </li>
+        </ul>
+        <ul>
+          <h4>Mixes</h4>
+          <li>
+            <LinkWithIcon
+              url="https://soundcloud.com/sara_soju"
+              text="Soundcloud"
+            />
           </li>
         </ul>
       </div>
