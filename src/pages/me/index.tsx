@@ -28,20 +28,9 @@ const Work = () => {
       {/* <h1>Work</h1> */}
       {/* TODO (8): acts as abstract until work is better documented upon which this turns into work section */}
       <p>
-        Engineer by training, entrepreneur by compulsion, artist by joy. I try
-        to keep my interests open. I can be an{' '}
-        <LinkWithIcon
-          url="/_archives/works/er-simulation"
-          text="OSINT researcher"
-        />
-        , gathering intel and compiling critical information to help attain my
-        client's needs. Other times I am a{' '}
-        <LinkWithIcon url="https://github.com/neila" text="software engineer" />
-        , building applications, administering systems, and generally making
-        life easier.
-      </p>
-      <p>
-        I have worked for, published in, or consulted for:{' '}
+        I'm Neil Atman, an experienced entrepreneur, creative, and engineer,
+        based in Tokyo and New York. Iroha Systems is my small business. I have
+        worked for, published in, or consulted for:{' '}
         {/* <em>
           <LinkWithIcon url="https://www.jt.com/" text="JT" /> ('24-)
         </em>
