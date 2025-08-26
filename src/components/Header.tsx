@@ -1,27 +1,24 @@
+import { useId } from 'react';
 import { PageLink } from '@/components/atoms/links/PageLink';
 
-const Header = () => {
-  const MainMenu = () => {
-    return (
-      <nav id="menu" className="py-2 flex justify-center">
-        <h3 className="-space-x-[24px] leading-[57px]">
-          {/* TODO (3): replace with drop cap */}
-          <PageLink href="/">🏠</PageLink>&emsp;
-          {/* <PageLink href="/about">SITE</PageLink>&emsp; */}
-          <PageLink href="/me">ME</PageLink>&emsp;
-          <PageLink href="/blog">BLOG</PageLink>
-          {/* <PageLink href="/changelog">CHANGES</PageLink> */}
-        </h3>
-      </nav>
-    );
-  };
-
+const MainMenu = () => {
   return (
-    <>
-      <div className="py-2 justify-center">
-        <MainMenu />
-      </div>
-    </>
+    <nav id={useId()} className="py-2 flex space-x-4 justify-center">
+      {/* TODO (3): replace with drop cap */}
+      <PageLink href="/">HOME</PageLink>
+      {/* <PageLink href="/about">SITE</PageLink>&emsp; */}
+      <PageLink href="/me">ABOUT</PageLink>
+      <PageLink href="/blog">BLOG</PageLink>
+      {/* <PageLink href="/changelog">CHANGES</PageLink> */}
+    </nav>
+  );
+};
+
+const Header = () => {
+  return (
+    <div className="py-2">
+      <MainMenu />
+    </div>
   );
 };
 

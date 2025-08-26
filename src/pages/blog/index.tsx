@@ -1,85 +1,73 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import matter from 'gray-matter';
+import { useId } from 'react';
 import { LinkWithIcon } from '@/components/atoms/links/LinkWithIcon';
 import BaseLayout from '@/components/layouts/Base';
 import type { blogPostType } from '@/types/blogpost';
 import Graph from '@/utils/Graph';
-import dateFormat from 'dateformat';
-import matter from 'gray-matter';
-import React from 'react';
 
-const BlogIndexPage = (props: { postsList: blogPostType[] }) => {
-  const Quote = () => {
-    return (
-      <div className="mx-auto desktop:w-3/5 py-4">
-        <blockquote className="border-l-4 p-2 text-center italic">
-          <p>&quot;Ego cogito, ergo sum&quot;</p>
-          <cite className="ml-16 text-1">- René Descartes</cite>
-        </blockquote>
-      </div>
-    );
-  };
-  const PostLinksList = () => {
-    return (
-      <>
-        {props.postsList.map((post: blogPostType) => (
-          <li key={post.id}>
-            <LinkWithIcon
-              url={
-                `/blog/${encodeURIComponent(post.id)}`
-                // TODO (9): parse url to simpler format
-              }
-              text={post.id}
-            />
-          </li>
-        ))}
-      </>
-    );
-  };
-
+const Quote = () => {
   return (
-    <>
-      <BaseLayout pageTitle="My writings" className="leading-snug">
-        <article className="laptop:max-w-6xl mx-auto">
-          <section id="abstract">
-            <p>
-              My biological brain is far too{' '}
-              <LinkWithIcon
-                url="https://doi.apa.org/doiLanding?doi=10.1037%2F0278-7393.20.5.1063"
-                text="forgetful"
-              />
-              . The raw thoughts that continuously pass through my mind can only
-              accumulate for so long. Despite the constant mental wrestling, I
-              feel often left stranded in the ponderer&apos;s void, with no
-              wisdom to bear.
-            </p>
-            <p>
-              I find this quite unfortunate, since all brilliant ideas are raw
-              thoughts at the point of its inception. I created this space to
-              nurture these seeds of imagination, so that they can grow into
-              something bigger. In the conscious and continuous effort to
-              acknolwedge and appreciate the everchanging present, lies the art
-              of spontaneous creativity.
-            </p>
-            <Quote />
-          </section>
+    <div className="mx-auto desktop:w-3/5 py-4">
+      <blockquote className="border-l-4 p-2 text-center italic">
+        <p>&quot;Ego cogito, ergo sum&quot;</p>
+        <cite className="ml-16 text-1">- René Descartes</cite>
+      </blockquote>
+    </div>
+  );
+};
 
-          <section id="bloglinks" className="pt-8">
-            {/* TODO (3) map sections by tag */}
-            <h2>Posts</h2>
-            <ul>
-              <PostLinksList />
-            </ul>
-          </section>
+const BlogIndexPage = (_props: { postsList: blogPostType[] }) => {
+  return (
+    <BaseLayout pageTitle="My writings" className="leading-snug">
+      <article className="laptop:max-w-6xl mx-auto">
+        <section id={`blogs-intro-${useId()}`}>
+          <p>
+            My biological brain is far too{' '}
+            <LinkWithIcon
+              url="https://doi.apa.org/doiLanding?doi=10.1037%2F0278-7393.20.5.1063"
+              text="forgetful"
+            />
+            . The raw thoughts that continuously pass through my mind can only
+            accumulate for so long. Despite the constant mental wrestling, I
+            feel often left stranded in the ponderer&apos;s void, with no wisdom
+            to bear.
+          </p>
+          <p>
+            I find this quite unfortunate, since all brilliant ideas are raw
+            thoughts at the point of its inception. I created this space to
+            nurture these seeds of imagination, so that they can grow into
+            something bigger. In the conscious and continuous effort to
+            acknolwedge and appreciate the everchanging present, lies the art of
+            spontaneous creativity.
+          </p>
+          <Quote />
+        </section>
 
-          <section id="graph-container">
-            <Graph />
-          </section>
-        </article>
-      </BaseLayout>
+        <section id={`blogs-${useId()}`} className="pt-8">
+          {/* TODO (3) map sections by tag */}
+          <h2>Posts</h2>
+          <ul>
+            {_props.postsList.map((post: blogPostType) => (
+              <li key={post.id}>
+                <LinkWithIcon
+                  url={
+                    `/blog/${encodeURIComponent(post.id)}`
+                    // TODO (9): parse url to simpler format
+                  }
+                  text={post.id}
+                />
+              </li>
+            ))}
+          </ul>
+        </section>
 
-      {/*-- content - */}
-    </>
+        <section id={`${useId()}`}>
+          <Graph />
+        </section>
+      </article>
+    </BaseLayout>
   );
 };
 

@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-
+import { useId } from 'react';
 import Header from '@/components/Header';
 
 const Home: NextPage = () => {
@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 
       <Header />
 
-      <section id="html tags" className="py-4 space-y-4">
+      <section id={`html-tags-${useId()}`} className="py-4 space-y-4">
         <h2>html tags</h2>
         <h1 className="outline">h1 typography </h1>
         <h2 className="outline">h2 typography</h2>
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
       </section>
 
       <div className="flex justify-around">
-        <section id="sizes" className="py-4">
+        <section id={`text-sizes-${useId()}`} className="py-4">
           <h2>text sizes</h2>
           <p className="text-5">text-5</p>
           <p className="text-4">text-4 (h1 pagetop)</p>
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
           <p className="text-1.125">text-1.125</p>
           <p className="text-1">text-1</p>
         </section>
-        <section id="weights" className="py-4">
+        <section id={`font-weights-${useId()}`} className="py-4">
           <h2>font weights</h2>
           <p className="font-9">font-9</p>
           <p className="font-8">font-8</p>
@@ -57,7 +57,7 @@ const Home: NextPage = () => {
         </section>
       </div>
 
-      <section id="colors" className="py-8 space-y-4">
+      <section id={`font-colors-${useId()}`} className="py-8 space-y-4">
         <h2>colors</h2>
         <p className="space-x-2">
           <span className="">base</span>

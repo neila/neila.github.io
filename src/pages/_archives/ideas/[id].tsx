@@ -1,12 +1,12 @@
+import type { NextPage } from 'next';
+import Head from 'next/head';
 import { MDXRemote, type MDXRemoteSerializeResult } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
-import Head from 'next/head';
-
+import { useId } from 'react';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Graph from '@/utils/Graph';
 import { getAllPosts } from '@/utils/postid';
-import type { NextPage } from 'next';
 
 type PostProps = {
   content: MDXRemoteSerializeResult<
@@ -20,7 +20,7 @@ const post: NextPage<PostProps> = ({ content, id }) => {
   return (
     <div>
       <Head>
-        <title>{`${id} - SHØ`}</title>
+        <title>{`${id} - irohas.eth`}</title>
       </Head>
 
       <Header />
@@ -30,7 +30,7 @@ const post: NextPage<PostProps> = ({ content, id }) => {
           <MDXRemote {...content} />
         </div>
 
-        <div id="graph-container">
+        <div id={useId()}>
           {/*display post network graph*/}
           <Graph />
         </div>
@@ -50,6 +50,7 @@ export async function getStaticProps(context) {
 
   return {
     props: {
+      data: data,
       content: mdxSource,
       id: id,
     },

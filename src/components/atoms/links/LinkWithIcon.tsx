@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const LinkWithIcon = (props: {
   url: string;
   text: string;
@@ -20,22 +22,22 @@ export const LinkWithIcon = (props: {
     fetchedUrl = `https://www.google.com/s2/favicons?domain=https://${new URL(props.url).hostname}&sz=256`;
   }
   return (
-    <>
-      <a
-        href={props.url}
-        target={internal ? '' : '_blank'}
-        rel={props.rel ?? 'noreferrer'}
-        className="inline-flex gap-x-0.5 hover:opacity-80 group"
-      >
-        {props.text}
-        {fetchedUrl && (
-          <img
-            src={fetchedUrl}
-            alt=""
-            className="w-3.5 h-3.5 rounded-sm group-hover:grayscale"
-          />
-        )}
-      </a>
-    </>
+    <a
+      href={props.url}
+      target={internal ? '' : '_blank'}
+      rel={props.rel ?? 'noreferrer'}
+      className="inline-flex gap-x-0.5 hover:opacity-80 group"
+    >
+      {props.text}
+      {fetchedUrl && (
+        <Image
+          src={fetchedUrl}
+          alt=""
+          className="w-3.5 h-3.5 rounded-sm group-hover:grayscale"
+          width={100}
+          height={100}
+        />
+      )}
+    </a>
   );
 };

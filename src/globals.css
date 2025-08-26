@@ -54,6 +54,14 @@
   ul > li > p {
     display: inline;
   }
+  code {
+    color: var(--color-neutral-300);
+    background-color: var(--color-neutral-black);
+    border-radius: 0.25rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    text-wrap: wrap;
+  }
   pre {
     color: var(--color-neutral-300);
     background-color: var(--color-neutral-black);
@@ -66,14 +74,6 @@
   pre > code {
     padding-left: 0;
     padding-right: 0;
-    text-wrap: wrap;
-  }
-  code {
-    color: var(--color-neutral-300);
-    background-color: var(--color-neutral-black);
-    border-radius: 0.25rem;
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
     text-wrap: wrap;
   }
 }
@@ -94,7 +94,5 @@
   }
 }
 
-
-@layer utilities {
-
-}
+/* @layer utilities {
+} */

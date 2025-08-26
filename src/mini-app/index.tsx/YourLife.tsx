@@ -80,7 +80,7 @@ const Cells = () => {
               key={`week ${i + 1}`}
               className="scale-75"
               checked={i + 1 < daysSinceBirth / 7}
-              onClick={(e) => cellClickModal(i)}
+              onClick={(_e) => cellClickModal(i)}
               readOnly
             />
           ))

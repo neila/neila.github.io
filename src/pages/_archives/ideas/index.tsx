@@ -1,13 +1,10 @@
 import fs from 'node:fs';
-
-import Head from 'next/head';
-import Link from 'next/link';
-import React from 'react';
-
 import path from 'node:path';
 import dateFormat from 'dateformat';
 import matter from 'gray-matter';
-
+import Head from 'next/head';
+import Link from 'next/link';
+import { useId } from 'react';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Graph from '@/utils/Graph';
@@ -113,7 +110,7 @@ const ideas = ({ postsList }) => {
         </div>
       </div>
 
-      <div id="graph-container">
+      <div id={useId()}>
         <Graph />
       </div>
 
