@@ -7,7 +7,6 @@ import Document, {
   Main,
   NextScript,
 } from 'next/document';
-import React from 'react';
 
 type NoncedDocument = DocumentInitialProps & { nonce: string };
 

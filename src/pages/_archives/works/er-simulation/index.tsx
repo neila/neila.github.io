@@ -1,9 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-
 import LondonBridges from 'public/images/er-simulation/LondonBridges.png';
 import LondonGeo from 'public/images/er-simulation/LondonGeo.png';
 import LondonNetwork from 'public/images/er-simulation/LondonNetwork.png';
@@ -13,6 +9,8 @@ import Sim3 from 'public/images/er-simulation/Sim3.png';
 import Sim4 from 'public/images/er-simulation/Sim4.png';
 import Sim5 from 'public/images/er-simulation/Sim5.png';
 import Sim6 from 'public/images/er-simulation/Sim6.png';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
 const Title = (params: { section: string; color?: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">

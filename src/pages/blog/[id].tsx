@@ -1,10 +1,11 @@
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import { MDXRemote, type MDXRemoteSerializeResult } from 'next-mdx-remote';
+import { serialize } from 'next-mdx-remote/serialize';
+import { useId } from 'react';
 import BaseLayout from '@/components/layouts/Base';
 import Graph from '@/utils/Graph';
 import { getAllPosts } from '@/utils/postid';
-import type { NextPage } from 'next';
-import { MDXRemote, type MDXRemoteSerializeResult } from 'next-mdx-remote';
-import { serialize } from 'next-mdx-remote/serialize';
-import Head from 'next/head';
 
 type PostProps = {
   content: MDXRemoteSerializeResult<
@@ -26,7 +27,7 @@ const post: NextPage<PostProps> = ({ content, id }) => {
             <MDXRemote {...content} />
           </article>
 
-          <div id="graph-container">
+          <div id={useId()}>
             {/*display post network graph*/}
             <Graph />
           </div>

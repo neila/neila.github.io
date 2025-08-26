@@ -1,10 +1,18 @@
+import Image from 'next/image';
+
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  // const _currentYear = new Date().getFullYear();
 
   return (
     <footer className="py-4 text-center text-sm">
       <p>
-        <img src="/images/alphabet_n.png" alt="N" className="mx-auto h-8 w-8" />
+        <Image
+          src="/images/alphabet_n.png"
+          alt="N"
+          className="mx-auto h-8 w-8"
+          width={100}
+          height={100}
+        />
       </p>
       <p className="font-mono text-xs">
         PGP fingerprint:{' '}

@@ -1,7 +1,7 @@
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
 import Head from 'next/head';
 import type { FC, ReactNode } from 'react';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
 const BaseLayout: FC<{
   pageTitle?: string;
@@ -19,7 +19,9 @@ const BaseLayout: FC<{
       <div className="px-2">
         <Header />
 
-        <main className={className}>{children}</main>
+        <main className={`px-4 laptop:max-w-6xl mx-auto ${{ className }}`}>
+          {children}
+        </main>
 
         {/* Lower menu + copyright */}
         <Footer />

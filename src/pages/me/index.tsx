@@ -1,9 +1,9 @@
+import Image from 'next/image';
+import pp from 'public/images/about/profilePic.png';
+import { useId } from 'react';
 import { LinkWithIcon } from '@/components/atoms/links/LinkWithIcon';
 import BaseLayout from '@/components/layouts/Base';
 import { walletAddress } from '@/utils/constants';
-import Image from 'next/image';
-import Link from 'next/link';
-import pp from 'public/images/about/profilePic.png';
 
 const ProfilePic = () => {
   return (
@@ -24,24 +24,17 @@ const ProfilePic = () => {
 
 const Work = () => {
   return (
-    <section id="abstract" className="py-4">
+    <section id={`intro-work-${useId()}`} className="py-4">
       {/* <h1>Work</h1> */}
       {/* TODO (8): acts as abstract until work is better documented upon which this turns into work section */}
       <p>
-        Engineer by training, entrepreneur by compulsion, artist by joy. I try
-        to keep my interests open. I can be an{' '}
+        I am a professional engineer and amateur artist in{' '}
         <LinkWithIcon
-          url="/_archives/works/er-simulation"
-          text="OSINT researcher"
+          url="https://www.youtube.com/watch?v=SZzjw2UfUEk"
+          text="Tokyo"
         />
-        , gathering intel and compiling critical information to help attain my
-        client's needs. Other times I am a{' '}
-        <LinkWithIcon url="https://github.com/neila" text="software engineer" />
-        , building applications, administering systems, and generally making
-        life easier.
-      </p>
-      <p>
-        I have worked for, published in, or consulted for:{' '}
+        . {/*Iroha Systems is my small business.*/} I have worked for, published
+        in, or consulted for:{' '}
         {/* <em>
           <LinkWithIcon url="https://www.jt.com/" text="JT" /> ('24-)
         </em>
@@ -82,11 +75,7 @@ const DonateToAddresses = () => {
         donations in cryptocurrencies. If you appreciate my work, please
         consider showing your support.
       </p>
-
-      <ul
-        className="font-sans font-3 text-1
-        space-y-2 pb-2 max-w-full list-outside list-none"
-      >
+      <ul className="font-sans font-3 text-1 space-y-2 pb-2 max-w-full list-outside list-none">
         <li>
           BTC:{' '}
           <code className="break-words text-pink-500">
@@ -98,11 +87,10 @@ const DonateToAddresses = () => {
           <code className="break-words text-pink-500">
             {walletAddress.ethereum}
           </code>
-          <span className="text-[0.75rem] leading-4 invisible group-hover:visible">
-            (stablecoins and L2s also accepted)
-          </span>
+          {/* <span className="text-[0.75rem] leading-4 invisible group-hover:visible">
+            stablecoins / L2s ok
+          </span> */}
         </li>
-
         <li>
           XMR:{' '}
           <code className="break-words max-w-full text-pink-500">
@@ -116,7 +104,7 @@ const DonateToAddresses = () => {
 
 const Websites = () => {
   return (
-    <section id="websites" className="py-4">
+    <section id={`online-presence-${useId()}`} className="py-4">
       <h1>Find me on</h1>
       <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4 gap-4">
         <ul>
@@ -175,7 +163,7 @@ const Websites = () => {
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-4">
+    <section id={`projects-${useId()}`} className="py-4">
       <h1>Projects</h1>
       <ul>
         {/* <li>
@@ -206,10 +194,10 @@ const Projects = () => {
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-4">
+    <section id={`contact-links-${useId()}`} className="py-4">
       <h1>Contact me</h1>
       <div className="grid grid-flow-row grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4">
-        <div id="liame">
+        <div id={`email-${useId()}`}>
           <p>
             <LinkWithIcon
               url={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
@@ -217,7 +205,7 @@ const Contact = () => {
             />
           </p>
         </div>
-        <div id="xirtam">
+        <div id={`matrix-${useId()}`}>
           <p>
             <LinkWithIcon
               url={`https://matrix.to/#/${process.env.NEXT_PUBLIC_MATRIX}`}
@@ -225,7 +213,7 @@ const Contact = () => {
             />
           </p>
         </div>
-        <div id="xelpmis">
+        <div id={`simplex-${useId()}`}>
           <p>
             <LinkWithIcon
               // url="https://envs.sh/2B8"
@@ -234,7 +222,7 @@ const Contact = () => {
             />
           </p>
         </div>
-        <div id="ppmx">
+        <div id={`xmpp-${useId()}`}>
           <p>
             <LinkWithIcon
               url={`xmpp:${process.env.NEXT_PUBLIC_XMPP}`}
@@ -249,33 +237,31 @@ const Contact = () => {
 
 const AboutMePage = () => {
   return (
-    <>
-      <BaseLayout pageTitle="About Neila" className="px-4">
-        <article className="laptop:max-w-6xl mx-auto">
-          <h1 className="top-heading text-center">
-            <span className="text-[4rem]">A</span>BOUT{' '}
-            <span className="text-[4rem]">N</span>EILA
-          </h1>
+    <BaseLayout>
+      <article className="laptop:max-w-6xl mx-auto">
+        <h1 className="top-heading text-center">
+          <span className="text-[4rem]">A</span>BOUT{' '}
+          <span className="text-[4rem]">I</span>ROHAS
+        </h1>
 
-          {/* <h4 className="py-4 text-center">
+        {/* <h4 className="py-4 text-center">
             This page is about me. For information about this website, see the{" "}
             <Link href="/about">About page</Link>.
           </h4> */}
 
-          <ProfilePic />
+        <ProfilePic />
 
-          <Work />
+        <Work />
 
-          {/* <DonateToAddresses /> */}
+        <DonateToAddresses />
 
-          <Projects />
+        <Projects />
 
-          <Websites />
+        <Websites />
 
-          <Contact />
-        </article>
-      </BaseLayout>
-    </>
+        <Contact />
+      </article>
+    </BaseLayout>
   );
 };
 

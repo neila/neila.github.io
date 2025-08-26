@@ -1,9 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
-
+import Synthfeed1 from 'public/images/synthfeed/Synthfeed_home.png';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
-import Synthfeed1 from 'public/images/synthfeed/Synthfeed_home.png';
 
 const Title = (params: { section: string; color: string }) => (
   <div className="mt-5 mb-7 flex-grow-0 text-center">
