@@ -50,7 +50,6 @@ export async function getStaticProps(context) {
 
   return {
     props: {
-      data: data,
       content: mdxSource,
       id: id,
     },
