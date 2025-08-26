@@ -4,8 +4,6 @@ export const LinkWithIcon = (props: {
   rel?: string;
 }) => {
   let internal = false;
-  const style =
-    'bg-[image:var(--favicon-url)] bg-right bg-no-repeat pr-[18px] inline-block bg-contain filter hover:grayscale';
   let fetchedUrl = '';
   if (props.url.startsWith('/') || props.url.startsWith('#')) {
     fetchedUrl = '/favicon.ico';
@@ -27,15 +25,16 @@ export const LinkWithIcon = (props: {
         href={props.url}
         target={internal ? '' : '_blank'}
         rel={props.rel ?? 'noreferrer'}
-        className={style}
-        style={
-          {
-            '--favicon-url': `url(${fetchedUrl})`,
-            maxHeight: '16px',
-          } as React.CSSProperties
-        }
+        className="inline-flex gap-x-0.5 hover:opacity-80 group"
       >
         {props.text}
+        {fetchedUrl && (
+          <img
+            src={fetchedUrl}
+            alt=""
+            className="w-3.5 h-3.5 rounded-sm group-hover:grayscale"
+          />
+        )}
       </a>
     </>
   );

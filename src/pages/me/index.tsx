@@ -28,9 +28,13 @@ const Work = () => {
       {/* <h1>Work</h1> */}
       {/* TODO (8): acts as abstract until work is better documented upon which this turns into work section */}
       <p>
-        I'm Neil Atman, an experienced entrepreneur, creative, and engineer,
-        based in Tokyo and New York. Iroha Systems is my small business. I have
-        worked for, published in, or consulted for:{' '}
+        I am a professional engineer and amateur artist in{' '}
+        <LinkWithIcon
+          url="https://www.youtube.com/watch?v=SZzjw2UfUEk"
+          text="Tokyo"
+        />
+        . {/*Iroha Systems is my small business.*/} I have worked for, published
+        in, or consulted for:{' '}
         {/* <em>
           <LinkWithIcon url="https://www.jt.com/" text="JT" /> ('24-)
         </em>
@@ -243,7 +247,7 @@ const AboutMePage = () => {
         <article className="laptop:max-w-6xl mx-auto">
           <h1 className="top-heading text-center">
             <span className="text-[4rem]">A</span>BOUT{' '}
-            <span className="text-[4rem]">N</span>EILA
+            <span className="text-[4rem]">I</span>ROHAS
           </h1>
 
           {/* <h4 className="py-4 text-center">

@@ -11,7 +11,7 @@ const HomePage: NextPage = () => {
         <h1 className="top-heading">Welcome,</h1>
 
         <div id="abstract">
-          <p>This is the website of Neil Atman.</p>
+          <p>This is the website of Iroha Sun.</p>
           <p>
             {/* For information about this website's philosophy & method, see the{" "}
             <Link href="/about">About page</Link>.<br /> */}
