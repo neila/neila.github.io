@@ -14,7 +14,7 @@ export default function radio() {
   return (
     <div className="">
       <Head>
-        <title>Radio algorithm - SHØ</title>
+        <title>Radio algorithm - irohas</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
