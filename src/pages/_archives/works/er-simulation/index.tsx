@@ -22,7 +22,7 @@ export default function ERsim() {
   return (
     <div className="">
       <Head>
-        <title>NHS - SHØ</title>
+        <title>NHS - irohas</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

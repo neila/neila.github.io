@@ -23,7 +23,7 @@ export default function digihana() {
   return (
     <div className="">
       <Head>
-        <title>DIGIHANA - SHØ</title>
+        <title>DIGIHANA - irohas</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

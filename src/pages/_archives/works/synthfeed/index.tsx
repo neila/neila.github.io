@@ -14,7 +14,7 @@ export default function synthfeed() {
   return (
     <div className="">
       <Head>
-        <title>Synthfeed - SHØ</title>
+        <title>Synthfeed - irohas</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
