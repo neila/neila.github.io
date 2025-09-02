@@ -28,7 +28,7 @@ const Work = () => {
       {/* <h1>Work</h1> */}
       {/* TODO (8): acts as abstract until work is better documented upon which this turns into work section */}
       <p>
-        I am a professional engineer and amateur artist in{' '}
+        I'm an engineering artist in{' '}
         <LinkWithIcon
           url="https://www.youtube.com/watch?v=SZzjw2UfUEk"
           text="Tokyo"
@@ -178,14 +178,15 @@ const Projects = () => {
         </li>
         <li>
           <LinkWithIcon url="https://ethtokyo.org" text="ETHTokyo" /> An annual
-          conference and hackathon where ideas are exchanged, connections are
-          formed, and progress is made.
+          Ethereum conference and hackathon where cypherpunks across the globe
+          come together to exchange ideas, form connections, and build the
+          future.
         </li>
         <li>
           <LinkWithIcon url="https://www.unchain.tech" text="UNCHAIN" /> A
-          community where anyone come and can learn the basics of web3
-          development, taking their first steps to join the permissionless
-          ecosystem.
+          community where anyone with a little will and internet can come and
+          learn the basics of web3 development, taking their first steps to join
+          the permissionless ecosystem.
         </li>
       </ul>
     </section>
