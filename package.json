@@ -16,7 +16,7 @@
   "homepage": "https://neila.github.io",
   "packageManager": "yarn@3.5.1",
   "dependencies": {
-    "next": "^15.5.9",
+    "next": "^16.1.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "sharp": "^0.34.5"
