@@ -18,7 +18,7 @@
   "dependencies": {
     "next": "^16.1.5",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1",
+    "react-dom": "^19.2.4",
     "sharp": "^0.34.5"
   },
   "devDependencies": {
@@ -27,7 +27,7 @@
     "@tailwindcss/postcss": "^4.1.18",
     "@types/node": "^22.15.3",
     "@types/react": "^19.1.15",
-    "@types/react-dom": "^19.1.9",
+    "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.4.23",
     "dateformat": "^5.0.3",
     "gray-matter": "^4.0.3",
