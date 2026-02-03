@@ -3,7 +3,7 @@ module.exports = {
   output: 'export',
   images: {
     unoptimized: true,
-    domains: [
+    remotePatterns: [
       'avatars.githubusercontent.com',
       'cdn-icons-png.flaticon.com',
       'firebase.google.com',
