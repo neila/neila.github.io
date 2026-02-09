@@ -819,12 +819,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.2.10":
-  version: 19.2.10
-  resolution: "@types/react@npm:19.2.10"
+"@types/react@npm:^19.2.13":
+  version: 19.2.13
+  resolution: "@types/react@npm:19.2.13"
   dependencies:
     csstype: ^3.2.2
-  checksum: d47df647fe594299b078a0ae0ef5bebd16969c19065986814e3cd38b1f062c7f2ae82ec90a0965fd1fb34139972a64fb87fca86f2ad88e547d718f2d3c0f68e3
+  checksum: fc3ca7226a7f1c54fa3ef185019f4cfb76f9088f4fed8a7eec0ddfcecfe41fa64c649ce6cf7facbce871343a8cb600a5afed68e15f6e85fe4163c5c8db8fc2b8
   languageName: node
   linkType: hard
 
@@ -2707,7 +2707,7 @@ __metadata:
     "@heroicons/react": ^2.2.0
     "@tailwindcss/postcss": ^4.1.18
     "@types/node": ^22.15.3
-    "@types/react": ^19.2.10
+    "@types/react": ^19.2.13
     "@types/react-dom": ^19.2.3
     autoprefixer: ^10.4.24
     dateformat: ^5.0.3
