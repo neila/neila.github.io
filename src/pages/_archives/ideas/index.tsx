@@ -18,7 +18,7 @@ type Post = {
 };
 
 const Title = (params: { section: string; color: string }) => (
-  <div className="mt-5 mb-7 flex-grow-0 text-center">
+  <div className="mt-5 mb-7 grow-0 text-center">
     <h1 className={params.color}> {params.section} </h1>
   </div>
 );
@@ -86,7 +86,7 @@ const ideas = ({ postsList }) => {
               (post: { id: string; date_created: string; tags: string }) => (
                 <div
                   key={post.id}
-                  className="cursor-pointer rounded-md bg-gradient-to-r from-purple-700 via-blue-400 to-green-500 px-3 align-middle hover:from-pink-500 hover:to-yellow-500"
+                  className="cursor-pointer rounded-md bg-linear-to-r from-purple-700 via-blue-400 to-green-500 px-3 align-middle hover:from-pink-500 hover:to-yellow-500"
                 >
                   <Link
                     href={{
