@@ -24,7 +24,6 @@ jobs:
             ${{ github.workspace }}/.yarn/cache
           key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}-nodemodules
       - name: Run build
-        if: steps.build-cache.outputs.cache-hit != 'true'
         run: yarn build
         env:
           NEXT_PUBLIC_FIRST: ${{ vars.NEXT_PUBLIC_FIRST }}

@@ -28,6 +28,10 @@ const Cells = () => {
   const daysSinceBirth = diffTime / (1000 * 60 * 60 * 24);
   const daysOndeath = Math.floor(365.25 * 76.5);
 
+  const totalWeeks = Math.floor(daysOndeath / 7);
+  const currentWeek = daysSinceBirth / 7;
+  const weeks = Array.from({ length: totalWeeks }, (_, index) => index + 1);
+
   const setCookie = (submitDate: string) => {
     document.cookie = `userDate=${submitDate}; path=/; expires=${today.setDate(
       today.getDate() + 400,
@@ -58,13 +62,13 @@ const Cells = () => {
   };
 
   return (
-    <div className="flex flex-col flex-grow justify-center items-center">
+    <div className="flex flex-col grow justify-center items-center">
       <p>
-        your birthday:{' '}
+        Enter your birthday:{' '}
         <input
           type="date"
           name="birthday"
-          className="text-black"
+          className="text-orange-400"
           value={birthDay ? birthDay : ''}
           onChange={(e) => {
             setBirthday(e.target.value);
@@ -74,13 +78,13 @@ const Cells = () => {
 
       <div className="p-8 py-4 leading-3">
         {birthDay
-          ? [...Array(Math.floor(daysOndeath / 7))].map((_, i) => (
+          ? weeks.map((week) => (
               <input
                 type="checkbox"
-                key={`week ${i + 1}`}
+                key={`week-${week}`}
                 className="scale-75"
-                checked={i + 1 < daysSinceBirth / 7}
-                onClick={(_e) => cellClickModal(i)}
+                checked={week < currentWeek}
+                onClick={() => cellClickModal(week)}
                 readOnly
               />
             ))
@@ -88,11 +92,16 @@ const Cells = () => {
 
         <p className="py-4 text-center">
           {birthDay
-            ? `on Earth: ${Math.ceil(
-                (+today - +birthDate) / (1000 * 60 * 60 * 24 * 7),
-              )} weeks / `
+            ? `You've been living for: ${Math.ceil(daysSinceBirth / 7)} weeks`
             : ''}
-          life expectancy: {Math.floor(daysOndeath / 7)} weeks
+          <br />
+          {daysSinceBirth ? (
+            <>
+              Remaining life expectancy:{' '}
+              {Math.floor(daysOndeath / 7) - Math.ceil(daysSinceBirth / 7)}{' '}
+              weeks
+            </>
+          ) : null}
         </p>
       </div>
     </div>

@@ -2,12 +2,12 @@ import type { NextPage } from 'next';
 import { useId } from 'react';
 import { LinkWithIcon } from '@/components/atoms/links/LinkWithIcon';
 import BaseLayout from '@/components/layouts/Base';
+import YourLife from '@/mini-app/YourLife';
 
 const HomePage: NextPage = () => {
   return (
     <BaseLayout className="">
       <h1 className="top-heading">Welcome,</h1>
-
       <div id={`landing-${useId()}`} className="">
         <p>
           This is the website of {(() => {
@@ -42,6 +42,7 @@ const HomePage: NextPage = () => {
           month: 'short',
         })}
       </p>
+      <YourLife />
     </BaseLayout>
   );
 };

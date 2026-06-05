@@ -1,18 +1,42 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
-import { useId } from 'react';
+import { useEffect, useId, useState } from 'react';
 import { LinkWithIcon } from '@/components/atoms/links/LinkWithIcon';
 import BaseLayout from '@/components/layouts/Base';
 import type { blogPostType } from '@/types/blogpost';
 import Graph from '@/utils/Graph';
 
 const Quote = () => {
+  // fetches and displays a random motivational quote at runtime
+  const [quote, setQuote] = useState<{
+    content: string;
+    author?: string;
+  } | null>(null);
+  const quoteEndpoint = 'https://api.quotable.io/';
+
+  useEffect(() => {
+    fetch(
+      `${quoteEndpoint}quotes/random?tags=change|failure|faith|freedom|friendship|future|genius|imagination|life|love|philosophy|science|self|technology|truth|wisdom`,
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setQuote(data[0]);
+      })
+      .catch(() => {
+        setQuote({ content: 'Ego cogito, ergo sum', author: 'René Descartes' });
+      });
+  }, []);
+
   return (
     <div className="mx-auto desktop:w-3/5 py-4">
       <blockquote className="border-l-4 p-2 text-center italic">
-        <p>&quot;Ego cogito, ergo sum&quot;</p>
-        <cite className="ml-16 text-1">- René Descartes</cite>
+        {quote ? (
+          <>
+            <p>&quot;{quote.content}&quot;</p>
+            <cite className="ml-16 text-1">- {quote.author}</cite>
+          </>
+        ) : null}
       </blockquote>
     </div>
   );
