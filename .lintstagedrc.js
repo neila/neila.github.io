@@ -11,5 +11,9 @@ const buildFormatCommand = (filenames) =>
     .join(' ')} `;
 
 module.exports = {
-  '**/*.{js,jsx,ts,tsx}': [buildLintCommand, buildFormatCommand],
+  // biome-ignore lint/complexity/noCommaOperator: <>
+  [('**/*.{js,jsx,ts,tsx}', '!next-env.d.ts')]: [
+    buildLintCommand,
+    buildFormatCommand,
+  ],
 };
