@@ -3,7 +3,7 @@ import pp from 'public/images/about/profilePic.png';
 import { useEffect, useId, useState } from 'react';
 import { LinkWithIcon } from '@/components/atoms/links/LinkWithIcon';
 import BaseLayout from '@/components/layouts/Base';
-import { walletAddress } from '@/utils/constants';
+import { contactAddresses, walletAddress } from '@/utils/constants';
 
 const ProfilePic = () => {
   return (
@@ -243,34 +243,37 @@ const Contact = () => {
       <div className="grid grid-flow-row grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4">
         <div id={`email-${useId()}`}>
           <p>
+            Email:{' '}
             <LinkWithIcon
-              url={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
-              text="Email"
-            />
-          </p>
-        </div>
-        <div id={`matrix-${useId()}`}>
-          <p>
-            <LinkWithIcon
-              url={`https://matrix.to/#/${process.env.NEXT_PUBLIC_MATRIX}`}
-              text="Matrix"
-            />
-          </p>
-        </div>
-        <div id={`simplex-${useId()}`}>
-          <p>
-            <LinkWithIcon
-              // url="https://envs.sh/2B8"
-              url={`https://simplex.chat/contact/#/?${process.env.NEXT_PUBLIC_SIMPLEX}.onion`}
-              text="SimpleX"
+              url={`mailto:${contactAddresses.email}`}
+              text={contactAddresses.email}
             />
           </p>
         </div>
         <div id={`xmpp-${useId()}`}>
           <p>
+            XMPP:{' '}
             <LinkWithIcon
-              url={`xmpp:${process.env.NEXT_PUBLIC_XMPP}`}
-              text="XMPP"
+              url={`xmpp:${contactAddresses.xmpp}`}
+              text={contactAddresses.xmpp}
+            />
+          </p>
+        </div>
+        <div id={`matrix-${useId()}`}>
+          <p>
+            Matrix:{' '}
+            <LinkWithIcon
+              url={`https://matrix.to/#/${contactAddresses.matrix}`}
+              text={contactAddresses.matrix}
+            />
+          </p>
+        </div>
+        <div id={`simplex-${useId()}`}>
+          <p>
+            SimpleX:{' '}
+            <LinkWithIcon
+              url={`https://simplex.chat/contact/#/?${contactAddresses.simplex}.onion`}
+              text="chat with me"
             />
           </p>
         </div>

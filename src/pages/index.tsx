@@ -36,7 +36,7 @@ const HomePage: NextPage = () => {
         </p>
       </div>
       <p>
-        Oct 16 -{' '}
+        Oct 2016 -{' '}
         {new Date().toLocaleDateString('en-US', {
           year: 'numeric',
           month: 'short',
