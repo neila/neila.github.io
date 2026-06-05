@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import type { ReactNode } from 'react';
 import { useRef, useState } from 'react';
 
 const getRandomHex = () => {
@@ -32,7 +33,7 @@ const lightenHex = (hex: string, weight = 0.45) => {
 export const LinkWithIcon = (props: {
   className?: string;
   url: string;
-  text: string;
+  text: ReactNode;
   rel?: string;
 }) => {
   const imgRef = useRef<HTMLImageElement | null>(null);
