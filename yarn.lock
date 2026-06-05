@@ -1249,6 +1249,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"colorthief@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "colorthief@npm:3.3.1"
+  peerDependencies:
+    sharp: ">=0.33.0"
+  peerDependenciesMeta:
+    sharp:
+      optional: true
+  bin:
+    colorthief: dist/cli.js
+  checksum: b17cc280e9107c5e86e2ef507a388d767166efcfc02ae80c7a824aa987378ee7a7c0d3582fbddadeaa05ccaa9a5c8584dfbff3b15b39c7d956a54ea57312746e
+  languageName: node
+  linkType: hard
+
 "comma-separated-tokens@npm:^2.0.0":
   version: 2.0.3
   resolution: "comma-separated-tokens@npm:2.0.3"
@@ -2710,6 +2724,7 @@ __metadata:
     "@types/react": ^19.2.14
     "@types/react-dom": ^19.2.3
     autoprefixer: ^10.4.24
+    colorthief: ^3.3.1
     dateformat: ^5.0.3
     gray-matter: ^4.0.3
     lint-staged: ^16.2.7
