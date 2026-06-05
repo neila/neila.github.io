@@ -31,7 +31,7 @@ export default function digihana() {
 
       <div className="relative min-h-full px-8 desktop:mx-24">
         <div className="relative flex justify-between px-2">
-          <div className="relative h-full flex-grow">
+          <div className="relative h-full grow">
             <Title
               digi="DIGI"
               hana="HANA"

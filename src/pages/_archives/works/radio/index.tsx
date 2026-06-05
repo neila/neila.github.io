@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 
 const Title = (params: { section: string; color: string }) => (
-  <div className="mt-5 mb-7 flex-grow-0 text-center">
+  <div className="mt-5 mb-7 grow-0 text-center">
     <h1 className={params.color}> {params.section} </h1>
   </div>
 );
@@ -22,7 +22,7 @@ export default function radio() {
 
       <div className="relative min-h-full px-8 desktop:mx-24">
         <div className="relative flex justify-between px-2">
-          <div className="relative h-full flex-grow text-[#C9CBC5]">
+          <div className="relative h-full grow text-[#C9CBC5]">
             <Title section="Radio algorithm" color="text-[#6CC417]" />
 
             <div className="left-2 mt-10 desktop:ml-32 desktop:w-4/6 bigmonitor:ml-48 bigmonitor:mt-16 bigmonitor:w-1/2">

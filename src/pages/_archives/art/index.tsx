@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 
 const Title = (params: { section: string; color: string }) => (
-  <div className="mt-5 mb-7 flex-grow-0 text-center">
+  <div className="mt-5 mb-7 grow-0 text-center">
     <h1 className={params.color}> {params.section} </h1>
   </div>
 );

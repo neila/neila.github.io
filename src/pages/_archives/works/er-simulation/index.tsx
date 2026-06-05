@@ -13,7 +13,7 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 
 const Title = (params: { section: string; color?: string }) => (
-  <div className="mt-5 mb-7 flex-grow-0 text-center">
+  <div className="mt-5 mb-7 grow-0 text-center">
     <h1 className={params.color}> {params.section} </h1>
   </div>
 );
@@ -35,7 +35,7 @@ export default function ERsim() {
           <div className="absolute inset-y-0 -right-8 h-full w-1/12 bg-[#005EB8]" />
           <div className="absolute inset-y-0 -right-1 h-full w-1/12 bg-[#00A499]" />
 
-          <div className="relative h-full flex-grow">
+          <div className="relative h-full grow">
             <Title section="London: Emergency response simulation" />
 
             <div className="left-2 mt-10 laptop:ml-32 laptop:w-4/6 desktop:ml-48 desktop:mt-16 desktop:w-1/2">

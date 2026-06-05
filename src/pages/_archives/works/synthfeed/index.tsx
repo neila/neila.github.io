@@ -22,7 +22,7 @@ export default function synthfeed() {
 
       <div className="relative min-h-full px-8 desktop:mx-24">
         <div className="relative flex justify-between px-2">
-          <div className="relative h-full flex-grow text-[#6BADDC]">
+          <div className="relative h-full grow text-[#6BADDC]">
             <Title section="SynthFeed" color="text-[#00CC30]" />
 
             <div className="left-2 mt-10 desktop:ml-32 desktop:mt-16 desktop:w-4/6 bigmonitor:ml-48 bigmonitor:w-1/2">
