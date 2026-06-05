@@ -5,9 +5,9 @@ const MainMenu = () => {
   return (
     <nav id={useId()} className="py-2 flex space-x-4 justify-center">
       {/* TODO (3): replace with drop cap */}
-      <PageLink href="/">HOME</PageLink>
-      {/* <PageLink href="/about">SITE</PageLink>&emsp; */}
-      <PageLink href="/me">ABOUT</PageLink>
+      <PageLink href="/">INDEX</PageLink>
+      {/* <PageLink href="/about">SITE</PageLink> */}
+      <PageLink href="/me">ME</PageLink>
       <PageLink href="/blog">BLOG</PageLink>
       {/* <PageLink href="/changelog">CHANGES</PageLink> */}
     </nav>

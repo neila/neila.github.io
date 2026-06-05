@@ -9,7 +9,16 @@ const HomePage: NextPage = () => {
       <h1 className="top-heading">Welcome,</h1>
 
       <div id={`landing-${useId()}`} className="">
-        <p>This is the website of Iroha Sun.</p>
+        <p>
+          This is the website of {(() => {
+            const first = `${process.env.NEXT_PUBLIC_FIRST}`;
+            return first.charAt(0).toUpperCase() + first.slice(1);
+          })()} {(() => {
+            const last = `${process.env.NEXT_PUBLIC_LAST}`;
+            return last.charAt(0).toUpperCase() + last.slice(1);
+          })()}.
+        </p>
+
         <p>
           {/* For information about this website's philosophy & method, see the{" "}
             <Link href="/about">About page</Link>.<br /> */}

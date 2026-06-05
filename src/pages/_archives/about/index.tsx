@@ -73,9 +73,8 @@ const about = () => {
                 >
                   Konnichiwa
                 </a>
-                . I&apos;m irohas, a creative developer from Japan.{' '}
-                <em>Time</em>
-                &apos;s 2006 person of the year.
+                . I'm irohas, a creative developer from Japan. <em>Time</em>'s
+                2006 person of the year.
               </p>
               <p>
                 I like questioning things; perhaps even more than finding
