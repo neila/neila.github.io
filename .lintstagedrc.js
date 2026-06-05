@@ -11,5 +11,8 @@ const buildFormatCommand = (filenames) =>
     .join(' ')} `;
 
 module.exports = {
-  '**/*.{js,jsx,ts,tsx}': [buildLintCommand, buildFormatCommand],
+  [('**/*.{js,jsx,ts,tsx}', '!next-env.d.ts')]: [
+    buildLintCommand,
+    buildFormatCommand,
+  ],
 };
