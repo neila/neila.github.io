@@ -11,9 +11,9 @@ Practicing better habits to protect sensitive data like email addresses can help
 Permanent addresses are the ones you intend to use for the foreseeable future. These addresses will be used for sending and receiving emails and any other active email correspondence.
 
 There are countless email service providers out there, but for our purpose, we are interested in the ones with enhanced privacy. For the extra careful, each account should be signed up on the tor network with a request for a new identity (obtain a different IP address).
-	- [Tuta](https://tuta.com/)
-	- [Proton Mail](https://proton.me/mail)
-	- [Mailfence\*](https://mailfence.com/)
+- [Tuta](https://tuta.com/)
+- [Proton Mail](https://proton.me/mail)
+- [Mailfence\*](https://mailfence.com/)
 ## Temporary addresses
 Using a single, non-privacy respecting email address to sign up for everything from Uber to Reddit to government services is a terrible idea. Even worse if using the same password across these accounts, and especially so if shared with the primary email for correspondence also. To prevent this issue, it is highly recommended to set up aliases and temporary addresses along with the use of [password managers](Password%20Managers.md).
 ### Email aliases
@@ -23,14 +23,14 @@ Emails sent to an alias are instantly forwarded to your inbox. Aliasing is super
 	3. **Subaddress doesn't conceal the real address.**
 
 It is strongly recommended to set up aliases for your permanent addresses when you wish to conceal your permanent address, but don't necessarily want to burn the associated temporary address after single use.
-	 - [SimpleLogin](https://simplelogin.io/)
-	 - [Firefox Relay](https://relay.firefox.com/)
-	 - [addy.io](https://addy.io/)
+- [SimpleLogin](https://simplelogin.io/)
+- [Firefox Relay](https://relay.firefox.com/)
+- [addy.io](https://addy.io/)
 ### Burner addresses
 Burner addresses, as the name suggests, are for one-time (or otherwise limited) use. You can use these when you have no plans of correspondence, like redeeming some kind of sweepstake.
-	- [Guerrilla Mail](https://www.guerrillamail.com/)
-	- [Temp-mail.org\*](https://temp-mail.org/)
-	- [InstAddr\*\*](https://m.kuku.lu/)
+- [Guerrilla Mail](https://www.guerrillamail.com/)
+- [Temp-mail.org\*](https://temp-mail.org/)
+- [InstAddr\*\*](https://m.kuku.lu/)
 
 ### Miscellaneous
 [spamgourmet](https://www.spamgourmet.com/) can be used as a burner-relayer hybrid, where you can create arbitrary burner addresses which all forward to a specified permanent address.
