@@ -5,7 +5,7 @@ tags:
   - git
   - gpg
 ---
-# Updating GPG keys for git commits
+# Updating GPG key for git signing
 Recently, I had to update my [GPG](GPG) key due to the change in email address. I had been signing all of my git commits with a key associated with an outdated identity, but since I have then lost the associated email address, I needed a way to update my commits to a new key associated with a different email.
 
 ## Updating the associated GPG key to a new UID
@@ -46,20 +46,12 @@ git config --global user.signingkey FingerprintOfYourNewKey
 ```
 alternatively, you can also directly edit `~/.gitconfig`.
 
-## Rewriting the metadata for past commits
-Finally, I rewrote the metadata for the past range of commits using a rebase.
-```
-git rebase -r --root --exec 'git commit --amend --no-edit --reset-author'
-```
-
-`--exec` will run the `git commit` step after each commit is rewritten. This is the equivalent of running `git commit && git rebase --continue` repeatedly from the first commit.
-
 ## Actually, turns out I didn't have to go through all of that
-If you're like me and only had to update the UID but not the key itself, a simpler alternative is to create a file called `.mailmap` at the base of the repository. This coalesces together commits by the same person in the git shortlog.
+A simpler alternative is to create a file called `.mailmap` at the base of the repository. This coalesces together commits by the same person in the git shortlog.
 
 `New Name <You@Email.com> Old Name <Your@OldAddress.com>`
 
-This simpler method saves you from worrying about any conflicts with upstream and accidentally losing data, since you aren't rewriting the git history unlike the rebase method.
+This simpler method saves you from worrying about any conflicts with upstream and accidentally losing data.
 
 ## References
 - [https://stackoverflow.com/questions/750172/how-do-i-change-the-author-and-committer-name-email-for-multiple-commits](https://stackoverflow.com/questions/750172/how-do-i-change-the-author-and-committer-name-email-for-multiple-commits)

@@ -5,7 +5,7 @@ import BRLO from '../../public/posts/BRLO.md';
 import DecentralizingOnlineAccounts from '../../public/posts/Decentralizing Online Accounts.md';
 import DigitalGarden from '../../public/posts/Digital garden.md';
 import GPG from '../../public/posts/GPG.md';
-import RetroactivelyUpdatingSigningKeys from '../../public/posts/Retroactively updating signing keys to past git commits.md';
+import UpdatingGPGKeyForGitSigning from '../../public/posts/Updating GPG key for git signing.md';
 
 export const postComponents: Record<string, ComponentType> = {
   Beginning,
@@ -14,6 +14,5 @@ export const postComponents: Record<string, ComponentType> = {
   'Decentralizing Online Accounts': DecentralizingOnlineAccounts,
   'Digital garden': DigitalGarden,
   GPG,
-  'Retroactively updating signing keys to past git commits':
-    RetroactivelyUpdatingSigningKeys,
+  'Updating GPG key for git signing': UpdatingGPGKeyForGitSigning,
 };

@@ -2,7 +2,6 @@ import type { NextPage } from 'next';
 import { useId } from 'react';
 import { LinkWithIcon } from '@/components/atoms/links/LinkWithIcon';
 import BaseLayout from '@/components/layouts/Base';
-import YourLife from '@/mini-app/YourLife';
 
 const HomePage: NextPage = () => {
   return (
