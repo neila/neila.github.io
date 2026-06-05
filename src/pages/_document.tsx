@@ -29,15 +29,24 @@ const CustomDocument = (props: NoncedDocument) => {
     >
       <Head nonce={props.nonce}>
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:url" content="neila.in05.org" />
+        <meta property="og:url" content={process.env.DEPLOY_TO} />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="neila.in05.org" />
+        <meta
+          property="og:title"
+          content={`${process.env.NEXT_PUBLIC_NICK} website`}
+        />
         <meta
           property="og:image"
-          content="https://neila.in05.org/images/about/profilePic.png"
+          content={`https://${process.env.DEPLOY_TO}/images/about/profilePic.png`}
         />
-        <meta property="og:description" content="website by neila" />
-        <meta name="description" content="website by neila" />
+        <meta
+          property="og:description"
+          content={`${process.env.NEXT_PUBLIC_NICK} website`}
+        />
+        <meta
+          name="description"
+          content={`${process.env.NEXT_PUBLIC_NICK} website`}
+        />
         <meta property="csp-nonce" content={props.nonce} />
       </Head>
 

@@ -11,8 +11,11 @@ const BaseLayout: FC<{
   return (
     <>
       <Head>
-        <title>{`${pageTitle ? `${pageTitle} | neila.github.io` : 'neila.github.io'}`}</title>
-        <meta name="description" content="website by neila" />
+        <title>{`${pageTitle ? `${pageTitle} | ${process.env.NEXT_PUBLIC_DEPLOY_TO}` : 'website'}`}</title>
+        <meta
+          name="description"
+          content={`website by ${process.env.NEXT_PUBLIC_NICK}`}
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

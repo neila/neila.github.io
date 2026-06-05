@@ -73,20 +73,18 @@ const Cells = () => {
       </p>
 
       <div className="p-8 py-4 leading-3">
-        {birthDay ? (
-          [...Array(Math.floor(daysOndeath / 7))].map((_, i) => (
-            <input
-              type="checkbox"
-              key={`week ${i + 1}`}
-              className="scale-75"
-              checked={i + 1 < daysSinceBirth / 7}
-              onClick={(_e) => cellClickModal(i)}
-              readOnly
-            />
-          ))
-        ) : (
-          <></>
-        )}
+        {birthDay
+          ? [...Array(Math.floor(daysOndeath / 7))].map((_, i) => (
+              <input
+                type="checkbox"
+                key={`week ${i + 1}`}
+                className="scale-75"
+                checked={i + 1 < daysSinceBirth / 7}
+                onClick={(_e) => cellClickModal(i)}
+                readOnly
+              />
+            ))
+          : null}
 
         <p className="py-4 text-center">
           {birthDay

@@ -11,7 +11,5 @@ updates:
       interval: "weekly"
     assignees:
       - "dependabot"
-    reviewers:
-      - "neila"
     commit-message:
       prefix: "chore"

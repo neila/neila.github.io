@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import pp from 'public/images/about/profilePic.png';
-import { useId } from 'react';
+import { useEffect, useId, useState } from 'react';
 import { LinkWithIcon } from '@/components/atoms/links/LinkWithIcon';
 import BaseLayout from '@/components/layouts/Base';
-import { walletAddress } from '@/utils/constants';
+import { contactAddresses, walletAddress } from '@/utils/constants';
 
 const ProfilePic = () => {
   return (
@@ -22,46 +22,21 @@ const ProfilePic = () => {
   );
 };
 
-const Work = () => {
+const Intro = () => {
   return (
-    <section id={`intro-work-${useId()}`} className="py-4">
+    <section id={`intro-${useId()}`} className="py-4">
       {/* <h1>Work</h1> */}
       {/* TODO (8): acts as abstract until work is better documented upon which this turns into work section */}
       <p>
-        I'm an engineering artist in{' '}
+        I'm a creative engineer from{' '}
         <LinkWithIcon
           url="https://www.youtube.com/watch?v=SZzjw2UfUEk"
-          text="Tokyo"
+          text="Tokyo, Japan"
         />
-        . {/*Iroha Systems is my small business.*/} I have worked for, published
-        in, or consulted for:{' '}
-        {/* <em>
-          <LinkWithIcon url="https://www.jt.com/" text="JT" /> ('24-)
-        </em>
-        ,{' '} */}
-        <em>
-          <LinkWithIcon url="https://www.nhk.or.jp/" text="NHK" /> ('22-'23)
-        </em>
-        ,{' '}
-        <em>
-          <LinkWithIcon url="https://www.henkaku.center/en" text="CIT" />{' '}
-          ('21-'22)
-        </em>
-        ,{' '}
-        <em>
-          <LinkWithIcon
-            url="https://www.wolfram.com/"
-            text="Wolfram Research"
-          />{' '}
-          ('20-'21)
-        </em>
-        ,{' '}
-        <em>
-          <LinkWithIcon url="https://nikkei.com/" text="Nikkei" /> ('17-'19)
-        </em>
-        , and other <em>private clients ('17-)</em> in various industries.
-        Everything on this website should be considered my own viewpoint or
-        writing, unless otherwise specified by a representative or publication.
+        . I write about technology, society, language, art, beliefs, and all
+        things human. Everything on this website should be considered my own
+        viewpoint or writing, unless otherwise specified by a representative or
+        publication.
       </p>
     </section>
   );
@@ -71,29 +46,55 @@ const DonateToAddresses = () => {
   return (
     <div className="border p-2 my-2">
       <p className="text-1">
-        To help make ends meet, I accept small (or large, if you insist)
-        donations in cryptocurrencies. If you appreciate my work, please
-        consider showing your support.
+        To help make ends meet, I accept donations in cryptocurrencies. If you
+        appreciate my work, please consider showing your support.
       </p>
       <ul className="font-sans font-3 text-1 space-y-2 pb-2 max-w-full list-outside list-none">
         <li>
-          BTC:{' '}
-          <code className="break-words text-pink-500">
+          <LinkWithIcon
+            className="font-medium"
+            url="https://bitcoin.org"
+            text="BTC"
+          />{' '}
+          :{' '}
+          <code className="wrap-break-word text-[#f7931a]">
+            {/* <LinkWithIcon
+              url={`https://blockstream.info/address/${walletAddress.bitcoin}`}
+              text={walletAddress.bitcoin}
+            /> */}
             {walletAddress.bitcoin}
           </code>
         </li>
         <li className="group">
-          ETH:{' '}
-          <code className="break-words text-pink-500">
+          <LinkWithIcon
+            className="font-medium"
+            url="https://ethereum.org"
+            text="ETH"
+          />{' '}
+          :{' '}
+          <code className="wrap-break-word text-[#497493]">
+            {/* <LinkWithIcon
+              url={`https://etherscan.io/address/${walletAddress.ethereum}`}
+              text={walletAddress.ethereum}
+            /> */}
             {walletAddress.ethereum}
-          </code>
-          {/* <span className="text-[0.75rem] leading-4 invisible group-hover:visible">
-            stablecoins / L2s ok
-          </span> */}
+          </code>{' '}
+          <span className="text-[0.75rem] leading-4 invisible group-hover:visible">
+            stablecoins / L2s accepted
+          </span>
         </li>
         <li>
-          XMR:{' '}
-          <code className="break-words max-w-full text-pink-500">
+          <LinkWithIcon
+            className="font-medium"
+            url="https://getmonero.org"
+            text="XMR"
+          />
+          :{' '}
+          <code className="wrap-break-word text-[#FF6600]">
+            {/* <LinkWithIcon
+              url="https://monerohash.com/explorer/"
+              text={walletAddress.monero}
+            /> */}
             {walletAddress.monero}
           </code>
         </li>
@@ -116,6 +117,9 @@ const Websites = () => {
             />
           </li>
           <li>
+            <LinkWithIcon url="https://x.com/irohasattva" text="X (Twitter)" />
+          </li>
+          {/* <li>
             <LinkWithIcon
               url="https://social.tchncs.de/@neila"
               text="Mastodon"
@@ -127,21 +131,27 @@ const Websites = () => {
               url="https://primal.net/p/npub1rdsn99fals5lduahfzw487k7waak6aerf04gndpgfs9kxtgy4r0qecqkwc"
               text="Nostr"
             />
-          </li>
+          </li> */}
         </ul>
         <ul>
           <h4>Forums</h4>
           <li>
-            <LinkWithIcon url="https://discuss.tchncs.de/u/nla" text="Lemmy" />
+            <LinkWithIcon url="https://lemmy.ml/u/irohas" text="Lemmy" />
+          </li>
+          <li>
+            <LinkWithIcon
+              url="https://www.lesswrong.com/users/irohas"
+              text="LessWrong"
+            />
           </li>
         </ul>
         <ul>
-          <h4>Forge</h4>
+          <h4>Code</h4>
+          {/* <li>
+            <LinkWithIcon url="https://codeberg.org/irohas" text="Codeberg" />
+          </li> */}
           <li>
             <LinkWithIcon url="https://github.com/neila" text="Github" />
-          </li>
-          <li>
-            <LinkWithIcon url="https://codeberg.org/neila" text="Codeberg" />
           </li>
           <li>
             <LinkWithIcon url="https://sr.ht/~neila/" text="Sourcehut" />
@@ -151,7 +161,7 @@ const Websites = () => {
           <h4>Mixes</h4>
           <li>
             <LinkWithIcon
-              url="https://soundcloud.com/sara_soju"
+              url="https://soundcloud.com/iroha_s/reposts"
               text="Soundcloud"
             />
           </li>
@@ -162,31 +172,64 @@ const Websites = () => {
 };
 
 const Projects = () => {
+  const [host, setHost] = useState('');
+  useEffect(() => {
+    setHost(window.location.host);
+  }, []);
+
   return (
     <section id={`projects-${useId()}`} className="py-4">
-      <h1>Projects</h1>
+      <h1>Work</h1>
+      <p>
+        I organize{' '}
+        <LinkWithIcon url="https://www.ethtokyo.org" text="ETHTokyo" />, a
+        Tokyo-based Ethereum community and coordination layer to to promote the
+        widespread use and development of{' '}
+        <LinkWithIcon url="https://ethereum.org" text="Ethereum" />. I also
+        operate <LinkWithIcon url="https://www.unchain.tech" text="UNCHAIN" />,
+        a developer's guild where anyone with internet can come and learn the
+        basics of web3 development, taking their first steps to join the
+        permissionless ecosystem.
+      </p>
+      <p>
+        I have worked with, published in, or consulted for:{' '}
+        <em>
+          <LinkWithIcon url="https://www.jt.com/" text="JT" />
+        </em>
+        ,{' '}
+        <em>
+          <LinkWithIcon url="https://www.nhk.or.jp/" text="NHK" />
+        </em>
+        ,{' '}
+        <em>
+          <LinkWithIcon url="https://www.henkaku.center/en" text="CIT" />{' '}
+        </em>
+        ,{' '}
+        <em>
+          <LinkWithIcon
+            url="https://www.wolfram.com/"
+            text="Wolfram Research"
+          />
+        </em>
+        ,{' '}
+        <em>
+          <LinkWithIcon url="https://nikkei.com/" text="Nikkei" />
+        </em>
+        , and other <em>public and private clients</em> in various industries;
+        everything on {host} should be considered my own viewpoint or writing
+        unless otherwise specified by a representative or publication.
+      </p>
+      <h1>Past Projects</h1>
       <ul>
-        {/* <li>
-          <LinkWithIcon url="https://akiyaz.io" text="Akiyaz" /> An A-to-Z
-          solution provider for anyone looking to build something new from the
-          rural Japanese landscape.
-        </li> */}
         <li>
           <LinkWithIcon url="https://www.in05.org" text="IN05 Network" /> An
           emergent network of artists, entrepreneurs, and hackers building a
           dynamic and collaborative lifestyle.
         </li>
         <li>
-          <LinkWithIcon url="https://ethtokyo.org" text="ETHTokyo" /> An annual
-          Ethereum conference and hackathon where cypherpunks across the globe
-          come together to exchange ideas, form connections, and build the
-          future.
-        </li>
-        <li>
-          <LinkWithIcon url="https://www.unchain.tech" text="UNCHAIN" /> A
-          community where anyone with a little will and internet can come and
-          learn the basics of web3 development, taking their first steps to join
-          the permissionless ecosystem.
+          <LinkWithIcon url="https://akiyaz.io" text="Akiyaz" /> An A-to-Z
+          solution provider for anyone looking to build something new from the
+          rural Japanese landscape.
         </li>
       </ul>
     </section>
@@ -200,34 +243,37 @@ const Contact = () => {
       <div className="grid grid-flow-row grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4">
         <div id={`email-${useId()}`}>
           <p>
+            Email:{' '}
             <LinkWithIcon
-              url={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
-              text="Email"
-            />
-          </p>
-        </div>
-        <div id={`matrix-${useId()}`}>
-          <p>
-            <LinkWithIcon
-              url={`https://matrix.to/#/${process.env.NEXT_PUBLIC_MATRIX}`}
-              text="Matrix"
-            />
-          </p>
-        </div>
-        <div id={`simplex-${useId()}`}>
-          <p>
-            <LinkWithIcon
-              // url="https://envs.sh/2B8"
-              url={`https://simplex.chat/contact/#/?${process.env.NEXT_PUBLIC_SIMPLEX}.onion`}
-              text="SimpleX"
+              url={`mailto:${contactAddresses.email}`}
+              text={contactAddresses.email}
             />
           </p>
         </div>
         <div id={`xmpp-${useId()}`}>
           <p>
+            XMPP:{' '}
             <LinkWithIcon
-              url={`xmpp:${process.env.NEXT_PUBLIC_XMPP}`}
-              text="XMPP"
+              url={`xmpp:${contactAddresses.xmpp}`}
+              text={contactAddresses.xmpp}
+            />
+          </p>
+        </div>
+        <div id={`matrix-${useId()}`}>
+          <p>
+            Matrix:{' '}
+            <LinkWithIcon
+              url={`https://matrix.to/#/${contactAddresses.matrix}`}
+              text={contactAddresses.matrix}
+            />
+          </p>
+        </div>
+        <div id={`simplex-${useId()}`}>
+          <p>
+            SimpleX:{' '}
+            <LinkWithIcon
+              url={`https://simplex.chat/contact/#/?${contactAddresses.simplex}.onion`}
+              text="chat with me"
             />
           </p>
         </div>
@@ -237,12 +283,21 @@ const Contact = () => {
 };
 
 const AboutMePage = () => {
+  const nickname = process.env.NEXT_PUBLIC_NICK;
+  const donateflag =
+    process.env.NEXT_PUBLIC_SHOWDONATEMODAL?.toLowerCase() === 'true';
+
   return (
-    <BaseLayout>
+    <BaseLayout
+      pageTitle={`About ${nickname.charAt(0).toUpperCase()}${nickname.slice(1)}`}
+    >
       <article className="laptop:max-w-6xl mx-auto">
         <h1 className="top-heading text-center">
           <span className="text-[4rem]">A</span>BOUT{' '}
-          <span className="text-[4rem]">I</span>ROHAS
+          <span className="text-[4rem]">
+            {nickname.charAt(0).toUpperCase()}
+          </span>
+          {nickname.slice(1).toUpperCase()}
         </h1>
 
         {/* <h4 className="py-4 text-center">
@@ -252,9 +307,7 @@ const AboutMePage = () => {
 
         <ProfilePic />
 
-        <Work />
-
-        <DonateToAddresses />
+        <Intro />
 
         <Projects />
 
@@ -262,6 +315,7 @@ const AboutMePage = () => {
 
         <Contact />
       </article>
+      {(() => (donateflag ? <DonateToAddresses /> : null))()}
     </BaseLayout>
   );
 };

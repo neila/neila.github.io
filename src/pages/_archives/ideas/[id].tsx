@@ -1,22 +1,19 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { MDXRemote, type MDXRemoteSerializeResult } from 'next-mdx-remote';
-import { serialize } from 'next-mdx-remote/serialize';
 import { useId } from 'react';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Graph from '@/utils/Graph';
+import { postComponents } from '@/utils/postComponents';
 import { getAllPosts } from '@/utils/postid';
 
 type PostProps = {
-  content: MDXRemoteSerializeResult<
-    Record<string, unknown>,
-    Record<string, unknown>
-  >;
   id: string;
 };
 
-const post: NextPage<PostProps> = ({ content, id }) => {
+const post: NextPage<PostProps> = ({ id }) => {
+  const PostContent = postComponents[id];
+
   return (
     <div>
       <Head>
@@ -27,7 +24,7 @@ const post: NextPage<PostProps> = ({ content, id }) => {
 
       <div className="mx-auto mt-10 desktop:w-2/3">
         <div className="prose p-3 desktop:prose-lg desktop:p-8">
-          <MDXRemote {...content} />
+          <PostContent />
         </div>
 
         <div id={useId()}>
@@ -43,15 +40,17 @@ const post: NextPage<PostProps> = ({ content, id }) => {
 
 export async function getStaticProps(context) {
   const { params } = context;
-  const { data, content, id } = getAllPosts().find(
-    (item) => item.id === params.id,
-  );
-  const mdxSource = await serialize(content);
+  const post = getAllPosts().find((item) => item.id === params.id);
+
+  if (!post) {
+    return {
+      notFound: true,
+    };
+  }
 
   return {
     props: {
-      content: mdxSource,
-      id: id,
+      id: post.id,
     },
   };
 }
