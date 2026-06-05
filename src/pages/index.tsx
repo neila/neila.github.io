@@ -42,7 +42,6 @@ const HomePage: NextPage = () => {
           month: 'short',
         })}
       </p>
-      <YourLife />
     </BaseLayout>
   );
 };
