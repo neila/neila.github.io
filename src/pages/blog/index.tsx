@@ -77,7 +77,7 @@ const BlogIndexPage = (_props: { postsList: blogPostType[] }) => {
               <li key={post.id}>
                 <LinkWithIcon
                   url={
-                    `/blog/${encodeURIComponent(post.id)}`
+                    `/blog/${encodeURIComponent(post.id)}${process.env.NEXT_PUBLIC_DEPLOY_TO.slice(-8) === 'eth.limo' ? '.html' : ''}`
                     // TODO (9): parse url to simpler format
                   }
                   text={post.id}
