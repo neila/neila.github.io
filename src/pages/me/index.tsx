@@ -219,19 +219,6 @@ const Projects = () => {
         everything on {host} should be considered my own viewpoint or writing
         unless otherwise specified by a representative or publication.
       </p>
-      <h1>Past Projects</h1>
-      <ul>
-        <li>
-          <LinkWithIcon url="https://www.in05.org" text="IN05 Network" /> An
-          emergent network of artists, entrepreneurs, and hackers building a
-          dynamic and collaborative lifestyle.
-        </li>
-        <li>
-          <LinkWithIcon url="https://akiyaz.io" text="Akiyaz" /> An A-to-Z
-          solution provider for anyone looking to build something new from the
-          rural Japanese landscape.
-        </li>
-      </ul>
     </section>
   );
 };
