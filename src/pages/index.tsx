@@ -24,7 +24,7 @@ const HomePage: NextPage = () => {
           {/* For website features & implementation, see the{" "}
             <Link href="/design">Design page</Link>.<br /> */}
           For information about myself and contact information see{' '}
-          <LinkWithIcon url="/me" text="My page" />.
+          <LinkWithIcon url="/me/" text="My page" />.
           <br />
           For site updates, see the{' '}
           <LinkWithIcon
