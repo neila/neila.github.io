@@ -104,30 +104,30 @@ __metadata:
   linkType: hard
 
 "@emnapi/core@npm:^1.10.0":
-  version: 1.10.0
-  resolution: "@emnapi/core@npm:1.10.0"
+  version: 1.11.0
+  resolution: "@emnapi/core@npm:1.11.0"
   dependencies:
-    "@emnapi/wasi-threads": 1.2.1
+    "@emnapi/wasi-threads": 1.2.2
     tslib: ^2.4.0
-  checksum: d8cf0d6e0668db456190dda05bffb299395e58e814bacfbe78e6306aea9df8c48c0c276ad9ca787d5bbd4272e765fcc879e8156c0fc40398d5f43658819b7314
+  checksum: e00f9c2c79c7844ecc647458013c27080646bd7a554687b212ae590c49d26d4f5efbaca24b5772550e06115551eafa4ff202644511a30ae9514812f35e924605
   languageName: node
   linkType: hard
 
 "@emnapi/runtime@npm:^1.10.0, @emnapi/runtime@npm:^1.7.0":
-  version: 1.10.0
-  resolution: "@emnapi/runtime@npm:1.10.0"
+  version: 1.11.0
+  resolution: "@emnapi/runtime@npm:1.11.0"
   dependencies:
     tslib: ^2.4.0
-  checksum: cc403db36a6875495f4f4a776eea8379c028d83d7d37a018b50079db226e7484f269a0447fc1e49235216d4fb2378bf2c61fa7f047d9f9c50e21698ce9b6e531
+  checksum: 83e296a6f795201b4ea7a41e773b626b6c32198180a375a5ec85a4b9835879814961f22b48c81736042407f41f4196c5fdadf3cec446c19fdf66a41e2577f82e
   languageName: node
   linkType: hard
 
-"@emnapi/wasi-threads@npm:1.2.1, @emnapi/wasi-threads@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "@emnapi/wasi-threads@npm:1.2.1"
+"@emnapi/wasi-threads@npm:1.2.2, @emnapi/wasi-threads@npm:^1.2.1":
+  version: 1.2.2
+  resolution: "@emnapi/wasi-threads@npm:1.2.2"
   dependencies:
     tslib: ^2.4.0
-  checksum: a2360553f8056e3e676f708b7e1639bae84212714ace6ee13b6e0ce667b3057bea6d120c7a4f5b32851f93d287fd4b5a0fd58b14f43363d365cb83bc538254d1
+  checksum: 6cb1a1ddd1902c2bb8ec09090afa0e950f21b2801a38903d33b29ec8223c03e7862e820dc2807842e8dea0575421641fabbde4fd4fabecf8d176d443794e5f72
   languageName: node
   linkType: hard
 
@@ -788,14 +788,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mdx@npm:^2.0.0":
-  version: 2.0.13
-  resolution: "@types/mdx@npm:2.0.13"
-  checksum: 195137b548e75a85f0558bb1ca5088aff1c01ae0fc64454da06085b7513a043356d0bb51ed559d3cbc7ad724ccd8cef2a7d07d014b89a47a74dff8875ceb3b15
-  languageName: node
-  linkType: hard
-
-"@types/mdx@npm:^2.0.14":
+"@types/mdx@npm:^2.0.0, @types/mdx@npm:^2.0.14":
   version: 2.0.14
   resolution: "@types/mdx@npm:2.0.14"
   checksum: 320bfa4d59bb43143147dbea9023d53789d64e7b322b178cf1beaba88ef5fcaf0b158f3b7d7d3ce2237cea106388aee6234cb3a5f6a746b9120d82b19681b0ab
@@ -810,11 +803,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:^22.15.3":
-  version: 22.19.19
-  resolution: "@types/node@npm:22.19.19"
+  version: 22.19.20
+  resolution: "@types/node@npm:22.19.20"
   dependencies:
     undici-types: ~6.21.0
-  checksum: 01bc720694f817a4f85af43ff6e93e80b9ec2e3bd1d0de2240e117152f61e2a4e6f19fe1a2632c2693d343ba0d157791581b34459b4e0110bca1ba5f9461ada3
+  checksum: a9a1d23e85d622f8bc6c0ab3eb21177da7af3b870ece17c6d93bf4b8bd3da1fc9b7cd5388123f2365dc82f597f5a4a99d18549b78f04a26c05f8a26c7bba3206
   languageName: node
   linkType: hard
 
@@ -1006,11 +999,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.10.12, baseline-browser-mapping@npm:^2.9.19":
-  version: 2.10.33
-  resolution: "baseline-browser-mapping@npm:2.10.33"
+  version: 2.10.34
+  resolution: "baseline-browser-mapping@npm:2.10.34"
   bin:
     baseline-browser-mapping: dist/cli.cjs
-  checksum: 7479b9a1aef3b3ddbb459eb15220db20c0414fc5d5dfb04f1e31cf4798138d1b07c62dfea107cd77bdc21720dbfb9882c9d2f13fc3d9a3ffadf66ad6d8831191
+  checksum: 4e1bc2a9a52a3b3b11fb5baf1865a24fcda7cdf736be6fd2a04ea1b784701f6b70f195c734f0440ed28b206064da71042d3d905e16e19ec0aa8dc6f1dac0c341
   languageName: node
   linkType: hard
 
@@ -1077,9 +1070,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001579, caniuse-lite@npm:^1.0.30001782, caniuse-lite@npm:^1.0.30001787":
-  version: 1.0.30001793
-  resolution: "caniuse-lite@npm:1.0.30001793"
-  checksum: 912398ddd1260a1524b7172c575a57361b081df8978cbbe4db57c46516b65edd0c645e9874c98628363b68d408f05f494494bcd2cf586580adc46c3d04e97951
+  version: 1.0.30001797
+  resolution: "caniuse-lite@npm:1.0.30001797"
+  checksum: 038ebafc784ddf5fa5db120f6995034974df232fc0fb4e42bc48dbcb7a86c6c1472522af4c073dc5d7f6f713c5b8d8397c56d36db71c9dc340042cefe5f1dbae
   languageName: node
   linkType: hard
 
@@ -1412,12 +1405,12 @@ __metadata:
   linkType: hard
 
 "enhanced-resolve@npm:^5.21.0":
-  version: 5.22.2
-  resolution: "enhanced-resolve@npm:5.22.2"
+  version: 5.23.0
+  resolution: "enhanced-resolve@npm:5.23.0"
   dependencies:
     graceful-fs: ^4.2.4
     tapable: ^2.3.3
-  checksum: e6a35cd486ff5950cccf9a01b85e49a1ae95d31771d26091ea981bf7ce67550e5fb00841d15f88a466c3a26237912a1a1b5d5277d05a3d7a65207b3ca76d803b
+  checksum: ae594afb28f15a44bbbd8f3eede43e97b8c7bae9e89b7040a209fb8f50c1d2f27f0bfe63b3c31ab226b1b8eefabf2277ed83fba0177b55d76239a8efba3b148c
   languageName: node
   linkType: hard
 
