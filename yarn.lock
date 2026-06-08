@@ -788,10 +788,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mdx@npm:^2.0.0, @types/mdx@npm:^2.0.13":
+"@types/mdx@npm:^2.0.0":
   version: 2.0.13
   resolution: "@types/mdx@npm:2.0.13"
   checksum: 195137b548e75a85f0558bb1ca5088aff1c01ae0fc64454da06085b7513a043356d0bb51ed559d3cbc7ad724ccd8cef2a7d07d014b89a47a74dff8875ceb3b15
+  languageName: node
+  linkType: hard
+
+"@types/mdx@npm:^2.0.14":
+  version: 2.0.14
+  resolution: "@types/mdx@npm:2.0.14"
+  checksum: 320bfa4d59bb43143147dbea9023d53789d64e7b322b178cf1beaba88ef5fcaf0b158f3b7d7d3ce2237cea106388aee6234cb3a5f6a746b9120d82b19681b0ab
   languageName: node
   linkType: hard
 
@@ -820,12 +827,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.2.14":
-  version: 19.2.16
-  resolution: "@types/react@npm:19.2.16"
+"@types/react@npm:^19.2.17":
+  version: 19.2.17
+  resolution: "@types/react@npm:19.2.17"
   dependencies:
     csstype: ^3.2.2
-  checksum: 916341127620a2109843af2d0c84a84019c2699b0f5201335cdb110d7df8ef7c50a1966c7677ef583a7b21b19656e47a31c6b53858e1e5efa644e5c11d441e77
+  checksum: 9704dc2001b6bcc32efc6e3fe144e18c411d5ee8a5c8dfe572535e44bd300424c4e7bddc9314299eeec28efb547816368b5c9851c93a3082e8ad1265786f3d31
   languageName: node
   linkType: hard
 
@@ -3687,9 +3694,9 @@ __metadata:
     "@mdx-js/react": ^3.1.1
     "@next/mdx": ^16.2.7
     "@tailwindcss/postcss": ^4.1.18
-    "@types/mdx": ^2.0.13
+    "@types/mdx": ^2.0.14
     "@types/node": ^22.15.3
-    "@types/react": ^19.2.14
+    "@types/react": ^19.2.17
     "@types/react-dom": ^19.2.3
     autoprefixer: ^10.4.24
     colorthief: ^3.3.1
