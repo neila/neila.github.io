@@ -104,58 +104,87 @@ const DonateToAddresses = () => {
 };
 
 const Websites = () => {
+  const [host, setHost] = useState('');
+  useEffect(() => {
+    setHost(window.location.host);
+  }, []);
+
   return (
     <section id={`online-presence-${useId()}`} className="py-4">
       <h1>Find me on</h1>
       <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4 gap-4">
         <ul>
           <h4>Socials</h4>
-          <li>
-            <LinkWithIcon
-              url="https://bsky.app/profile/in05.org"
-              text="Bluesky"
-            />
-          </li>
-          <li>
-            <LinkWithIcon url="https://x.com/irohasattva" text="X (Twitter)" />
-          </li>
-          {/* <li>
-            <LinkWithIcon
-              url="https://social.tchncs.de/@neila"
-              text="Mastodon"
-              rel="me"
-            />
-          </li>
+          {host.includes('neila') ? (
+            <li>
+              <LinkWithIcon
+                url="https://social.tchncs.de/@neila"
+                text="Mastodon"
+                rel="me"
+              />
+            </li>
+          ) : (
+            <>
+              <li>
+                <LinkWithIcon
+                  url="https://x.com/irohasattva"
+                  text="X (Twitter)"
+                />
+              </li>
+              <li>
+                <LinkWithIcon
+                  url="https://bsky.app/profile/in05.org"
+                  text="Bluesky"
+                />
+              </li>
+            </>
+          )}
           <li>
             <LinkWithIcon
               url="https://primal.net/p/npub1rdsn99fals5lduahfzw487k7waak6aerf04gndpgfs9kxtgy4r0qecqkwc"
               text="Nostr"
             />
-          </li> */}
+          </li>
         </ul>
         <ul>
           <h4>Forums</h4>
-          <li>
-            <LinkWithIcon url="https://lemmy.ml/u/irohas" text="Lemmy" />
-          </li>
-          <li>
-            <LinkWithIcon
-              url="https://www.lesswrong.com/users/irohas"
-              text="LessWrong"
-            />
-          </li>
+          {host.includes('neila') ? (
+            <li>
+              <LinkWithIcon
+                url="https://discuss.tchncs.de/u/nla"
+                text="Lemmy"
+              />
+            </li>
+          ) : (
+            <>
+              <li>
+                <LinkWithIcon url="https://lemmy.ml/u/irohas" text="Lemmy" />
+              </li>
+              <li>
+                <LinkWithIcon
+                  url="https://www.lesswrong.com/users/irohas"
+                  text="LessWrong"
+                />
+              </li>
+            </>
+          )}
         </ul>
         <ul>
           <h4>Code</h4>
-          {/* <li>
-            <LinkWithIcon url="https://codeberg.org/irohas" text="Codeberg" />
-          </li> */}
-          <li>
-            <LinkWithIcon url="https://github.com/neila" text="Github" />
-          </li>
-          <li>
-            <LinkWithIcon url="https://sr.ht/~neila/" text="Sourcehut" />
-          </li>
+          {host.includes('neila') ? (
+            <>
+              <li>
+                <LinkWithIcon url="https://github.com/neila" text="Github" />
+              </li>
+              <li>
+                <LinkWithIcon url="https://sr.ht/~neila/" text="Sourcehut" />
+              </li>
+            </>
+          ) : (
+            <li>
+              <LinkWithIcon url="https://codeberg.org/irohas" text="Codeberg" />
+            </li>
+          )}
         </ul>
         <ul>
           <h4>Mixes</h4>
