@@ -1,7 +1,13 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.4.16/schema.json",
   "files": {
-    "includes": ["**", "!next-env.d.ts", "!**/src/globals.css", "!yarn.lock"]
+    "includes": [
+      "**",
+      "!next-env.d.ts",
+      "!**/src/globals.css",
+      "!yarn.lock",
+      "public/**"
+    ]
   },
   "linter": {
     "enabled": true,
