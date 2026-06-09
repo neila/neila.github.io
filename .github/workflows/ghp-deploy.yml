@@ -30,8 +30,6 @@ jobs:
             ${{ github.workspace }}/node_modules
             ${{ github.workspace }}/.yarn/cache
           key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}-nodemodules
-      - name: Disable Jekyll 
-        run: touch .nojekyll
       - name: build
         run: yarn build
         env:
@@ -51,6 +49,7 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: ./out
+          include-hidden-files: true
 
   deploy:
     environment:
