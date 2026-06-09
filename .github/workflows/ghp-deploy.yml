@@ -46,7 +46,7 @@ jobs:
           NEXT_PUBLIC_ETH: ${{ secrets.NEXT_PUBLIC_ETH }}
           NEXT_PUBLIC_XMR: ${{ secrets.NEXT_PUBLIC_XMR }}
       - name: Disable Jekyll
-        run: touch out/.nojekyll
+        run: touch ./out/.nojekyll
       - name: upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
