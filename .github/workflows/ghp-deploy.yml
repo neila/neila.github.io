@@ -30,6 +30,8 @@ jobs:
             ${{ github.workspace }}/node_modules
             ${{ github.workspace }}/.yarn/cache
           key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}-nodemodules
+      - name: Disable Jekyll
+        run: touch ./public/.nojekyll
       - name: build
         run: yarn build
         env:
@@ -45,8 +47,6 @@ jobs:
           NEXT_PUBLIC_BTC: ${{ secrets.NEXT_PUBLIC_BTC }}
           NEXT_PUBLIC_ETH: ${{ secrets.NEXT_PUBLIC_ETH }}
           NEXT_PUBLIC_XMR: ${{ secrets.NEXT_PUBLIC_XMR }}
-      - name: Disable Jekyll
-        run: touch ./out/.nojekyll
       - name: upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
