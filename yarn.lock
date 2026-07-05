@@ -3481,10 +3481,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:4.3.1, tailwindcss@npm:^4.3.1":
+"tailwindcss@npm:4.3.1":
   version: 4.3.1
   resolution: "tailwindcss@npm:4.3.1"
   checksum: 76fea3aa086355967d24893aeb02d517742f642d53633a1bf28385274f0b0bfb53242d50c18dee1d09953b28ad8dd514d02072c67d31acadf8a57c7cef730a97
+  languageName: node
+  linkType: hard
+
+"tailwindcss@npm:^4.3.2":
+  version: 4.3.2
+  resolution: "tailwindcss@npm:4.3.2"
+  checksum: 705bcf3952a6dbc472cd1d941eb311d84dff51b496f4efd9aff701745175b23fbe9cc4ac79d95a889783696944169bb9270d056a3c868efe0a4567bc93725d7e
   languageName: node
   linkType: hard
 
@@ -3708,7 +3715,7 @@ __metadata:
     serve: ^14.2.5
     sharp: ^0.34.5
     simple-git-hooks: ^2.13.1
-    tailwindcss: ^4.3.1
+    tailwindcss: ^4.3.2
     tslib: ^2.8.1
     typescript: ^5.9.3
   languageName: unknown
