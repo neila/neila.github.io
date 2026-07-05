@@ -20,7 +20,7 @@
     "@mdx-js/react": "^3.1.1",
     "@types/mdx": "^2.0.14",
     "colorthief": "^3.3.1",
-    "next": "^16.2.9",
+    "next": "^16.2.10",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "sharp": "^0.34.5"
