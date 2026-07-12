@@ -737,9 +737,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/mdx@npm:^16.2.9":
-  version: 16.2.9
-  resolution: "@next/mdx@npm:16.2.9"
+"@next/mdx@npm:^16.2.10":
+  version: 16.2.10
+  resolution: "@next/mdx@npm:16.2.10"
   dependencies:
     source-map: ^0.7.0
   peerDependencies:
@@ -750,7 +750,7 @@ __metadata:
       optional: true
     "@mdx-js/react":
       optional: true
-  checksum: 0862a4e31958fa8fb43f9ac5723b90c317a668326e58a30b979bf79f1a2d142b64c20e7264db72537dc7c3268ab06de0e83ecd642465f3ae001213c4c1db47b0
+  checksum: 0a6db47bbf116eed0a857ba01d3b117303eebfffbc95ea96e7f9f2535149e84244650ba949ed07b284c89ad28dcf6f3531d4a91775c93d467b8108bb13969181
   languageName: node
   linkType: hard
 
@@ -4034,7 +4034,7 @@ __metadata:
     "@heroicons/react": ^2.2.0
     "@mdx-js/loader": ^3.1.1
     "@mdx-js/react": ^3.1.1
-    "@next/mdx": ^16.2.9
+    "@next/mdx": ^16.2.10
     "@tailwindcss/postcss": ^4.3.2
     "@types/mdx": ^2.0.14
     "@types/node": ^22.15.3
