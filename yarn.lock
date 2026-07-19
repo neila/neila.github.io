@@ -1474,9 +1474,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"colorthief@npm:^3.3.1":
-  version: 3.3.1
-  resolution: "colorthief@npm:3.3.1"
+"colorthief@npm:^3.4.0":
+  version: 3.4.0
+  resolution: "colorthief@npm:3.4.0"
   peerDependencies:
     sharp: ">=0.33.0"
   peerDependenciesMeta:
@@ -1484,7 +1484,7 @@ __metadata:
       optional: true
   bin:
     colorthief: dist/cli.js
-  checksum: b17cc280e9107c5e86e2ef507a388d767166efcfc02ae80c7a824aa987378ee7a7c0d3582fbddadeaa05ccaa9a5c8584dfbff3b15b39c7d956a54ea57312746e
+  checksum: c0bfaa1adcba397603b08b48c5f8c13c52ce7250360d303ece508f6cb0599d3d06f7f9cbe73158ff66057c0f77bea2a8efb2ac6720b6455b8c06372e84778755
   languageName: node
   linkType: hard
 
@@ -4057,7 +4057,7 @@ __metadata:
     "@types/react": ^19.2.17
     "@types/react-dom": ^19.2.3
     autoprefixer: ^10.5.4
-    colorthief: ^3.3.1
+    colorthief: ^3.4.0
     dateformat: ^5.0.3
     gray-matter: ^4.0.3
     lint-staged: ^17.0.8
