@@ -3150,14 +3150,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^19.2.7":
-  version: 19.2.7
-  resolution: "react-dom@npm:19.2.7"
+"react-dom@npm:^19.2.8":
+  version: 19.2.8
+  resolution: "react-dom@npm:19.2.8"
   dependencies:
     scheduler: ^0.27.0
   peerDependencies:
-    react: ^19.2.7
-  checksum: 9543b532a070c91751dd9aae77f5ee21d2aeada28e061080162433a5418f8ba98eadb869c76d82eff9f0475e5ff2b9e1cf31916ab6509f8ebc856be77361eb1c
+    react: ^19.2.8
+  checksum: cef5d9493f911f20da5648bbd44a27e7e2e96868be4ed0a6a650499b19d74156d35e8c2eee9c075a2cbce59ef3da483cb55113f2941c1bc17fd005ffa92d7084
   languageName: node
   linkType: hard
 
@@ -4056,7 +4056,7 @@ __metadata:
     lint-staged: ^17.0.8
     next: ^16.2.11
     react: ^19.2.7
-    react-dom: ^19.2.7
+    react-dom: ^19.2.8
     remark: 15
     remark-frontmatter: ^5.0.0
     remark-html: 16
